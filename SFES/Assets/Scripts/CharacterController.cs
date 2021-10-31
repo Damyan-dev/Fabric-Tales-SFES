@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,12 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 2.0f;
-    protected Rigidbody2D rb2d;
-    protected Vector2 movement;
+    private Vector3 movement;
+    
 
     private void Awake()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Update()
@@ -21,6 +22,8 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2d.MovePosition(rb2d.position + movement * movementSpeed * Time.fixedDeltaTime);
+        transform.Translate(new Vector3(movement.x, 0, movement.y) * (movementSpeed * Time.deltaTime));
+
     }
+
 }
