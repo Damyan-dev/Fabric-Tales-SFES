@@ -331,8 +331,22 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/MouseLook.cs"
+"Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs"
 "Assets/Scripts/CharacterController.cs"
 "Assets/Scripts/Load.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/IdleChanger.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/IKCtrlRightHand.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/RandomWind.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringBone.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringCollider.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringManager.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs"
+"Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs"
+"Assets/unity-chan!/Unity-chan! Model/SplashScreen/Scripts/SplashScreen.cs"
 -langversion:8.0
 
 /deterministic

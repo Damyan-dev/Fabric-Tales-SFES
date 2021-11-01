@@ -1,29 +1,33 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    [SerializeField] float movementSpeed = 2.0f;
-    private Vector3 movement;
-    
+    private UnityEngine.CharacterController controller;
+    private Vector3 playerVelocity;
+    private bool groundedPlayer;
+    private float playerSpeed = 2.0f;
+    private float jumpHeight = 1.0f;
+    private float gravityValue = -9.81f;
 
-    private void Awake()
+    private void Start()
     {
-        
+        controller = gameObject.AddComponent<UnityEngine.CharacterController>();
     }
 
-    private void Update()
+    void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
+        {
+            playerVelocity.y = 0f;
+        }
+
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        controller.Move(move * Time.deltaTime * playerSpeed);
+
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
     }
-
-    private void FixedUpdate()
-    {
-        transform.Translate(new Vector3(movement.x, 0, movement.y) * (movementSpeed * Time.deltaTime));
-
-    }
-
 }
