@@ -42,8 +42,8 @@ namespace UnityChan
 	
 		void FixedUpdate ()
 		{
-			float h = Input.GetAxis ("Horizontal");				
-			float v = Input.GetAxis ("Vertical");				
+			float h = Input.GetAxis ("Vertical");				
+			float v = Input.GetAxis ("Horizontal");				
 			anim.SetFloat ("Speed", v);							
 			anim.SetFloat ("Direction", h); 						
 			anim.speed = animSpeed;								

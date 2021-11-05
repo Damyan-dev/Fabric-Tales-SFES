@@ -1697,10 +1697,7 @@ MonoBehaviour:
   lookSmoother: 3
   useCurves: 1
   useCurvesHeight: 0.5
-  forwardSpeed: 5
-  backwardSpeed: 2
-  rotateSpeed: 2
-  jumpPower: 2
+  playerSpeed: 4
 --- !u!1 &100078
 GameObject:
   m_ObjectHideFlags: 0
