@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637719648936954090
-    m_Hash: 102562388
+      ticks: 637719755373167339
+    m_Hash: 3200377531
   m_LockFileStatus:
     m_FilePath: D:/Unity Projects/SFES-Unity/SFES/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637719648948284035
-    m_Hash: 1949789066
+      ticks: 637719755373177322
+    m_Hash: 3159929413
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1572,7 +1572,6 @@ m_ResolvedPackages:
     - 1.6.1
     - 1.6.2
     - 1.6.3
-    - 1.7.0-pre.1
     compatible:
     - 1.5.6
     - 1.5.7
@@ -1583,7 +1582,6 @@ m_ResolvedPackages:
     - 1.6.1
     - 1.6.2
     - 1.6.3
-    - 1.7.0-pre.1
     verified: 1.5.7
   dependencies:
   - name: com.unity.modules.director
@@ -3873,11 +3871,9 @@ m_ResolvedPackages:
     - 1.1.0-preview.1
     - 1.1.0
     - 1.2.1
-    - 1.2.4
     compatible:
     - 1.2.1
-    - 1.2.4
-    verified: 1.2.4
+    verified: 1.2.1
   dependencies: []
   resolvedDependencies: []
   keywords:
