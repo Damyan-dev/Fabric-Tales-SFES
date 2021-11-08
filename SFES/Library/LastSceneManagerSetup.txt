@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/Environment_Free.unity
+- path: Assets/Scenes/Environment_Free.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

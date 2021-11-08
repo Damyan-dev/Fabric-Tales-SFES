@@ -82,6 +82,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -281,9 +282,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
--r:"C:/Users/pwr20/Documents/GitHub/SFES/SFES Unity/SFES/Library/PackageCache/com.unity.cinemachine@2.7.9/Runtime/ThirdParty/clipper_library.dll"
--r:"C:/Users/pwr20/Documents/GitHub/SFES/SFES Unity/SFES/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/pwr20/Documents/GitHub/SFES/SFES Unity/SFES/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/Unity Projects/SFES-Unity/SFES/Library/PackageCache/com.unity.cinemachine@2.7.9/Runtime/ThirdParty/clipper_library.dll"
+-r:"D:/Unity Projects/SFES-Unity/SFES/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"D:/Unity Projects/SFES-Unity/SFES/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/PsdPlugin.ref.dll"
@@ -304,17 +305,12 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.2D.Tilemap.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.2D.Tilemap.Extras.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.2D.Tilemap.Extras.ref.dll"
--r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AdaptivePerformance.Editor.ref.dll"
--r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AdaptivePerformance.ref.dll"
--r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AdaptivePerformance.Simulator.Editor.ref.dll"
--r:"Library/Bee/artifacts/2000b0aE.dag/Unity.AdaptivePerformance.Simulator.Extension.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.InternalAPIEditorBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Rider.Editor.ref.dll"
--r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Subsystem.Registration.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Timeline.Editor.ref.dll"
@@ -334,18 +330,7 @@
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs"
 "Assets/Scripts/CharacterController.cs"
 "Assets/Scripts/Load.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/AutoBlink.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/CameraController.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/FaceUpdate.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/IdleChanger.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/IKCtrlRightHand.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/RandomWind.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringBone.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringCollider.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/SpringManager.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/ThirdPersonCamera.cs"
-"Assets/unity-chan!/Unity-chan! Model/Scripts/UnityChanControlScriptWithRgidBody.cs"
-"Assets/unity-chan!/Unity-chan! Model/SplashScreen/Scripts/SplashScreen.cs"
+"Assets/Scripts/PlayerMovement.cs"
 -langversion:8.0
 
 /deterministic
