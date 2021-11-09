@@ -12,7 +12,7 @@ public class PickUp : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
