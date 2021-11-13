@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tree1
-    second: {fileID: 2100000, guid: bffc92eb90fc5354e83c5e3259b14b83, type: 2}
+    second: {fileID: 2100000, guid: 76743adfa68d1664489dbb18178738fe, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -44,9 +44,9 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
-    meshCompression: 0
-    addColliders: 0
+    globalScale: 5
+    meshCompression: 3
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
@@ -95,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.049999997
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

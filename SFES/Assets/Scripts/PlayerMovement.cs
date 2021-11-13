@@ -15,10 +15,6 @@ namespace UnityChan
 		public float lookSmoother = 3.0f;			
 		public bool useCurves = true;				
 		public float useCurvesHeight = 0.5f;
-
-		//public float forwardSpeed = 7.0f;
-		//public float backwardSpeed = 2.0f
-		private float gravityValue = -9.81f;
 		public float playerSpeed = 4.0f;
 		private CapsuleCollider col;
 		private float orgColHight;
