@@ -50,6 +50,6 @@ public class Spawner : MonoBehaviour
     //   GameObject cotton = Instantiate(gameobject);
     //  Character.transform.position = new Vector3(position.x, position.y + transform.localScale.y / 2, position.z);
     //}
-}
+
 
 
