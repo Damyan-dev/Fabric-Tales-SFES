@@ -11,47 +11,50 @@ namespace UnityChan
 	public class PlayerMovement : MonoBehaviour
 	{
 
-		public float animSpeed = 1.5f;			
-		public float lookSmoother = 3.0f;			
-		public bool useCurves = true;				
+		public float animSpeed = 1.5f;
+		public float lookSmoother = 3.0f;
+		public bool useCurves = true;
 		public float useCurvesHeight = 0.5f;
 		public float playerSpeed = 4.0f;
 		private CapsuleCollider col;
 		private float orgColHight;
 		private Vector3 orgVectColCenter;
-		private Animator anim;							
-		private AnimatorStateInfo currentBaseState;		
-		
-		static int idleState = Animator.StringToHash ("Base Layer.Idle");
-		static int locoState = Animator.StringToHash ("Base Layer.Locomotion");
-		static int jumpState = Animator.StringToHash ("Base Layer.Jump");
-		static int restState = Animator.StringToHash ("Base Layer.Rest");
+		private Animator anim;
+		private AnimatorStateInfo currentBaseState;
 
-		void Start ()
+		//static int idleState = Animator.StringToHash("Base Layer.IDLING");
+		//static int locoState = Animator.StringToHash("Base Layer.WALKING");
+
+		void Start()
 		{
-			anim = GetComponent<Animator> ();
-			col = GetComponent<CapsuleCollider> ();
+			anim = GetComponent<Animator>();
+			col = GetComponent<CapsuleCollider>();
 			orgColHight = col.height;
 			orgVectColCenter = col.center;
 		}
-	
-	
-		void FixedUpdate ()
+
+
+		void FixedUpdate()
 		{
-			float h = Input.GetAxis ("Vertical");				
-			float v = Input.GetAxis ("Horizontal");				
-			anim.SetFloat ("Speed", v);							
-			anim.SetFloat ("Direction", h); 						
-			anim.speed = animSpeed;								
-			currentBaseState = anim.GetCurrentAnimatorStateInfo (0);
-			
-			Vector3 charMovement = new Vector3(h,0,v);
+			float h = Input.GetAxis("Vertical");
+			float v = Input.GetAxis("Horizontal");
+			anim.SetFloat("Speed", v);
+			anim.SetFloat("Direction", h);
+			anim.speed = animSpeed;
+			currentBaseState = anim.GetCurrentAnimatorStateInfo(0);
+
+			Vector3 charMovement = new Vector3(h, 0, v);
 			transform.Translate(charMovement * (playerSpeed * Time.fixedDeltaTime), Space.World);
 
-			if(charMovement != Vector3.zero)
-            {
+			if (charMovement != Vector3.zero)
+			{
+				anim.SetInteger("condition", 1);
 				transform.forward = charMovement;
-            }
+			}
+			else
+			{
+				anim.SetInteger("condition", 0);
+			}
 			/*velocity = new Vector3 (0, 0, v);		
 			velocity = transform.TransformDirection (velocity);
 			if (v > 0.1) {
@@ -63,7 +66,7 @@ namespace UnityChan
 			transform.localPosition += velocity * Time.fixedDeltaTime; */
 
 
-			if (currentBaseState.fullPathHash == locoState) {
+			/*if (currentBaseState.fullPathHash == locoState) {
 				if (useCurves) {
 					resetCollider ();
 				}
@@ -74,17 +77,13 @@ namespace UnityChan
 					resetCollider ();
 				}
 			}
-		else if (currentBaseState.fullPathHash == restState) {
-				if (!anim.IsInTransition (0)) {
-					anim.SetBool ("Rest", false);
-				}
-			}
 		}
 		
 		void resetCollider ()
 		{
 			col.height = orgColHight;
 			col.center = orgVectColCenter;
+		}*/
 		}
 	}
 }
