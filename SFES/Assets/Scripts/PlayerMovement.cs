@@ -48,13 +48,23 @@ namespace UnityChan
 
 			if (charMovement != Vector3.zero)
 			{
-				anim.SetInteger("condition", 1);
+				anim.SetFloat("Speed", 1);
 				transform.forward = charMovement;
 			}
 			else
 			{
-				anim.SetInteger("condition", 0);
+				anim.SetFloat("Speed", 0);
 			}
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+				anim.SetBool("Harvest", true);
+            } else
+            {
+				anim.SetBool("Harvest", false);
+            }
+
+            
 			/*velocity = new Vector3 (0, 0, v);		
 			velocity = transform.TransformDirection (velocity);
 			if (v > 0.1) {

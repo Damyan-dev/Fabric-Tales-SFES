@@ -13,28 +13,27 @@ public class ImageShow : MonoBehaviour
     public void Start()
     {
 
-        canvasObject.SetActive(true);
+        canvasObject.SetActive(false);
 
        
     }
 
     void Update()
     {
-
         if (Input.GetKeyDown("e"))
         {
 
 
 
-            canvasObject.SetActive(false);
+            canvasObject.SetActive(true);
 
 
         }
         if (Input.GetKeyDown("r"))
         {
 
-            canvasObject.SetActive(true);
+            canvasObject.SetActive(false);
 
         }
-        }
     }
+}
