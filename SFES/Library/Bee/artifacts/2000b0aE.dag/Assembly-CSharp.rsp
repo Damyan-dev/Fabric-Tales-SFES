@@ -337,6 +337,7 @@
 "Assets/Scripts/Load.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Spawner.cs"
+"Assets/Scripts/SpawnObject.cs"
 -langversion:8.0
 
 /deterministic
