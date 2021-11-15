@@ -17377,11 +17377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9001bcbd91e76437cb0f52f12764f2f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animSpeed: 1.5
-  lookSmoother: 3
-  useCurves: 1
-  useCurvesHeight: 0.5
-  playerSpeed: 4
+  playerSpeed: 2.5
 --- !u!54 &1967967219
 Rigidbody:
   m_ObjectHideFlags: 0
