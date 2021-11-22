@@ -16,14 +16,22 @@ public class Spawner : MonoBehaviour
         void Start()
         {
             // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
-            InvokeRepeating("Spawn", startSpawnTime, spawnTime);
+           // InvokeRepeating("Spawn", startSpawnTime, spawnTime);
         }
 
         // Update is called once per frame
         void Update()
         {
+        if (Input.GetKeyDown("p"))
+        {
+
+
+
+           Spawn();
+
 
         }
+    }
 
         void Spawn()
         {
