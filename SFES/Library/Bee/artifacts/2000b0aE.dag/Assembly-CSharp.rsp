@@ -328,6 +328,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs"
+"Assets/Scripts/Buildings/BarnTrigger.cs"
 "Assets/Scripts/CharacterController.cs"
 "Assets/Scripts/Crafting/CraftRecipes.cs"
 "Assets/Scripts/Crafting/IItemContainer.cs"
