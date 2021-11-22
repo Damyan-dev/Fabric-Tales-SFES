@@ -8,8 +8,8 @@ public class Spawner : MonoBehaviour
         public Transform[] spawnPoints;
         public GameObject[] cotton;
 
-        public int startSpawnTime = 10;
-        public int spawnTime = 5;
+        //public int startSpawnTime = 10;
+        //public int spawnTime = 5;
 
 
         // Use this for initialization
@@ -24,16 +24,11 @@ public class Spawner : MonoBehaviour
         {
         if (Input.GetKeyDown("p"))
         {
-
-
-
            Spawn();
-
-
         }
     }
 
-        void Spawn()
+        public void Spawn()
         {
             // Find a random index between zero and one less than the number of spawn points.
             int spawnPoints = Random.Range(0, 1);

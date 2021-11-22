@@ -325,7 +325,6 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/Machine.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs"
 "Assets/Scripts/Buildings/BarnTrigger.cs"
@@ -336,9 +335,10 @@
 "Assets/Scripts/Inventory/Inventory.cs"
 "Assets/Scripts/Inventory/PickUp.cs"
 "Assets/Scripts/Load.cs"
+"Assets/Scripts/Machines/Loom.cs"
+"Assets/Scripts/Machines/WashingMachine.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Spawner.cs"
-"Assets/Scripts/SpawnObject.cs"
 -langversion:8.0
 
 /deterministic
