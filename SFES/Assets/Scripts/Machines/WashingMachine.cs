@@ -21,7 +21,11 @@ public class WashingMachine : Spawner
         }
         if (Input.GetKeyDown("f"))
         {
-            Spawn();
+            int spawnPoints = Random.Range(0, 1);
+            int cotton = Random.Range(0, 1);
+
+            // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
+            Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation); ;
         }
     }
 

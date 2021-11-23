@@ -11,7 +11,6 @@ public class Spawner : MonoBehaviour
         //public int startSpawnTime = 10;
         //public int spawnTime = 5;
 
-
         // Use this for initialization
         void Start()
         {
@@ -22,7 +21,7 @@ public class Spawner : MonoBehaviour
         // Update is called once per frame
         void Update()
         {
-        if (Input.GetKeyDown("p"))
+        if (Input.GetKeyDown("f"))
         {
            Spawn();
         }
