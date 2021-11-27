@@ -7,23 +7,26 @@ public class Spawner : MonoBehaviour
 
         public Transform[] spawnPoints;
         public GameObject[] cotton;
-
+        public GameObject canvasObject;
         //public int startSpawnTime = 10;
         //public int spawnTime = 5;
 
-        // Use this for initialization
-        void Start()
+    // Use this for initialization
+    void Start()
         {
             // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
            // InvokeRepeating("Spawn", startSpawnTime, spawnTime);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
+    // Update is called once per frame
+    void Update()
+    {
         if (Input.GetKeyDown("f"))
         {
-           Spawn();
+            if (canvasObject.activeSelf)
+            {
+                Spawn();
+            }
         }
     }
 
