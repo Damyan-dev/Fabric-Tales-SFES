@@ -41,6 +41,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
   - {fileID: 21300000, guid: 41a6f1b43f9f1ab46a00020c4afb194c, type: 3}
+  - {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
   - {fileID: 7482667652216324306, guid: f1fa3e0822eeafc4b82c227e80f0ce8a, type: 3}
   - {fileID: 21300000, guid: f3890f38749225e4f98d76f998ecba15, type: 3}
@@ -50,6 +51,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d3ca067cb85af6f46bd583c05b82a73c, type: 3}
   - {fileID: 21300000, guid: f0553cacca68d844692e744d67c9c476, type: 3}
   - {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
+  - {fileID: 21300000, guid: 28cffbed2a30f2c4c99a3d9c5508a2f1, type: 3}
   - {fileID: 21300000, guid: cde7108f7dec6a742a4e12082440371b, type: 3}
   - {fileID: 21300000, guid: ec8eb3bf81893ff4aab5520d05aed223, type: 3}
   - {fileID: 21300000, guid: d5c3f8ef57d3d0e4db2a61e815a8bcaf, type: 3}
@@ -57,6 +59,7 @@ SpriteAtlas:
   - Red_dyed_clothing_gold
   - cotton_green
   - clothing_blue
+  - icons8-cotton-64
   - seed1
   - Square
   - clothing_gold
@@ -66,6 +69,7 @@ SpriteAtlas:
   - Cotton Seed Icon
   - cotton_blue
   - cloth_gold
+  - icons8-backpack-64
   - cloth_blue
   - cotton_gold
   - Red_dyed_clothing_blue

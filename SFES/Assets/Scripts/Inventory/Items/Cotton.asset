@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
+  m_Name: Cotton
+  m_EditorClassIdentifier: 
+  description: This is a harvested cotton bud.
+  thumbnail: {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
+  objectModel: {fileID: 919132149155446097, guid: 90dffe3e13aaa6b428e0bae2853a623b, type: 3}
