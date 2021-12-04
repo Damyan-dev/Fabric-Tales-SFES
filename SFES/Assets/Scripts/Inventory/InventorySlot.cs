@@ -4,12 +4,19 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     ItemData itemToShow;
+    private int invSlotIndex;
 
     public Image itemDisplayImage;
-    // Start is called before the first frame update
+
+    public enum InventoryCategory
+    {
+        Items, Tools
+    }
+
+    public InventoryCategory inventoryCategory;
     public void Show(ItemData itemToShow)
     {
         if (itemToShow != null)
@@ -30,5 +37,16 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerExit(PointerEventData eventData)
     {
         UIController.Instance.ShowItemInfo(null);
+    }
+
+    // Ensures that the OnPointerClick function is overridable.
+    public virtual void OnPointerClick(PointerEventData eventData)
+    {
+        InventoryManager.Instance.InventoryToEquipped(invSlotIndex, inventoryCategory);
+    }
+
+    public void SetIndex(int invSlotIndex)
+    {
+        this.invSlotIndex = invSlotIndex;
     }
 }

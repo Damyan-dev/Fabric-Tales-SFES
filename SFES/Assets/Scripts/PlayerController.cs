@@ -53,8 +53,7 @@ using System.Collections;
 				anim.SetBool("walking", false);
 				anim.SetInteger("state", 0);
 			}
-			
-		}
+        }
 		
 		public void Interact()
 		{

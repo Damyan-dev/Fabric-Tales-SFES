@@ -17,13 +17,54 @@ public class InventoryManager : MonoBehaviour
             Instance = this;
         }
     }
-    [Header("Tools")]
-    public ItemData[] tool = new ItemData[8];
-    public ItemData equippedTool = null;
-
-    [Header("Items")] 
+   
+    public ItemData[] tools = new ItemData[8];
     public ItemData[] items = new ItemData[8];
+    public ItemData equippedTool = null;
     public ItemData equippedItem = null;
+
+    public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
+    {
+        if (inventoryCategory == InventorySlot.InventoryCategory.Items)
+        {
+            ItemData itemToEquip = items[invSlotIndex];
+            items[invSlotIndex] = equippedItem;
+            equippedItem = itemToEquip;
+        }
+        else
+        {
+            ItemData toolToEquip = tools[invSlotIndex];
+            tools[invSlotIndex] = equippedTool;
+            equippedTool = toolToEquip;
+        }
+        UIController.Instance.DisplayInventory();
+    }
+
+    public void EquippedToInventory(InventorySlot.InventoryCategory inventoryCategory)
+    {
+        if (inventoryCategory == InventorySlot.InventoryCategory.Items)
+        {
+            for (int i = 0; items.Length != 0; i++)
+            {
+                if (items[i] == null)
+                {
+                    items[i] = equippedItem;
+                    equippedItem = null;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < tools.Length; i++)
+            {
+                tools[i] = equippedTool;
+                equippedTool = null;
+                break;
+            }
+        }
+        UIController.Instance.DisplayInventory();
+    }
 
 }
 

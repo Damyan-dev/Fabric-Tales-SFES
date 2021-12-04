@@ -7,11 +7,13 @@ public class UIController : MonoBehaviour
 {
     public static UIController Instance { get; private set; }
 
-    [Header("Inventory")]
     public GameObject inventoryPanel; // Sets the Inventory panel.
+    public InventorySlot[] itemsSlots; // The UI for the item slots.
+    public InventorySlot[] toolSlots; // The UI for the tool slots.
+    public Image guiEquipSlot; // Sets the currently equipped tool in the GUI.
+    public EquippedSlot toolEquippedSlot;
+    public EquippedSlot itemEquippedSlot;
 
-    public InventorySlot[] inventorySlots; // The UI for the item slots.
-    
     // Information for the items in the info box.
     public Text itemNameText;
     public Text itemDescriptionText;
@@ -31,12 +33,26 @@ public class UIController : MonoBehaviour
     private void Start()
     {
         DisplayInventory();
+        SetInvSlotIndexes();
     }
 
     public void DisplayInventory()
     {
-        ItemData[] inventoryItemSlots = InventoryManager.Instance.items;
-        RenderInventoryPanel(inventoryItemSlots, inventorySlots);
+        ItemData[] invItemSlots = InventoryManager.Instance.items;
+        ItemData[] invToolSlots = InventoryManager.Instance.tools;
+        RenderInventoryPanel(invItemSlots, itemsSlots);
+        RenderInventoryPanel(invToolSlots, toolSlots);
+        toolEquippedSlot.Show(InventoryManager.Instance.equippedTool);
+        itemEquippedSlot.Show(InventoryManager.Instance.equippedItem);
+
+        ItemData equipTool = InventoryManager.Instance.equippedItem;
+        if (equipTool != null)
+        {
+            guiEquipSlot.sprite = equipTool.thumbnail;
+            guiEquipSlot.gameObject.SetActive(true);
+            return;
+        }
+        guiEquipSlot.gameObject.SetActive(false);
     }
 
     void RenderInventoryPanel(ItemData[] items, InventorySlot[] uiSlots)
@@ -65,4 +81,12 @@ public class UIController : MonoBehaviour
         itemDescriptionText.text = data.description;
     }
 
+    public void SetInvSlotIndexes()
+    {
+        for (int i = 0; i < toolSlots.Length; i++)
+        {
+            toolSlots[i].SetIndex(i);
+            itemsSlots[i].SetIndex(i);
+        }
+    }
 }

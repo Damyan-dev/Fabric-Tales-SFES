@@ -6,13 +6,7 @@ using UnityEngine;
 public class Interactor : MonoBehaviour
 {
     private Farmland selectedFarmLand = null;
-    
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         RaycastHit detected;
@@ -37,6 +31,7 @@ public class Interactor : MonoBehaviour
             selectedFarmLand.Selected(false);
             selectedFarmLand = null;
         }
+
     }
 
     private void SelectedFarmLand(Farmland farmLand)
@@ -49,6 +44,7 @@ public class Interactor : MonoBehaviour
         selectedFarmLand = farmLand;
         farmLand.Selected(true);
     }
+    
 
     public void Interact()
     {

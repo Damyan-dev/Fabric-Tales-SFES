@@ -6,11 +6,13 @@ public class WashingMachine : Spawner
 {           
     public Spawner spawner;
     public GameObject canvasObject;
+    public GameObject selected;
 
 
     public void Start()
     {
         canvasObject.SetActive(false);
+        selected.SetActive(false);
         
     }
 
@@ -19,6 +21,7 @@ public class WashingMachine : Spawner
         if (other.CompareTag("Player"))
         {
             canvasObject.SetActive(true);
+            selected.SetActive(true);
 
         }
         if (Input.GetKeyDown("f"))
@@ -39,8 +42,9 @@ public class WashingMachine : Spawner
         if (other.CompareTag("Player"))
         {
             canvasObject.SetActive(false);
+            selected.SetActive(false);
             
         }
         
     }
-   }
+}
