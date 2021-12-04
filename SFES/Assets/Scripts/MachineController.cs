@@ -19,7 +19,7 @@ public class MachineController : MonoBehaviour
     {
         if (Input.GetKey (KeyCode.F))
         {
-            anim.SetInteger ("Condition 0", 0); ;
+            anim.SetInteger ("Condition", 1); ;
         }
     }
 }

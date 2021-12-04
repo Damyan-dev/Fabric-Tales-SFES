@@ -14325,6 +14325,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2723060518997314785, guid: 2c4ae7bed20b2ee40a2461f9b41d6dd0, type: 3}
+--- !u!1 &1103305417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7750397243111347764, guid: 7342426fb0a6bba4e8fa34607bf08b62, type: 3}
+  m_PrefabInstance: {fileID: 1662442187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106166161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 844fc917912019a41872e544d2887a73, type: 3}
@@ -21391,6 +21396,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cloth
       objectReference: {fileID: 0}
+    - target: {fileID: 5639405848544218604, guid: 7342426fb0a6bba4e8fa34607bf08b62, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.9391
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639405848544218604, guid: 7342426fb0a6bba4e8fa34607bf08b62, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.9391
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639405848544218604, guid: 7342426fb0a6bba4e8fa34607bf08b62, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.9391
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7342426fb0a6bba4e8fa34607bf08b62, type: 3}
 --- !u!224 &1664426602 stripped
@@ -25484,11 +25501,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5480735367447214401, guid: 2c4ae7bed20b2ee40a2461f9b41d6dd0, type: 3}
---- !u!1 &1938537306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7342426fb0a6bba4e8fa34607bf08b62, type: 3}
-  m_PrefabInstance: {fileID: 1662442187}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1941263147
 GameObject:
   m_ObjectHideFlags: 0
@@ -26359,7 +26371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019411387}
   m_LocalRotation: {x: -0.440734, y: -0.7111824, z: 0.46286073, w: -0.2928023}
-  m_LocalPosition: {x: -0.558, y: -1.151, z: 0.769}
+  m_LocalPosition: {x: -0.632, y: -1.249, z: 1.254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2046781110}
@@ -26733,7 +26745,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 2019411388}
   cotton:
-  - {fileID: 1938537306}
+  - {fileID: 1103305417}
   canvasObject: {fileID: 2060932875}
   spawner: {fileID: 0}
   canvasObject: {fileID: 2060932875}
@@ -26774,6 +26786,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2046781113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046781108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383e8c2f703f56241a408937a2541048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2049449330
 GameObject:
   m_ObjectHideFlags: 0
