@@ -20,16 +20,11 @@ public class ImageShow : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("c"))
         {
-
-
-
             canvasObject.SetActive(true);
-
-
         }
-        if (Input.GetKeyDown("r"))
+        if (Input.GetKeyUp("c"))
         {
 
             canvasObject.SetActive(false);

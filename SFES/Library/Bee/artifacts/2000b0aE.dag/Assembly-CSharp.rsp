@@ -337,6 +337,7 @@
 "Assets/Scripts/EquippedSlot.cs"
 "Assets/Scripts/Farming/Farmland.cs"
 "Assets/Scripts/Interactor.cs"
+"Assets/Scripts/Inventory/InteractableObject.cs"
 "Assets/Scripts/Inventory/Inventory.cs"
 "Assets/Scripts/Inventory/InventoryManager.cs"
 "Assets/Scripts/Inventory/InventorySlot.cs"

@@ -5,7 +5,10 @@ using UnityEngine;
 public class Farmland : MonoBehaviour
 {
     public GameObject selected;
+    public GameObject cottonCrop;
+    public GameObject cottonDrop;
     public Material dirtMat, farmMat, wateredMat;
+    
 
     public enum FarmStatus
     {
@@ -33,6 +36,8 @@ public class Farmland : MonoBehaviour
                 break;
             case FarmStatus.Farm:
                 materialToSwitch = farmMat;
+                Destroy(cottonCrop);
+                Instantiate<GameObject>(cottonDrop);
                 break;
             case FarmStatus.Watered:
                 materialToSwitch = wateredMat;

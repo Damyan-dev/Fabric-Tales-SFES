@@ -27,15 +27,11 @@ public class InventoryManager : MonoBehaviour
     {
         if (inventoryCategory == InventorySlot.InventoryCategory.Items)
         {
-            ItemData itemToEquip = items[invSlotIndex];
-            items[invSlotIndex] = equippedItem;
-            equippedItem = itemToEquip;
+            (items[invSlotIndex], equippedItem) = (equippedItem, items[invSlotIndex]);
         }
         else
         {
-            ItemData toolToEquip = tools[invSlotIndex];
-            tools[invSlotIndex] = equippedTool;
-            equippedTool = toolToEquip;
+            (tools[invSlotIndex], equippedTool) = (equippedTool, tools[invSlotIndex]);
         }
         UIController.Instance.DisplayInventory();
     }

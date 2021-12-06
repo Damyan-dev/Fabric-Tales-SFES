@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Field
   - Washing Machine
+  - Item
   layers:
   - Default
   - TransparentFX

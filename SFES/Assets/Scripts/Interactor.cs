@@ -6,6 +6,8 @@ using UnityEngine;
 public class Interactor : MonoBehaviour
 {
     private Farmland selectedFarmLand = null;
+    private InteractableObject selectedItemInteractable = null;
+    
 
     void Update()
     {
@@ -32,6 +34,19 @@ public class Interactor : MonoBehaviour
             selectedFarmLand = null;
         }
 
+        if (hit.CompareTag("Item"))
+        {
+            InteractableObject interactableObject = hit.GetComponent<InteractableObject>();
+            SelectedInteractableObject(interactableObject);
+            return;
+        }
+
+        if (selectedItemInteractable != null)
+        {
+            selectedItemInteractable.SelectedInteractableObject(false);
+            selectedItemInteractable = null;
+        }
+
     }
 
     private void SelectedFarmLand(Farmland farmLand)
@@ -43,8 +58,19 @@ public class Interactor : MonoBehaviour
 
         selectedFarmLand = farmLand;
         farmLand.Selected(true);
+        
     }
-    
+
+    private void SelectedInteractableObject(InteractableObject interactableObject)
+    {
+        if (selectedItemInteractable != null)
+        {
+            selectedItemInteractable.SelectedInteractableObject(false);
+        }
+
+        selectedItemInteractable = interactableObject;
+        interactableObject.SelectedInteractableObject(true);
+    }
 
     public void Interact()
     {
@@ -54,6 +80,18 @@ public class Interactor : MonoBehaviour
             return;
         }
         
-        Debug.Log("Not on farm land");
+    }
+
+    public void ItemPickup()
+    {
+        if (InventoryManager.Instance.equippedItem != null)
+        {
+            InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
+        }
+        
+        if (selectedItemInteractable != null)
+        {
+            selectedItemInteractable.Pickup();
+        }
     }
 }

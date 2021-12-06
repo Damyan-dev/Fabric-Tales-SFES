@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: This is a harvested cotton bud.
   thumbnail: {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
-  objectModel: {fileID: 919132149155446097, guid: 90dffe3e13aaa6b428e0bae2853a623b, type: 3}
+  objectModel: {fileID: 0}

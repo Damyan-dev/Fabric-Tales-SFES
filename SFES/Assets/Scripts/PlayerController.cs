@@ -70,6 +70,11 @@ using System.Collections;
 					playerInteractor.Interact();
 				}
 			}
+
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				playerInteractor.ItemPickup();
+			}
 		}
 
 		private IEnumerator HarvestRoutine()
