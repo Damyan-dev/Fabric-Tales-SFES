@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42221254, g: 0.64316183, b: 0.793691, a: 1}
+  m_IndirectSpecularColor: {r: 0.42222098, g: 0.64365846, b: 0.7936594, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10393,6 +10393,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842901170}
   m_CullTransparentMesh: 1
+--- !u!1 &842959030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2417844893251727786, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
+  m_PrefabInstance: {fileID: 1774681526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &847479669
 GameObject:
   m_ObjectHideFlags: 0
@@ -17997,7 +18002,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 1537232896}
   cotton:
-  - {fileID: 1796780076}
+  - {fileID: 842959030}
   canvasObject: {fileID: 1999312022}
   spawner: {fileID: 0}
   canvasObject: {fileID: 1999312022}
@@ -19173,7 +19178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537232894}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.013, y: 0.2805275, z: 0.4023103}
+  m_LocalPosition: {x: 0.013, y: 0.127, z: 0.4023103}
   m_LocalScale: {x: 1.1258619, y: 1.1258619, z: 1.1258619}
   m_Children: []
   m_Father: {fileID: 1464779192}
@@ -22827,11 +22832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb79663d3d11d5040bf830942742894c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1796780076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6388274720957993284, guid: 6b73db090c73b6240b65d617cb194751, type: 3}
-  m_PrefabInstance: {fileID: 6388274722418172264}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1796780077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6388274720957993285, guid: 6b73db090c73b6240b65d617cb194751, type: 3}

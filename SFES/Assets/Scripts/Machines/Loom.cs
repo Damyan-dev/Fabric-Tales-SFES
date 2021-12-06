@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Loom : Spawner
+public class Loom : LoomSpawn
 {
-    public Spawner spawner;
+    public LoomSpawn spawner;
     public GameObject canvasObject;
     public GameObject selected;
 
@@ -24,7 +24,7 @@ public class Loom : Spawner
             selected.SetActive(true);
 
         }
-        if (Input.GetKeyDown("f"))
+        if (Input.GetKeyDown("g"))
         {
 
             int spawnPoints = Random.Range(0, 1);
