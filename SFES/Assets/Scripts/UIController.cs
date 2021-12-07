@@ -8,6 +8,7 @@ public class UIController : MonoBehaviour
     public static UIController Instance { get; private set; }
 
     public GameObject inventoryPanel; // Sets the Inventory panel.
+    public GameObject JournalPanel; // sets the journal panel
     public InventorySlot[] itemsSlots; // The UI for the item slots.
     public InventorySlot[] toolSlots; // The UI for the tool slots.
     public Image guiEquipSlot; // Sets the currently equipped tool in the GUI.
@@ -68,8 +69,12 @@ public class UIController : MonoBehaviour
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
         DisplayInventory();
     }
+    public void ToggleJournalPanel()
+    {
+        JournalPanel.SetActive(!JournalPanel.activeSelf);
+    }
 
-    public void ShowItemInfo(ItemData data)
+        public void ShowItemInfo(ItemData data)
     {
         if (data == null)
         {
