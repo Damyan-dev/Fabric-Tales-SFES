@@ -8,7 +8,7 @@ class Load : MonoBehaviour
     }
     public void MainGame()
     {
-        SceneManager.LoadScene("TestEnvironment");
+        SceneManager.LoadScene("FinalLevel");
     }
     public void Options()
     {
@@ -18,9 +18,9 @@ class Load : MonoBehaviour
     {
         Application.Quit();
     }
-    public void YSelect()
+    public void Credits()
     {
-        SceneManager.LoadScene("YSelect");
+        SceneManager.LoadScene("Credits");
     }
     public void Map1Fight()
     {
