@@ -22,6 +22,9 @@ public class InventoryManager : MonoBehaviour
     public ItemData[] items = new ItemData[8];
     public ItemData equippedTool = null;
     public ItemData equippedItem = null;
+    
+    [SerializeField]
+    public Transform handPoint = null;
 
     public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
     {
@@ -52,7 +55,7 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < tools.Length; i++)
+            for (int i = 0; i < tools.Length; )
             {
                 tools[i] = equippedTool;
                 equippedTool = null;
@@ -61,6 +64,7 @@ public class InventoryManager : MonoBehaviour
         }
         UIController.Instance.DisplayInventory();
     }
+    
 
 }
 

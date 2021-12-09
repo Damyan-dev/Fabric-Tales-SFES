@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Tool for watering plants.
   thumbnail: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  objectModel: {fileID: 0}
+  objectModel: {fileID: 919132149155446097, guid: c73e21beead5de34699aa8a5865d2182, type: 3}
   tool: 0
