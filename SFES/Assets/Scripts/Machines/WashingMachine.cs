@@ -24,7 +24,7 @@ public class WashingMachine : Spawner
             selected.SetActive(true);
 
         }
-        if (Input.GetKeyDown("f"))
+        if (Input.GetKeyDown("e"))
         {
             int spawnPoints = Random.Range(0, 1);
             int cotton = Random.Range(0, 1);

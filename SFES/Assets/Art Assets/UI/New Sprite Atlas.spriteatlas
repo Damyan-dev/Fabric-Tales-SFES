@@ -38,38 +38,186 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: ee7fad90a5cc5a34186ecb7ae9fdeef5, type: 3}
+  - {fileID: 21300000, guid: 875b52b01892dfc449146c9246a23afc, type: 3}
+  - {fileID: 21300000, guid: 65f582c05350e934b94b3b8f83292aa8, type: 3}
+  - {fileID: 21300000, guid: 74cf88c0bb4479749b62f16db5661d3a, type: 3}
+  - {fileID: 21300000, guid: 71e761e0c6c06404a87cf29aa18664bf, type: 3}
+  - {fileID: 21300000, guid: b85935e0365dab04e8839697aedefec4, type: 3}
+  - {fileID: 21300000, guid: 85bf9d4149f9b424b87d242e9047deda, type: 3}
+  - {fileID: 21300000, guid: c431ad71a7e7c1141b3e7d81130b1649, type: 3}
+  - {fileID: 21300000, guid: 6c456f71ba391c840b75b7ab5b9bc202, type: 3}
+  - {fileID: 21300000, guid: d1d935c162f71094680f0305c7324195, type: 3}
+  - {fileID: 21300000, guid: de0d59e1a4479984aab973c7c1d0b838, type: 3}
+  - {fileID: 21300000, guid: bbbf5ae18c91b764398aae66c6aa6693, type: 3}
+  - {fileID: 21300000, guid: 5f260d028df9b8a44bb28d6ffffc9af1, type: 3}
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
+  - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
+  - {fileID: 21300000, guid: 563375030cc2481489c3faede68d9d0e, type: 3}
+  - {fileID: 21300000, guid: 6db40f13b3f67584f8f9b6216812e72e, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
+  - {fileID: 21300000, guid: 38a11463e2dbe264382b446cbe2fb4ba, type: 3}
+  - {fileID: 21300000, guid: a40c5fd31a96f7f4fa6158ba55e43338, type: 3}
+  - {fileID: 21300000, guid: 51cf3a14095d5094a82ce26bd24d32a1, type: 3}
+  - {fileID: 21300000, guid: 497dc324f9ce8f348bb1f91cfb26a736, type: 3}
+  - {fileID: 21300000, guid: 4b53fa2417abca548b21917d3fb7404e, type: 3}
+  - {fileID: 21300000, guid: f493d134e05580548a365391b48e03e3, type: 3}
+  - {fileID: 21300000, guid: c9b218348c5d8cc49b407354a699382f, type: 3}
   - {fileID: 21300000, guid: 41a6f1b43f9f1ab46a00020c4afb194c, type: 3}
+  - {fileID: 21300000, guid: bfb642b400e375c4994d3cbb795f7713, type: 3}
+  - {fileID: 21300000, guid: c83be7b49adfb5140873a36f65dd666a, type: 3}
+  - {fileID: 21300000, guid: 03a68bc4355978343940445a6fed131e, type: 3}
+  - {fileID: 21300000, guid: 0bafdbd45b410d64488ae929b01f1406, type: 3}
+  - {fileID: 21300000, guid: 3a79bfe427591ee4b9497d91d6467945, type: 3}
   - {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
+  - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
+  - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
+  - {fileID: 21300000, guid: ca9304f6e0546f24481f640ebb54887f, type: 3}
+  - {fileID: 21300000, guid: fcbe5e079f0f3b74baad2b3adda920ea, type: 3}
+  - {fileID: 21300000, guid: 2f6edc27a09b72340a9804fbd2c60ccf, type: 3}
+  - {fileID: 21300000, guid: 57de014735a25a441943327fa7efb659, type: 3}
+  - {fileID: 21300000, guid: bb211e77c8b5fe549a068df020f165a4, type: 3}
+  - {fileID: 21300000, guid: 070ee5a73a54f674394c183bad778f98, type: 3}
+  - {fileID: 21300000, guid: a0024cc7ddd5f47459ced22e79fdf9a0, type: 3}
+  - {fileID: 21300000, guid: 67835fe757d9d514388daca1f119b9a1, type: 3}
   - {fileID: 7482667652216324306, guid: f1fa3e0822eeafc4b82c227e80f0ce8a, type: 3}
   - {fileID: 21300000, guid: f3890f38749225e4f98d76f998ecba15, type: 3}
+  - {fileID: 21300000, guid: c2c3f468389c4db44baa9b4524bbbd24, type: 3}
+  - {fileID: 21300000, guid: 0c85ba98ee44a4144bcb7d57f6e109fd, type: 3}
+  - {fileID: 21300000, guid: 7dc48ca81ea67f647b663af4049df3e0, type: 3}
+  - {fileID: 21300000, guid: 7b74dec8ddc28b546a5a03564d2c9830, type: 3}
   - {fileID: 21300000, guid: aca96fc86803c8340abb85333861352e, type: 3}
+  - {fileID: 21300000, guid: e401aee890d71e54e9ad8414635ade1e, type: 3}
   - {fileID: 21300000, guid: 2a33e6093471a864cb1deebce0891d03, type: 3}
+  - {fileID: 21300000, guid: 13f36b196c0804244a9ebaf33c6985a2, type: 3}
+  - {fileID: 21300000, guid: a709af39eb53577468c79653cb5455c8, type: 3}
+  - {fileID: 21300000, guid: b8088499b5b077d498a1a7471782bd02, type: 3}
+  - {fileID: 21300000, guid: 5377c899bce139f499170b0721bbda99, type: 3}
+  - {fileID: 21300000, guid: 6f2a280a964cfdd4f878045579a45aa1, type: 3}
   - {fileID: 21300000, guid: e8942a1a277b1034a9c76ef07332cb74, type: 3}
+  - {fileID: 21300000, guid: 6db1f35a84fcde54e8dab62f3faccfaf, type: 3}
+  - {fileID: 21300000, guid: b2169e7a7d4630745879968d70cbb2c8, type: 3}
+  - {fileID: 21300000, guid: b09fcada7ef18b74081376cc6877fdcf, type: 3}
+  - {fileID: 21300000, guid: 840195eaf1ab96945b04f9e9aea37013, type: 3}
+  - {fileID: 21300000, guid: 7fcdd45bd78107848b083fe31d4f247b, type: 3}
+  - {fileID: 21300000, guid: 1606ef7b99d8778448f0c99809bb82e9, type: 3}
+  - {fileID: 21300000, guid: dd5d31db41ceeb64684a73a8b28045b2, type: 3}
+  - {fileID: 21300000, guid: a856500ccd9b6634c9b6e0ea6464a386, type: 3}
+  - {fileID: 21300000, guid: 3e8f4e2cfc80c1945a4500da3bcc88c9, type: 3}
   - {fileID: 21300000, guid: d3ca067cb85af6f46bd583c05b82a73c, type: 3}
+  - {fileID: 21300000, guid: bbc6888c24fd7c146946e2cc37e8177c, type: 3}
   - {fileID: 21300000, guid: f0553cacca68d844692e744d67c9c476, type: 3}
+  - {fileID: 21300000, guid: 3400f2ece8cdab046b51aa94b83e06c5, type: 3}
+  - {fileID: 21300000, guid: c41c2bec2903eb74abeef97f3810e1da, type: 3}
   - {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
+  - {fileID: 21300000, guid: 9c7c366d46e748a44a608c9051274105, type: 3}
+  - {fileID: 21300000, guid: f361e7cd6f3123d44a5e3871f0eab320, type: 3}
+  - {fileID: 21300000, guid: 45c849cd05f6276449cdfba0d539c4b8, type: 3}
   - {fileID: 21300000, guid: 28cffbed2a30f2c4c99a3d9c5508a2f1, type: 3}
+  - {fileID: 21300000, guid: 26c247fd38cfd674881b28854ed3de64, type: 3}
+  - {fileID: 21300000, guid: 99887b0eb2a5e574cbdd1a30e9bcffcd, type: 3}
+  - {fileID: 21300000, guid: 8e825f0e90d433445a366035a3cc7408, type: 3}
+  - {fileID: 21300000, guid: 0dce516e4357e484a97fefc6ff3830ea, type: 3}
+  - {fileID: 21300000, guid: 41bea66ea243f0e4a8a382f3310b6271, type: 3}
+  - {fileID: 21300000, guid: c812108ee9f76f040bce0b054da5831e, type: 3}
+  - {fileID: 21300000, guid: 5e81d39e02d4259419bb5b3c981d80d0, type: 3}
+  - {fileID: 21300000, guid: 80ec15ee77516ba488cef756f9a9fc2d, type: 3}
+  - {fileID: 21300000, guid: 5279b73ff072f4343b4aa938889e42cd, type: 3}
+  - {fileID: 21300000, guid: 54e4684f67302bf46805977588ce6849, type: 3}
+  - {fileID: 21300000, guid: e9a6dc6fb059d784095ffab5cfe3525b, type: 3}
   - {fileID: 21300000, guid: cde7108f7dec6a742a4e12082440371b, type: 3}
   - {fileID: 21300000, guid: ec8eb3bf81893ff4aab5520d05aed223, type: 3}
   - {fileID: 21300000, guid: d5c3f8ef57d3d0e4db2a61e815a8bcaf, type: 3}
   m_PackedSpriteNamesToIndex:
+  - rope5
+  - frame030
+  - frame038
+  - frame018
+  - Border Bottom
+  - frame017
+  - JOURNAL icon
+  - inside separator bottom
+  - frame034
+  - frame011
+  - frame045
+  - frame024
+  - craft button clicked
   - Red_dyed_clothing_gold
+  - frame047
+  - frame012
+  - ropes guide
   - cotton_green
+  - rope3
+  - frame021
+  - frame010
+  - frame014
+  - Border Top Right
+  - firefox_qtPr9ljSsH
+  - frame027
   - clothing_blue
+  - frame049
+  - rope1
+  - frame032
+  - frame003
+  - frame031
   - icons8-cotton-64
+  - frame023
+  - frame037
   - seed1
+  - frame039
+  - Border Top Left
+  - frame019
+  - firefox_oZloZxAvKf
+  - inside separators
+  - frame015
+  - frame016
+  - Backgrounds all
   - Square
   - clothing_gold
+  - frame028
+  - frame025
+  - frame008
+  - frame002
   - red_dyed_cloth_blue
+  - frame026
   - red_dyed_cloth_gold
+  - Background top left
+  - frame040
+  - ropes all
+  - frame020
+  - backpack icon
   - Red Dye Icon
+  - frame048
+  - rope4
+  - Background bottom
+  - frame029
+  - frame004
+  - frame042
+  - frame036
+  - frame035
+  - frame001
   - Cotton Seed Icon
+  - craft button normal
   - cotton_blue
+  - frame044
+  - frame013
   - cloth_gold
+  - inside separator top left
+  - frame006
+  - frame033
   - icons8-backpack-64
+  - frame043
+  - frame046
+  - frame007
+  - rope2
+  - frame041
+  - frame022
+  - all borders
+  - frame005
+  - frame009
+  - Background top right
+  - rope6
   - cloth_blue
   - cotton_gold
   - Red_dyed_clothing_blue

@@ -24,7 +24,7 @@ public class Loom : LoomSpawn
             selected.SetActive(true);
 
         }
-        if (Input.GetKeyDown("g"))
+        if (Input.GetKeyDown("e"))
         {
 
             int spawnPoints = Random.Range(0, 1);
