@@ -8,15 +8,21 @@ using System.Collections;
 		private CapsuleCollider col;
 		private Animator anim;
 
+	    public AudioManager audioManager;
 		Interactor playerInteractor;
 		private void Start()
 		{
+		    
 			anim = GetComponent<Animator>();
 			col = GetComponent<CapsuleCollider>();
 			playerInteractor = GetComponentInChildren<Interactor>();
-		}
+			audioManager = GameObject.Find("GameManager").GetComponent<AudioManager>();
+		    audioManager.PlaySoundComplete("BGM");
 
-        private void Update()
+
+	}
+
+	private void Update()
         {
 			Interact();
         }

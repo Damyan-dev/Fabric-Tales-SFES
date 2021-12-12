@@ -99,7 +99,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PlayAudioCheck(string name)
+    public void PlaySoundComplete(string name)
     {
         for (int i = 0; i < sounds.Length; i++)
         {
