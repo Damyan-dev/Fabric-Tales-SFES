@@ -329,7 +329,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/AnimatedBackground.cs"
-"Assets/Scripts/AudioManager.cs"
+"Assets/Scripts/AudioController.cs"
 "Assets/Scripts/Buildings/BarnTrigger.cs"
 "Assets/Scripts/EquippedSlot.cs"
 "Assets/Scripts/Farming/Farmland.cs"

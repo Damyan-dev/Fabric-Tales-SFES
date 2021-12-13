@@ -8,7 +8,7 @@ using System.Collections;
 		private CapsuleCollider col;
 		private Animator anim;
 
-	    public AudioManager audioManager;
+	    public AudioController audioController;
 		Interactor playerInteractor;
 		private void Start()
 		{
@@ -16,8 +16,8 @@ using System.Collections;
 			anim = GetComponent<Animator>();
 			col = GetComponent<CapsuleCollider>();
 			playerInteractor = GetComponentInChildren<Interactor>();
-			audioManager = GameObject.Find("GameManager").GetComponent<AudioManager>();
-		    audioManager.PlaySoundComplete("BGM");
+			audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
+		    audioController.PlaySoundComplete("BGM");
 
 
 	}
