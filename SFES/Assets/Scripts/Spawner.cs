@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
         {
             if (canvasObject.activeSelf)
             {
-                Spawn();
+                StartCoroutine(DelayedSpawn());
             }
         }
     }
@@ -40,21 +40,14 @@ public class Spawner : MonoBehaviour
             Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
         }
 
+        private IEnumerator DelayedSpawn()
+        {
+            yield return new WaitForSeconds(5);
+            Spawn();
+        }
+
     }
-    // public GameObject cotton;
-    //  private Vector3 ItemPos;
-
-    //public void InstantiateItem()
-    //  {
-    //     Instantiate(cotton, ItemPos, Quaternion.Euler(ItemPos));
-    //     TurretPos.y += cotton.transform.localScale.y;
-    // }
-
-    //  void SpawnNext()
-    // {
-    //   GameObject cotton = Instantiate(gameobject);
-    //  Character.transform.position = new Vector3(position.x, position.y + transform.localScale.y / 2, position.z);
-    //}
+    
 
 
 
