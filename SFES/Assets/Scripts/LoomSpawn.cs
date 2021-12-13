@@ -25,7 +25,7 @@ public class LoomSpawn : MonoBehaviour
         {
             if (canvasObject.activeSelf)
             {
-                Spawn();
+                StartCoroutine(DelayedSpawn());
             }
         }
     }
@@ -38,6 +38,11 @@ public class LoomSpawn : MonoBehaviour
 
         // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
         Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
+    }
+    private IEnumerator DelayedSpawn()
+    {
+        yield return new WaitForSeconds(5);
+        Spawn();
     }
 
 }

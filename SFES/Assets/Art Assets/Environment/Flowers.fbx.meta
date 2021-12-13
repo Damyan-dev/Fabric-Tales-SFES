@@ -13,12 +13,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Field tExture
-    second: {fileID: 2800000, guid: 6981cdfcb22d7614a833af66e7aafa84, type: 3}
+    second: {fileID: 2800000, guid: 2d6b90b79e2bc7a458eef862d6c5a3ea, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Field tExture Normal
-    second: {fileID: 2800000, guid: a93421fc33ce04b4e99e5353a02dabb1, type: 3}
+    second: {fileID: 2800000, guid: 39b58133287408d41ba7cade8bbec0d1, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

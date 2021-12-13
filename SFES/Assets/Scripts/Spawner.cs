@@ -39,15 +39,27 @@ public class Spawner : MonoBehaviour
             // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
             Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
         }
-
         private IEnumerator DelayedSpawn()
         {
-            yield return new WaitForSeconds(5);
+               yield return new WaitForSeconds(5);
             Spawn();
         }
 
-    }
-    
+}
+    // public GameObject cotton;
+    //  private Vector3 ItemPos;
+
+    //public void InstantiateItem()
+    //  {
+    //     Instantiate(cotton, ItemPos, Quaternion.Euler(ItemPos));
+    //     TurretPos.y += cotton.transform.localScale.y;
+    // }
+
+    //  void SpawnNext()
+    // {
+    //   GameObject cotton = Instantiate(gameobject);
+    //  Character.transform.position = new Vector3(position.x, position.y + transform.localScale.y / 2, position.z);
+    //}
 
 
 
