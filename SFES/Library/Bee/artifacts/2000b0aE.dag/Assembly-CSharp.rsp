@@ -331,6 +331,8 @@
 "Assets/Scripts/AnimatedBackground.cs"
 "Assets/Scripts/AudioController.cs"
 "Assets/Scripts/Buildings/BarnTrigger.cs"
+"Assets/Scripts/Currency/AddRemoveMoney.cs"
+"Assets/Scripts/Currency/playerMoney.cs"
 "Assets/Scripts/EquippedSlot.cs"
 "Assets/Scripts/Farming/Farmland.cs"
 "Assets/Scripts/Interactor.cs"
