@@ -16,13 +16,13 @@ public class playerMoney : MonoBehaviour
         moneyText.text = money.ToString();
     }
 
-    void addMoney(int moneyToAdd)
+    public void addMoney(int moneyToAdd)
     {
         money += moneyToAdd;
         moneyText.text = money.ToString();
     }
 
-    void subtractMoney(int moneyToSubtract)
+    public void subtractMoney(int moneyToSubtract)
     {
         if(money - moneyToSubtract < 0)
         {
