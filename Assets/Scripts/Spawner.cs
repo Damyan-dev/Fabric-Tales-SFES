@@ -2,27 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Spawner : InventoryManager
 {
 
-        public Transform[] spawnPoints;
-        public GameObject[] cotton;
-        public GameObject canvasObject;
-        //public int startSpawnTime = 10;
-        //public int spawnTime = 5;
+    public Transform[] spawnPoints;
+    public GameObject[] cotton;
+    public GameObject canvasObject;
+    //public int startSpawnTime = 10;
+    //public int spawnTime = 5;
 
     // Use this for initialization
     void Start()
-        {
-            // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
-           // InvokeRepeating("Spawn", startSpawnTime, spawnTime);
-        }
+    {
+        // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
+        // InvokeRepeating("Spawn", startSpawnTime, spawnTime);
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("f"))
         {
+
             if (canvasObject.activeSelf)
             {
                 StartCoroutine(DelayedSpawn());
@@ -30,21 +31,29 @@ public class Spawner : MonoBehaviour
         }
     }
 
-        public void Spawn()
-        {
-            // Find a random index between zero and one less than the number of spawn points.
-            int spawnPoints = Random.Range(0, 1);
-            int cotton = Random.Range(0, 1);
+    public void Spawn()
+    {
+        // Find a random index between zero and one less than the number of spawn points.
+        int spawnPoints = Random.Range(0, 1);
+        int cotton = Random.Range(0, 1);
 
-            // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-            Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
-        }
-        private IEnumerator DelayedSpawn()
+        // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
+        Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
+    }
+
+    private IEnumerator DelayedSpawn()
+    {
+        for (int i = 0, i < inventorySlotIndex, i++)
         {
-               yield return new WaitForSeconds(5);
-            Spawn();
+            if (itemData.GetComponent<Description> == ("This is a harvested cotton bud."))
+            {
+                yield return new WaitForSeconds(5);
+                Spawn();
+            }
+
         }
 
+    }
 }
     // public GameObject cotton;
     //  private Vector3 ItemPos;

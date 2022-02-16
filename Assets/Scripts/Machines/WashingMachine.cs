@@ -8,7 +8,7 @@ public class WashingMachine : Spawner
     public Spawner spawner;
     public GameObject canvasObject;
     public GameObject selected;
-
+    public GameObject Inventory;
 
     public void Start()
     {
@@ -22,10 +22,13 @@ public class WashingMachine : Spawner
         {
             canvasObject.SetActive(true);
             selected.SetActive(true);
-
+            
         }
+        
         if (Input.GetKeyDown("e"))
         {
+            
+
             int spawnPoints = Random.Range(0, 1);
             int cotton = Random.Range(0, 1);
 

@@ -388,6 +388,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
       value: 0
       objectReference: {fileID: 0}
@@ -14612,6 +14616,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
       value: 0
       objectReference: {fileID: 0}
@@ -15350,6 +15358,10 @@ PrefabInstance:
     - target: {fileID: 6648326141248928455, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
@@ -17146,6 +17158,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
       value: 0
       objectReference: {fileID: 0}
@@ -18096,7 +18112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &990666278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26927,6 +26943,7 @@ MonoBehaviour:
   spawner: {fileID: 0}
   canvasObject: {fileID: 1999312022}
   selected: {fileID: 1901205920}
+  Inventory: {fileID: 0}
 --- !u!4 &1464779192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 58dc8f5b932b4f345bdf5dbb67b4dde5, type: 3}
@@ -35602,6 +35619,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
       value: 0
       objectReference: {fileID: 0}
@@ -37058,6 +37079,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
       value: 0
       objectReference: {fileID: 0}
@@ -37230,6 +37255,10 @@ PrefabInstance:
     - target: {fileID: 6648326141248928455, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
+      propertyPath: invSlotIndex
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8457224044584155763, guid: dc6858f914c7071439466afa527885af, type: 3}
       propertyPath: inventoryCategory
