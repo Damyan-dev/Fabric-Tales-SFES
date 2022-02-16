@@ -15,6 +15,15 @@ public class AddRemoveMoney : MonoBehaviour
     {
             camera.GetComponent<playerMoney>().subtractMoney(10);
     }
+
+    public void Subtract25()
+    {
+        camera.GetComponent<playerMoney>().subtractMoney(25);
+    }
+    public void Subtract100()
+    {
+        camera.GetComponent<playerMoney>().subtractMoney(100);
+    }
     public void Add10()
     {
         camera.GetComponent<playerMoney>().addMoney(10);
