@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     ItemData itemToShow;
-    private int invSlotIndex;
+    public int invSlotIndex;
 
     public Image itemDisplayImage;
 
