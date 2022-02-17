@@ -28,12 +28,4 @@ public class AddRemoveMoney : MonoBehaviour
     {
         camera.GetComponent<playerMoney>().addMoney(10);
     }
-    // Update is called once per frame
-    // void Update()
-    // {
-    //    /if(x)
-    //      {
-    //     camera.GetComponent<playerMoney>().addMoney(10);
-    //    }
-    // }
 }

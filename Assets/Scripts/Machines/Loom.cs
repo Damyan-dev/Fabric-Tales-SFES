@@ -5,7 +5,7 @@ using UnityEngine;
 public class Loom : LoomSpawn
 {
     public LoomSpawn spawner;
-    public GameObject canvasObject;
+    //public GameObject canvasObject;
     public GameObject selected;
 
 

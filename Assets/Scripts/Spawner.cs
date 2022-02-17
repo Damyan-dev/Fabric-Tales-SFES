@@ -45,6 +45,7 @@ public class Spawner : InventoryManager
     {
         yield return new WaitForSeconds(5);
         Spawn();
+        
         // for (int i = 0, i < inventorySlotIndex, i++)
         // {
         //   if (itemData.GetComponent<Description> == ("This is a harvested cotton bud."))

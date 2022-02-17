@@ -7,7 +7,7 @@ using System.Collections;
 		public float playerSpeed = 4.0f;
 		private CapsuleCollider col;
 		private Animator anim;
-
+		public WashingMachine washingMachine;
 	    public AudioController audioController;
 		Interactor playerInteractor;
 		private void Start()
@@ -82,8 +82,33 @@ using System.Collections;
 				playerInteractor.ItemPickup();
 			}
 		}
+	private void OnTriggerStay(Collider other)
+	{
+		if(other.name == "Washing Machine Rig")
+        {
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+				//Debug.Log("F");
+				int spawnPoints = Random.Range(0, 1);
+				int cotton = Random.Range(0, 1);
+				
+				ItemData item = InventoryManager.Instance.ItemSearch("Cotton");
+				
+				if(item != null)
+                {
+					InventoryManager.Instance.ItemRemove(item);
+					washingMachine.Spawn();
+				}
 
-		private IEnumerator HarvestRoutine()
+				// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
+				
+
+			}
+
+		}
+
+	}
+	private IEnumerator HarvestRoutine()
 		{
 			anim.SetBool("harvesting", true);
 			anim.SetInteger("state", 2);

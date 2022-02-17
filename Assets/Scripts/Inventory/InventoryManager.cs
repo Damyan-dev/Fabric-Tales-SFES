@@ -38,6 +38,30 @@ public class InventoryManager : MonoBehaviour
         }
         UIController.Instance.DisplayInventory();
     }
+    public void ItemRemove(ItemData itemToRemove)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i] == itemToRemove)
+            {
+                items[i] = null;
+            }
+        }
+    }
+    public ItemData ItemSearch(string itemName)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i] != null)
+            {
+               if (items[i].name == itemName)
+                {
+                    return items[i];
+                }
+            }
+        }
+        return null;
+    }
 
     public void EquippedToInventory(InventorySlot.InventoryCategory inventoryCategory)
     {
