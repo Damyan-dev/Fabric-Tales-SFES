@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Loom : LoomSpawn
+public class Loom : Spawner
 {
     public LoomSpawn spawner;
     //public GameObject canvasObject;
     public GameObject selected;
+    public GameObject Inventory;
 
 
     public void Start()
@@ -24,7 +25,11 @@ public class Loom : LoomSpawn
             selected.SetActive(true);
 
         }
-        if (Input.GetKeyDown("e"))
+    }
+    /*private void OnTriggerStay(Collider other)
+    {
+      
+        if (Input.GetKeyDown("f"))
         {
 
             int spawnPoints = Random.Range(0, 1);
@@ -35,7 +40,7 @@ public class Loom : LoomSpawn
 
         }
 
-    }
+    }*/
 
     private void OnTriggerExit(Collider other)
     {
