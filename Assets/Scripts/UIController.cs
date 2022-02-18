@@ -28,6 +28,7 @@ public class UIController : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(this);
         }
     }
 
