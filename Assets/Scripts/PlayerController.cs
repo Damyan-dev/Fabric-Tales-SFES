@@ -102,15 +102,13 @@ public class PlayerController : MonoBehaviour
 					washingMachine.Spawn();
 				}
 
-				// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-
 			}
 		
-		else
+		
 
 		if (other.name == "Loom")
 			{
-				Debug.Log("F");
+				Debug.Log("colliding");
 				if (Input.GetKeyDown(KeyCode.F))
 				{
 					Debug.Log("F");

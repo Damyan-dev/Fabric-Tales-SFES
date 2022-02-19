@@ -13,7 +13,7 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void Subtract10()
     {
-            camera.GetComponent<playerMoney>().subtractMoney(10);
+         camera.GetComponent<playerMoney>().subtractMoney(10);
     }
 
     public void Subtract25()
@@ -26,6 +26,11 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add10()
     {
-        camera.GetComponent<playerMoney>().addMoney(10);
+        ItemData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+        if (item != null)
+        {
+            InventoryManager.Instance.ItemRemove(item);
+            camera.GetComponent<playerMoney>().addMoney(10);
+        }
     }
 }

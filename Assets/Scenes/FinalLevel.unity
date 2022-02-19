@@ -5883,7 +5883,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 58dc8f5b932b4f345bdf5dbb67b4dde5, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 58dc8f5b932b4f345bdf5dbb67b4dde5, type: 3}
       propertyPath: m_LocalScale.x
@@ -29051,7 +29051,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d1db83426a1a8344cbd6f79a8c13509c, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1db83426a1a8344cbd6f79a8c13509c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45013,8 +45013,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0075467, y: 3.1171257, z: 1.5571116}
-  m_Center: {x: -0.72489244, y: -0.58407915, z: 0.2785511}
+  m_Size: {x: 1.8675146, y: 3.0336242, z: 1.8617237}
+  m_Center: {x: -0.7023577, y: -0.40839863, z: 0.43086207}
 --- !u!95 &2046781112
 Animator:
   serializedVersion: 3
@@ -45046,6 +45046,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383e8c2f703f56241a408937a2541048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &2046781114
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046781108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3822247309040838107, guid: f8218a7aa815fdf4eb91850f4913fc7b, type: 3}
+--- !u!54 &2046781115
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046781108}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2049113302
 GameObject:
   m_ObjectHideFlags: 0
@@ -47578,7 +47608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 954137917758343401, guid: a59b4b1470fafb848a1b8620a548ce3f, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 954137917758343401, guid: a59b4b1470fafb848a1b8620a548ce3f, type: 3}
       propertyPath: m_LocalPosition.x
