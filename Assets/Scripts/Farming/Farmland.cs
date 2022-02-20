@@ -7,6 +7,7 @@ public class Farmland : MonoBehaviour
     public GameObject selected;
     public GameObject cottonCrop;
     public GameObject cottonDrop;
+    public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
     
 
@@ -22,6 +23,7 @@ public class Farmland : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         ChangeFarmStatus(FarmStatus.Dirt);
+        Selected(false);
     }
 
     public void ChangeFarmStatus(FarmStatus farmToSwitch)
@@ -37,7 +39,7 @@ public class Farmland : MonoBehaviour
             case FarmStatus.Farm:
                 materialToSwitch = farmMat;
                 Destroy(cottonCrop);
-                Instantiate<GameObject>(cottonDrop);
+                Instantiate(cottonDrop, dropPosition.position, dropPosition.rotation);
                 break;
             case FarmStatus.Watered:
                 materialToSwitch = wateredMat;

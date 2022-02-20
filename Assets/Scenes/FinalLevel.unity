@@ -7573,6 +7573,7 @@ MonoBehaviour:
   selected: {fileID: 345861199}
   cottonCrop: {fileID: 0}
   cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 5d6dc05f53be2b54fb8e2e0006c5f791, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
   wateredMat: {fileID: 0}
@@ -10552,6 +10553,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb82392d224db34993a7821014db467, type: 3}
+--- !u!1 &498513578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498513579}
+  m_Layer: 0
+  m_Name: dropPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498513579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498513578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1083437944}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &505144711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20447,6 +20478,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083314816}
   m_Mesh: {fileID: 3220187785746652986, guid: 2c4ae7bed20b2ee40a2461f9b41d6dd0, type: 3}
+--- !u!4 &1083437944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3137247724424490467, guid: 48ff68872d6975d4fa2ee832ad0d3c4c, type: 3}
+  m_PrefabInstance: {fileID: 1274783995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1086262566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9059659422204047295, guid: 7679286ec81d29649b1f3a1ff8a68992, type: 3}
@@ -23685,7 +23721,7 @@ PrefabInstance:
     - target: {fileID: 3137247724424490478, guid: 48ff68872d6975d4fa2ee832ad0d3c4c, type: 3}
       propertyPath: cottonCrop
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1633896717}
     - target: {fileID: 3137247724424490478, guid: 48ff68872d6975d4fa2ee832ad0d3c4c, type: 3}
       propertyPath: cottonDrop
       value: 
@@ -23694,6 +23730,10 @@ PrefabInstance:
       propertyPath: wateredMat
       value: 
       objectReference: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
+    - target: {fileID: 3137247724424490478, guid: 48ff68872d6975d4fa2ee832ad0d3c4c, type: 3}
+      propertyPath: dropPosition
+      value: 
+      objectReference: {fileID: 498513579}
     - target: {fileID: 3137247724424490478, guid: 48ff68872d6975d4fa2ee832ad0d3c4c, type: 3}
       propertyPath: cottonDrop.Array.size
       value: 1
@@ -35503,7 +35543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.592
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_LocalPosition.y
@@ -35511,7 +35551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36392,6 +36432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc6858f914c7071439466afa527885af, type: 3}
+--- !u!1 &1633896717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1491506755931027999, guid: 5eb82392d224db34993a7821014db467, type: 3}
+  m_PrefabInstance: {fileID: 958765704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1635992362
 GameObject:
   m_ObjectHideFlags: 0
