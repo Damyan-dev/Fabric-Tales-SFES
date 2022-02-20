@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 			}
 			else if (anim.GetBool("walking") == false)
 			{
-				//	StartCoroutine(HarvestRoutine());
+				StartCoroutine(HarvestRoutine());
 				playerInteractor.Interact();
 			}
 		}
@@ -86,8 +86,30 @@ public class PlayerController : MonoBehaviour
 	}
 	private void OnTriggerStay(Collider other)
 	{
+
+		if (other.name == "Loom")
+		{
+			Debug.Log("colliding");
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+				Debug.Log("F");
+				int spawnPoints = Random.Range(0, 1);
+				int cotton = Random.Range(0, 1);
+
+				ItemData item = InventoryManager.Instance.ItemSearch("Rare Washed");
+
+				if (item != null)
+				{
+					InventoryManager.Instance.ItemRemove(item);
+					loom.Spawn();
+				}
+			}
+
+		}
+
 		if (other.name == "Washing Machine Rig")
 		{
+
 			if (Input.GetKeyDown(KeyCode.F))
 			{
 				//Debug.Log("F");
@@ -103,40 +125,18 @@ public class PlayerController : MonoBehaviour
 				}
 
 			}
-		
-		
-
-		if (other.name == "Loom")
-			{
-				Debug.Log("colliding");
-				if (Input.GetKeyDown(KeyCode.F))
-				{
-					Debug.Log("F");
-					int spawnPoints = Random.Range(0, 1);
-					int cotton = Random.Range(0, 1);
-
-					ItemData item = InventoryManager.Instance.ItemSearch("Rare Washed");
-
-					if (item != null)
-					{
-						InventoryManager.Instance.ItemRemove(item);
-						loom.Spawn();
-					}
-				}
-
-			}
 
 		}
 	}
-}
-		/*public IEnumerator HarvestRoutine()
+
+		public IEnumerator HarvestRoutine()
 		{
 			anim.SetBool("harvesting", true);
 			anim.SetInteger("state", 2);
 			yield return new WaitForSeconds(1);
 			anim.SetInteger("state", 0);
-			anim.SetBool("harvesting", false);
+			anim.SetBool("harvesting", false); 
 		}
-	}
 }
-		*/
+
+		
