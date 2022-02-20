@@ -38,6 +38,8 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 4fc5bc003c6c2c844806e9216c8fb22c, type: 3}
+  - {fileID: 21300000, guid: 11f2d6807c8cf3e4d91b97da8d4ed7bb, type: 3}
   - {fileID: 21300000, guid: ee7fad90a5cc5a34186ecb7ae9fdeef5, type: 3}
   - {fileID: 21300000, guid: 875b52b01892dfc449146c9246a23afc, type: 3}
   - {fileID: 21300000, guid: 65f582c05350e934b94b3b8f83292aa8, type: 3}
@@ -47,17 +49,22 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 85bf9d4149f9b424b87d242e9047deda, type: 3}
   - {fileID: 21300000, guid: c431ad71a7e7c1141b3e7d81130b1649, type: 3}
   - {fileID: 21300000, guid: 6c456f71ba391c840b75b7ab5b9bc202, type: 3}
+  - {fileID: 21300000, guid: c9d33d8176375754785df5b6633ab10a, type: 3}
   - {fileID: 21300000, guid: d1d935c162f71094680f0305c7324195, type: 3}
   - {fileID: 21300000, guid: de0d59e1a4479984aab973c7c1d0b838, type: 3}
   - {fileID: 21300000, guid: bbbf5ae18c91b764398aae66c6aa6693, type: 3}
   - {fileID: 21300000, guid: 5f260d028df9b8a44bb28d6ffffc9af1, type: 3}
+  - {fileID: 21300000, guid: e601861230032a84db54f0d5ace4dca9, type: 3}
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
   - {fileID: 21300000, guid: 563375030cc2481489c3faede68d9d0e, type: 3}
   - {fileID: 21300000, guid: 6db40f13b3f67584f8f9b6216812e72e, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
   - {fileID: 21300000, guid: 38a11463e2dbe264382b446cbe2fb4ba, type: 3}
+  - {fileID: 21300000, guid: 5530219342c53b14d962b95e527f01ad, type: 3}
+  - {fileID: 21300000, guid: 20f1a7d393cbeae42bfad9a983565fd0, type: 3}
   - {fileID: 21300000, guid: a40c5fd31a96f7f4fa6158ba55e43338, type: 3}
+  - {fileID: 21300000, guid: c1465704f825e23409f634359f44a976, type: 3}
   - {fileID: 21300000, guid: 51cf3a14095d5094a82ce26bd24d32a1, type: 3}
   - {fileID: 21300000, guid: 497dc324f9ce8f348bb1f91cfb26a736, type: 3}
   - {fileID: 21300000, guid: 4b53fa2417abca548b21917d3fb7404e, type: 3}
@@ -95,12 +102,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a709af39eb53577468c79653cb5455c8, type: 3}
   - {fileID: 21300000, guid: b8088499b5b077d498a1a7471782bd02, type: 3}
   - {fileID: 21300000, guid: 5377c899bce139f499170b0721bbda99, type: 3}
+  - {fileID: 21300000, guid: 7135dcd956783df4b9dce5383e1a64f1, type: 3}
   - {fileID: 21300000, guid: 6f2a280a964cfdd4f878045579a45aa1, type: 3}
   - {fileID: 21300000, guid: e8942a1a277b1034a9c76ef07332cb74, type: 3}
   - {fileID: 21300000, guid: 6db1f35a84fcde54e8dab62f3faccfaf, type: 3}
   - {fileID: 21300000, guid: b2169e7a7d4630745879968d70cbb2c8, type: 3}
   - {fileID: 21300000, guid: b09fcada7ef18b74081376cc6877fdcf, type: 3}
   - {fileID: 21300000, guid: 840195eaf1ab96945b04f9e9aea37013, type: 3}
+  - {fileID: 21300000, guid: 638dc14b3b50bbc499fb526ce9f4bc87, type: 3}
   - {fileID: 21300000, guid: 7fcdd45bd78107848b083fe31d4f247b, type: 3}
   - {fileID: 21300000, guid: 1606ef7b99d8778448f0c99809bb82e9, type: 3}
   - {fileID: 21300000, guid: dd5d31db41ceeb64684a73a8b28045b2, type: 3}
@@ -128,8 +137,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e9a6dc6fb059d784095ffab5cfe3525b, type: 3}
   - {fileID: 21300000, guid: cde7108f7dec6a742a4e12082440371b, type: 3}
   - {fileID: 21300000, guid: ec8eb3bf81893ff4aab5520d05aed223, type: 3}
+  - {fileID: 21300000, guid: 4e02d0efd1ee0f746ac9b92d77fe4172, type: 3}
   - {fileID: 21300000, guid: d5c3f8ef57d3d0e4db2a61e815a8bcaf, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Inventory Button
+  - Quick Inventory Single
   - rope5
   - frame030
   - frame038
@@ -139,17 +151,22 @@ SpriteAtlas:
   - JOURNAL icon
   - inside separator bottom
   - frame034
+  - Journal Button
   - frame011
   - frame045
   - frame024
   - craft button clicked
+  - Menu
   - Red_dyed_clothing_gold
   - frame047
   - frame012
   - ropes guide
   - cotton_green
   - rope3
+  - Good Environment Stat
+  - Environment Bar Neutral
   - frame021
+  - Neutral Environment Stat
   - frame010
   - frame014
   - Border Top Right
@@ -187,12 +204,14 @@ SpriteAtlas:
   - frame040
   - ropes all
   - frame020
+  - Clock
   - backpack icon
   - Red Dye Icon
   - frame048
   - rope4
   - Background bottom
   - frame029
+  - Gold
   - frame004
   - frame042
   - frame036
@@ -220,6 +239,7 @@ SpriteAtlas:
   - rope6
   - cloth_blue
   - cotton_gold
+  - Bad Environment Stat
   - Red_dyed_clothing_blue
   m_RenderDataMap: {}
   m_Tag: New Sprite Atlas
