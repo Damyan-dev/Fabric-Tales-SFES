@@ -89,10 +89,10 @@ public class PlayerController : MonoBehaviour
 
 		if (other.name == "Loom")
 		{
-			Debug.Log("colliding");
+		//	Debug.Log("colliding");
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				Debug.Log("F");
+		//		Debug.Log("F");
 				int spawnPoints = Random.Range(0, 1);
 				int cotton = Random.Range(0, 1);
 
