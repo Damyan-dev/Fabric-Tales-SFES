@@ -83,6 +83,11 @@ public class PlayerController : MonoBehaviour
 		{
 			playerInteractor.ItemPickup();
 		}
+
+		if (Input.GetKey(KeyCode.RightBracket))
+        {
+			TimeController.Instance.Tick();
+        }
 	}
 	private void OnTriggerStay(Collider other)
 	{

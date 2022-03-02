@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIController : MonoBehaviour
+public class UIController : MonoBehaviour, ITimeTracker
 {
     public static UIController Instance { get; private set; }
 
@@ -18,6 +18,9 @@ public class UIController : MonoBehaviour
     // Information for the items in the info box.
     public Text itemNameText;
     public Text itemDescriptionText;
+
+    public Text timeText;
+    public Text dateText;
 
     private void Awake()
     {
@@ -36,6 +39,7 @@ public class UIController : MonoBehaviour
     {
         DisplayInventory();
         SetInvSlotIndexes();
+        TimeController.Instance.InitTracker(this);
     }
 
     public void DisplayInventory()
@@ -94,5 +98,17 @@ public class UIController : MonoBehaviour
             toolSlots[i].SetIndex(i);
             itemsSlots[i].SetIndex(i);
         }
+    }
+
+    public void ClockUpdate(GameTimeConverter gametime)
+    {
+        int hours = gametime.hour;
+        int minutes = gametime.minute;
+        timeText.text = hours.ToString("00") + ":" + minutes.ToString("00");
+
+        int day = gametime.day;
+        string month = gametime.month.ToString();
+        string weekDay = gametime.GetWeekDay().ToString();
+        dateText.text = month + " " + day + " (" + weekDay + ") "; 
     }
 }
