@@ -46,6 +46,7 @@ public class InventoryManager : MonoBehaviour
             if (items[i] == itemToRemove)
             {
                 items[i] = null;
+                return;
             }
         }
     }

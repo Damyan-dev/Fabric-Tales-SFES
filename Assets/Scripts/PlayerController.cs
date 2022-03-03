@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 	private Animator anim;
 	public WashingMachine washingMachine;
 	public AudioController audioController;
+	public DyeMachine dyeMachine;
 	Interactor playerInteractor;
 	public Loom loom;
 
@@ -94,13 +95,8 @@ public class PlayerController : MonoBehaviour
 
 		if (other.name == "Loom")
 		{
-		//	Debug.Log("colliding");
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-		//		Debug.Log("F");
-				int spawnPoints = Random.Range(0, 1);
-				int cotton = Random.Range(0, 1);
-
 				ItemData item = InventoryManager.Instance.ItemSearch("Rare Washed");
 
 				if (item != null)
@@ -112,15 +108,28 @@ public class PlayerController : MonoBehaviour
 
 		}
 
+		if (other.name == "Dye Machine")
+		{
+			
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+
+				ItemData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+
+				if (item != null)
+				{
+					InventoryManager.Instance.ItemRemove(item);
+					dyeMachine.Spawn();
+				}
+			}
+
+		}
+
 		if (other.name == "Washing Machine Rig")
 		{
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				//Debug.Log("F");
-				int spawnPoints = Random.Range(0, 1);
-				int cotton = Random.Range(0, 1);
-
 				ItemData item = InventoryManager.Instance.ItemSearch("Cotton");
 
 				if (item != null)
