@@ -21,7 +21,7 @@ public class LoomController1 : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.F))
             {
-                anim.SetInteger("ConditionB", 1); ;
+                anim.Play("Take001", 0, 0.0f); ;
 
             }
         }

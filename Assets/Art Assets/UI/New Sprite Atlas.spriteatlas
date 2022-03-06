@@ -87,6 +87,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 57de014735a25a441943327fa7efb659, type: 3}
   - {fileID: 21300000, guid: bb211e77c8b5fe549a068df020f165a4, type: 3}
   - {fileID: 21300000, guid: 070ee5a73a54f674394c183bad778f98, type: 3}
+  - {fileID: 21300000, guid: 258799a752511ab44a1f35084cbc3ae8, type: 3}
   - {fileID: 21300000, guid: a0024cc7ddd5f47459ced22e79fdf9a0, type: 3}
   - {fileID: 21300000, guid: 67835fe757d9d514388daca1f119b9a1, type: 3}
   - {fileID: 7482667652216324306, guid: f1fa3e0822eeafc4b82c227e80f0ce8a, type: 3}
@@ -189,6 +190,7 @@ SpriteAtlas:
   - firefox_oZloZxAvKf
   - inside separators
   - frame015
+  - Close Normal
   - frame016
   - Backgrounds all
   - Square

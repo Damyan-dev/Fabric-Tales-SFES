@@ -7,12 +7,9 @@ public class StatrtParticle : MonoBehaviour
 {
     public ParticleSystem MyParticleSystem;
   
-    void Update()
+    public void StartParticles()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
             MyParticleSystem.Play();
-        }
-        
+    
     }
 }
