@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Loom : Spawner
+public class Sheep1 : Spawner
 {
     public Spawner spawner;
     //public GameObject canvasObject;

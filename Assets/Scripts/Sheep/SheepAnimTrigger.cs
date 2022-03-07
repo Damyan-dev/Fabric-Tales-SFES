@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SheepAnimTrigger : MonoBehaviour
 {
-   
+
     // Start is called before the first frame update
-    
-   
+    public Sheep1 sheep;
+
     [SerializeField] private Animator anim;
     
     private void OnTriggerEnter(Collider col)
@@ -15,6 +15,17 @@ public class SheepAnimTrigger : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             anim.Play("SheepShake", 0, 0.0f);
+        }
+    }
+
+    private void OnTriggerStay(Collider col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                sheep.Spawn();
+            }
         }
     }
 
