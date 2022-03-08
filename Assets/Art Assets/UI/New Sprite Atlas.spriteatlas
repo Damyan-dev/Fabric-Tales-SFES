@@ -132,6 +132,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 41bea66ea243f0e4a8a382f3310b6271, type: 3}
   - {fileID: 21300000, guid: c812108ee9f76f040bce0b054da5831e, type: 3}
   - {fileID: 21300000, guid: 5e81d39e02d4259419bb5b3c981d80d0, type: 3}
+  - {fileID: 21300000, guid: 79a4b99e88681544db26a9ffd6550390, type: 3}
   - {fileID: 21300000, guid: 80ec15ee77516ba488cef756f9a9fc2d, type: 3}
   - {fileID: 21300000, guid: 5279b73ff072f4343b4aa938889e42cd, type: 3}
   - {fileID: 21300000, guid: 54e4684f67302bf46805977588ce6849, type: 3}
@@ -235,6 +236,7 @@ SpriteAtlas:
   - frame041
   - frame022
   - all borders
+  - Water Inventory
   - frame005
   - frame009
   - Background top right
