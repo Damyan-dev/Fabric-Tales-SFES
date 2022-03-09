@@ -50,6 +50,17 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
+    public void ItemAdd(ItemData itemToAdd)
+    {
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i] == null)
+            {
+                items[i] = itemToAdd;
+                return;
+            }
+        }
+    }
     public ItemData ItemSearch(string itemName)
     {
         for (int i = 0; i < items.Length; i++)

@@ -7615,46 +7615,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 73b13f8d476c83848a43301415cb8354, type: 3}
   m_PrefabInstance: {fileID: 529650300}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &325713347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325713341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2306d464a79154890a7b081624d1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tools:
-  - {fileID: 11400000, guid: c45bd137d28488747933fd39e8b06025, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  items:
-  - {fileID: 11400000, guid: 43b1b803435eca24eb3c2671e23b9187, type: 2}
-  - {fileID: 11400000, guid: eaa6b58f0c6f7f84382f0a7757ba72b1, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  equippedTool: {fileID: 11400000, guid: 29e9c136cbf247747ac2a4359b7cfd7c, type: 2}
-  equippedItem: {fileID: 0}
-  handPoint: {fileID: 0}
-  spawnPoints:
-  - {fileID: 190646854}
-  cotton:
-  - {fileID: 636761820}
-  canvasObject: {fileID: 0}
-  spawner: {fileID: 0}
-  selected: {fileID: 0}
 --- !u!1001 &329236482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33881,7 +33841,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1548651522}
         m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
-        m_MethodName: Add10
+        m_MethodName: Add30
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -46030,7 +45990,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1876319610
 BoxCollider:
@@ -46045,8 +46005,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.0015419, y: 1.8094841, z: 2.3828666}
   m_Center: {x: 0.0770396, y: 0.40474203, z: 1.9324467}
---- !u!64 &1876319611
-MeshCollider:
+--- !u!65 &1876319611
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -46055,10 +46015,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 3.463368, y: 2.6431565, z: 1.9489025}
+  m_Center: {x: -0.119802855, y: 0.8215783, z: -0.14803907}
 --- !u!224 &1876942780 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6648326141248928455, guid: dc6858f914c7071439466afa527885af, type: 3}
