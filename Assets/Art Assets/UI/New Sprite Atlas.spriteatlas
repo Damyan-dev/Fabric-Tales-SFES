@@ -55,6 +55,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bbbf5ae18c91b764398aae66c6aa6693, type: 3}
   - {fileID: 21300000, guid: 5f260d028df9b8a44bb28d6ffffc9af1, type: 3}
   - {fileID: 21300000, guid: e601861230032a84db54f0d5ace4dca9, type: 3}
+  - {fileID: 21300000, guid: 38a3c532f6ab85b4e8c89a7e39fa200d, type: 3}
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
   - {fileID: 21300000, guid: 563375030cc2481489c3faede68d9d0e, type: 3}
@@ -62,7 +63,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
   - {fileID: 21300000, guid: 38a11463e2dbe264382b446cbe2fb4ba, type: 3}
   - {fileID: 21300000, guid: 5530219342c53b14d962b95e527f01ad, type: 3}
+  - {fileID: 21300000, guid: 2ed362b3e88907c40ad2827d9f6dc910, type: 3}
   - {fileID: 21300000, guid: 20f1a7d393cbeae42bfad9a983565fd0, type: 3}
+  - {fileID: 21300000, guid: 2d5dcad3cc3115b43bc8be00ce668aa4, type: 3}
   - {fileID: 21300000, guid: a40c5fd31a96f7f4fa6158ba55e43338, type: 3}
   - {fileID: 21300000, guid: c1465704f825e23409f634359f44a976, type: 3}
   - {fileID: 21300000, guid: 51cf3a14095d5094a82ce26bd24d32a1, type: 3}
@@ -70,6 +73,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4b53fa2417abca548b21917d3fb7404e, type: 3}
   - {fileID: 21300000, guid: f493d134e05580548a365391b48e03e3, type: 3}
   - {fileID: 21300000, guid: c9b218348c5d8cc49b407354a699382f, type: 3}
+  - {fileID: 21300000, guid: 77f20c64a2e955949a6581ba5dd37205, type: 3}
   - {fileID: 21300000, guid: 41a6f1b43f9f1ab46a00020c4afb194c, type: 3}
   - {fileID: 21300000, guid: bfb642b400e375c4994d3cbb795f7713, type: 3}
   - {fileID: 21300000, guid: c83be7b49adfb5140873a36f65dd666a, type: 3}
@@ -159,6 +163,7 @@ SpriteAtlas:
   - frame024
   - craft button clicked
   - Menu
+  - shop  ui tab 2
   - Red_dyed_clothing_gold
   - frame047
   - frame012
@@ -166,7 +171,9 @@ SpriteAtlas:
   - cotton_green
   - rope3
   - Good Environment Stat
+  - shop  ui
   - Environment Bar Neutral
+  - shop  ui tab 4
   - frame021
   - Neutral Environment Stat
   - frame010
@@ -174,6 +181,7 @@ SpriteAtlas:
   - Border Top Right
   - firefox_qtPr9ljSsH
   - frame027
+  - shop  ui tab 3
   - clothing_blue
   - frame049
   - rope1
