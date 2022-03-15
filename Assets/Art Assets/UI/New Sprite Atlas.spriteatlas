@@ -46,6 +46,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 74cf88c0bb4479749b62f16db5661d3a, type: 3}
   - {fileID: 21300000, guid: 71e761e0c6c06404a87cf29aa18664bf, type: 3}
   - {fileID: 21300000, guid: b85935e0365dab04e8839697aedefec4, type: 3}
+  - {fileID: 21300000, guid: dc22ee2132e911448946785381e29961, type: 3}
   - {fileID: 21300000, guid: 85bf9d4149f9b424b87d242e9047deda, type: 3}
   - {fileID: 21300000, guid: c431ad71a7e7c1141b3e7d81130b1649, type: 3}
   - {fileID: 21300000, guid: 6c456f71ba391c840b75b7ab5b9bc202, type: 3}
@@ -90,6 +91,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2f6edc27a09b72340a9804fbd2c60ccf, type: 3}
   - {fileID: 21300000, guid: 57de014735a25a441943327fa7efb659, type: 3}
   - {fileID: 21300000, guid: bb211e77c8b5fe549a068df020f165a4, type: 3}
+  - {fileID: 21300000, guid: 2775a0879d934a74c8e92643e4b3c5df, type: 3}
   - {fileID: 21300000, guid: 070ee5a73a54f674394c183bad778f98, type: 3}
   - {fileID: 21300000, guid: 258799a752511ab44a1f35084cbc3ae8, type: 3}
   - {fileID: 21300000, guid: a0024cc7ddd5f47459ced22e79fdf9a0, type: 3}
@@ -154,6 +156,7 @@ SpriteAtlas:
   - frame018
   - Border Bottom
   - frame017
+  - Hand Inventory
   - JOURNAL icon
   - inside separator bottom
   - frame034
@@ -198,6 +201,7 @@ SpriteAtlas:
   - frame019
   - firefox_oZloZxAvKf
   - inside separators
+  - Hammer Inventory
   - frame015
   - Close Normal
   - frame016
