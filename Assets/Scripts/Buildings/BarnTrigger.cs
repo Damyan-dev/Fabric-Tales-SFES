@@ -15,7 +15,7 @@ public class BarnTrigger : MonoBehaviour
         canvasObject.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerStay(Collider col)
     {
         if (col.tag == "Player")
         {
@@ -33,9 +33,4 @@ public class BarnTrigger : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
