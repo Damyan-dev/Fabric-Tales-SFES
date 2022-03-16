@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Used for watering the crops.
   thumbnail: {fileID: 0}
-  objectModel: {fileID: 0}
+  objectModel: {fileID: 919132149155446097, guid: c73e21beead5de34699aa8a5865d2182, type: 3}
   tool: 0
