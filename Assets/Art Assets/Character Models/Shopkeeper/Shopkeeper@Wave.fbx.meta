@@ -1,14 +1,12 @@
 fileFormatVersion: 2
-guid: 002cb5f3f47b3cd4d8cc17a982efbe51
+guid: 29e4342e556e1d447af6d42fc2041ab4
 ModelImporter:
   serializedVersion: 21100
-  internalIDToNameTable: []
-  externalObjects:
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shopkeeper Texture
-    second: {fileID: 2800000, guid: 78c229119e9254d409fdf2840433e99d, type: 3}
+      74: -57793324751458776
+    second: Wave
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -77,9 +75,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 279349628b1e9bd4e9ae52b7f6fda43f
-  - 29e4342e556e1d447af6d42fc2041ab4
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -92,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 2.6
+    globalScale: 0.025999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
