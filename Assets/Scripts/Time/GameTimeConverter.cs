@@ -49,6 +49,15 @@ public class GameTimeConverter
         this.minute = minute;
     }
 
+    public GameTimeConverter(GameTimeConverter gametime)
+    {
+        this.year = gametime.year;
+        this.month = gametime.month;
+        this.day = gametime.day;
+        this.hour = gametime.hour;
+        this.minute = gametime.minute;
+    }
+
     public void AdvanceTime()
     {
         minute++;
@@ -107,5 +116,14 @@ public class GameTimeConverter
     public static int ConvertYearsToDays(int year)
     {
         return year * 12 * 30;
+    }
+
+    public static int CompareTime(GameTimeConverter gametime1, GameTimeConverter gametime2)
+    {
+        int gametime1Hours = ConvertDaysToHours(ConvertYearsToDays(gametime1.year)) + ConvertDaysToHours(ConvertMonthsToDays(gametime1.month)) + ConvertDaysToHours(gametime1.day) + gametime1.hour;
+        int gametime2Hours = ConvertDaysToHours(ConvertYearsToDays(gametime2.year)) + ConvertDaysToHours(ConvertMonthsToDays(gametime2.month)) + ConvertDaysToHours(gametime2.day) + gametime2.hour;
+        int diff = Mathf.Abs(gametime2Hours - gametime1Hours);
+        
+        return ConvertHoursToMins(diff);
     }
 }

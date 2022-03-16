@@ -57,6 +57,11 @@ public class TimeController : MonoBehaviour
         sunTransform.eulerAngles = new Vector3(sunAngle, 0, 0);
     }
 
+    public GameTimeConverter GetTimeStamp()
+    {
+        return new GameTimeConverter(gametime);     
+    }
+
     public void InitTracker(ITimeTracker listener)
     {
         listeners.Add(listener);

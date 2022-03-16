@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Farmland : MonoBehaviour
+public class Farmland : MonoBehaviour, ITimeTracker
 {
     public GameObject selected;
     public GameObject cottonCrop;
     public GameObject cottonDrop;
     public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
+    public GameTimeConverter timeWatered;
     
 
     public enum FarmStatus
@@ -24,6 +25,7 @@ public class Farmland : MonoBehaviour
         renderer = GetComponent<Renderer>();
         ChangeFarmStatus(FarmStatus.Dirt);
         Selected(false);
+        TimeController.Instance.InitTracker(this);
     }
 
     public void ChangeFarmStatus(FarmStatus farmToSwitch)
@@ -43,6 +45,8 @@ public class Farmland : MonoBehaviour
                 break;
             case FarmStatus.Watered:
                 materialToSwitch = wateredMat;
+
+                timeWatered = TimeController.Instance.GetTimeStamp();
                 break;
         }
 
@@ -57,5 +61,19 @@ public class Farmland : MonoBehaviour
     public void Interact()
     {
         ChangeFarmStatus(FarmStatus.Farm);
+    }
+
+    public void ClockUpdate(GameTimeConverter gametime)
+    {
+        if(farmStatus == FarmStatus.Watered)
+        {
+            int hoursPassed = GameTimeConverter.CompareTime(timeWatered, gametime);
+            Debug.Log(hoursPassed + " since the crop was watered.");
+
+            if(hoursPassed > 24)
+            {
+                ChangeFarmStatus(FarmStatus.Farm);
+            }
+        }
     }
 }

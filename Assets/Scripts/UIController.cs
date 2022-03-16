@@ -109,6 +109,6 @@ public class UIController : MonoBehaviour, ITimeTracker
         int day = gametime.day;
         string month = gametime.month.ToString();
         string weekDay = gametime.GetWeekDay().ToString();
-        dateText.text = month + " " + day + " (" + weekDay + ") "; 
+        dateText.text = month + " " + day + " (" + weekDay + ")"; 
     }
 }
