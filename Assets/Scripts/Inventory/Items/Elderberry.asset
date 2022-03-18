@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
-  m_Name: Wool
+  m_Name: Elderberry
   m_EditorClassIdentifier: 
-  description: Wool found on sheep. Can be used in washing machine.
-  thumbnail: {fileID: 21300000, guid: 43a3ee112cc597048bbf1359914ead20, type: 3}
+  description: Use in the dye machine to create red dyed clothing
+  thumbnail: {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
   objectModel: {fileID: 0}

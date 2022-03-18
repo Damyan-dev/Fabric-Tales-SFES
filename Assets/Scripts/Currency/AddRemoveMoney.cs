@@ -5,6 +5,8 @@ using UnityEngine;
 public class AddRemoveMoney : MonoBehaviour
 {
     public GameObject camera;
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,10 +51,12 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void ShearSheep()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Wool");
-        if (item != null)
-        {
-            InventoryManager.Instance.ItemAdd(item);
-        }
+    
+
+         ItemData item = InventoryManager.Instance.ItemSearch("Wool");
+         if (item != null)
+         {
+             InventoryManager.Instance.ItemAdd(item);
+         }
     }
 }

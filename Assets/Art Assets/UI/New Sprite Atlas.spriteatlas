@@ -46,6 +46,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 74cf88c0bb4479749b62f16db5661d3a, type: 3}
   - {fileID: 21300000, guid: 71e761e0c6c06404a87cf29aa18664bf, type: 3}
   - {fileID: 21300000, guid: b85935e0365dab04e8839697aedefec4, type: 3}
+  - {fileID: 21300000, guid: 43a3ee112cc597048bbf1359914ead20, type: 3}
   - {fileID: 21300000, guid: dc22ee2132e911448946785381e29961, type: 3}
   - {fileID: 21300000, guid: 85bf9d4149f9b424b87d242e9047deda, type: 3}
   - {fileID: 21300000, guid: c431ad71a7e7c1141b3e7d81130b1649, type: 3}
@@ -59,6 +60,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 38a3c532f6ab85b4e8c89a7e39fa200d, type: 3}
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
+  - {fileID: 21300000, guid: d1d930b2695910e43b0a6aaab2b7dc3e, type: 3}
   - {fileID: 21300000, guid: 563375030cc2481489c3faede68d9d0e, type: 3}
   - {fileID: 21300000, guid: 6db40f13b3f67584f8f9b6216812e72e, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
@@ -85,6 +87,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
   - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
+  - {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
   - {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
   - {fileID: 21300000, guid: ca9304f6e0546f24481f640ebb54887f, type: 3}
   - {fileID: 21300000, guid: fcbe5e079f0f3b74baad2b3adda920ea, type: 3}
@@ -92,8 +95,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 57de014735a25a441943327fa7efb659, type: 3}
   - {fileID: 21300000, guid: bb211e77c8b5fe549a068df020f165a4, type: 3}
   - {fileID: 21300000, guid: 2775a0879d934a74c8e92643e4b3c5df, type: 3}
+  - {fileID: 21300000, guid: b07c9997f5b620f45a987f63dc277ac9, type: 3}
+  - {fileID: 21300000, guid: 3f648b979e81e9544989e919ae4025d1, type: 3}
   - {fileID: 21300000, guid: 070ee5a73a54f674394c183bad778f98, type: 3}
   - {fileID: 21300000, guid: 258799a752511ab44a1f35084cbc3ae8, type: 3}
+  - {fileID: 21300000, guid: fd1553c735c157b4291604936347d526, type: 3}
   - {fileID: 21300000, guid: a0024cc7ddd5f47459ced22e79fdf9a0, type: 3}
   - {fileID: 21300000, guid: 67835fe757d9d514388daca1f119b9a1, type: 3}
   - {fileID: 7482667652216324306, guid: f1fa3e0822eeafc4b82c227e80f0ce8a, type: 3}
@@ -126,6 +132,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bbc6888c24fd7c146946e2cc37e8177c, type: 3}
   - {fileID: 21300000, guid: f0553cacca68d844692e744d67c9c476, type: 3}
   - {fileID: 21300000, guid: 3400f2ece8cdab046b51aa94b83e06c5, type: 3}
+  - {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
   - {fileID: 21300000, guid: c41c2bec2903eb74abeef97f3810e1da, type: 3}
   - {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
   - {fileID: 21300000, guid: 9c7c366d46e748a44a608c9051274105, type: 3}
@@ -156,6 +163,7 @@ SpriteAtlas:
   - frame018
   - Border Bottom
   - frame017
+  - wool green 1
   - Hand Inventory
   - JOURNAL icon
   - inside separator bottom
@@ -169,6 +177,7 @@ SpriteAtlas:
   - shop  ui tab 2
   - Red_dyed_clothing_gold
   - frame047
+  - elderberry blue
   - frame012
   - ropes guide
   - cotton_green
@@ -195,6 +204,7 @@ SpriteAtlas:
   - frame023
   - frame037
   - seed1
+  - elderberry seeds
   - WateringCan
   - frame039
   - Border Top Left
@@ -202,8 +212,11 @@ SpriteAtlas:
   - firefox_oZloZxAvKf
   - inside separators
   - Hammer Inventory
+  - clean wool blue
+  - clean wool gold
   - frame015
   - Close Normal
+  - elderberry gold
   - frame016
   - Backgrounds all
   - Square
@@ -236,6 +249,7 @@ SpriteAtlas:
   - craft button normal
   - cotton_blue
   - frame044
+  - elderberry green
   - frame013
   - cloth_gold
   - inside separator top left
