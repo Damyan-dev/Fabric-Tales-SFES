@@ -5,22 +5,22 @@ using UnityEngine;
 public class AddRemoveMoney : MonoBehaviour
 {
     public GameObject camera;
-   
+    public GameObject canvasObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       canvasObject.SetActive(false);
     }
 
     public void Subtract10()
     {
         ItemData item = InventoryManager.Instance.ItemSearch("Cotton Seeds");
-        if (item != null)
-        {
+        
+        
             InventoryManager.Instance.ItemAdd(item);
             camera.GetComponent<playerMoney>().subtractMoney(10);
-        }
+        
     }
 
     public void Subtract25()
@@ -49,14 +49,22 @@ public class AddRemoveMoney : MonoBehaviour
             camera.GetComponent<playerMoney>().addMoney(50);
         }
     }
+
+    public void ShopkeeperOn()
+    {
+        canvasObject.SetActive(true);
+
+    }
+    public void ShopkeeperOff()
+    {
+        canvasObject.SetActive(false);
+    }
+
     public void ShearSheep()
     {
-    
-
-         ItemData item = InventoryManager.Instance.ItemSearch("Wool");
-         if (item != null)
-         {
+       //  ItemData item = Wool;
+  
              InventoryManager.Instance.ItemAdd(item);
-         }
+        
     }
 }
