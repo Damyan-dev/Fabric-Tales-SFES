@@ -5,12 +5,14 @@ using UnityEngine;
 public class AddRemoveMoney : MonoBehaviour
 {
     public GameObject camera;
-    public GameObject canvasObject;
+    public GameObject canvasObject1;
+    public GameObject canvasObject2;
 
     // Start is called before the first frame update
     void Start()
     {
-       canvasObject.SetActive(false);
+       canvasObject1.SetActive(false);
+       canvasObject2.SetActive(false);
     }
 
     public void Subtract10()
@@ -52,12 +54,13 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void ShopkeeperOn()
     {
-        canvasObject.SetActive(true);
-
+        canvasObject1.SetActive(true);
+        //canvasObject2.SetActive(false);
     }
     public void ShopkeeperOff()
     {
-        canvasObject.SetActive(false);
+        canvasObject1.SetActive(false);
+        canvasObject2.SetActive(true);
     }
 
     /*public void ShearSheep()
