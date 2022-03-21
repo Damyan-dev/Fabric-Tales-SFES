@@ -89,6 +89,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
   - {fileID: 21300000, guid: 77a1efd5c006f0644b844709206595fd, type: 3}
   - {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
+  - {fileID: 21300000, guid: 9f7581a6d8e5f4e4383d7adc6c34adb0, type: 3}
   - {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
   - {fileID: 21300000, guid: ca9304f6e0546f24481f640ebb54887f, type: 3}
   - {fileID: 21300000, guid: fcbe5e079f0f3b74baad2b3adda920ea, type: 3}
@@ -125,6 +126,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 840195eaf1ab96945b04f9e9aea37013, type: 3}
   - {fileID: 21300000, guid: 638dc14b3b50bbc499fb526ce9f4bc87, type: 3}
   - {fileID: 21300000, guid: 7fcdd45bd78107848b083fe31d4f247b, type: 3}
+  - {fileID: 21300000, guid: d4a72f5b07d5d33449e9483d2d4d721b, type: 3}
   - {fileID: 21300000, guid: 1606ef7b99d8778448f0c99809bb82e9, type: 3}
   - {fileID: 21300000, guid: dd5d31db41ceeb64684a73a8b28045b2, type: 3}
   - {fileID: 21300000, guid: f61394dbb5f594d4e83ac5474adb1475, type: 3}
@@ -145,6 +147,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8e825f0e90d433445a366035a3cc7408, type: 3}
   - {fileID: 21300000, guid: 0dce516e4357e484a97fefc6ff3830ea, type: 3}
   - {fileID: 21300000, guid: 41bea66ea243f0e4a8a382f3310b6271, type: 3}
+  - {fileID: 21300000, guid: c118a97ef6a489e499e1e08e2d659c73, type: 3}
   - {fileID: 21300000, guid: c812108ee9f76f040bce0b054da5831e, type: 3}
   - {fileID: 21300000, guid: 5e81d39e02d4259419bb5b3c981d80d0, type: 3}
   - {fileID: 21300000, guid: 79a4b99e88681544db26a9ffd6550390, type: 3}
@@ -156,6 +159,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ec8eb3bf81893ff4aab5520d05aed223, type: 3}
   - {fileID: 21300000, guid: 4e02d0efd1ee0f746ac9b92d77fe4172, type: 3}
   - {fileID: 21300000, guid: d5c3f8ef57d3d0e4db2a61e815a8bcaf, type: 3}
+  - {fileID: 21300000, guid: 279f3eef6dd0ceb4997de663ef9969e9, type: 3}
   m_PackedSpriteNamesToIndex:
   - Inventory Button
   - Quick Inventory Single
@@ -208,6 +212,7 @@ SpriteAtlas:
   - seed1
   - IMG_0698
   - elderberry seeds
+  - Progress Bar 2
   - WateringCan
   - frame039
   - Border Top Left
@@ -244,6 +249,7 @@ SpriteAtlas:
   - frame029
   - Gold
   - frame004
+  - Progress Bar 3
   - frame042
   - frame036
   - Inventory Rework 1
@@ -264,6 +270,7 @@ SpriteAtlas:
   - frame007
   - rope2
   - frame041
+  - Current seletion
   - frame022
   - all borders
   - Water Inventory
@@ -275,6 +282,7 @@ SpriteAtlas:
   - cotton_gold
   - Bad Environment Stat
   - Red_dyed_clothing_blue
+  - Progress Bar 1
   m_RenderDataMap: {}
   m_Tag: New Sprite Atlas
   m_IsVariant: 0
