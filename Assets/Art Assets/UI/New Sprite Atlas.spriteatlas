@@ -126,6 +126,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7fcdd45bd78107848b083fe31d4f247b, type: 3}
   - {fileID: 21300000, guid: 1606ef7b99d8778448f0c99809bb82e9, type: 3}
   - {fileID: 21300000, guid: dd5d31db41ceeb64684a73a8b28045b2, type: 3}
+  - {fileID: 21300000, guid: f61394dbb5f594d4e83ac5474adb1475, type: 3}
   - {fileID: 21300000, guid: a856500ccd9b6634c9b6e0ea6464a386, type: 3}
   - {fileID: 21300000, guid: 3e8f4e2cfc80c1945a4500da3bcc88c9, type: 3}
   - {fileID: 21300000, guid: d3ca067cb85af6f46bd583c05b82a73c, type: 3}
@@ -243,6 +244,7 @@ SpriteAtlas:
   - frame004
   - frame042
   - frame036
+  - Inventory Rework 1
   - frame035
   - frame001
   - Cotton Seed Icon
