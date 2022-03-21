@@ -5,8 +5,6 @@ using UnityEngine;
 public class Farmland : MonoBehaviour, ITimeTracker
 {
     public GameObject selected;
-    public GameObject cottonCrop;
-    public GameObject cottonDrop;
     public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
     public GameTimeConverter timeWatered;
@@ -19,6 +17,11 @@ public class Farmland : MonoBehaviour, ITimeTracker
     public FarmStatus farmStatus;
 
     private new Renderer renderer;
+
+    [Header("Crops")]
+    public GameObject cropPrefab;
+    CropParams cropPlanted = null;
+
 
     void Start()
     {
@@ -40,8 +43,6 @@ public class Farmland : MonoBehaviour, ITimeTracker
                 break;
             case FarmStatus.Farm:
                 materialToSwitch = farmMat;
-                Destroy(cottonCrop);
-                Instantiate(cottonDrop, dropPosition.position, dropPosition.rotation);
                 break;
             case FarmStatus.Watered:
                 materialToSwitch = wateredMat;
@@ -60,7 +61,32 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
     public void Interact()
     {
-        ChangeFarmStatus(FarmStatus.Farm);
+        ItemData toolSlot = InventoryManager.Instance.equippedTool;
+        ItemEquipment equippedEquipment = toolSlot as ItemEquipment;
+
+        if(equippedEquipment != null)
+        {
+            ItemEquipment.Tool tool = equippedEquipment.tool;
+
+            switch (tool)
+            {
+                case ItemEquipment.Tool.WateringCan:
+                    ChangeFarmStatus(FarmStatus.Watered);
+                    break;
+            }
+
+            return;
+        }
+        ItemData itemSlot = InventoryManager.Instance.equippedItem;
+        SeedData seedTool = toolSlot as SeedData;
+
+        if(seedTool != null && farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        {
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropPlanted = cropObject.GetComponent<CropParams>();
+            cropPlanted.Plant(seedTool);
+            Debug.Log(cropPlanted + " has been planted.");
+        }
     }
 
     public void ClockUpdate(GameTimeConverter gametime)

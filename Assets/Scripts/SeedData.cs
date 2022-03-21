@@ -8,4 +8,5 @@ public class SeedData : ItemData
 {
     public int timeToGrow;
     public ItemData cropToHarvest;
+    public GameObject seedling;
 }

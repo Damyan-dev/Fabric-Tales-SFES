@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CottonSeed
   m_EditorClassIdentifier: 
   description: Cotton seeds.
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: 21300000, guid: d3ca067cb85af6f46bd583c05b82a73c, type: 3}
   objectModel: {fileID: 0}
   timeToGrow: 5
   cropToHarvest: {fileID: 11400000, guid: 9e2eec702f8a1234d9d44802ede7efbf, type: 2}
+  seedling: {fileID: 919132149155446097, guid: f75678f80c7def143948b7e15bb16bea, type: 3}

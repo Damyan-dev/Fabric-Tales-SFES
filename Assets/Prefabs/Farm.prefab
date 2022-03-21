@@ -126,10 +126,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247724231611598}
+  cottonCrop: {fileID: 0}
+  cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: fbe056f76abfdad4c847836723167133, type: 2}
   wateredMat: {fileID: 0}
+  timeWatered:
+    month: 0
+    weekDays: 0
+    day: 0
+    year: 0
+    hour: 0
+    minute: 0
   farmStatus: 0
+  cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
 --- !u!1 &3137247722805587765
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,10 +303,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247724365146607}
+  cottonCrop: {fileID: 0}
+  cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: fbe056f76abfdad4c847836723167133, type: 2}
   wateredMat: {fileID: 0}
+  timeWatered:
+    month: 0
+    weekDays: 0
+    day: 0
+    year: 0
+    hour: 0
+    minute: 0
   farmStatus: 0
+  cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
 --- !u!1 &3137247723228206461
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,10 +608,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247723631430358}
+  cottonCrop: {fileID: 0}
+  cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: fbe056f76abfdad4c847836723167133, type: 2}
   wateredMat: {fileID: 0}
+  timeWatered:
+    month: 0
+    weekDays: 0
+    day: 0
+    year: 0
+    hour: 0
+    minute: 0
   farmStatus: 0
+  cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
 --- !u!1 &3137247723631430358
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,10 +831,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247724363152591}
+  cottonCrop: {fileID: 0}
+  cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: fbe056f76abfdad4c847836723167133, type: 2}
   wateredMat: {fileID: 0}
+  timeWatered:
+    month: 0
+    weekDays: 0
+    day: 0
+    year: 0
+    hour: 0
+    minute: 0
   farmStatus: 0
+  cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
 --- !u!1 &3137247724231611598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,10 +1218,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247723552966513}
+  cottonCrop: {fileID: 0}
+  cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2311294882486556227, guid: 2f184897f73388942a65e91d992e0263, type: 3}
   wateredMat: {fileID: 2100000, guid: 8149a377980e0e34a9e412c1f64aff82, type: 2}
+  timeWatered:
+    month: 0
+    weekDays: 0
+    day: 0
+    year: 0
+    hour: 0
+    minute: 0
   farmStatus: 0
+  cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
 --- !u!1 &3137247724497505057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1359,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247723228206461}
+  cottonCrop: {fileID: 0}
+  cottonDrop: {fileID: 0}
+  dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: fbe056f76abfdad4c847836723167133, type: 2}
   wateredMat: {fileID: 0}
+  timeWatered:
+    month: 0
+    weekDays: 0
+    day: 0
+    year: 0
+    hour: 0
+    minute: 0
   farmStatus: 0
+  cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
