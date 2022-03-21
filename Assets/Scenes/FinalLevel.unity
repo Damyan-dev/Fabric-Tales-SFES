@@ -14919,7 +14919,7 @@ PrefabInstance:
     - target: {fileID: 1294967300202647389, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: bd844110e03e74947a16654b83989a0e, type: 2}
+      objectReference: {fileID: 11400000, guid: 39bd2f53d80e5f24e94b6cb68a7adba8, type: 2}
     - target: {fileID: 2417844893251727786, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
       propertyPath: m_Name
       value: Blue Cotton (2)
@@ -14930,7 +14930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2417844893251727787, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.4
+      value: 46.89
       objectReference: {fileID: 0}
     - target: {fileID: 2417844893251727787, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14938,7 +14938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2417844893251727787, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 72.5
+      value: 95.44
       objectReference: {fileID: 0}
     - target: {fileID: 2417844893251727787, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16606,6 +16606,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3397621435326332701, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
   m_PrefabInstance: {fileID: 868240660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &724191407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2417844893251727786, guid: e7cdcbfaa59eef1429fd507fca86855b, type: 3}
+  m_PrefabInstance: {fileID: 633425123}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &726299582
 GameObject:
@@ -23380,7 +23385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tools:
   - {fileID: 11400000, guid: 7cec079277779454a9b757b37d4d4a2e, type: 2}
-  - {fileID: 11400000, guid: a3484fba0bf49464aa4a9b2e2d0ced81, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -23389,8 +23394,8 @@ MonoBehaviour:
   - {fileID: 0}
   items:
   - {fileID: 11400000, guid: eaa6b58f0c6f7f84382f0a7757ba72b1, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: bd844110e03e74947a16654b83989a0e, type: 2}
+  - {fileID: 11400000, guid: 39bd2f53d80e5f24e94b6cb68a7adba8, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -31558,6 +31563,8 @@ MonoBehaviour:
   - {fileID: 1537232896}
   cotton:
   - {fileID: 842959030}
+  wool:
+  - {fileID: 724191407}
   canvasObject: {fileID: 1999312022}
   spawner: {fileID: 0}
   selected: {fileID: 1901205920}
@@ -41590,6 +41597,7 @@ MonoBehaviour:
   - {fileID: 1537232896}
   cotton:
   - {fileID: 842959030}
+  wool: []
   canvasObject: {fileID: 1999312022}
   spawner: {fileID: 0}
   selected: {fileID: 1901205920}
@@ -46615,6 +46623,7 @@ MonoBehaviour:
   - {fileID: 456186768}
   cotton:
   - {fileID: 1020668780}
+  wool: []
   canvasObject: {fileID: 0}
   spawner: {fileID: 0}
   selected: {fileID: 0}
@@ -50661,6 +50670,7 @@ MonoBehaviour:
   - {fileID: 2019411388}
   cotton:
   - {fileID: 1020668780}
+  wool: []
   canvasObject: {fileID: 2060932875}
   spawner: {fileID: 0}
   selected: {fileID: 673289733}

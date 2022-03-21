@@ -7,6 +7,7 @@ public class Spawner : InventoryManager
 
     public Transform[] spawnPoints;
     public GameObject[] cotton;
+    public GameObject[] wool;
     public GameObject canvasObject;
     //public int startSpawnTime = 10;
     //public int spawnTime = 5;
@@ -19,17 +20,17 @@ public class Spawner : InventoryManager
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown("f"))
-        {
+    /* void Update()
+     {
+         if (Input.GetKeyDown("f"))
+         {
 
-            if (canvasObject.activeSelf)
-            {
-                StartCoroutine(DelayedSpawn());
-            }
-        }
-    }
+             if (canvasObject.activeSelf)
+             {
+                 StartCoroutine(DelayedSpawn());
+             }
+         }
+     } */
 
     public void Spawn()
     {
@@ -41,10 +42,19 @@ public class Spawner : InventoryManager
         Instantiate(this.cotton[cotton], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
     }
 
-    private IEnumerator DelayedSpawn()
+    public void SpawnWool()
     {
-        yield return new WaitForSeconds(5);
-        Spawn();
+        int spawnPoints = Random.Range(0, 1);
+        int wool = Random.Range(0, 1);
+
+        // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
+        Instantiate(this.wool[wool], this.spawnPoints[spawnPoints].position, this.spawnPoints[spawnPoints].rotation);
+    }
+}
+  //  private IEnumerator DelayedSpawn()
+   // {
+    //    yield return new WaitForSeconds(5);
+     //   Spawn();
         
         // for (int i = 0, i < inventorySlotIndex, i++)
         // {
@@ -56,8 +66,8 @@ public class Spawner : InventoryManager
 
         //  }
 
-    }
-}
+    
+
     // public GameObject cotton;
     //  private Vector3 ItemPos;
 

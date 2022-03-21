@@ -140,6 +140,16 @@ public class PlayerController : MonoBehaviour
 
 			}
 
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+				ItemData item = InventoryManager.Instance.ItemSearch("Wool");
+
+				if (item != null)
+				{
+					InventoryManager.Instance.ItemRemove(item);
+					washingMachine.SpawnWool();
+				}
+			}
 		}
 	}
 
