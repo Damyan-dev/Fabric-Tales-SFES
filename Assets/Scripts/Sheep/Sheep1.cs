@@ -8,7 +8,7 @@ public class Sheep1 : Spawner
     public Spawner spawner;
     //public GameObject canvasObject;
     public GameObject selected;
-
+    public GameObject Inventory;
 
     public void Start()
     {
@@ -27,6 +27,7 @@ public class Sheep1 : Spawner
         }
     }
 
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -37,5 +38,3 @@ public class Sheep1 : Spawner
         }
     }
 }
-
-
