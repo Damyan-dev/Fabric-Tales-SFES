@@ -122,8 +122,8 @@ public class GameTimeConverter
     {
         int gametime1Hours = ConvertDaysToHours(ConvertYearsToDays(gametime1.year)) + ConvertDaysToHours(ConvertMonthsToDays(gametime1.month)) + ConvertDaysToHours(gametime1.day) + gametime1.hour;
         int gametime2Hours = ConvertDaysToHours(ConvertYearsToDays(gametime2.year)) + ConvertDaysToHours(ConvertMonthsToDays(gametime2.month)) + ConvertDaysToHours(gametime2.day) + gametime2.hour;
-        int diff = Mathf.Abs(gametime2Hours - gametime1Hours);
+        int diff = gametime2Hours - gametime1Hours;
         
-        return ConvertHoursToMins(diff);
+        return Mathf.Abs(diff);
     }
 }

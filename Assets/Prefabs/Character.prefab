@@ -564,6 +564,7 @@ Transform:
   m_Children:
   - {fileID: 5965879570485917801}
   - {fileID: 797488679655955759}
+  - {fileID: 7955354488243218060}
   m_Father: {fileID: 7297099680093825917}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1011,6 +1012,7 @@ MonoBehaviour:
   - {fileID: 6770683471146327225}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683471577757499
 GameObject:
@@ -1080,6 +1082,7 @@ MonoBehaviour:
   - {fileID: 6770683471577757500}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683471673578693
 GameObject:
@@ -1149,6 +1152,7 @@ MonoBehaviour:
   - {fileID: 6770683471673578694}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683471819365745
 GameObject:
@@ -1261,6 +1265,7 @@ MonoBehaviour:
   - {fileID: 6770683472169739019}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683472369080667
 GameObject:
@@ -1330,6 +1335,7 @@ MonoBehaviour:
   - {fileID: 6770683472369080668}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683472547606829
 GameObject:
@@ -1399,6 +1405,7 @@ MonoBehaviour:
   - {fileID: 6770683472547606830}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683472795885116
 GameObject:
@@ -1468,6 +1475,7 @@ MonoBehaviour:
   - {fileID: 6770683472795885117}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6770683472898329661
 GameObject:
@@ -1537,6 +1545,7 @@ MonoBehaviour:
   - {fileID: 6770683472898329662}
   cotton:
   - {fileID: 0}
+  wool: []
   canvasObject: {fileID: 0}
 --- !u!1 &6808446445725109559
 GameObject:
@@ -1568,6 +1577,36 @@ Transform:
   - {fileID: 6541798641933744080}
   m_Father: {fileID: 2847167593296375340}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7538613685165891881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7955354488243218060}
+  m_Layer: 0
+  m_Name: HandPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7955354488243218060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7538613685165891881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7862531439524783891}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7621076219493850074
 GameObject:

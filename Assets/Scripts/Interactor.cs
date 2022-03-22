@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
+    PlayerController playerController;
     private Farmland selectedFarmLand = null;
     private InteractableObject selectedItemInteractable = null;
-    
+
+    private void Start()
+    {
+        playerController = transform.parent.GetComponent<PlayerController>();
+    }
 
     void Update()
     {

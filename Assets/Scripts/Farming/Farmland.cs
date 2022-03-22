@@ -7,7 +7,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
     public GameObject selected;
     public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
-    public GameTimeConverter timeWatered;
+    GameTimeConverter timeWatered;
     
 
     public enum FarmStatus
@@ -46,7 +46,6 @@ public class Farmland : MonoBehaviour, ITimeTracker
                 break;
             case FarmStatus.Watered:
                 materialToSwitch = wateredMat;
-
                 timeWatered = TimeController.Instance.GetTimeStamp();
                 break;
         }
@@ -77,12 +76,13 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
             return;
         }
-        ItemData itemSlot = InventoryManager.Instance.equippedItem;
+        
         SeedData seedTool = toolSlot as SeedData;
 
         if(seedTool != null && farmStatus == FarmStatus.Dirt && cropPlanted == null)
         {
             GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
             cropPlanted = cropObject.GetComponent<CropParams>();
             cropPlanted.Plant(seedTool);
             Debug.Log(cropPlanted + " has been planted.");
@@ -95,6 +95,11 @@ public class Farmland : MonoBehaviour, ITimeTracker
         {
             int hoursPassed = GameTimeConverter.CompareTime(timeWatered, gametime);
             Debug.Log(hoursPassed + " since the crop was watered.");
+
+            if (cropPlanted != null)
+            {
+                cropPlanted.Grow();
+            }
 
             if(hoursPassed > 24)
             {

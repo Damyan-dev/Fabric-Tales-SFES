@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Harvested cotton.
   thumbnail: {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
-  objectModel: {fileID: 919132149155446097, guid: 90dffe3e13aaa6b428e0bae2853a623b, type: 3}
+  objectModel: {fileID: 1491506755931027999, guid: 5eb82392d224db34993a7821014db467, type: 3}
