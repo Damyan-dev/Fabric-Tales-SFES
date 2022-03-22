@@ -19,8 +19,8 @@ public class InventoryManager : MonoBehaviour
         }
     }
    
-    public ItemData[] tools = new ItemData[8];
-    public ItemData[] items = new ItemData[8];
+    public ItemData[] tools = new ItemData[12];
+    public ItemData[] items = new ItemData[12];
     public ItemData equippedTool = null;
     public ItemData equippedItem = null;
     

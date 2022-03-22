@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,9 +10,12 @@ public class PlayerController : MonoBehaviour
 	private Animator anim;
 	public WashingMachine washingMachine;
 	public AudioController audioController;
+	public Sheep1 Sheep;
 	public DyeMachine dyeMachine;
 	Interactor playerInteractor;
 	public Loom loom;
+	private int nextShear = 0;
+	public Text Cooldown;
 
 	private void Start()
 	{
@@ -22,11 +26,15 @@ public class PlayerController : MonoBehaviour
 		audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
 		audioController.PlaySoundComplete("BGM");
 
-
 	}
 
 	private void Update()
 	{
+		Cooldown.text = (nextShear - Time.time).ToString();
+		if((nextShear - Time.time) < 0)
+        {
+			Cooldown.text = "0";
+        }
 		Interact();
 	}
 
@@ -104,6 +112,25 @@ public class PlayerController : MonoBehaviour
 					InventoryManager.Instance.ItemRemove(item);
 					loom.Spawn();
 				}
+			}
+
+		}
+		if (other.name == "Shearing Sheep")
+		{
+			if (Input.GetKeyDown(KeyCode.F) && Time.time > nextShear)
+			{
+
+				Sheep.Spawn();
+				
+				nextShear += 60;
+				//Cooldown.text = (nextShear - Time.time).ToString();
+
+				//ItemData item = InventoryManager.Instance.ItemSearch("Wool");
+				//if (item != null)
+				//{
+				//	InventoryManager.Instance.ItemRemove(item);
+				//	loom.Spawn();
+				//}
 			}
 
 		}

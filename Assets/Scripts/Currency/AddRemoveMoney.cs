@@ -63,11 +63,12 @@ public class AddRemoveMoney : MonoBehaviour
         canvasObject2.SetActive(true);
     }
 
-    /*public void ShearSheep()
+    public void ShearSheep()
     {
-       //  ItemData item = Wool;
+         ItemData item = InventoryManager.Instance.ItemSearch("Wool");
+       
   
              InventoryManager.Instance.ItemAdd(item);
         
-    } */
+    }
 }
