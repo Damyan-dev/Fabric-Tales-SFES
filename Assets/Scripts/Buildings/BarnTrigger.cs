@@ -15,6 +15,15 @@ public class BarnTrigger : MonoBehaviour
         canvasObject.SetActive(false);
     }
 
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "Player")
+        {
+            Debug.Log("entered");
+          //  canvasObject.SetActive(true);
+        }
+    }
+
     private void OnTriggerStay(Collider col)
     {
         if (col.tag == "Player")

@@ -42,6 +42,15 @@ public class AddRemoveMoney : MonoBehaviour
             camera.GetComponent<playerMoney>().addMoney(30);
         }
     }
+    public void Add20()
+    {
+        ItemData item = InventoryManager.Instance.ItemSearch("Washed Wool");
+        if (item != null)
+        {
+            InventoryManager.Instance.ItemRemove(item);
+            camera.GetComponent<playerMoney>().addMoney(30);
+        }
+    }
     public void Add50()
     {
         ItemData item = InventoryManager.Instance.ItemSearch("Dyed Shirt");
