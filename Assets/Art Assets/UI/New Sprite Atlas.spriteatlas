@@ -55,6 +55,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d1d935c162f71094680f0305c7324195, type: 3}
   - {fileID: 21300000, guid: de0d59e1a4479984aab973c7c1d0b838, type: 3}
   - {fileID: 21300000, guid: bbbf5ae18c91b764398aae66c6aa6693, type: 3}
+  - {fileID: 21300000, guid: 1d7756f19b1e98a45948005b035db239, type: 3}
   - {fileID: 21300000, guid: 5f260d028df9b8a44bb28d6ffffc9af1, type: 3}
   - {fileID: 21300000, guid: e601861230032a84db54f0d5ace4dca9, type: 3}
   - {fileID: 21300000, guid: 38a3c532f6ab85b4e8c89a7e39fa200d, type: 3}
@@ -77,12 +78,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f493d134e05580548a365391b48e03e3, type: 3}
   - {fileID: 21300000, guid: c9b218348c5d8cc49b407354a699382f, type: 3}
   - {fileID: 21300000, guid: 77f20c64a2e955949a6581ba5dd37205, type: 3}
+  - {fileID: 21300000, guid: 28809394dbf971f4fa6483028ef63168, type: 3}
   - {fileID: 21300000, guid: 41a6f1b43f9f1ab46a00020c4afb194c, type: 3}
   - {fileID: 21300000, guid: bfb642b400e375c4994d3cbb795f7713, type: 3}
   - {fileID: 21300000, guid: c83be7b49adfb5140873a36f65dd666a, type: 3}
   - {fileID: 21300000, guid: 03a68bc4355978343940445a6fed131e, type: 3}
   - {fileID: 21300000, guid: 0bafdbd45b410d64488ae929b01f1406, type: 3}
   - {fileID: 21300000, guid: 3a79bfe427591ee4b9497d91d6467945, type: 3}
+  - {fileID: 21300000, guid: 4b590b25e7c541e439efd761888e6451, type: 3}
   - {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
   - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
@@ -101,11 +104,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3f648b979e81e9544989e919ae4025d1, type: 3}
   - {fileID: 21300000, guid: 070ee5a73a54f674394c183bad778f98, type: 3}
   - {fileID: 21300000, guid: 258799a752511ab44a1f35084cbc3ae8, type: 3}
+  - {fileID: 21300000, guid: ab7aebb7370a0ce4cb4a4183001259e7, type: 3}
   - {fileID: 21300000, guid: fd1553c735c157b4291604936347d526, type: 3}
   - {fileID: 21300000, guid: a0024cc7ddd5f47459ced22e79fdf9a0, type: 3}
   - {fileID: 21300000, guid: 67835fe757d9d514388daca1f119b9a1, type: 3}
   - {fileID: 7482667652216324306, guid: f1fa3e0822eeafc4b82c227e80f0ce8a, type: 3}
+  - {fileID: 21300000, guid: 72403218cc71fcb4b8dfd6d27c7fab2f, type: 3}
   - {fileID: 21300000, guid: f3890f38749225e4f98d76f998ecba15, type: 3}
+  - {fileID: 21300000, guid: 637dea58d6d59254190178479dd6f9c7, type: 3}
   - {fileID: 21300000, guid: c2c3f468389c4db44baa9b4524bbbd24, type: 3}
   - {fileID: 21300000, guid: 0c85ba98ee44a4144bcb7d57f6e109fd, type: 3}
   - {fileID: 21300000, guid: 7dc48ca81ea67f647b663af4049df3e0, type: 3}
@@ -117,17 +123,20 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a709af39eb53577468c79653cb5455c8, type: 3}
   - {fileID: 21300000, guid: b8088499b5b077d498a1a7471782bd02, type: 3}
   - {fileID: 21300000, guid: 5377c899bce139f499170b0721bbda99, type: 3}
+  - {fileID: 21300000, guid: ac9c35c9eb36dc346b823257df4409e3, type: 3}
   - {fileID: 21300000, guid: 7135dcd956783df4b9dce5383e1a64f1, type: 3}
   - {fileID: 21300000, guid: 6f2a280a964cfdd4f878045579a45aa1, type: 3}
   - {fileID: 21300000, guid: e8942a1a277b1034a9c76ef07332cb74, type: 3}
   - {fileID: 21300000, guid: 6db1f35a84fcde54e8dab62f3faccfaf, type: 3}
   - {fileID: 21300000, guid: b2169e7a7d4630745879968d70cbb2c8, type: 3}
+  - {fileID: 21300000, guid: defc498adec35ff45865f200512008eb, type: 3}
   - {fileID: 21300000, guid: b09fcada7ef18b74081376cc6877fdcf, type: 3}
   - {fileID: 21300000, guid: 840195eaf1ab96945b04f9e9aea37013, type: 3}
   - {fileID: 21300000, guid: 638dc14b3b50bbc499fb526ce9f4bc87, type: 3}
   - {fileID: 21300000, guid: 7fcdd45bd78107848b083fe31d4f247b, type: 3}
   - {fileID: 21300000, guid: d4a72f5b07d5d33449e9483d2d4d721b, type: 3}
   - {fileID: 21300000, guid: 1606ef7b99d8778448f0c99809bb82e9, type: 3}
+  - {fileID: 21300000, guid: 40da779b7cb6fa64c989c0efa72b820d, type: 3}
   - {fileID: 21300000, guid: dd5d31db41ceeb64684a73a8b28045b2, type: 3}
   - {fileID: 21300000, guid: f61394dbb5f594d4e83ac5474adb1475, type: 3}
   - {fileID: 21300000, guid: a856500ccd9b6634c9b6e0ea6464a386, type: 3}
@@ -139,7 +148,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
   - {fileID: 21300000, guid: c41c2bec2903eb74abeef97f3810e1da, type: 3}
   - {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
+  - {fileID: 21300000, guid: 5b41a51d39c0a414489258b735649a45, type: 3}
   - {fileID: 21300000, guid: 9c7c366d46e748a44a608c9051274105, type: 3}
+  - {fileID: 21300000, guid: 1ea119bd9506e994d9a5d7153c886425, type: 3}
   - {fileID: 21300000, guid: f361e7cd6f3123d44a5e3871f0eab320, type: 3}
   - {fileID: 21300000, guid: 45c849cd05f6276449cdfba0d539c4b8, type: 3}
   - {fileID: 21300000, guid: 26c247fd38cfd674881b28854ed3de64, type: 3}
@@ -178,6 +189,7 @@ SpriteAtlas:
   - frame011
   - frame045
   - frame024
+  - turmeric green
   - craft button clicked
   - Menu
   - shop  ui tab 2
@@ -200,12 +212,14 @@ SpriteAtlas:
   - firefox_qtPr9ljSsH
   - frame027
   - shop  ui tab 3
+  - red dyed polyester clothing gold
   - clothing_blue
   - frame049
   - rope1
   - frame032
   - frame003
   - frame031
+  - polyester clothing gold
   - icons8-cotton-64
   - frame023
   - frame037
@@ -224,11 +238,14 @@ SpriteAtlas:
   - clean wool gold
   - frame015
   - Close Normal
+  - yellow dyed polyester clothing blue
   - elderberry gold
   - frame016
   - Backgrounds all
   - Square
+  - red dyed polyester clothing blue
   - clothing_gold
+  - polyester green
   - frame028
   - frame025
   - frame008
@@ -240,17 +257,20 @@ SpriteAtlas:
   - frame040
   - ropes all
   - frame020
+  - turmeric seed green
   - Clock
   - backpack icon
   - Red Dye Icon
   - frame048
   - rope4
+  - yellow dyed clothing gold
   - Background bottom
   - frame029
   - Gold
   - frame004
   - Progress Bar 3
   - frame042
+  - yellow dyed clothing blue
   - frame036
   - Inventory Rework 1
   - frame035
@@ -262,7 +282,9 @@ SpriteAtlas:
   - elderberry green
   - frame013
   - cloth_gold
+  - polyester clothing blue
   - inside separator top left
+  - yellow dyed polyester clothing gold
   - frame006
   - frame033
   - frame043
