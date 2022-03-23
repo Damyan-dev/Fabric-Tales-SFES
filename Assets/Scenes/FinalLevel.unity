@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 2134475459}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 0}
   canvasObject2: {fileID: 0}
 --- !u!114 &20933919
@@ -13588,7 +13588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 2134475459}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 0}
   canvasObject2: {fileID: 0}
 --- !u!1 &414877706
@@ -21891,7 +21891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 2134475459}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 0}
   canvasObject2: {fileID: 0}
 --- !u!114 &869212948
@@ -25764,7 +25764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f23462f9263e9e4ea2bc9f0dd85ef87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 30
+  timeScale: 15
   gametime:
     month: 0
     weekDays: 0
@@ -31842,7 +31842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 2134475459}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 0}
   canvasObject2: {fileID: 0}
 --- !u!114 &1464515083
@@ -33776,7 +33776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 1936730976}
   canvasObject2: {fileID: 990666277}
 --- !u!114 &1517155452
@@ -34943,7 +34943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 2134475459}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 0}
   canvasObject2: {fileID: 0}
 --- !u!1 &1553324404
@@ -50976,7 +50976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
+  ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 1936730976}
   canvasObject2: {fileID: 990666277}
 --- !u!114 &2111089839

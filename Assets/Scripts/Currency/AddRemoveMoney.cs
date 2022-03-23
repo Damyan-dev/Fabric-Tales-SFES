@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AddRemoveMoney : MonoBehaviour
 {
-    public GameObject camera;
+    public GameObject ingameCamera;
     public GameObject canvasObject1;
     public GameObject canvasObject2;
 
@@ -21,17 +21,17 @@ public class AddRemoveMoney : MonoBehaviour
         
         
             InventoryManager.Instance.ItemAdd(item);
-            camera.GetComponent<playerMoney>().subtractMoney(10);
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
         
     }
 
     public void Subtract25()
     {
-        camera.GetComponent<playerMoney>().subtractMoney(25);
+        ingameCamera.GetComponent<playerMoney>().subtractMoney(25);
     }
     public void Subtract100()
     {
-        camera.GetComponent<playerMoney>().subtractMoney(100);
+        ingameCamera.GetComponent<playerMoney>().subtractMoney(100);
     }
     public void Add30()
     {
@@ -39,7 +39,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
-            camera.GetComponent<playerMoney>().addMoney(30);
+            ingameCamera.GetComponent<playerMoney>().addMoney(30);
         }
     }
     public void Add20()
@@ -48,7 +48,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
-            camera.GetComponent<playerMoney>().addMoney(30);
+            ingameCamera.GetComponent<playerMoney>().addMoney(30);
         }
     }
     public void Add50()
@@ -57,7 +57,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
-            camera.GetComponent<playerMoney>().addMoney(50);
+            ingameCamera.GetComponent<playerMoney>().addMoney(50);
         }
     }
 
