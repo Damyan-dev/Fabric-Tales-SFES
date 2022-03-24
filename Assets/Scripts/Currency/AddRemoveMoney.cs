@@ -48,7 +48,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
-            ingameCamera.GetComponent<playerMoney>().addMoney(30);
+            ingameCamera.GetComponent<playerMoney>().addMoney(20);
         }
     }
     public void Add50()
