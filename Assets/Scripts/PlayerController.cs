@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 	public Loom loom;
 	private int nextShear = 0;
 	public Text Cooldown;
+	public GameObject WMCanvas;
 
 	private void Start()
 	{
@@ -154,6 +155,7 @@ public class PlayerController : MonoBehaviour
 
 		if (other.name == "Washing Machine Rig")
 		{
+			
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
@@ -163,6 +165,7 @@ public class PlayerController : MonoBehaviour
 				{
 					InventoryManager.Instance.ItemRemove(item);
 					washingMachine.Spawn();
+					
 				}
 
 			}
@@ -175,12 +178,31 @@ public class PlayerController : MonoBehaviour
 				{
 					InventoryManager.Instance.ItemRemove(item);
 					washingMachine.SpawnWool();
+					
 				}
 			}
 		}
 	}
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.name == "Washing Machine Rig")
+		{
+			WMCanvas.SetActive(true);
+		}
+	}
 
-		public IEnumerator HarvestRoutine()
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.name == "Washing Machine Rig")
+		{
+			WMCanvas.SetActive(false);
+		}
+
+	}
+
+
+	public IEnumerator HarvestRoutine()
 		{
 			anim.SetBool("harvesting", true);
 			anim.SetInteger("state", 2);
@@ -188,6 +210,6 @@ public class PlayerController : MonoBehaviour
 			anim.SetInteger("state", 0);
 			anim.SetBool("harvesting", false); 
 		}
-}
+	}
 
 		

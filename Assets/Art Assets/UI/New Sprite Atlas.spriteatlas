@@ -85,6 +85,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 03a68bc4355978343940445a6fed131e, type: 3}
   - {fileID: 21300000, guid: 0bafdbd45b410d64488ae929b01f1406, type: 3}
   - {fileID: 21300000, guid: 3a79bfe427591ee4b9497d91d6467945, type: 3}
+  - {fileID: -3687348052613884379, guid: 70fa9e15ae49c244a820dbece4a47b5c, type: 3}
+  - {fileID: 2042049135016041240, guid: 70fa9e15ae49c244a820dbece4a47b5c, type: 3}
   - {fileID: 21300000, guid: 4b590b25e7c541e439efd761888e6451, type: 3}
   - {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
@@ -219,6 +221,8 @@ SpriteAtlas:
   - frame032
   - frame003
   - frame031
+  - F_0
+  - F_1
   - polyester clothing gold
   - icons8-cotton-64
   - frame023
