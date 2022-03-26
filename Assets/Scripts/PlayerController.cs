@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 	private int nextShear = 0;
 	public Text Cooldown;
 	public GameObject WMCanvas;
+	public GameObject LoomCanvas;
 
 	private void Start()
 	{
@@ -149,6 +150,7 @@ public class PlayerController : MonoBehaviour
 					InventoryManager.Instance.ItemRemove(item);
 					dyeMachine.Spawn();
 				}
+
 			}
 
 		}
@@ -189,6 +191,12 @@ public class PlayerController : MonoBehaviour
 		{
 			WMCanvas.SetActive(true);
 		}
+
+		if (other.name == "Loom")
+		{
+			LoomCanvas.SetActive(true);
+		}
+
 	}
 
 
@@ -197,6 +205,11 @@ public class PlayerController : MonoBehaviour
 		if (other.name == "Washing Machine Rig")
 		{
 			WMCanvas.SetActive(false);
+		}
+
+		if (other.name == "Loom")
+		{
+			LoomCanvas.SetActive(false);
 		}
 
 	}
