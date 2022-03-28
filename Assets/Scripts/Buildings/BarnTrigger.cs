@@ -20,7 +20,7 @@ public class BarnTrigger : MonoBehaviour
         if (col.tag == "Player")
         {
             Debug.Log("entered");
-          //  canvasObject.SetActive(true);
+          //  canvasObject1.SetActive(true);
         }
     }
 

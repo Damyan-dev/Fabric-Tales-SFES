@@ -58,6 +58,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1d7756f19b1e98a45948005b035db239, type: 3}
   - {fileID: 21300000, guid: 5f260d028df9b8a44bb28d6ffffc9af1, type: 3}
   - {fileID: 21300000, guid: e601861230032a84db54f0d5ace4dca9, type: 3}
+  - {fileID: 21300000, guid: 0420ae12788963c46b16b30cd16dfef6, type: 3}
   - {fileID: 21300000, guid: 38a3c532f6ab85b4e8c89a7e39fa200d, type: 3}
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
@@ -92,7 +93,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
   - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
+  - {fileID: 21300000, guid: 6a9556d5c90a3b94e87acb985e327256, type: 3}
   - {fileID: 21300000, guid: 77a1efd5c006f0644b844709206595fd, type: 3}
+  - {fileID: 21300000, guid: 15247cf561182794ca9428e3a6b5a3c9, type: 3}
   - {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
   - {fileID: 21300000, guid: 9f7581a6d8e5f4e4383d7adc6c34adb0, type: 3}
   - {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
@@ -130,6 +133,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6f2a280a964cfdd4f878045579a45aa1, type: 3}
   - {fileID: 21300000, guid: e8942a1a277b1034a9c76ef07332cb74, type: 3}
   - {fileID: 21300000, guid: 6db1f35a84fcde54e8dab62f3faccfaf, type: 3}
+  - {fileID: 21300000, guid: 314bd87a6de41ea4cbd04d44c4608897, type: 3}
   - {fileID: 21300000, guid: b2169e7a7d4630745879968d70cbb2c8, type: 3}
   - {fileID: 21300000, guid: defc498adec35ff45865f200512008eb, type: 3}
   - {fileID: 21300000, guid: b09fcada7ef18b74081376cc6877fdcf, type: 3}
@@ -152,7 +156,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
   - {fileID: 21300000, guid: 5b41a51d39c0a414489258b735649a45, type: 3}
   - {fileID: 21300000, guid: 9c7c366d46e748a44a608c9051274105, type: 3}
+  - {fileID: 21300000, guid: 17f2947d7f149174c87d720d6c40798e, type: 3}
   - {fileID: 21300000, guid: 1ea119bd9506e994d9a5d7153c886425, type: 3}
+  - {fileID: 21300000, guid: 24837bbdc3e4bd041ad632f8b8ebf449, type: 3}
   - {fileID: 21300000, guid: f361e7cd6f3123d44a5e3871f0eab320, type: 3}
   - {fileID: 21300000, guid: 45c849cd05f6276449cdfba0d539c4b8, type: 3}
   - {fileID: 21300000, guid: 26c247fd38cfd674881b28854ed3de64, type: 3}
@@ -194,6 +200,7 @@ SpriteAtlas:
   - turmeric green
   - craft button clicked
   - Menu
+  - tab1
   - shop  ui tab 2
   - Red_dyed_clothing_gold
   - frame047
@@ -228,7 +235,9 @@ SpriteAtlas:
   - frame023
   - frame037
   - seed1
+  - tab3
   - IMG_0698
+  - tab5
   - elderberry seeds
   - Progress Bar 2
   - WateringCan
@@ -266,6 +275,7 @@ SpriteAtlas:
   - backpack icon
   - Red Dye Icon
   - frame048
+  - unused tabs
   - rope4
   - yellow dyed clothing gold
   - Background bottom
@@ -288,7 +298,9 @@ SpriteAtlas:
   - cloth_gold
   - polyester clothing blue
   - inside separator top left
+  - tab4
   - yellow dyed polyester clothing gold
+  - tab2
   - frame006
   - frame033
   - frame043
