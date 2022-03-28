@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Farmland : MonoBehaviour, ITimeTracker
 {
     public GameObject selected;
     public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
+    public Text Objtext;
     GameTimeConverter timeWatered;
     
 
@@ -66,11 +68,12 @@ public class Farmland : MonoBehaviour, ITimeTracker
         if(equippedEquipment != null)
         {
             ItemEquipment.Tool tool = equippedEquipment.tool;
-
+            
             switch (tool)
             {
                 case ItemEquipment.Tool.WateringCan:
                     ChangeFarmStatus(FarmStatus.Watered);
+                    Objtext.text = "Now your crop is growing! Use E to harvest the crop once it is fully grown";
                     break;
             }
 
@@ -86,6 +89,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
             cropPlanted = cropObject.GetComponent<CropParams>();
             cropPlanted.Plant(seedTool);
             Debug.Log(cropPlanted + " has been planted.");
+            Objtext.text = "Now use the watering can in your inventory to water the planted crop";
         }
     }
 
