@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
   m_Name: Yellow Dyed Shirt
   m_EditorClassIdentifier: 
-  description: 
-  thumbnail: {fileID: 0}
+  description: A shirt dyed with Tumeric
+  thumbnail: {fileID: 21300000, guid: defc498adec35ff45865f200512008eb, type: 3}
   objectModel: {fileID: 0}

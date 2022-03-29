@@ -7,6 +7,12 @@ public class AddRemoveMoney : MonoBehaviour
     public GameObject ingameCamera;
     public GameObject canvasObject1;
     public GameObject canvasObject2;
+    public GameObject MaterialsTab;
+    public GameObject CropsTab;
+    public GameObject FarmTab;
+    public GameObject SeedTab;
+    public GameObject ClothesTab;
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,11 +59,20 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add50()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Dyed Shirt");
+        ItemData item = InventoryManager.Instance.ItemSearch("Red Dyed shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
             ingameCamera.GetComponent<playerMoney>().addMoney(50);
+        }
+    }
+    public void Add75()
+    {
+        ItemData item = InventoryManager.Instance.ItemSearch("Yellow Dyed Shirt");
+        if (item != null)
+        {
+            InventoryManager.Instance.ItemRemove(item);
+            ingameCamera.GetComponent<playerMoney>().addMoney(75);
         }
     }
 
@@ -71,6 +86,60 @@ public class AddRemoveMoney : MonoBehaviour
         canvasObject1.SetActive(false);
         canvasObject2.SetActive(true);
     }
+
+    public void MaterialTabOn()
+    {
+        MaterialsTab.SetActive(true);
+        CropsTab.SetActive(false);
+        FarmTab.SetActive(false);
+        SeedTab.SetActive(false);
+    }
+    public void MaterialTabOff()
+    {
+        MaterialsTab.SetActive(false);
+    }
+    public void CropsTabOn()
+    {
+        CropsTab.SetActive(true);
+        MaterialsTab.SetActive(false);
+        FarmTab.SetActive(false);
+        SeedTab.SetActive(false);
+    }
+    public void CropsTabOff()
+    {
+        CropsTab.SetActive(false);
+    }
+    public void FarmTabOn()
+    {
+        FarmTab.SetActive(true);
+        MaterialsTab.SetActive(false);
+        CropsTab.SetActive(false);
+        SeedTab.SetActive(false);
+    }
+    public void FarmTabOff()
+    {
+        FarmTab.SetActive(false);
+    }
+    public void SeedsTabOn()
+    {
+        SeedTab.SetActive(true);
+        MaterialsTab.SetActive(false);
+        CropsTab.SetActive(false);
+        FarmTab.SetActive(false);
+    }
+    public void SeedsTabOff()
+    {
+        SeedTab.SetActive(false);
+    }
+    public void ClothesTabOn()
+    {
+        ClothesTab.SetActive(true);
+        CropsTab.SetActive(false);
+        FarmTab.SetActive(false);
+        SeedTab.SetActive(false);
+        MaterialsTab.SetActive(false);
+    }
+
 
     public void ShearSheep()
     {
