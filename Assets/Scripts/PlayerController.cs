@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
 
 				Sheep.Spawn();
 				
-				nextShear += 60;
+				nextShear += 100;
 				//Cooldown.text = (nextShear - Time.time).ToString();
 
 				//ItemData item = InventoryManager.Instance.ItemSearch("Wool");
