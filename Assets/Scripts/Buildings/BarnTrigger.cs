@@ -20,18 +20,20 @@ public class BarnTrigger : MonoBehaviour
         if (col.tag == "Player")
         {
             Debug.Log("entered");
-          //  canvasObject1.SetActive(true);
+            barnOutside.SetActive(false);
+            canvasObject.SetActive(true);
+            //  canvasObject1.SetActive(true);
         }
     }
 
-    private void OnTriggerStay(Collider col)
-    {
-        if (col.tag == "Player")
-        {
-            barnOutside.SetActive(false);
-            canvasObject.SetActive(true);
-        }
-    }
+   // private void OnTriggerEnter(Collider col)
+   // {
+      //  if (col.tag == "Player")
+      //  {
+      //      barnOutside.SetActive(false);
+       //     canvasObject.SetActive(true);
+       // }
+   // }
 
     private void OnTriggerExit(Collider col)
     {

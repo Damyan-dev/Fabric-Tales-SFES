@@ -63,6 +63,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
   - {fileID: 21300000, guid: d1d930b2695910e43b0a6aaab2b7dc3e, type: 3}
+  - {fileID: 21300000, guid: 1ada7403e427ab54aa6cb9e330cc41cd, type: 3}
   - {fileID: 21300000, guid: 563375030cc2481489c3faede68d9d0e, type: 3}
   - {fileID: 21300000, guid: 6db40f13b3f67584f8f9b6216812e72e, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
@@ -85,6 +86,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c83be7b49adfb5140873a36f65dd666a, type: 3}
   - {fileID: 21300000, guid: 03a68bc4355978343940445a6fed131e, type: 3}
   - {fileID: 21300000, guid: 0bafdbd45b410d64488ae929b01f1406, type: 3}
+  - {fileID: 21300000, guid: 544fc1e4b5146824ebc439d57a0252f8, type: 3}
   - {fileID: 21300000, guid: 3a79bfe427591ee4b9497d91d6467945, type: 3}
   - {fileID: -3687348052613884379, guid: 70fa9e15ae49c244a820dbece4a47b5c, type: 3}
   - {fileID: 2042049135016041240, guid: 70fa9e15ae49c244a820dbece4a47b5c, type: 3}
@@ -205,6 +207,7 @@ SpriteAtlas:
   - Red_dyed_clothing_gold
   - frame047
   - elderberry blue
+  - Shopkeeper-Animation.gif-trial-2
   - frame012
   - ropes guide
   - cotton_green
@@ -227,6 +230,7 @@ SpriteAtlas:
   - rope1
   - frame032
   - frame003
+  - Dialoge bar
   - frame031
   - F_0
   - F_1
