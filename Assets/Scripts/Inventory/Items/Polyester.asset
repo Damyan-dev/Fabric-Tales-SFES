@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
   m_Name: Polyester
   m_EditorClassIdentifier: 
-  description: 
-  thumbnail: {fileID: 0}
+  description: Material used to create clothing. potentially harmful for the environment
+  thumbnail: {fileID: 21300000, guid: 637dea58d6d59254190178479dd6f9c7, type: 3}
   objectModel: {fileID: 0}
