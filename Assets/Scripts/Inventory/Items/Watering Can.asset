@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 744286a447a2075409656709375bde34, type: 3}
   m_Name: Watering Can
   m_EditorClassIdentifier: 
-  description: Tool for watering plants.
+  description: Tool for watering plants
   thumbnail: {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
   objectModel: {fileID: 919132149155446097, guid: c73e21beead5de34699aa8a5865d2182, type: 3}
   tool: 0
