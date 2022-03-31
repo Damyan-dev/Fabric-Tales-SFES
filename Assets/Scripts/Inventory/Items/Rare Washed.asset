@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
   m_Name: Rare Washed
   m_EditorClassIdentifier: 
-  description: Rare cotton that has been washed clean.
+  description: Rare cotton that has been washed clean. Can be used in Loom to create
+    clothes
   thumbnail: {fileID: 21300000, guid: f0553cacca68d844692e744d67c9c476, type: 3}
   objectModel: {fileID: 0}

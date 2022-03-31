@@ -13,7 +13,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         int dialogue = Random.Range(0, 4);
-        Instantiate(this.dialogue[dialogue]);
+        Instantiate(this.dialogue[dialogue], this.dialogue[dialogue].transform);
     }
 
     // Update is called once per frame

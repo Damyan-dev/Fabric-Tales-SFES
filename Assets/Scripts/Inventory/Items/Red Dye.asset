@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
   m_Name: Red Dye
   m_EditorClassIdentifier: 
-  description: Red dye made from elderberries
+  description: Red dye made from elderberries. Can be used to dye clothing
   thumbnail: {fileID: 21300000, guid: e8942a1a277b1034a9c76ef07332cb74, type: 3}
   objectModel: {fileID: 0}

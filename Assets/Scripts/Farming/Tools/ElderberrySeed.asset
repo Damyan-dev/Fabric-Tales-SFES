@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee500ec345c1844bb1ac2198a526956, type: 3}
   m_Name: ElderberrySeed
   m_EditorClassIdentifier: 
-  description: Elderberry seeds.
+  description: Elderberry seeds, can be planted and watered in order to grow
   thumbnail: {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
   objectModel: {fileID: 0}
   timeToGrow: 1
