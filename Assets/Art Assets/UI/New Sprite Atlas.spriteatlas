@@ -92,6 +92,7 @@ SpriteAtlas:
   - {fileID: 2042049135016041240, guid: 70fa9e15ae49c244a820dbece4a47b5c, type: 3}
   - {fileID: 21300000, guid: 4b590b25e7c541e439efd761888e6451, type: 3}
   - {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
+  - {fileID: 21300000, guid: c68e3555ef11be446a1cb81ed4613977, type: 3}
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
   - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
@@ -236,6 +237,7 @@ SpriteAtlas:
   - F_1
   - polyester clothing gold
   - icons8-cotton-64
+  - Shopkeepr Face
   - frame023
   - frame037
   - seed1
