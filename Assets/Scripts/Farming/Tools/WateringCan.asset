@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: WateringCan
   m_EditorClassIdentifier: 
   description: Used for watering the crops.
-  thumbnail: {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
+  thumbnail: {fileID: 21300000, guid: 052bb3ce786df0a43a1368a4a709925e, type: 3}
   objectModel: {fileID: 919132149155446097, guid: c73e21beead5de34699aa8a5865d2182, type: 3}
   tool: 0

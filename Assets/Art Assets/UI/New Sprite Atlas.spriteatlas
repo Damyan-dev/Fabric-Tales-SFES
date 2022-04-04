@@ -69,6 +69,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d3a02f722a6bb4046abe9bf309c2b531, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
   - {fileID: 21300000, guid: d1d930b2695910e43b0a6aaab2b7dc3e, type: 3}
+  - {fileID: 21300000, guid: f30a90b2cbf65624bb842c6cf6fff02a, type: 3}
+  - {fileID: 21300000, guid: 1ebe84e2047259840859a2df7fe5fcf4, type: 3}
   - {fileID: 21300000, guid: 89eb5ae2a2e726048b3f5b5d0f5076c9, type: 3}
   - {fileID: 21300000, guid: 46a52df22da2d2a48a012bd8a6278a4b, type: 3}
   - {fileID: 21300000, guid: 1ada7403e427ab54aa6cb9e330cc41cd, type: 3}
@@ -106,10 +108,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
   - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
+  - {fileID: 21300000, guid: 42c405c53ccc66a45ab9cd69e799a5a8, type: 3}
   - {fileID: 21300000, guid: 6a9556d5c90a3b94e87acb985e327256, type: 3}
   - {fileID: 21300000, guid: 77a1efd5c006f0644b844709206595fd, type: 3}
   - {fileID: 21300000, guid: 15247cf561182794ca9428e3a6b5a3c9, type: 3}
   - {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
+  - {fileID: 21300000, guid: 64aba166290bb874c86ea639ca430fb9, type: 3}
   - {fileID: 21300000, guid: 4f04a8669993348458093788e0eb9d4c, type: 3}
   - {fileID: 21300000, guid: 9f7581a6d8e5f4e4383d7adc6c34adb0, type: 3}
   - {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
@@ -161,10 +165,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: defc498adec35ff45865f200512008eb, type: 3}
   - {fileID: 21300000, guid: b09fcada7ef18b74081376cc6877fdcf, type: 3}
   - {fileID: 21300000, guid: 840195eaf1ab96945b04f9e9aea37013, type: 3}
+  - {fileID: 21300000, guid: d47cebfafa556a74e9d00bc50fbde25a, type: 3}
   - {fileID: 21300000, guid: 638dc14b3b50bbc499fb526ce9f4bc87, type: 3}
   - {fileID: 21300000, guid: 9c63834b056a89d45aae3db09405a30c, type: 3}
   - {fileID: 21300000, guid: 7fcdd45bd78107848b083fe31d4f247b, type: 3}
   - {fileID: 21300000, guid: d4a72f5b07d5d33449e9483d2d4d721b, type: 3}
+  - {fileID: 21300000, guid: bc92266bee3472e45ae253cddaffcb3b, type: 3}
   - {fileID: 21300000, guid: 1606ef7b99d8778448f0c99809bb82e9, type: 3}
   - {fileID: 21300000, guid: 40da779b7cb6fa64c989c0efa72b820d, type: 3}
   - {fileID: 21300000, guid: 2932c5cbd26d8a14a8a2fce2e1a9019b, type: 3}
@@ -187,6 +193,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 17f2947d7f149174c87d720d6c40798e, type: 3}
   - {fileID: 21300000, guid: 1ea119bd9506e994d9a5d7153c886425, type: 3}
   - {fileID: 21300000, guid: 24837bbdc3e4bd041ad632f8b8ebf449, type: 3}
+  - {fileID: 21300000, guid: 555a71cd7da7fdf41b4efa1bdd71d008, type: 3}
   - {fileID: 21300000, guid: f361e7cd6f3123d44a5e3871f0eab320, type: 3}
   - {fileID: 21300000, guid: 45c849cd05f6276449cdfba0d539c4b8, type: 3}
   - {fileID: 21300000, guid: 5d4f6eddcfd519a4da55fbadcfc9500f, type: 3}
@@ -200,6 +207,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c812108ee9f76f040bce0b054da5831e, type: 3}
   - {fileID: 21300000, guid: 5e81d39e02d4259419bb5b3c981d80d0, type: 3}
   - {fileID: 21300000, guid: 79a4b99e88681544db26a9ffd6550390, type: 3}
+  - {fileID: 21300000, guid: 5a02df9ec18f28e4abf4495b117b4d14, type: 3}
+  - {fileID: 21300000, guid: 052bb3ce786df0a43a1368a4a709925e, type: 3}
   - {fileID: 21300000, guid: f43d02eee27b59a45a3e7cbebfe9592b, type: 3}
   - {fileID: 21300000, guid: 80ec15ee77516ba488cef756f9a9fc2d, type: 3}
   - {fileID: 21300000, guid: 522dcefe9c1ab4f4585dee9f439da1eb, type: 3}
@@ -244,6 +253,8 @@ SpriteAtlas:
   - Resume Normal
   - frame047
   - elderberry blue
+  - Up Arrow
+  - Clothes Tab- Sell
   - Play Hover
   - Load Click
   - Shopkeeper-Animation.gif-trial-2
@@ -281,10 +292,12 @@ SpriteAtlas:
   - frame023
   - frame037
   - seed1
+  - Crops Tab
   - tab3
   - IMG_0698
   - tab5
   - elderberry seeds
+  - Down Arrow
   - Menu Clicked
   - Progress Bar 2
   - WateringCan
@@ -336,10 +349,12 @@ SpriteAtlas:
   - yellow dyed clothing gold
   - Background bottom
   - frame029
+  - Clothes Tab
   - Gold
   - Resume Hover
   - frame004
   - Progress Bar 3
+  - Materials Tab
   - frame042
   - yellow dyed clothing blue
   - Options Normal
@@ -362,6 +377,7 @@ SpriteAtlas:
   - tab4
   - yellow dyed polyester clothing gold
   - tab2
+  - Seeds Tab
   - frame006
   - frame033
   - Close Clicked
@@ -375,6 +391,8 @@ SpriteAtlas:
   - frame022
   - all borders
   - Water Inventory
+  - Farm Tab
+  - Watering Can Icon
   - Credits Click
   - frame005
   - Load Hover
