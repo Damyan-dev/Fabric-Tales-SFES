@@ -8,6 +8,7 @@ public class HoverText : MonoBehaviour
 {
     public GameObject img;
     public GameObject Info;
+    public GameObject shopkeeperText;
 
     void Start()
     {
@@ -20,11 +21,13 @@ public class HoverText : MonoBehaviour
     {
         Info.SetActive(true);
         img.SetActive(true);
+        shopkeeperText.SetActive(false);
     }
 
     public void OnPointerExit(BaseEventData eventData)
     {
         Info.SetActive(false);
         img.SetActive(false);
+        shopkeeperText.SetActive(true);
     }
 }
