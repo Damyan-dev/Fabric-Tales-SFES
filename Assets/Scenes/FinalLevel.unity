@@ -932,7 +932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - {fileID: 25814436}
+  - 
+  text: {fileID: 0}
 --- !u!114 &25814436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7689,6 +7690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 798831741}
   Info: {fileID: 2092698894}
+  shopkeeperText: {fileID: 1601800536}
 --- !u!1001 &102070115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8498,6 +8500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 1646696191}
+  shopkeeperText: {fileID: 0}
 --- !u!114 &132748468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11064,6 +11067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 1311190215}
+  shopkeeperText: {fileID: 0}
 --- !u!1 &231444006
 GameObject:
   m_ObjectHideFlags: 0
@@ -11840,6 +11844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 1765044155}
   Info: {fileID: 1795888608}
+  shopkeeperText: {fileID: 1601800536}
 --- !u!1 &245334998
 GameObject:
   m_ObjectHideFlags: 0
@@ -13712,6 +13717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 695118768}
+  shopkeeperText: {fileID: 0}
 --- !u!1 &331692090
 GameObject:
   m_ObjectHideFlags: 0
@@ -15538,7 +15544,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - {fileID: 433858001}
+  - 
+  text: {fileID: 0}
 --- !u!114 &433858001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16942,6 +16949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 1321158044}
+  shopkeeperText: {fileID: 0}
 --- !u!1 &483576425
 GameObject:
   m_ObjectHideFlags: 0
@@ -21940,10 +21948,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - {fileID: 685908133}
-  - {fileID: 2119100216}
-  - {fileID: 433858001}
-  - {fileID: 25814436}
+  - 
+  - 
+  - 
+  - 
+  text: {fileID: 0}
 --- !u!1 &688940327 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8817631559578258065, guid: 7679286ec81d29649b1f3a1ff8a68992, type: 3}
@@ -24515,6 +24524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 1600312121}
+  shopkeeperText: {fileID: 0}
 --- !u!1 &810214384
 GameObject:
   m_ObjectHideFlags: 0
@@ -37812,6 +37822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 1501236745}
+  shopkeeperText: {fileID: 0}
 --- !u!1001 &1412505064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40357,6 +40368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 0}
   Info: {fileID: 1279348277}
+  shopkeeperText: {fileID: 0}
 --- !u!1 &1481864243
 GameObject:
   m_ObjectHideFlags: 0
@@ -48959,13 +48971,14 @@ GameObject:
   - component: {fileID: 1601800537}
   - component: {fileID: 1601800539}
   - component: {fileID: 1601800538}
+  - component: {fileID: 1601800540}
   m_Layer: 5
   m_Name: Shopkeeper Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1601800537
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48982,7 +48995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.9, y: -33.2}
+  m_AnchoredPosition: {x: 5.9, y: -31.9}
   m_SizeDelta: {x: 479.7442, y: 106.27013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601800538
@@ -49018,7 +49031,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hello Eko! Did you know that cow farts are 99% of CO2 emissions?
+  m_Text: 
 --- !u!222 &1601800539
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49027,6 +49040,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601800536}
   m_CullTransparentMesh: 1
+--- !u!114 &1601800540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601800536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cac9934f76db9b4ea03f2cdc8a540e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Hello Eko! Did you know that cow farts are 99% of CO2 emissions?
+  - Synthetic fibres account for 35% of microplastics released into oceans. I wouldn't
+    want to be one of those fish.
+  text: {fileID: 1601800538}
 --- !u!1001 &1603283550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54580,6 +54610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 1780596899}
   Info: {fileID: 1518356027}
+  shopkeeperText: {fileID: 1601800536}
 --- !u!224 &1819805165 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6648326141248928455, guid: dc6858f914c7071439466afa527885af, type: 3}
@@ -55557,7 +55588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1861642291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55970,6 +56001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 2146375369}
   Info: {fileID: 2006593155}
+  shopkeeperText: {fileID: 1601800536}
 --- !u!1 &1873383605
 GameObject:
   m_ObjectHideFlags: 0
@@ -62300,7 +62332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - {fileID: 2119100216}
+  - 
+  text: {fileID: 0}
 --- !u!114 &2119100216
 MonoBehaviour:
   m_ObjectHideFlags: 0
