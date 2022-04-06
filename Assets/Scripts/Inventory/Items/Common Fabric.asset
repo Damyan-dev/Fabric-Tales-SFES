@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de4dac5679ce33c45ac036deba05a99f, type: 3}
-  m_Name: Rare Fabric
+  m_Name: Common Fabric
   m_EditorClassIdentifier: 
-  description: Organic fabric. Can be used to create clothing at the sewing machine.
-  thumbnail: {fileID: 21300000, guid: cde7108f7dec6a742a4e12082440371b, type: 3}
+  description: Inorganic fabric. Can be used to create clothing at the sewing machine.
+  thumbnail: {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
   objectModel: {fileID: 0}

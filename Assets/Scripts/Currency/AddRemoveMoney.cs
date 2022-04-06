@@ -12,7 +12,8 @@ public class AddRemoveMoney : MonoBehaviour
     public GameObject FarmTab;
     public GameObject SeedTab;
     public GameObject ClothesTab;
-
+    public Interactor playerInteractor;
+    public ItemSlotData ItemSlotData;
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +24,12 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void Subtract10()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Cotton Seeds");
-        
-        
-            InventoryManager.Instance.ItemAdd(item);
+         // ItemSlotData item = InventoryManager.Instance.("Cotton Seeds");
+         // playerInteractor.ItemPickup();
+      
+            ItemSlotData.AddQuantity(1);
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
-        
+       
     }
 
     public void Subtract25()
@@ -50,12 +51,13 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add20()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Washed Wool");
-        if (item != null)
-        {
-            InventoryManager.Instance.ItemRemove(item);
-            ingameCamera.GetComponent<playerMoney>().addMoney(20);
-        }
+      //  ItemSlotData item = InventoryManager.Instance.ItemSearch("Washed Wool");
+       // if (item != null)
+       // {
+       //     InventoryManager.Instance.ItemRemove(item);   
+       // }
+
+        ingameCamera.GetComponent<playerMoney>().addMoney(20);
     }
     public void Add50()
     {
