@@ -89,7 +89,7 @@ public class Interactor : MonoBehaviour
 
     public void ItemPickup()
     {
-        if (InventoryManager.Instance.equippedItem != null)
+        if (InventoryManager.Instance.SlotEquipped(InventorySlot.InventoryCategory.Items))
         {
             InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
         }

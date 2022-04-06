@@ -8,8 +8,10 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 {
     ItemData itemToShow;
     public int invSlotIndex;
+    int quantity;
 
     public Image itemDisplayImage;
+    public Text quantityText;
 
     public enum InventoryCategory
     {
@@ -17,12 +19,22 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
 
     public InventoryCategory inventoryCategory;
-    public void Show(ItemData itemToShow)
+    public void Show(ItemSlotData itemSlot)
     {
+        itemToShow = itemSlot.itemData;
+        quantity = itemSlot.quantity;
+
+        quantityText.text = "";
+
         if (itemToShow != null)
         {
             itemDisplayImage.sprite = itemToShow.thumbnail;
-            this.itemToShow = itemToShow;
+
+            if (quantity > 1)
+            {
+                quantityText.text = quantity.ToString();
+            }
+
             itemDisplayImage.gameObject.SetActive(true);
             return;
         }

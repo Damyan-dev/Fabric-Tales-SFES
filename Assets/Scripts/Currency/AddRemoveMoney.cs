@@ -23,7 +23,7 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void Subtract10()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Cotton Seeds");
+        ItemSlotData item = InventoryManager.Instance.ItemSearch("Cotton Seeds");
         
         
             InventoryManager.Instance.ItemAdd(item);
@@ -41,7 +41,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add30()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+        ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -50,7 +50,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add20()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Washed Wool");
+        ItemSlotData item = InventoryManager.Instance.ItemSearch("Washed Wool");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -59,7 +59,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add50()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Red Dyed shirt");
+        ItemSlotData item = InventoryManager.Instance.ItemSearch("Red Dyed shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -68,7 +68,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add75()
     {
-        ItemData item = InventoryManager.Instance.ItemSearch("Yellow Dyed Shirt");
+        ItemSlotData item = InventoryManager.Instance.ItemSearch("Yellow Dyed Shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -143,7 +143,7 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void ShearSheep()
     {
-         ItemData item = InventoryManager.Instance.ItemSearch("Wool");
+         ItemSlotData item = InventoryManager.Instance.ItemSearch("Wool");
        
   
              InventoryManager.Instance.ItemAdd(item);
