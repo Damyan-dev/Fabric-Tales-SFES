@@ -22036,8 +22036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 274, y: -419}
-  m_SizeDelta: {x: 718.1539, y: 48.7554}
+  m_AnchoredPosition: {x: -7.4202, y: -405.2263}
+  m_SizeDelta: {x: 519.9739, y: 60.2599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685908133
 MonoBehaviour:
@@ -22061,10 +22061,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3adce737c0b8f3147a7c90633aecc9ab, type: 3}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -22072,7 +22072,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to my shop, Echo!
+  m_Text: 
 --- !u!222 &685908134
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22094,11 +22094,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - 
-  - 
-  - 
-  - 
-  text: {fileID: 0}
+  - Hello Eko, I got new goodies for ya!
+  - What can I get ya?
+  - New day, new sales!
+  - "I heard you quit your previous job because your bosses didn\u2019t care about
+    sustainability. Is that true Eko?"
+  - I got the perfect item for you Ecco. ustainability. Is that true Eko?
+  - "I read online that by 2030, it\u2019s expected that fashion waste will increase
+    to a 148 million ton problem. But who knows, people like yourself may make a
+    difference."
+  text: {fileID: 685908133}
 --- !u!1 &688940327 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8817631559578258065, guid: 7679286ec81d29649b1f3a1ff8a68992, type: 3}
@@ -57840,7 +57845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1936730977
 MonoBehaviour:
   m_ObjectHideFlags: 0
