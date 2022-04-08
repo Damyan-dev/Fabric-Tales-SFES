@@ -16,6 +16,12 @@ public class Interactor : MonoBehaviour
 
     void Update()
     {
+        if((Input.GetButtonDown("Interact")) && selectedItemInteractable)
+        { //pick up object
+            selectedItemInteractable.SendMessage("interaction");
+        }
+
+
         RaycastHit detected;
         if (Physics.Raycast(transform.position, Vector3.down, out detected, 1))
         {

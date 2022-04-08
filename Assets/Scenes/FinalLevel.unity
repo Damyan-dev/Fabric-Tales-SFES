@@ -14060,7 +14060,6 @@ MonoBehaviour:
     itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 655351694}
   cotton:
@@ -14069,7 +14068,6 @@ MonoBehaviour:
   canvasObject: {fileID: 0}
   spawner: {fileID: 0}
   selected: {fileID: 0}
-  Inventory: {fileID: 0}
 --- !u!1 &342466307
 GameObject:
   m_ObjectHideFlags: 0
@@ -24583,7 +24581,6 @@ MonoBehaviour:
     itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 1656249249}
   cotton:
@@ -31466,7 +31463,6 @@ MonoBehaviour:
     itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  handPoint: {fileID: 1454828521}
 --- !u!4 &1126368601
 Transform:
   m_ObjectHideFlags: 0
@@ -39837,11 +39833,6 @@ Transform:
   m_Father: {fileID: 1449981486}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1454828521 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7955354488243218060, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
-  m_PrefabInstance: {fileID: 6770683472378160144}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1455149592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -40198,7 +40189,6 @@ MonoBehaviour:
     itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 1537232896}
   cotton:
@@ -56986,7 +56976,6 @@ MonoBehaviour:
     itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 456186768}
   cotton:
@@ -61289,7 +61278,6 @@ MonoBehaviour:
     itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 2019411388}
   cotton:

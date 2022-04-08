@@ -7,6 +7,11 @@ public class InteractableObject : MonoBehaviour
     public ItemData item;
     public GameObject selectedIntObj;
 
+    public void DoInteraction()
+    {//picked up and put in inv
+
+        gameObject.SetActive(false);
+    }
     public void Pickup()
     {
         InventoryManager.Instance.EquipHandSlot(item);
