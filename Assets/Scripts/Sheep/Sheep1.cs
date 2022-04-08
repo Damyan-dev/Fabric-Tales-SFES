@@ -8,11 +8,11 @@ public class Sheep1 : Spawner
     public Spawner spawner;
     //public GameObject canvasObject;
     public GameObject selected;
-    public GameObject Inventory;
+ 
 
     public void Start()
     {
-        canvasObject.SetActive(false);
+       // canvasObject.SetActive(false);
         selected.SetActive(false);
     }
 

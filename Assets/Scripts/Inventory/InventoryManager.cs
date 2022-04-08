@@ -28,8 +28,6 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] 
     private ItemSlotData equippedItemSlot = null;
 
-    [SerializeField]
-    public Transform handPoint = null;
 
     public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
     {
@@ -54,7 +52,7 @@ public class InventoryManager : MonoBehaviour
             // Change inventory slot to equipped slot
             inventoryToChange[invSlotIndex] = new ItemSlotData(equippedToInv);
             // Change the equipped slot to the inventory slot
-            EquipHandSlot(slotToEquip);
+           // EquipHandSlot(slotToEquip);
         }
 
         UIController.Instance.DisplayInventory();
@@ -219,6 +217,7 @@ public class InventoryManager : MonoBehaviour
     public void EquipHandSlot(ItemSlotData itemSlot)
     {
         ItemData item = itemSlot.itemData;
+
         if (IsTool(item))
         {
             equippedToolSlot = new ItemSlotData(itemSlot);

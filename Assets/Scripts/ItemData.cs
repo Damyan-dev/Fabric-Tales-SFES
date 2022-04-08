@@ -5,7 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Items/Item")]
 public class ItemData : ScriptableObject
 {
+    public string itemName;
     public string description;
+    
     public Sprite thumbnail;
+    
     public GameObject objectModel;
+    
+ 
+    
 }

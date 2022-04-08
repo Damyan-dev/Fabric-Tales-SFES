@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     ItemData itemToShow;
     public int invSlotIndex;
@@ -52,10 +52,10 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
 
     // Ensures that the OnPointerClick function is overridable.
-    public virtual void OnPointerClick(PointerEventData eventData)
+    /*public virtual void OnPointerClick(PointerEventData eventData)
     {
         InventoryManager.Instance.InventoryToEquipped(invSlotIndex, inventoryCategory);
-    }
+    } */
 
     public void SetIndex(int invSlotIndex)
     {
