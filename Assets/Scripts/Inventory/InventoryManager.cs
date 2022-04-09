@@ -11,14 +11,13 @@ public class InventoryManager : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             Destroy(this);
-       }
+        }
         else
         {
             Instance = this;
             DontDestroyOnLoad(this);
         }
     }
-<<<<<<< HEAD
 
 
     public GameObject[] inventory = new GameObject[25];
@@ -33,16 +32,6 @@ public class InventoryManager : MonoBehaviour
     //[SerializeField] 
     private ItemSlotData invSlot = null;
 
-=======
-   
-    public ItemData[] tools = new ItemData[12];
-    public ItemData[] items = new ItemData[12];
-    public ItemData equippedTool = null;
-    public ItemData equippedItem = null;
-    
-    [SerializeField]
-    public Transform handPoint = null;
->>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
 
     public void AddItem(GameObject item)
     {
@@ -67,74 +56,77 @@ public class InventoryManager : MonoBehaviour
 
    /* public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
     {
+        ItemSlotData equippedToInv = equippedToolSlot;
+        ItemSlotData[] inventoryToChange = toolSlots;
+
         if (inventoryCategory == InventorySlot.InventoryCategory.Items)
         {
-            ItemData itemToEquip = items[invSlotIndex];
-            items[invSlotIndex] = equippedItem;
-            equippedItem = itemToEquip;
+            equippedToInv = equippedItemSlot;
+            inventoryToChange = itemSlots;
+        }
+
+        if (equippedToInv.Stackable(inventoryToChange[invSlotIndex]))
+        {
+            ItemSlotData slotToChange = inventoryToChange[invSlotIndex];
+            equippedToInv.AddQuantity(slotToChange.quantity);
+            slotToChange.EmptyQuantity();
         }
         else
         {
-<<<<<<< HEAD
             ItemSlotData slotToEquip = new ItemSlotData(inventoryToChange[invSlotIndex]);
             // Change inventory slot to equipped slot
             inventoryToChange[invSlotIndex] = new ItemSlotData(equippedToInv);
             // Change the equipped slot to the inventory slot
            // EquipHandSlot(slotToEquip);
-=======
-            ItemData toolToEquip = tools[invSlotIndex];
-            tools[invSlotIndex] = equippedTool;
-            equippedTool = toolToEquip;
->>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
         }
+
         UIController.Instance.DisplayInventory();
-<<<<<<< HEAD
     } */
 
     public void ItemRemove(ItemSlotData itemToRemove)
-=======
-    }
-    public void ItemRemove(ItemData itemToRemove)
->>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
     {
-        for (int i = 0; i < items.Length; i++)
+        for (int i = 0; i < itemSlots.Length; i++)
         {
-            if (items[i] == itemToRemove)
+            if (itemSlots[i] == itemToRemove)
             {
-                items[i] = null;
+                itemSlots[i] = null;
                 return;
             }
         }
+        
     }
-    public void ItemAdd(ItemData itemToAdd)
+    public void ItemAdd(ItemSlotData itemToAdd)
     {
-        for (int i = 0; i < items.Length; i++)
+        
+        for (int i = 0; i < itemSlots.Length; i++)
         {
-            if (items[i] == null)
+            if (itemSlots[i] == null)
             {
-                items[i] = itemToAdd;
+                itemSlots[i] = itemToAdd;
                 return;
             }
         }
+        
     }
-    public ItemData ItemSearch(string itemName)
+    public ItemSlotData ItemSearch(string itemName)
     {
-        for (int i = 0; i < items.Length; i++)
+        
+        for (int i = 0; i < itemSlots.Length; i++)
         {
-            if (items[i] != null)
+            if (itemSlots[i] != null)
             {
-               if (items[i].name == itemName)
+               if (itemSlots[i].itemName == itemName)
                 {
-                    return items[i];
+                    return itemSlots[i];
                 }
             }
         }
         return null;
+        
     }
 
     public void EquippedToInventory(InventorySlot.InventoryCategory inventoryCategory)
     {
-<<<<<<< HEAD
         ItemSlotData inventorySlot = invSlot;
         ItemSlotData[] inventoryToChange = itemSlots;
 
@@ -147,35 +139,43 @@ public class InventoryManager : MonoBehaviour
         if (StackItemToInv(inventorySlot, inventoryToChange))
         {
             for (int i = 0; inventoryToChange.Length != 0; i++)
-=======
-        if (inventoryCategory == InventorySlot.InventoryCategory.Items)
-        {
-            for (int i = 0; items.Length != 0; i++)
->>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
             {
-                if (items[i] == null)
+                if (inventoryToChange[i].IsEmpty())
                 {
-<<<<<<< HEAD
                     inventoryToChange[i] = new ItemSlotData(invSlot);
                     invSlot.EmptyQuantity();
-=======
-                    items[i] = equippedItem;
-                    equippedItem = null;
->>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
                     break;
                 }
             }
         }
-        else
+
+        UIController.Instance.DisplayInventory();
+
+    }
+
+    public void ConsumeItem(ItemSlotData itemSlot)
+    {
+        if (itemSlot.IsEmpty())
         {
-            for (int i = 0; i < tools.Length; )
+            Debug.LogError("There is nothing to use.");
+            return;
+        }
+        
+        itemSlot.RemoveQuantity();
+        UIController.Instance.DisplayInventory();
+    }
+
+    public bool StackItemToInv(ItemSlotData itemSlot, ItemSlotData[] invArray)
+    {
+        for (int i = 0; i < invArray.Length; i++)
+        {
+            if (invArray[i].Stackable(itemSlot))
             {
-                tools[i] = equippedTool;
-                equippedTool = null;
-                break;
+                invArray[i].AddQuantity(itemSlot.quantity);
+                itemSlot.EmptyQuantity();
+                return true;
             }
         }
-<<<<<<< HEAD
         return false;
     }
 
@@ -275,11 +275,7 @@ public class InventoryManager : MonoBehaviour
         {
             ValidateInventorySlots(slot);
         }
-=======
-        UIController.Instance.DisplayInventory();
->>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
     }
- 
 }
 
 
