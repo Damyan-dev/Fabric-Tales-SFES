@@ -14011,6 +14011,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec2306d464a79154890a7b081624d1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   toolSlots:
   - itemData: {fileID: 11400000, guid: a3484fba0bf49464aa4a9b2e2d0ced81, type: 2}
     itemName: 
@@ -24499,6 +24510,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c22ed164b4ca84bbef9860a4679c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   toolSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -31414,6 +31436,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12856c599aaa9ca4cad55ff757bc99fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   toolSlots:
   - itemData: {fileID: 11400000, guid: a3484fba0bf49464aa4a9b2e2d0ced81, type: 2}
     itemName: Watering Can
@@ -40107,6 +40140,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e83435e79995dc4688b9b875cd94628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   toolSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -41619,6 +41663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: c45bd137d28488747933fd39e8b06025, type: 2}
   selectedIntObj: {fileID: 0}
+  inventory: 0
 --- !u!4 &1491435383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c73e21beead5de34699aa8a5865d2182, type: 3}
@@ -56894,6 +56939,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b05db7e4269335478b39f193c26ef0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   toolSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -61196,6 +61252,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ff9a16a0eeaca44a9196cb90b283ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   toolSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -67712,6 +67779,10 @@ PrefabInstance:
       propertyPath: cotton.Array.data[0]
       value: 
       objectReference: {fileID: 297460492}
+    - target: {fileID: 6770683471819365747, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 6770683472378160146}
     - target: {fileID: 6770683472169739020, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: canvasObject
       value: 
@@ -67806,6 +67877,92 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
+--- !u!1 &6770683472378160145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6770683471819365745, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
+  m_PrefabInstance: {fileID: 6770683472378160144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6770683472378160146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6770683472378160145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12856c599aaa9ca4cad55ff757bc99fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  toolSlots:
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  itemSlots:
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  - itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  equippedToolSlot:
+    itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
+  equippedItemSlot:
+    itemData: {fileID: 0}
+    itemName: 
+    quantity: 0
 --- !u!64 &6898769588350307439
 MeshCollider:
   m_ObjectHideFlags: 0

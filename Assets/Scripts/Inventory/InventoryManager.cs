@@ -19,15 +19,40 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+
+    public GameObject[] inventory = new GameObject[10];
+
+
     [SerializeField] 
-    private ItemSlotData[] toolSlots = new ItemSlotData[12];
+    private ItemSlotData[] toolSlots = new ItemSlotData[8];
     [SerializeField] 
-    private ItemSlotData[] itemSlots = new ItemSlotData[12];
+    private ItemSlotData[] itemSlots = new ItemSlotData[8];
     [SerializeField] 
     private ItemSlotData equippedToolSlot = null;
     [SerializeField] 
     private ItemSlotData equippedItemSlot = null;
 
+
+    public void AddItem(GameObject item)
+    {
+        bool itemAdded = false;
+
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if((inventory[i]) == null)
+            {
+                inventory[i] = item;
+                Debug.Log(item.name + " was added");
+                break;
+            }
+        }
+
+        if (!itemAdded)
+        {
+            Debug.Log("inventory is full - item not added");
+        }
+
+    }
 
     public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
     {

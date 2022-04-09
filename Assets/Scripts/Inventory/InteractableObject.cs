@@ -6,17 +6,18 @@ public class InteractableObject : MonoBehaviour
 {
     public ItemData item;
     public GameObject selectedIntObj;
+    public bool inventory;
 
     public void DoInteraction()
     {//picked up and put in inv
 
         gameObject.SetActive(false);
     }
-    public void Pickup()
+   /* public void Pickup()
     {
         InventoryManager.Instance.EquipHandSlot(item);
         Destroy(gameObject);
-    }
+    }*/
     
     public void SelectedInteractableObject(bool toggle)
     {

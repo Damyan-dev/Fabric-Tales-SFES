@@ -8,6 +8,7 @@ public class Interactor : MonoBehaviour
     PlayerController playerController;
     private Farmland selectedFarmLand = null;
     private InteractableObject selectedItemInteractable = null;
+    public InventoryManager inventory;
 
     private void Start()
     {
@@ -18,6 +19,11 @@ public class Interactor : MonoBehaviour
     {
         if((Input.GetButtonDown("Interact")) && selectedItemInteractable)
         { //pick up object
+            if (selectedItemInteractable.inventory)
+            {
+                inventory.AddItem(selectedItemInteractable);
+            }
+
             selectedItemInteractable.SendMessage("interaction");
         }
 
