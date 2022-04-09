@@ -62,7 +62,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
     public void Interact()
     {
-        ItemData toolSlot = InventoryManager.Instance.GetEquippedSlotItem(InventorySlot.InventoryCategory.Tools);
+        ItemData toolSlot = InventoryManager.Instance.equippedTool;
         ItemEquipment equippedEquipment = toolSlot as ItemEquipment;
 
         if(equippedEquipment != null)
@@ -90,7 +90,6 @@ public class Farmland : MonoBehaviour, ITimeTracker
             cropPlanted.Plant(seedTool);
             Debug.Log(cropPlanted + " has been planted.");
             Objtext.text = "Now use the watering can in your inventory to water the planted crop";
-            InventoryManager.Instance.ConsumeItem(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryCategory.Tools));
         }
     }
 

@@ -15,7 +15,7 @@ public class InteractableObject : MonoBehaviour
     }
    public void Pickup()
     {
-        InventoryManager.Instance.EquipHandSlot(item);
+        InventoryManager.Instance.equippedItem = item;
         Destroy(gameObject);
     }
     

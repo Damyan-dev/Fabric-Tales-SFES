@@ -24,10 +24,17 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void Subtract10()
     {
+<<<<<<< HEAD
          // ItemSlotData item = InventoryManager.Instance.("Cotton Seeds");
          // playerInteractor.ItemPickup();
       
             ItemSlotData.AddQuantity(1);
+=======
+        ItemData item = InventoryManager.Instance.ItemSearch("Cotton Seeds");
+        
+        
+            InventoryManager.Instance.ItemAdd(item);
+>>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
        
     }
@@ -42,7 +49,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add30()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+        ItemData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -51,6 +58,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add20()
     {
+<<<<<<< HEAD
       //  ItemSlotData item = InventoryManager.Instance.ItemSearch("Washed Wool");
        // if (item != null)
        // {
@@ -58,10 +66,18 @@ public class AddRemoveMoney : MonoBehaviour
        // }
 
         ingameCamera.GetComponent<playerMoney>().addMoney(20);
+=======
+        ItemData item = InventoryManager.Instance.ItemSearch("Washed Wool");
+        if (item != null)
+        {
+            InventoryManager.Instance.ItemRemove(item);
+            ingameCamera.GetComponent<playerMoney>().addMoney(20);
+        }
+>>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
     }
     public void Add50()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Red Dyed shirt");
+        ItemData item = InventoryManager.Instance.ItemSearch("Red Dyed shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -70,7 +86,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add75()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Yellow Dyed Shirt");
+        ItemData item = InventoryManager.Instance.ItemSearch("Yellow Dyed Shirt");
         if (item != null)
         {
             InventoryManager.Instance.ItemRemove(item);
@@ -145,7 +161,7 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void ShearSheep()
     {
-         ItemSlotData item = InventoryManager.Instance.ItemSearch("Wool");
+         ItemData item = InventoryManager.Instance.ItemSearch("Wool");
        
   
              InventoryManager.Instance.ItemAdd(item);

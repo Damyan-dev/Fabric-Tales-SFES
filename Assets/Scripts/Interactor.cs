@@ -102,9 +102,13 @@ public class Interactor : MonoBehaviour
 
     public void ItemPickup()
     {
+<<<<<<< HEAD
         InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
 
         if (InventoryManager.Instance.SlotEquipped(InventorySlot.InventoryCategory.Items))
+=======
+        if (InventoryManager.Instance.equippedItem != null)
+>>>>>>> parent of 947ca393 (Reworked inventory system to accommodate stackable items. Fixed sun lighting to now go from East to West.)
         {
             InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
         }

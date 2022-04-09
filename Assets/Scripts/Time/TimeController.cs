@@ -53,8 +53,8 @@ public class TimeController : MonoBehaviour
 
         // Converts the current in-game time to minutes.
         int timeInMins = GameTimeConverter.ConvertHoursToMins(gametime.hour) + gametime.minute;
-        float sunXAngle = 0.25f * timeInMins - 90;
-        sunTransform.eulerAngles = new Vector3(sunXAngle, 90f, 0);
+        float sunAngle = 0.25f * timeInMins - 90;
+        sunTransform.eulerAngles = new Vector3(sunAngle, 0, 0);
     }
 
     public GameTimeConverter GetTimeStamp()
