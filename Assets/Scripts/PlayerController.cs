@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
 		{
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				ItemData item = InventoryManager.Instance.ItemSearch("Rare Washed");
+				ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Washed");
 
 				if (item != null)
 				{
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetKeyDown(KeyCode.F))
 			{
 
-				ItemData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+				ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
 
 				if (item != null)
 				{
@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				ItemData item = InventoryManager.Instance.ItemSearch("Cotton");
+				ItemSlotData item = InventoryManager.Instance.ItemSearch("Cotton");
 
 				if (item != null)
 				{
@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				ItemData item = InventoryManager.Instance.ItemSearch("Wool");
+				ItemSlotData item = InventoryManager.Instance.ItemSearch("Wool");
 
 				if (item != null)
 				{
