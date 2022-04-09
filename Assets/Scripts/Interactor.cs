@@ -8,8 +8,8 @@ public class Interactor : MonoBehaviour
     PlayerController playerController;
     private Farmland selectedFarmLand = null;
     public InteractableObject selectedItemInteractableScript = null;
-    public GameObject selectedItemInteractable = null;
-    public InventoryManager inventory;
+    public GameObject selectedInterObj = null;
+    public Inventory inventory;
 
     private void Start()
     {
@@ -18,21 +18,59 @@ public class Interactor : MonoBehaviour
 
     void Update()
     {
-        if((Input.GetButtonDown("Interact")) && selectedItemInteractable)
+        if(Input.GetButtonDown("Interact") && selectedInterObj)
         { //pick up object
             if (selectedItemInteractableScript.inventory)
             {
-                inventory.AddItem(selectedItemInteractable);
+                inventory.AddItem(selectedInterObj);
             }
-
-            selectedItemInteractableScript.SendMessage("interaction");
         }
 
 
-        RaycastHit detected;
+        /*RaycastHit detected;
         if (Physics.Raycast(transform.position, Vector3.down, out detected, 1))
         {
             InteractableDetected(detected);
+        } */
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Item"))
+        {
+            Debug.Log(other.name);
+            selectedInterObj = other.gameObject;
+            selectedItemInteractableScript = selectedInterObj.GetComponent<InteractableObject>();
+            SelectedInteractableObject(selectedItemInteractableScript);
+        }
+
+        if (other.CompareTag("Field"))
+        {
+            Debug.Log(other.name);
+            Farmland farmLand = other.GetComponent<Farmland>();
+            SelectedFarmLand(farmLand);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Item"))
+        {
+            if (other.gameObject == selectedInterObj)
+            {
+                selectedInterObj = null;
+                selectedItemInteractableScript = null;
+                
+            }
+        }
+
+        if (other.CompareTag("Field"))
+        {
+            if (other.gameObject == selectedInterObj)
+            {
+                selectedFarmLand.Selected(false);
+                selectedFarmLand = null;
+            }
         }
     }
 
@@ -55,7 +93,11 @@ public class Interactor : MonoBehaviour
         if (hit.CompareTag("Item"))
         {
             InteractableObject interactableObject = hit.GetComponent<InteractableObject>();
+            selectedInterObj = hit.gameObject;
             SelectedInteractableObject(interactableObject);
+        }
+        else
+        {
             return;
         }
 

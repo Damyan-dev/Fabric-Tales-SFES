@@ -20,7 +20,6 @@ public class InventoryManager : MonoBehaviour
     }
 
 
-    public GameObject[] inventory = new GameObject[25];
 
 
     //[SerializeField] 
@@ -33,26 +32,6 @@ public class InventoryManager : MonoBehaviour
     private ItemSlotData invSlot = null;
 
 
-    public void AddItem(GameObject item)
-    {
-        bool itemAdded = false;
-
-        for (int i = 0; i < inventory.Length; i++)
-        {
-            if((inventory[i]) == null)
-            {
-                inventory[i] = item;
-                Debug.Log(item.name + " was added");
-                break;
-            }
-        }
-
-        if (!itemAdded)
-        {
-            Debug.Log("inventory is full - item not added");
-        }
-
-    }
 
    /* public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
     {

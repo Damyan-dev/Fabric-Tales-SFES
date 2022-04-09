@@ -80,9 +80,9 @@ public class Farmland : MonoBehaviour, ITimeTracker
             return;
         }
         
-        SeedData seedTool = toolSlot as SeedData;
-
-        if(seedTool != null && farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        SeedData seedTool = toolSlot as SeedData; 
+          
+        if (seedTool != null &&  farmStatus == FarmStatus.Dirt && cropPlanted == null)
         {
             GameObject cropObject = Instantiate(cropPrefab, transform);
             cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);

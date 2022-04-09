@@ -93,10 +93,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5224029779159419122}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3307113174340136538, guid: 90dffe3e13aaa6b428e0bae2853a623b, type: 3}
 --- !u!114 &4953417214499596343
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: eaa6b58f0c6f7f84382f0a7757ba72b1, type: 2}
   selectedIntObj: {fileID: 765362649717695067}
+  inventory: 1
 --- !u!1001 &4953417214457770793
 PrefabInstance:
   m_ObjectHideFlags: 0

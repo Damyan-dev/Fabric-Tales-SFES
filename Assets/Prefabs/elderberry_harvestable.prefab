@@ -14,6 +14,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6534028877589322395, guid: 7837e92ef62c48c459e2046535575403, type: 3}
+--- !u!65 &4243359176982441843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4913100214129844947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0610679, y: 1.9120243, z: 1}
+  m_Center: {x: 0.030534064, y: 0.4560121, z: 0}
 --- !u!95 &8167053410627783768
 Animator:
   serializedVersion: 3
@@ -46,7 +59,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: a67d3c82c8ca77e4e92156be5f7a41a4, type: 2}
-  selectedIntObj: {fileID: 0}
+  selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
+  inventory: 1
+  machine: 0
+  farm: 0
 --- !u!1001 &2812262938532006824
 PrefabInstance:
   m_ObjectHideFlags: 0

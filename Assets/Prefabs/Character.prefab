@@ -770,6 +770,8 @@ GameObject:
   - component: {fileID: 6770683471627661285}
   - component: {fileID: 6770683471627661282}
   - component: {fileID: 5852187401226633083}
+  - component: {fileID: 2191883557590141988}
+  - component: {fileID: 391667780903861597}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -829,10 +831,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 0.8
+  m_Radius: 0.23733793
+  m_Height: 0.89568526
   m_Direction: 1
-  m_Center: {x: 0, y: 0.39, z: 0}
+  m_Center: {x: 1.560003e-12, y: 0.35375664, z: 0.03733794}
 --- !u!95 &6770683471627661285
 Animator:
   serializedVersion: 3
@@ -885,6 +887,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383e8c2f703f56241a408937a2541048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2191883557590141988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852187401226633082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40893e0e269a2ad4396a5a3bbdbf82d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedItemInteractableScript: {fileID: 0}
+  selectedInterObj: {fileID: 0}
+  inventory: {fileID: 391667780903861597}
+--- !u!114 &391667780903861597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852187401226633082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d51524dfc246547b7708a2704192f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6093760593108613399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,43 +1140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1159,15 +1177,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683471146327225}
   cotton:
@@ -1217,43 +1226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1291,15 +1263,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683471577757500}
   cotton:
@@ -1349,43 +1312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1423,15 +1349,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683471673578694}
   cotton:
@@ -1447,7 +1364,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6770683471819365746}
-  - component: {fileID: 6770683471819365747}
   m_Layer: 0
   m_Name: Interactor
   m_TagString: Untagged
@@ -1469,18 +1385,6 @@ Transform:
   m_Father: {fileID: 6520356582479455680}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6770683471819365747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6770683471819365745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40893e0e269a2ad4396a5a3bbdbf82d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6770683472169739018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,43 +1428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1598,15 +1465,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683472169739019}
   cotton:
@@ -1656,43 +1514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1730,15 +1551,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683472369080668}
   cotton:
@@ -1788,43 +1600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1862,15 +1637,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683472547606830}
   cotton:
@@ -1920,43 +1686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -1994,15 +1723,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683472795885117}
   cotton:
@@ -2052,43 +1772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b3b66874ecc547a91729d50542031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSlots:
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  - itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
   itemSlots:
   - itemData: {fileID: 0}
     itemName: 
@@ -2126,15 +1809,6 @@ MonoBehaviour:
   - itemData: {fileID: 0}
     itemName: 
     quantity: 0
-  equippedToolSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  equippedItemSlot:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
-  handPoint: {fileID: 0}
   spawnPoints:
   - {fileID: 6770683472898329662}
   cotton:

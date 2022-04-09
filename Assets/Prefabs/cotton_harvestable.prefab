@@ -144,7 +144,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: eaa6b58f0c6f7f84382f0a7757ba72b1, type: 2}
-  selectedIntObj: {fileID: 0}
+  selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
+  inventory: 1
+  machine: 0
+  farm: 0
 --- !u!1 &1954367281628159343
 GameObject:
   m_ObjectHideFlags: 0
