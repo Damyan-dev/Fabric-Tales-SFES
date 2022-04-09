@@ -108,10 +108,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6388274720957993284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecb0db2c08ff1b40902deb318137aca, type: 3}
+  m_Script: {fileID: 11500000, guid: acac22d751bac3b4db197ad591e7a80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 8657288961108923430, guid: 88587beda566f2e4d8e52b8c9103bf4d, type: 3}
+  item: {fileID: 0}
+  selectedIntObj: {fileID: 6388274721937392287}
+  inventory: 0
 --- !u!114 &6388274720957993306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: bb9d02b218c01224bb50a02345970b29, type: 2}
   selectedIntObj: {fileID: 6388274721937392287}
+  inventory: 0
 --- !u!1 &6388274721937392287
 GameObject:
   m_ObjectHideFlags: 0

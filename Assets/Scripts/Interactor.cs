@@ -7,7 +7,8 @@ public class Interactor : MonoBehaviour
 {
     PlayerController playerController;
     private Farmland selectedFarmLand = null;
-    private InteractableObject selectedItemInteractable = null;
+    public InteractableObject selectedItemInteractableScript = null;
+    public GameObject selectedItemInteractable = null;
     public InventoryManager inventory;
 
     private void Start()
@@ -19,12 +20,12 @@ public class Interactor : MonoBehaviour
     {
         if((Input.GetButtonDown("Interact")) && selectedItemInteractable)
         { //pick up object
-            if (selectedItemInteractable.inventory)
+            if (selectedItemInteractableScript.inventory)
             {
                 inventory.AddItem(selectedItemInteractable);
             }
 
-            selectedItemInteractable.SendMessage("interaction");
+            selectedItemInteractableScript.SendMessage("interaction");
         }
 
 
@@ -58,10 +59,10 @@ public class Interactor : MonoBehaviour
             return;
         }
 
-        if (selectedItemInteractable != null)
+        if (selectedItemInteractableScript != null)
         {
-            selectedItemInteractable.SelectedInteractableObject(false);
-            selectedItemInteractable = null;
+            selectedItemInteractableScript.SelectedInteractableObject(false);
+            selectedItemInteractableScript = null;
         }
 
     }
@@ -80,12 +81,12 @@ public class Interactor : MonoBehaviour
 
     private void SelectedInteractableObject(InteractableObject interactableObject)
     {
-        if (selectedItemInteractable != null)
+        if (selectedItemInteractableScript != null)
         {
-            selectedItemInteractable.SelectedInteractableObject(false);
+            selectedItemInteractableScript.SelectedInteractableObject(false);
         }
 
-        selectedItemInteractable = interactableObject;
+        selectedItemInteractableScript = interactableObject;
         interactableObject.SelectedInteractableObject(true);
     }
 
@@ -101,14 +102,16 @@ public class Interactor : MonoBehaviour
 
     public void ItemPickup()
     {
+        InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
+
         if (InventoryManager.Instance.SlotEquipped(InventorySlot.InventoryCategory.Items))
         {
             InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
         }
         
-        if (selectedItemInteractable != null)
+        if (selectedItemInteractableScript != null)
         {
-            selectedItemInteractable.Pickup();
+            selectedItemInteractableScript.Pickup();
         }
-    }
+    } 
 }

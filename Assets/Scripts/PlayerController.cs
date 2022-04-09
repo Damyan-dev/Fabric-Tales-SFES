@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.E))
 		{
 			playerInteractor.ItemPickup();
-		}
+		} 
 
 		if (Input.GetKey(KeyCode.RightBracket))
         {

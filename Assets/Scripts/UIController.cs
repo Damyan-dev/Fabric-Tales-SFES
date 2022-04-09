@@ -10,7 +10,7 @@ public class UIController : MonoBehaviour, ITimeTracker
     public GameObject inventoryPanel; // Sets the Inventory panel.
     public GameObject JournalPanel; // sets the journal panel
     public InventorySlot[] itemsSlots; // The UI for the item slots.
-    public InventorySlot[] toolSlots; // The UI for the tool slots.
+    //public InventorySlot[] toolSlots; // The UI for the tool slots.
     public Image guiEquipSlot; // Sets the currently equipped tool in the GUI.
     public EquippedSlot toolEquippedSlot;
     public EquippedSlot itemEquippedSlot;
@@ -44,11 +44,11 @@ public class UIController : MonoBehaviour, ITimeTracker
 
     public void DisplayInventory()
     {
-        ItemSlotData[] invToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryCategory.Tools);
+        //ItemSlotData[] invToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryCategory.Tools);
         ItemSlotData[] invItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryCategory.Items);
         RenderInventoryPanel(invItemSlots, itemsSlots);
-        RenderInventoryPanel(invToolSlots, toolSlots);
-        toolEquippedSlot.Show(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryCategory.Tools));
+        //RenderInventoryPanel(invToolSlots, toolSlots);
+        //toolEquippedSlot.Show(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryCategory.Tools));
         itemEquippedSlot.Show(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryCategory.Items));
 
         ItemData equipTool = InventoryManager.Instance.GetEquippedSlotItem(InventorySlot.InventoryCategory.Tools);
@@ -93,9 +93,9 @@ public class UIController : MonoBehaviour, ITimeTracker
 
     public void SetInvSlotIndexes()
     {
-        for (int i = 0; i < toolSlots.Length; i++)
+        for (int i = 0; i < itemsSlots.Length; i++)
         {
-            toolSlots[i].SetIndex(i);
+            //toolSlots[i].SetIndex(i);
             itemsSlots[i].SetIndex(i);
         }
     }
