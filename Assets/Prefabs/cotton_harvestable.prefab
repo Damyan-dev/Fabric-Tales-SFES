@@ -125,10 +125,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491506755931027999}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8471185442718564438, guid: a09aa3102e5b5e444aec3645ffb325e1, type: 3}
 --- !u!114 &627785627962196410
@@ -143,11 +143,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac22d751bac3b4db197ad591e7a80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: eaa6b58f0c6f7f84382f0a7757ba72b1, type: 2}
-  selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
+  cropToHarvest: {fileID: 0}
+  seedNeeded: {fileID: 0}
+  seedling: {fileID: 0}
+  wateringCanModel: {fileID: 0}
+  shearsModel: {fileID: 0}
+  timeToGrow: 1
   inventory: 1
   machine: 0
   farm: 0
+  seed: 0
+  fertilizer: 0
+  shears: 0
+  itemType: 
+  item: {fileID: 11400000, guid: eaa6b58f0c6f7f84382f0a7757ba72b1, type: 2}
+  selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
+  itemName: Cotton
+  description: This is a cotton bud. It needs to be washed first so it can be used
+    to produce clothes!
+  thumbnail: {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
+  anim: {fileID: 1761906551579199106}
 --- !u!1 &1954367281628159343
 GameObject:
   m_ObjectHideFlags: 0

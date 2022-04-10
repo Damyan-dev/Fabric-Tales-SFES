@@ -38,7 +38,7 @@ public class UIController : MonoBehaviour, ITimeTracker
     private void Start()
     {
         DisplayInventory();
-        SetInvSlotIndexes();
+        //SetInvSlotIndexes();
         TimeController.Instance.InitTracker(this);
     }
 
@@ -46,6 +46,7 @@ public class UIController : MonoBehaviour, ITimeTracker
     {
         //ItemSlotData[] invToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryCategory.Tools);
         ItemSlotData[] invItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryCategory.Items);
+        //InteractableObject[] invItemSlots = Inventory.Instance.inventory;
         RenderInventoryPanel(invItemSlots, itemsSlots);
         //RenderInventoryPanel(invToolSlots, toolSlots);
         //toolEquippedSlot.Show(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryCategory.Tools));
@@ -91,14 +92,14 @@ public class UIController : MonoBehaviour, ITimeTracker
         itemDescriptionText.text = data.description;
     }
 
-    public void SetInvSlotIndexes()
+    /*public void SetInvSlotIndexes()
     {
         for (int i = 0; i < itemsSlots.Length; i++)
         {
             //toolSlots[i].SetIndex(i);
             itemsSlots[i].SetIndex(i);
         }
-    }
+    } */
 
     public void ClockUpdate(GameTimeConverter gametime)
     {

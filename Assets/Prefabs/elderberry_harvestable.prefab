@@ -58,11 +58,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac22d751bac3b4db197ad591e7a80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: a67d3c82c8ca77e4e92156be5f7a41a4, type: 2}
-  selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
+  cropToHarvest: {fileID: 0}
+  seedNeeded: {fileID: 0}
+  seedling: {fileID: 0}
+  wateringCanModel: {fileID: 0}
+  shearsModel: {fileID: 0}
+  timeToGrow: 1
   inventory: 1
   machine: 0
   farm: 0
+  seed: 0
+  fertilizer: 0
+  shears: 0
+  itemType: Elderberry
+  item: {fileID: 11400000, guid: a67d3c82c8ca77e4e92156be5f7a41a4, type: 2}
+  selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
+  itemName: Elderberry
+  description: This is an elderberry that is used to dye clothes.
+  thumbnail: {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
+  anim: {fileID: 8167053410627783768}
 --- !u!1001 &2812262938532006824
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class InventorySlot : MonoBehaviour
 {
     ItemData itemToShow;
     public int invSlotIndex;
-    int quantity;
+     int quantity;
 
     public Image itemDisplayImage;
     public Text quantityText;
@@ -22,18 +22,18 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void Show(ItemSlotData itemSlot)
     {
         itemToShow = itemSlot.itemData;
-        quantity = itemSlot.quantity;
+         quantity = itemSlot.quantity;
 
-        quantityText.text = "";
+         quantityText.text = "";
 
         if (itemToShow != null)
         {
             itemDisplayImage.sprite = itemToShow.thumbnail;
 
-            if (quantity > 1)
+            /* if (quantity > 1)
             {
                 quantityText.text = quantity.ToString();
-            }
+            } */
 
             itemDisplayImage.gameObject.SetActive(true);
             return;
@@ -41,7 +41,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         itemDisplayImage.gameObject.SetActive(false);
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    /*public void OnPointerEnter(PointerEventData eventData)
     {
         UIController.Instance.ShowItemInfo(itemToShow);
     }
@@ -49,7 +49,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerExit(PointerEventData eventData)
     {
         UIController.Instance.ShowItemInfo(null);
-    }
+    } */
 
     // Ensures that the OnPointerClick function is overridable.
     /*public virtual void OnPointerClick(PointerEventData eventData)

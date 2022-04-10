@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class Inventory : MonoBehaviour
 {
     public static Inventory Instance { get; private set; }
 
@@ -25,8 +25,14 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
     }
 
-    public GameObject[] inventory = new GameObject[25];
+    [Header("Inventory UI")]
+    public GameObject inventoryPanel; // Sets the Inventory panel.
+    public GameObject JournalPanel; // sets the journal panel
+    public Text itemNameText;
+    public Text itemDescriptionText;  
     public Image[] InventorySlots = new Image[25];
+
+    public GameObject[] inventory = new GameObject[25];
 
     public void AddItem(GameObject item)
     {
@@ -98,10 +104,18 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
         return null;
     }
+    public void ToggleInventoryPanel()
+    {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+    }
+    public void ToggleJournalPanel()
+    {
+        JournalPanel.SetActive(!JournalPanel.activeSelf);
+    }
 
-   // public InventoryCategory inventoryCategory;
-   
-    public void Show(InteractableObject itemSlot)
+    // public InventoryCategory inventoryCategory;
+
+    /*public void Show(InteractableObject itemSlot)
     {
         itemToShow = itemSlot;
 
@@ -113,16 +127,39 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             return;
         }
         itemDisplayImage.gameObject.SetActive(false);
+    } */
+
+    public void OnMouseEnter()
+    {
+        ShowItemDescription(itemToShow);
+
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void OnMouseExit()
     {
-        UIController.Instance.ShowItemInfo(itemToShow);
+        ShowItemDescription(null);
+
+    }
+
+    /*public void OnPointerEnter(PointerEventData eventData)
+    {
+        ShowItemDescription(itemToShow);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        UIController.Instance.ShowItemInfo(null);
+        ShowItemDescription(null);
+    } */
+
+    public void ShowItemDescription(InteractableObject data)
+    {
+        if (data == null)
+        {
+            itemNameText.text = "";
+            itemDescriptionText.text = "";
+            return;
+        }
+        itemNameText.text = data.itemName;
+        itemDescriptionText.text = data.description;
     }
-   
 }
