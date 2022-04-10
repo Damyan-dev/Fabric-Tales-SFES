@@ -8,8 +8,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 {
     public static Inventory Instance { get; private set; }
 
-    //InteractableObject itemToShow;
-    ItemData itemToShow;
+    InteractableObject itemToShow;
+    //ItemData itemToShow;
     public Image itemDisplayImage;
 
     private void Awake()
@@ -101,9 +101,9 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
    // public InventoryCategory inventoryCategory;
    
-    public void Show(ItemSlotData itemSlot)
+    public void Show(InteractableObject itemSlot)
     {
-        itemToShow = itemSlot.itemData;
+        itemToShow = itemSlot;
 
         if (itemToShow != null)
         {
