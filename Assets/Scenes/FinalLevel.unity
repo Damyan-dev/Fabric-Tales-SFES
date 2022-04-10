@@ -14818,6 +14818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec2306d464a79154890a7b081624d1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
 --- !u!1 &342466307
 GameObject:
   m_ObjectHideFlags: 0
@@ -45671,12 +45672,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 0}
   canvasObject1: {fileID: 1936730976}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
+  canvasObject2: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
   playerInteractor: {fileID: 0}
   ItemSlotData:
     itemData: {fileID: 0}
@@ -45726,9 +45727,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1936730981}
-        m_TargetAssemblyTypeName: ShopTrigger, Assembly-CSharp
-        m_MethodName: OpenShop
+      - m_Target: {fileID: 1517155451}
+        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_MethodName: ShopkeeperOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -61143,10 +61144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1933924549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef1c38f1cf0c4644b8b62cc147ef5bd, type: 3}
+  m_Script: {fileID: 11500000, guid: c4369548b27bcfb4da69b5083365cb0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   barnOutside: {fileID: 723838198}
+  canvasObject: {fileID: 1936730976}
 --- !u!65 &1933924551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71464,6 +71466,10 @@ PrefabInstance:
       propertyPath: WMCanvas
       value: 
       objectReference: {fileID: 1999312022}
+    - target: {fileID: 6770683471627661282, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1578068987}
     - target: {fileID: 6770683471627661282, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: LoomCanvas
       value: 

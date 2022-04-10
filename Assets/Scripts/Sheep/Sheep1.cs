@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Sheep1 : MonoBehaviour
 {
 
- 
+    public Inventory inventory;
 
     public void Start()
     {
@@ -38,6 +38,6 @@ public class Sheep1 : MonoBehaviour
 
     internal void Spawn()
     {
-        throw new NotImplementedException();
+        
     }
 }

@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 	public Text Cooldown;
 	public GameObject WMCanvas;
 	public GameObject LoomCanvas;
+	public GameObject cottonItem;
 
 	private void Start()
 	{
@@ -162,7 +163,8 @@ public class PlayerController : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				//inventory.FindItem();
+
+				//if(inventory.FindItem(cottonItem));
 
 				//if (item != null)
 				//{
@@ -186,6 +188,7 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
+
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.name == "Washing Machine Rig")
