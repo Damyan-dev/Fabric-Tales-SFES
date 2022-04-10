@@ -1,19 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sheep1 : Spawner
+public class Sheep1 : MonoBehaviour
 {
-    public Spawner spawner;
-    //public GameObject canvasObject;
-    public GameObject selected;
+
  
 
     public void Start()
     {
-       // canvasObject.SetActive(false);
-        selected.SetActive(false);
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,8 +19,8 @@ public class Sheep1 : Spawner
 
         if (other.CompareTag("Player"))
         {
-            canvasObject.SetActive(true);
-            selected.SetActive(true);
+
+
 
         }
     }
@@ -32,9 +30,14 @@ public class Sheep1 : Spawner
     {
         if (other.CompareTag("Player"))
         {
-            canvasObject.SetActive(false);
-            selected.SetActive(false);
+
+
 
         }
+    }
+
+    internal void Spawn()
+    {
+        throw new NotImplementedException();
     }
 }

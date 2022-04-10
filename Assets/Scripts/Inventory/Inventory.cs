@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public static Inventory Instance { get; private set; }
+
+    //InteractableObject itemToShow;
+    ItemData itemToShow;
+    public Image itemDisplayImage;
 
     private void Awake()
     {
@@ -20,6 +26,7 @@ public class Inventory : MonoBehaviour
     }
 
     public GameObject[] inventory = new GameObject[25];
+    public Image[] InventorySlots = new Image[25];
 
     public void AddItem(GameObject item)
     {
@@ -30,6 +37,7 @@ public class Inventory : MonoBehaviour
             if ((inventory[i]) == null)
             {
                 inventory[i] = item;
+                InventorySlots[i].overrideSprite = item.GetComponent<InteractableObject>().thumbnail;
                 Debug.Log(item.name + " was added");
                 itemAdded = true;
                 item.SendMessage("DoInteraction");
@@ -54,6 +62,9 @@ public class Inventory : MonoBehaviour
                 {
                     inventory[i] = null;
                     Debug.Log(item.name + " has been deleted from inventory");
+                    InventorySlots[i].overrideSprite = null;
+                    
+                    
                     break;
                 }
             }
@@ -87,4 +98,31 @@ public class Inventory : MonoBehaviour
         }
         return null;
     }
+
+   // public InventoryCategory inventoryCategory;
+   
+    public void Show(ItemSlotData itemSlot)
+    {
+        itemToShow = itemSlot.itemData;
+
+        if (itemToShow != null)
+        {
+            itemDisplayImage.sprite = itemToShow.thumbnail;
+
+            itemDisplayImage.gameObject.SetActive(true);
+            return;
+        }
+        itemDisplayImage.gameObject.SetActive(false);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        UIController.Instance.ShowItemInfo(itemToShow);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        UIController.Instance.ShowItemInfo(null);
+    }
+   
 }

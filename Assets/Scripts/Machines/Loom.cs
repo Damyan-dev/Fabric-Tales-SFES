@@ -1,18 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Loom : Spawner
-{
-    public Spawner spawner;
-    //public GameObject canvasObject;
+public class Loom : MonoBehaviour
+{ 
     public GameObject selected;
 
 
     public void Start()
     {
-        canvasObject.SetActive(false);
         selected.SetActive(false);
     }
 
@@ -21,7 +19,6 @@ public class Loom : Spawner
 
         if (other.CompareTag("Player"))
         {
-            canvasObject.SetActive(true);
             selected.SetActive(true);
 
         }
@@ -31,10 +28,14 @@ public class Loom : Spawner
     {
         if (other.CompareTag("Player"))
         {
-            canvasObject.SetActive(false);
             selected.SetActive(false);
 
         }
+    }
+
+    internal void Spawn()
+    {
+        throw new NotImplementedException();
     }
 }
 

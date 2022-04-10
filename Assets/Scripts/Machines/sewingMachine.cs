@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class sewingMachine : Spawner
+public class sewingMachine : MonoBehaviour
 {
-    public Spawner spawner;
-    //public GameObject canvasObject;
     public GameObject selected;
     public GameObject Inventory;
 
     public void Start()
     {
-        canvasObject.SetActive(false);
         selected.SetActive(false);
     }
 
@@ -21,7 +18,6 @@ public class sewingMachine : Spawner
 
         if (other.CompareTag("Player"))
         {
-            canvasObject.SetActive(true);
             selected.SetActive(true);
 
         }
@@ -31,7 +27,6 @@ public class sewingMachine : Spawner
     {
         if (other.CompareTag("Player"))
         {
-            canvasObject.SetActive(false);
             selected.SetActive(false);
 
         }

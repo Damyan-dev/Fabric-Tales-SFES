@@ -7,13 +7,6 @@ public class BarnTrigger : MonoBehaviour
 {
 
     public GameObject barnOutside = null;
-    public GameObject canvasObject;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        canvasObject.SetActive(false);
-    }
 
     private void OnTriggerEnter(Collider col)
     {
@@ -21,26 +14,14 @@ public class BarnTrigger : MonoBehaviour
         {
             Debug.Log("entered");
             barnOutside.SetActive(false);
-            canvasObject.SetActive(true);
-            //  canvasObject1.SetActive(true);
         }
     }
-
-   // private void OnTriggerEnter(Collider col)
-   // {
-      //  if (col.tag == "Player")
-      //  {
-      //      barnOutside.SetActive(false);
-       //     canvasObject.SetActive(true);
-       // }
-   // }
 
     private void OnTriggerExit(Collider col)
     {
         if (col.tag == "Player")
         {
             barnOutside.SetActive(true);
-            canvasObject.SetActive(false);
         }
     }
 

@@ -33,34 +33,7 @@ public class InventoryManager : MonoBehaviour
 
 
 
-   /* public void InventoryToEquipped(int invSlotIndex, InventorySlot.InventoryCategory inventoryCategory)
-    {
-        ItemSlotData equippedToInv = equippedToolSlot;
-        ItemSlotData[] inventoryToChange = toolSlots;
 
-        if (inventoryCategory == InventorySlot.InventoryCategory.Items)
-        {
-            equippedToInv = equippedItemSlot;
-            inventoryToChange = itemSlots;
-        }
-
-        if (equippedToInv.Stackable(inventoryToChange[invSlotIndex]))
-        {
-            ItemSlotData slotToChange = inventoryToChange[invSlotIndex];
-            equippedToInv.AddQuantity(slotToChange.quantity);
-            slotToChange.EmptyQuantity();
-        }
-        else
-        {
-            ItemSlotData slotToEquip = new ItemSlotData(inventoryToChange[invSlotIndex]);
-            // Change inventory slot to equipped slot
-            inventoryToChange[invSlotIndex] = new ItemSlotData(equippedToInv);
-            // Change the equipped slot to the inventory slot
-           // EquipHandSlot(slotToEquip);
-        }
-
-        UIController.Instance.DisplayInventory();
-    } */
 
     public void ItemRemove(ItemSlotData itemToRemove)
     {

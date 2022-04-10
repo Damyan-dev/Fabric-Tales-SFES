@@ -18,17 +18,6 @@ public class SheepAnimTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider col)
-    {
-        if (col.CompareTag("Player"))
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                sheep.Spawn();
-            }
-        }
-    }
-
     private void OnTriggerExit(Collider col)
     {
         if (col.CompareTag("Player"))

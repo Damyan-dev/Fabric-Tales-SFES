@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	public Sheep1 Sheep;
 	public DyeMachine dyeMachine;
 	Interactor playerInteractor;
+	public Inventory inventory;
 	public Loom loom;
 	private int nextShear = 0;
 	public Text Cooldown;
@@ -161,14 +162,14 @@ public class PlayerController : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				ItemSlotData item = InventoryManager.Instance.ItemSearch("Cotton");
+				//inventory.FindItem();
 
-				if (item != null)
-				{
-					InventoryManager.Instance.ItemRemove(item);
-					washingMachine.Spawn();
+				//if (item != null)
+				//{
+					//InventoryManager.Instance.ItemRemove(item);
+					//washingMachine.Spawn();
 					
-				}
+				//}
 
 			}
 
@@ -179,7 +180,7 @@ public class PlayerController : MonoBehaviour
 				if (item != null)
 				{
 					InventoryManager.Instance.ItemRemove(item);
-					washingMachine.SpawnWool();
+				
 					
 				}
 			}
