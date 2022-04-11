@@ -116,6 +116,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 310702f534b5fde43a4469d084796378, type: 3}
   - {fileID: 21300000, guid: 15247cf561182794ca9428e3a6b5a3c9, type: 3}
   - {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
+  - {fileID: 21300000, guid: f8b17e56242fd9c4782643d47a6a9dd8, type: 3}
   - {fileID: 21300000, guid: 64aba166290bb874c86ea639ca430fb9, type: 3}
   - {fileID: 21300000, guid: 4f04a8669993348458093788e0eb9d4c, type: 3}
   - {fileID: 21300000, guid: 9f7581a6d8e5f4e4383d7adc6c34adb0, type: 3}
@@ -309,6 +310,7 @@ SpriteAtlas:
   - Up Button
   - tab5
   - elderberry seeds
+  - Washing Machine title
   - Down Arrow
   - Menu Clicked
   - Progress Bar 2
