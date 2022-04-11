@@ -42,7 +42,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add30()
     {
-        GameObject item = Inventory.Instance.FindItemByType("Rare Shirt");
+        InteractableObject item = Inventory.Instance.FindItemByType("Rare Shirt");
         if (item != null)
         {
             Inventory.Instance.RemoveItem(item);
@@ -61,7 +61,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add50()
     {
-        GameObject item = Inventory.Instance.FindItemByType("Red Dyed shirt");
+        InteractableObject item = Inventory.Instance.FindItemByType("Red Dyed shirt");
         if (item != null)
         {
             Inventory.Instance.RemoveItem(item);
@@ -70,7 +70,7 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add75()
     {
-        GameObject item = Inventory.Instance.FindItemByType("Yellow Dyed Shirt");
+        InteractableObject item = Inventory.Instance.FindItemByType("Yellow Dyed Shirt");
         if (item != null)
         {
             Inventory.Instance.RemoveItem(item);
@@ -145,7 +145,7 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void ShearSheep()
     {
-         GameObject item = Inventory.Instance.FindItemByType("Wool");
+         InteractableObject item = Inventory.Instance.FindItemByType("Wool");
        
   
              Inventory.Instance.AddItem(item);

@@ -10,6 +10,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
     public Material dirtMat, farmMat, wateredMat;
     public Text Objtext;
     GameTimeConverter timeWatered;
+    InteractableObject seedData;
     
 
     public enum FarmStatus
@@ -60,39 +61,53 @@ public class Farmland : MonoBehaviour, ITimeTracker
         selected.SetActive(toggle);
     }
 
-    public void Interact()
+    public void CottonSeed()
     {
-         /*ItemData toolSlot = InventoryManager.Instance.GetEquippedSlotItem(InventorySlot.InventoryCategory.Tools);
-        ItemEquipment equippedEquipment = toolSlot as ItemEquipment;
+        InteractableObject cottonInv = Inventory.Instance.FindItemByType("Cotton Seed");
 
-        if(equippedEquipment != null)
-        {
-            ItemEquipment.Tool tool = equippedEquipment.tool;
-            
-            switch (tool)
-            {
-                case ItemEquipment.Tool.WateringCan:
-                    ChangeFarmStatus(FarmStatus.Watered);
-                    Objtext.text = "Now your crop is growing! Use E to harvest the crop once it is fully grown";
-                    break;
-            }
-
-            return;
-        }
-        
-        SeedData seedTool = toolSlot as SeedData; 
-          
-        if (seedTool != null &&  farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        if (seedData.cottonSeed &&  farmStatus == FarmStatus.Dirt && cropPlanted == null)
         {
             GameObject cropObject = Instantiate(cropPrefab, transform);
             cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
             cropPlanted = cropObject.GetComponent<CropParams>();
-            cropPlanted.Plant(seedTool);
+            cropPlanted.Plant(seedData);
             Debug.Log(cropPlanted + " has been planted.");
             Objtext.text = "Now use the watering can in your inventory to water the planted crop";
-            InventoryManager.Instance.ConsumeItem(InventoryManager.Instance.GetEquippedSlot(InventorySlot.InventoryCategory.Tools));
-        } */
-    } 
+            Inventory.Instance.RemoveItem(seedData);
+        } 
+    }
+
+    public void ElderberrySeed()
+    {
+        if (seedData.elderberrySeed && farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        {
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
+            cropPlanted = cropObject.GetComponent<CropParams>();
+            cropPlanted.Plant(seedData);
+            Debug.Log(cropPlanted + " has been planted.");
+            Objtext.text = "Now use the watering can in your inventory to water the planted crop";
+            Inventory.Instance.RemoveItem(seedData);
+        }
+        else
+        {
+            Debug.Log(seedData + " has not been found");
+        }
+    }
+
+    public void TumericSeed()
+    {
+        if (seedData.tumericSeed && farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        {
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
+            cropPlanted = cropObject.GetComponent<CropParams>();
+            cropPlanted.Plant(seedData);
+            Debug.Log(cropPlanted + " has been planted.");
+            Objtext.text = "Now use the watering can in your inventory to water the planted crop";
+            Inventory.Instance.RemoveItem(seedData);
+        }
+    }
 
     public void ClockUpdate(GameTimeConverter gametime)
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class Inventory : MonoBehaviour
 {
@@ -27,57 +28,87 @@ public class Inventory : MonoBehaviour
     public GameObject inventoryPanel; // Sets the Inventory panel.
     public GameObject JournalPanel; // sets the journal panel
     public Text itemNameText;
-    public Text itemDescriptionText;  
+    public Text itemDescriptionText;
+    public Text itemQuantity;
     public Image[] InventorySlots = new Image[25];
 
-    public GameObject[] inventory = new GameObject[25];
+    public InteractableObject[] inventory = new InteractableObject[25];
 
-    public void AddItem(GameObject item)
+    public void AddItem(InteractableObject interObject)
     {
-        bool itemAdded = false;
+        
+        var foundItem = FindItemByType(interObject.itemType);
+        InteractableObject inventoryItem = null;
 
-        for (int i = 0; i < inventory.Length; i++)
+        if (foundItem != null)
         {
-            if ((inventory[i]) == null)
-            {
-                var interObject = item.GetComponent<InteractableObject>();
-                inventory[i] = item;
-                InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(interObject);
+            inventoryItem = foundItem;
+        }
+        else
+        {
+            throw new Exception("Please make sure inventory item is in scene and attached to the inventory with a quantity of 0.");
+        }
 
-                Debug.Log(item.name + " was added");
-                itemAdded = true;
-                Interactor player = GetComponent<Interactor>();
-                player.selectedInterObj = null;
-                player.selectedItemInteractableScript = null;
-                item.SendMessage("DoInteraction");
+        
+        inventoryItem.quantity += interObject.quantity;
+
+        Interactor player = GetComponent<Interactor>();
+        player.selectedInterObj = null;
+        player.selectedItemInteractableScript = null;
+        interObject.gameObject.SendMessage("DoInteraction");
+        
+        // This loop is for the UI;
+        for (int i = 0; i < inventory.Length; i++)
+        {      
+            var currentInventorySlot = inventory[i];
+
+            if (currentInventorySlot.itemType == interObject.itemType && currentInventorySlot.quantity > 0)
+            {
+                InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(currentInventorySlot);
                 break;
             }
+
         }
 
-        if (!itemAdded)
-        {
-            Debug.Log("inventory is full - item not added");
-        }
 
     }
 
-    public void RemoveItem(GameObject item)
+    public void RemoveItem(InteractableObject interObject)
     {
+        var foundItem = FindItemByType(interObject.itemType);
+        InteractableObject inventoryItem = null;
+
+        if (foundItem != null)
+        {
+            inventoryItem = foundItem.GetComponent<InteractableObject>();
+        }
+        else
+        {
+            throw new Exception("Please make sure inventory item is in scene and attached to the inventory with a quantity of 0.");
+        }
+
+
+        inventoryItem.quantity -= interObject.quantity;
+
+        if (inventoryItem.quantity < 0)
+        {
+            inventoryItem.quantity = 0;
+        }
+
+        // This loop is for the UI;
         for (int i = 0; i < inventory.Length; i++)
         {
-            if (inventory[i] != null)
+            var currentInventorySlot = inventory[i].GetComponent<InteractableObject>();
+
+            if (currentInventorySlot.itemType == interObject.itemType && currentInventorySlot.quantity > 0)
             {
-                if (inventory[i] == item)
-                {
-                    inventory[i] = null;
-                    Debug.Log(item.name + " has been deleted from inventory");
-                    InventorySlots[i].overrideSprite = null;
-                    
-                    
-                    break;
-                }
+                InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(currentInventorySlot);
+                break;
             }
+
         }
+
+
     }
 
     public bool FindItem(GameObject item)
@@ -93,13 +124,13 @@ public class Inventory : MonoBehaviour
     }
     
     // Search for an item by its type, rather than GameObject.
-    public GameObject FindItemByType(string itemType)
+    public InteractableObject FindItemByType(string itemType)
     {
         for(int i = 0; i < inventory.Length; i++)
         {
             if(inventory[i] != null)
             {
-                if(inventory[i].GetComponent<InteractableObject>().itemType == itemType)
+                if(inventory[i].itemType == itemType)
                 {
                     return inventory[i];
                 }

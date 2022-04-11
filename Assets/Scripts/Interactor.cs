@@ -17,16 +17,9 @@ public class Interactor : MonoBehaviour
         { //pick up object
             if (selectedItemInteractableScript.inventory)
             {
-                inventory.AddItem(selectedInterObj);
+                inventory.AddItem(selectedItemInteractableScript);
             }
         }
-
-
-        /*RaycastHit detected;
-        if (Physics.Raycast(transform.position, Vector3.down, out detected, 1))
-        {
-            InteractableDetected(detected);
-        } */
     }
 
     private void OnTriggerEnter(Collider other)
@@ -69,41 +62,7 @@ public class Interactor : MonoBehaviour
         }
     }
 
-    private void InteractableDetected(RaycastHit detected)
-    {
-        Collider hit = detected.collider;
-
-        if (hit.CompareTag("Field"))
-        {
-            Farmland farmLand = hit.GetComponent<Farmland>();
-            SelectedFarmLand(farmLand);
-            return;
-        }
-        if (selectedFarmLand != null)
-        {
-            selectedFarmLand.Selected(false);
-            selectedFarmLand = null;
-        }
-
-        if (hit.CompareTag("Item"))
-        {
-            InteractableObject interactableObject = hit.GetComponent<InteractableObject>();
-            selectedInterObj = hit.gameObject;
-            SelectedInteractableObject(interactableObject);
-        }
-        else
-        {
-            return;
-        }
-
-        if (selectedItemInteractableScript != null)
-        {
-            selectedItemInteractableScript.SelectedInteractableObject(false);
-            selectedItemInteractableScript = null;
-        }
-
-    }
-
+    
     private void SelectedFarmLand(Farmland farmLand)
     {
         if (selectedFarmLand != null)
@@ -131,7 +90,7 @@ public class Interactor : MonoBehaviour
     {
         if (selectedFarmLand != null)
         {
-            selectedFarmLand.Interact();
+            selectedFarmLand.CottonSeed();
             return;
         }
         

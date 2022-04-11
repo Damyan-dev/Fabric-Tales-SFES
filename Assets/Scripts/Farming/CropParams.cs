@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CropParams : MonoBehaviour
 {
-    SeedData seedToGrow;
+    InteractableObject seedToGrow;
     public GameObject seed;
     private GameObject seedling;
     private GameObject harvestable;
@@ -19,14 +19,12 @@ public class CropParams : MonoBehaviour
 
     
 
-    public void Plant(SeedData seedToGrow)
+    public void Plant(InteractableObject seedToGrow)
     {
         this.seedToGrow = seedToGrow;
 
         seedling = Instantiate(seedToGrow.seedling, transform);
-        ItemData cropToHarvest = seedToGrow.cropToHarvest;
-
-        harvestable = Instantiate(cropToHarvest.objectModel, transform);
+        harvestable = Instantiate(seedToGrow.harvestable, transform);
 
         int hoursToGrow = GameTimeConverter.ConvertDaysToHours(seedToGrow.timeToGrow);
         maxGrowth = GameTimeConverter.ConvertHoursToMins(hoursToGrow);

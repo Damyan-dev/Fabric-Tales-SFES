@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour
 	public Sheep1 Sheep;
 	public DyeMachine dyeMachine;
 	Interactor playerInteractor;
-	public Inventory inventory;
 	public Loom loom;
 	private int nextShear = 0;
 	public Text Cooldown;
@@ -107,13 +106,14 @@ public class PlayerController : MonoBehaviour
 
 		if (other.name == "Loom")
 		{
+			InteractableObject itemWashed = Inventory.Instance.FindItemByType("Rare Washed");
+
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				GameObject item = Inventory.Instance.FindItemByType("Rare Washed");
 
-				if (item != null)
+				if (itemWashed != null)
 				{
-					Inventory.Instance.RemoveItem(item);
+					Inventory.Instance.RemoveItem(itemWashed);
 					loom.Spawn();
 				}
 			}
@@ -141,15 +141,15 @@ public class PlayerController : MonoBehaviour
 
 		if (other.name == "Dye Machine")
 		{
-			
+			InteractableObject itemShirt = Inventory.Instance.FindItemByType("Rare Shirt");
+
 			if (Input.GetKeyDown(KeyCode.F))
 			{
 
-				GameObject item = Inventory.Instance.FindItemByType("Rare Shirt");
 
-				if (item != null)
+				if (itemShirt != null)
 				{
-					Inventory.Instance.RemoveItem(item);
+					Inventory.Instance.RemoveItem(itemShirt);
 					dyeMachine.Spawn();
 				}
 
@@ -159,29 +159,28 @@ public class PlayerController : MonoBehaviour
 
 		if (other.name == "Washing Machine Rig")
 		{
-			
+			InteractableObject itemCotton = Inventory.Instance.FindItemByType("Cotton");
 
-			if (Input.GetKeyDown(KeyCode.F))
+
+
+			if (Input.GetKeyDown(KeyCode.F) && itemCotton.quantity > 0)
 			{
 
-				//if(inventory.FindItem(cottonItem));
-
-				//if (item != null)
-				//{
-					//InventoryManager.Instance.ItemRemove(item);
-					//washingMachine.Spawn();
-					
-				//}
-
-			}
-
-			if (Input.GetKeyDown(KeyCode.F))
-			{
-				GameObject item = Inventory.Instance.FindItemByType("Wool");
-
-				if (item != null)
+				if (itemCotton != null)
 				{
-					Inventory.Instance.RemoveItem(item);
+					Inventory.Instance.RemoveItem(itemCotton);
+					loom.Spawn();
+				}
+			}
+			
+			InteractableObject itemWool = Inventory.Instance.FindItemByType("Wool");
+
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+
+				if (itemCotton != null)
+				{
+					Inventory.Instance.RemoveItem(itemCotton);
 				
 					
 				}

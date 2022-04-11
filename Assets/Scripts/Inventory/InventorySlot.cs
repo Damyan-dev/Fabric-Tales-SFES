@@ -12,7 +12,17 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void SetUI(InteractableObject item)
     {
         this.item = item;
-        GetComponent<Image>().overrideSprite = item.thumbnail;
+
+        if (item != null && item.quantity > 0)
+        {
+            GetComponent<Image>().overrideSprite = item.thumbnail;
+            GetComponentInChildren<Text>().text = item.quantity.ToString();
+        }
+        else
+        {
+            GetComponent<Image>().overrideSprite = null;
+            GetComponentInChildren<Text>().text = "";
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
