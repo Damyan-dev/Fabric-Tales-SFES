@@ -65,7 +65,7 @@ public class DilougeManager : MonoBehaviour
         {
             return;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (CurrentStory.currentChoices.Count == 0 && Input.GetMouseButtonDown(0))
         {
             ContinueStory();
         }
@@ -123,6 +123,7 @@ public class DilougeManager : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         CurrentStory.ChooseChoiceIndex(choiceIndex);
+        ContinueStory();
     }
     // Update is called once per frame
 

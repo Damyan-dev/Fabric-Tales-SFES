@@ -39,6 +39,7 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 4fc5bc003c6c2c844806e9216c8fb22c, type: 3}
+  - {fileID: 21300000, guid: e661b8206d68730498e0555ce887b058, type: 3}
   - {fileID: 21300000, guid: c3136440165a73642a231737835140a1, type: 3}
   - {fileID: 21300000, guid: cd1a7540bd514ec4b823402553aaa805, type: 3}
   - {fileID: 21300000, guid: 11f2d6807c8cf3e4d91b97da8d4ed7bb, type: 3}
@@ -76,6 +77,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1ada7403e427ab54aa6cb9e330cc41cd, type: 3}
   - {fileID: 21300000, guid: 563375030cc2481489c3faede68d9d0e, type: 3}
   - {fileID: 21300000, guid: 6db40f13b3f67584f8f9b6216812e72e, type: 3}
+  - {fileID: 21300000, guid: bcad1433dcd172f4c8ab57c2ded15124, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
   - {fileID: 21300000, guid: 38a11463e2dbe264382b446cbe2fb4ba, type: 3}
   - {fileID: 21300000, guid: 53a95f83ec7f21e428e5622650938739, type: 3}
@@ -148,6 +150,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 7dc48ca81ea67f647b663af4049df3e0, type: 3}
   - {fileID: 21300000, guid: 7b74dec8ddc28b546a5a03564d2c9830, type: 3}
   - {fileID: 21300000, guid: aca96fc86803c8340abb85333861352e, type: 3}
+  - {fileID: 21300000, guid: 51d0d1e836b59a24e8a647bcc881594a, type: 3}
   - {fileID: 21300000, guid: 9d3d68e89c4ce9347a92925352c80f44, type: 3}
   - {fileID: 21300000, guid: e401aee890d71e54e9ad8414635ade1e, type: 3}
   - {fileID: 21300000, guid: 2a33e6093471a864cb1deebce0891d03, type: 3}
@@ -234,6 +237,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 279f3eef6dd0ceb4997de663ef9969e9, type: 3}
   m_PackedSpriteNamesToIndex:
   - Inventory Button
+  - Header
   - Close Hover
   - Quit Normal
   - Quick Inventory Single
@@ -271,6 +275,7 @@ SpriteAtlas:
   - Shopkeeper-Animation.gif-trial-2
   - frame012
   - ropes guide
+  - Amelia
   - cotton_green
   - rope3
   - Save Hover
@@ -343,6 +348,7 @@ SpriteAtlas:
   - frame008
   - frame002
   - red_dyed_cloth_blue
+  - Echo_2
   - Quit Hover
   - frame026
   - red_dyed_cloth_gold
