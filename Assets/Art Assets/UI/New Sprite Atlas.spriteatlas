@@ -119,6 +119,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f8b17e56242fd9c4782643d47a6a9dd8, type: 3}
   - {fileID: 21300000, guid: 64aba166290bb874c86ea639ca430fb9, type: 3}
   - {fileID: 21300000, guid: 4f04a8669993348458093788e0eb9d4c, type: 3}
+  - {fileID: 21300000, guid: 404b6976ddc18414d87f2eece79bd48d, type: 3}
   - {fileID: 21300000, guid: 9f7581a6d8e5f4e4383d7adc6c34adb0, type: 3}
   - {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
   - {fileID: 21300000, guid: ca9304f6e0546f24481f640ebb54887f, type: 3}
@@ -313,6 +314,7 @@ SpriteAtlas:
   - Washing Machine title
   - Down Arrow
   - Menu Clicked
+  - SMall Dialoge bar
   - Progress Bar 2
   - WateringCan
   - frame039
