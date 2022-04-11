@@ -161,11 +161,8 @@ public class PlayerController : MonoBehaviour
 		{
 			InteractableObject itemCotton = Inventory.Instance.FindItemByType("Cotton");
 
-
-
 			if (Input.GetKeyDown(KeyCode.F) && itemCotton.quantity > 0)
 			{
-
 				if (itemCotton != null)
 				{
 					Inventory.Instance.RemoveItem(itemCotton);
