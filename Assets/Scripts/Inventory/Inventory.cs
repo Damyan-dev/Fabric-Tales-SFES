@@ -8,8 +8,6 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Instance { get; private set; }
 
-    InteractableObject itemToShow;
-    //ItemData itemToShow;
     public Image itemDisplayImage;
 
     private void Awake()
@@ -42,10 +40,15 @@ public class Inventory : MonoBehaviour
         {
             if ((inventory[i]) == null)
             {
+                var interObject = item.GetComponent<InteractableObject>();
                 inventory[i] = item;
-                InventorySlots[i].overrideSprite = item.GetComponent<InteractableObject>().thumbnail;
+                InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(interObject);
+
                 Debug.Log(item.name + " was added");
                 itemAdded = true;
+                Interactor player = GetComponent<Interactor>();
+                player.selectedInterObj = null;
+                player.selectedItemInteractableScript = null;
                 item.SendMessage("DoInteraction");
                 break;
             }
@@ -129,9 +132,10 @@ public class Inventory : MonoBehaviour
         itemDisplayImage.gameObject.SetActive(false);
     } */
 
-    public void OnMouseEnter()
+    /*public void OnMouseEnter()
     {
         ShowItemDescription(itemToShow);
+        Debug.Log("Inventory mouse enter.");
 
     }
 
@@ -139,16 +143,6 @@ public class Inventory : MonoBehaviour
     {
         ShowItemDescription(null);
 
-    }
-
-    /*public void OnPointerEnter(PointerEventData eventData)
-    {
-        ShowItemDescription(itemToShow);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        ShowItemDescription(null);
     } */
 
     public void ShowItemDescription(InteractableObject data)

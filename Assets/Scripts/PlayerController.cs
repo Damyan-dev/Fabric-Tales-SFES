@@ -109,11 +109,11 @@ public class PlayerController : MonoBehaviour
 		{
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Washed");
+				GameObject item = Inventory.Instance.FindItemByType("Rare Washed");
 
 				if (item != null)
 				{
-					InventoryManager.Instance.ItemRemove(item);
+					Inventory.Instance.RemoveItem(item);
 					loom.Spawn();
 				}
 			}
@@ -145,11 +145,11 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetKeyDown(KeyCode.F))
 			{
 
-				ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+				GameObject item = Inventory.Instance.FindItemByType("Rare Shirt");
 
 				if (item != null)
 				{
-					InventoryManager.Instance.ItemRemove(item);
+					Inventory.Instance.RemoveItem(item);
 					dyeMachine.Spawn();
 				}
 
@@ -177,11 +177,11 @@ public class PlayerController : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.F))
 			{
-				ItemSlotData item = InventoryManager.Instance.ItemSearch("Wool");
+				GameObject item = Inventory.Instance.FindItemByType("Wool");
 
 				if (item != null)
 				{
-					InventoryManager.Instance.ItemRemove(item);
+					Inventory.Instance.RemoveItem(item);
 				
 					
 				}

@@ -4,61 +4,26 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    ItemData itemToShow;
-    public int invSlotIndex;
-     int quantity;
+    public InteractableObject item;
+    
 
-    public Image itemDisplayImage;
-    public Text quantityText;
-
-    public enum InventoryCategory
+    public void SetUI(InteractableObject item)
     {
-        Items, Tools
+        this.item = item;
+        GetComponent<Image>().overrideSprite = item.thumbnail;
     }
 
-    public InventoryCategory inventoryCategory;
-    public void Show(ItemSlotData itemSlot)
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        itemToShow = itemSlot.itemData;
-         quantity = itemSlot.quantity;
-
-         quantityText.text = "";
-
-        if (itemToShow != null)
-        {
-            itemDisplayImage.sprite = itemToShow.thumbnail;
-
-            /* if (quantity > 1)
-            {
-                quantityText.text = quantity.ToString();
-            } */
-
-            itemDisplayImage.gameObject.SetActive(true);
-            return;
-        }
-        itemDisplayImage.gameObject.SetActive(false);
-    }
-
-    /*public void OnPointerEnter(PointerEventData eventData)
-    {
-        UIController.Instance.ShowItemInfo(itemToShow);
+        Inventory.Instance.ShowItemDescription(item);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        UIController.Instance.ShowItemInfo(null);
-    } */
+        Inventory.Instance.ShowItemDescription(null);
+    } 
 
-    // Ensures that the OnPointerClick function is overridable.
-    /*public virtual void OnPointerClick(PointerEventData eventData)
-    {
-        InventoryManager.Instance.InventoryToEquipped(invSlotIndex, inventoryCategory);
-    } */
-
-    public void SetIndex(int invSlotIndex)
-    {
-        this.invSlotIndex = invSlotIndex;
-    }
+  
 }

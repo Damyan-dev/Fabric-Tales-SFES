@@ -5,16 +5,11 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
-    PlayerController playerController;
     private Farmland selectedFarmLand = null;
     public InteractableObject selectedItemInteractableScript = null;
     public GameObject selectedInterObj = null;
     public Inventory inventory;
 
-    private void Start()
-    {
-        playerController = transform.parent.GetComponent<PlayerController>();
-    }
 
     void Update()
     {
@@ -142,18 +137,4 @@ public class Interactor : MonoBehaviour
         
     }
 
-    public void ItemPickup()
-    {
-        InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
-
-        if (InventoryManager.Instance.SlotEquipped(InventorySlot.InventoryCategory.Items))
-        {
-            InventoryManager.Instance.EquippedToInventory(InventorySlot.InventoryCategory.Items);
-        }
-        
-        if (selectedItemInteractableScript != null)
-        {
-            selectedItemInteractableScript.Pickup();
-        }
-    } 
 }

@@ -42,10 +42,10 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add30()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Rare Shirt");
+        GameObject item = Inventory.Instance.FindItemByType("Rare Shirt");
         if (item != null)
         {
-            InventoryManager.Instance.ItemRemove(item);
+            Inventory.Instance.RemoveItem(item);
             ingameCamera.GetComponent<playerMoney>().addMoney(30);
         }
     }
@@ -61,19 +61,19 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add50()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Red Dyed shirt");
+        GameObject item = Inventory.Instance.FindItemByType("Red Dyed shirt");
         if (item != null)
         {
-            InventoryManager.Instance.ItemRemove(item);
+            Inventory.Instance.RemoveItem(item);
             ingameCamera.GetComponent<playerMoney>().addMoney(50);
         }
     }
     public void Add75()
     {
-        ItemSlotData item = InventoryManager.Instance.ItemSearch("Yellow Dyed Shirt");
+        GameObject item = Inventory.Instance.FindItemByType("Yellow Dyed Shirt");
         if (item != null)
         {
-            InventoryManager.Instance.ItemRemove(item);
+            Inventory.Instance.RemoveItem(item);
             ingameCamera.GetComponent<playerMoney>().addMoney(75);
         }
     }
@@ -145,10 +145,10 @@ public class AddRemoveMoney : MonoBehaviour
 
     public void ShearSheep()
     {
-         ItemSlotData item = InventoryManager.Instance.ItemSearch("Wool");
+         GameObject item = Inventory.Instance.FindItemByType("Wool");
        
   
-             InventoryManager.Instance.ItemAdd(item);
+             Inventory.Instance.AddItem(item);
         
     }
 }

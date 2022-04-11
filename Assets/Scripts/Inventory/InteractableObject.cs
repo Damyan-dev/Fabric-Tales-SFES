@@ -36,12 +36,7 @@ public class InteractableObject : MonoBehaviour
 
         gameObject.SetActive(false);
     }
-   public void Pickup()
-    {
-        InventoryManager.Instance.EquipHandSlot(item);
-        Destroy(gameObject);
-    }
-    
+  
     public void SelectedInteractableObject(bool toggle)
     {
         selectedIntObj.SetActive(toggle);
