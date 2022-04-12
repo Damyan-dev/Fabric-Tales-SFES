@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 	public Text Cooldown;
 	public GameObject WMCanvas;
 	public GameObject LoomCanvas;
+	public GameObject DMCanvas;
 	public GameObject cottonItem;
 
 	private void Start()
@@ -103,7 +104,7 @@ public class PlayerController : MonoBehaviour
 	}
 	private void OnTriggerStay(Collider other)
 	{
-
+		/*
 		if (other.name == "Loom")
 		{
 			InteractableObject itemWashed = Inventory.Instance.FindItemByType("Rare Washed");
@@ -183,6 +184,7 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 		}
+		*/
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -197,6 +199,12 @@ public class PlayerController : MonoBehaviour
 			LoomCanvas.SetActive(true);
 		}
 
+		if(other.name == "Dye Machine")
+        {
+			DMCanvas.SetActive(true);
+        }
+		
+
 	}
 
 
@@ -210,6 +218,11 @@ public class PlayerController : MonoBehaviour
 		if (other.name == "Loom")
 		{
 			LoomCanvas.SetActive(false);
+		}
+
+		if (other.name == "Dye Machine")
+		{
+			DMCanvas.SetActive(false);
 		}
 
 	}

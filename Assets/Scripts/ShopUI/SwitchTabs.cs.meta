@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: c4369548b27bcfb4da69b5083365cb0c
+guid: 1e9d9e835b0d98d44ba7b0072acc8266
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - barnOutside: {instanceID: 0}
-  - canvasObject: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

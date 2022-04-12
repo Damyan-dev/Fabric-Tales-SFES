@@ -42,6 +42,8 @@ public class Crafting : MonoBehaviour
         }
     }
 
+
+
     public void OrganicDyeCraft()
     {
         var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
