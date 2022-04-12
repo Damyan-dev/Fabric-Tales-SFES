@@ -5,17 +5,14 @@ using UnityEngine;
 public class CropInteractionMenu : MonoBehaviour
 {
     private Animator anim;
+    Farmland farmLand;
 
     public void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    public void Harvest()
-    {
-
-    }
-
+  
     public void Fertilize()
     {
 
@@ -23,7 +20,7 @@ public class CropInteractionMenu : MonoBehaviour
 
     public void PlantCotton()
     {
-
+        farmLand.CottonSeed();
     }
 
     public void PlantElderberry()

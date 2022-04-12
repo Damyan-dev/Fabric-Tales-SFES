@@ -36,8 +36,14 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(InteractableObject interObject)
     {
+        AddItem(interObject.itemType, interObject.quantity);     
+        interObject.gameObject.SendMessage("DoInteraction");
         
-        var foundItem = FindItemByType(interObject.itemType);
+    }
+
+    public void AddItem(string itemType, int quantity)
+    {
+        var foundItem = FindItemByType(itemType);
         InteractableObject inventoryItem = null;
 
         if (foundItem != null)
@@ -49,33 +55,36 @@ public class Inventory : MonoBehaviour
             throw new Exception("Please make sure inventory item is in scene and attached to the inventory with a quantity of 0.");
         }
 
-        
-        inventoryItem.quantity += interObject.quantity;
+
+        inventoryItem.quantity += quantity;
 
         Interactor player = GetComponent<Interactor>();
         player.selectedInterObj = null;
         player.selectedItemInteractableScript = null;
-        interObject.gameObject.SendMessage("DoInteraction");
-        
+
         // This loop is for the UI;
         for (int i = 0; i < inventory.Length; i++)
-        {      
+        {
             var currentInventorySlot = inventory[i];
 
-            if (currentInventorySlot.itemType == interObject.itemType && currentInventorySlot.quantity > 0)
+            if (currentInventorySlot.itemType == itemType)
             {
                 InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(currentInventorySlot);
                 break;
             }
 
         }
-
-
     }
 
     public void RemoveItem(InteractableObject interObject)
     {
-        var foundItem = FindItemByType(interObject.itemType);
+        RemoveItem(interObject.itemType, interObject.quantity);
+    }
+
+    public void RemoveItem(string itemType, int quantity)
+    {
+        var foundItem = FindItemByType(itemType);
+       
         InteractableObject inventoryItem = null;
 
         if (foundItem != null)
@@ -88,7 +97,7 @@ public class Inventory : MonoBehaviour
         }
 
 
-        inventoryItem.quantity -= interObject.quantity;
+        inventoryItem.quantity -= quantity;
 
         if (inventoryItem.quantity < 0)
         {
@@ -98,17 +107,17 @@ public class Inventory : MonoBehaviour
         // This loop is for the UI;
         for (int i = 0; i < inventory.Length; i++)
         {
-            var currentInventorySlot = inventory[i].GetComponent<InteractableObject>();
-
-            if (currentInventorySlot.itemType == interObject.itemType && currentInventorySlot.quantity > 0)
+            if (inventory[i] != null)
             {
-                InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(currentInventorySlot);
-                break;
+                var currentInventorySlot = inventory[i].GetComponent<InteractableObject>();
+
+                if (currentInventorySlot.itemType == itemType)
+                {
+                    InventorySlots[i].gameObject.GetComponent<InventorySlot>().SetUI(currentInventorySlot);
+                    break;
+                }
             }
-
         }
-
-
     }
 
     public bool FindItem(GameObject item)

@@ -33,18 +33,25 @@ public class Sound
    
     public void Play()
     {
-        source.volume = volume * (1 + Random.Range(-volumeDeviation / 2f, volumeDeviation / 2f));
-        source.pitch = pitch * (1 + Random.Range(-pitchDeviation / 2f, pitchDeviation / 2f));
-        source.Play();
+        if (source != null)
+        {
+            source.volume = volume * (1 + Random.Range(-volumeDeviation / 2f, volumeDeviation / 2f));
+            source.pitch = pitch * (1 + Random.Range(-pitchDeviation / 2f, pitchDeviation / 2f));
+            source.Play();
+        }
     }
+
 
     public void PlayOneShot()
     {
-        source.volume = volume * (1 + Random.Range(-volumeDeviation / 2f, volumeDeviation / 2f));
-        source.pitch = pitch * (1 + Random.Range(-pitchDeviation / 2f, pitchDeviation / 2f));
-        if (!source.isPlaying)
+        if (source != null)
         {
-            source.Play();
+            source.volume = volume * (1 + Random.Range(-volumeDeviation / 2f, volumeDeviation / 2f));
+            source.pitch = pitch * (1 + Random.Range(-pitchDeviation / 2f, pitchDeviation / 2f));
+            if (!source.isPlaying)
+            {
+                source.Play();
+            }
         }
     }
 

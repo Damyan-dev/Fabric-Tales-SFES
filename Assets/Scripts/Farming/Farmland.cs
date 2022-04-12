@@ -65,15 +65,15 @@ public class Farmland : MonoBehaviour, ITimeTracker
     {
         InteractableObject cottonInv = Inventory.Instance.FindItemByType("Cotton Seed");
 
-        if (seedData.cottonSeed &&  farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        if (cottonInv.cottonSeed &&  farmStatus == FarmStatus.Dirt && cropPlanted == null && cottonInv.quantity > 0)
         {
             GameObject cropObject = Instantiate(cropPrefab, transform);
             cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
             cropPlanted = cropObject.GetComponent<CropParams>();
-            cropPlanted.Plant(seedData);
+            cropPlanted.Plant(cottonInv);
             Debug.Log(cropPlanted + " has been planted.");
             Objtext.text = "Now use the watering can in your inventory to water the planted crop";
-            Inventory.Instance.RemoveItem(seedData);
+            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
         } 
     }
 

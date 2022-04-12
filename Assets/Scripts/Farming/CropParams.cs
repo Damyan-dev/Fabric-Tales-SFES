@@ -26,7 +26,7 @@ public class CropParams : MonoBehaviour
         seedling = Instantiate(seedToGrow.seedling, transform);
         harvestable = Instantiate(seedToGrow.harvestable, transform);
 
-        int hoursToGrow = GameTimeConverter.ConvertDaysToHours(seedToGrow.timeToGrow);
+        int hoursToGrow = GameTimeConverter.ConvertHoursToMins(seedToGrow.timeToGrow);
         maxGrowth = GameTimeConverter.ConvertHoursToMins(hoursToGrow);
 
         SwitchState(CropState.Seed);
