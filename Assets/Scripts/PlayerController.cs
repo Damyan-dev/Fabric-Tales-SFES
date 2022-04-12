@@ -88,7 +88,6 @@ public class PlayerController : MonoBehaviour
 			else if (anim.GetBool("walking") == false)
 			{
 				StartCoroutine(HarvestRoutine());
-				playerInteractor.Interact();
 			}
 		}
 
@@ -203,7 +202,6 @@ public class PlayerController : MonoBehaviour
         {
 			DMCanvas.SetActive(true);
         }
-		
 
 	}
 

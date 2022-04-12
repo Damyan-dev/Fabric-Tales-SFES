@@ -8,8 +8,6 @@ public class InteractableObject : MonoBehaviour
     public GameObject harvestable;
     public GameObject seedNeeded;
     public GameObject seedling;
-    public GameObject wateringCanModel;
-    public GameObject shearsModel;
     public int timeToGrow;
     
     [Header("Interaction setters")]

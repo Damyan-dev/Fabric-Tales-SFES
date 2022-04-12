@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
-    private Farmland selectedFarmLand = null;
+    public Farmland selectedFarmLand = null;
     public InteractableObject selectedItemInteractableScript = null;
     public GameObject selectedInterObj = null;
     public Inventory inventory;
@@ -34,9 +34,9 @@ public class Interactor : MonoBehaviour
 
         if (other.CompareTag("Field"))
         {
-            Debug.Log(other.name);
             Farmland farmLand = other.GetComponent<Farmland>();
             SelectedFarmLand(farmLand);
+            return;
         }
     }
 
@@ -54,7 +54,7 @@ public class Interactor : MonoBehaviour
 
         if (other.CompareTag("Field"))
         {
-            if (other.gameObject == selectedInterObj)
+            if (selectedFarmLand != null)
             {
                 selectedFarmLand.Selected(false);
                 selectedFarmLand = null;

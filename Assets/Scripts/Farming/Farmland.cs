@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class Farmland : MonoBehaviour, ITimeTracker
 {
     public GameObject selected;
+    public GameObject cropPopUpMenu;
     public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
     public Text Objtext;
     GameTimeConverter timeWatered;
     InteractableObject seedData;
+    private Interactor selectedField;
     
 
     public enum FarmStatus
@@ -59,22 +61,26 @@ public class Farmland : MonoBehaviour, ITimeTracker
     public void Selected(bool toggle)
     {
         selected.SetActive(toggle);
+        cropPopUpMenu.SetActive(toggle);
     }
 
     public void CottonSeed()
     {
         InteractableObject cottonInv = Inventory.Instance.FindItemByType("Cotton Seed");
 
-        if (cottonInv.cottonSeed &&  farmStatus == FarmStatus.Dirt && cropPlanted == null && cottonInv.quantity > 0)
+        if (selectedField.selectedFarmLand != null)
         {
-            GameObject cropObject = Instantiate(cropPrefab, transform);
-            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
-            cropPlanted = cropObject.GetComponent<CropParams>();
-            cropPlanted.Plant(cottonInv);
-            Debug.Log(cropPlanted + " has been planted.");
-            Objtext.text = "Now use the watering can in your inventory to water the planted crop";
-            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
-        } 
+            if (cottonInv.cottonSeed && farmStatus == FarmStatus.Dirt && cropPlanted == null && cottonInv.quantity > 0)
+            {
+                GameObject cropObject = Instantiate(cropPrefab, transform);
+                cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
+                cropPlanted = cropObject.GetComponent<CropParams>();
+                cropPlanted.Plant(cottonInv);
+                Debug.Log(cropPlanted + " has been planted.");
+                Objtext.text = "Now use the watering can in your inventory to water the planted crop";
+                Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
+            }
+        }
     }
 
     public void ElderberrySeed()

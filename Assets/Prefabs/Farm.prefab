@@ -111,7 +111,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.031495, y: 0.26552296, z: 1.0374056}
+  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
   m_Center: {x: 0.0009001493, y: 0.061198212, z: 0.0000019073467}
 --- !u!114 &3137247722409030097
 MonoBehaviour:
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247724231611598}
+  cropPopUpMenu: {fileID: 0}
   dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
@@ -280,7 +281,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0296968, y: 0.24995041, z: 1.0374056}
+  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
   m_Center: {x: 0, y: 0.053411935, z: 0}
 --- !u!114 &3137247722915745818
 MonoBehaviour:
@@ -295,6 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247724365146607}
+  cropPopUpMenu: {fileID: 0}
   dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
@@ -577,7 +579,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0296968, y: 0.2341547, z: 1.0374056}
+  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
   m_Center: {x: 0.0000009536743, y: 0.045514077, z: 0.0000019073486}
 --- !u!114 &3137247723578547747
 MonoBehaviour:
@@ -592,6 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247723631430358}
+  cropPopUpMenu: {fileID: 0}
   dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
@@ -792,7 +795,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0296968, y: 0.28301668, z: 1.0374056}
+  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
   m_Center: {x: 0, y: 0.069945075, z: 0}
 --- !u!114 &3137247724086582775
 MonoBehaviour:
@@ -807,6 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247724363152591}
+  cropPopUpMenu: {fileID: 0}
   dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
@@ -1171,8 +1175,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7672724, y: 0.22069445, z: 0.8096531}
-  m_Center: {x: -0.007110119, y: 0.038784042, z: 0.02630417}
+  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
+  m_Center: {x: -0.009457022, y: 0.038784042, z: -0.013934076}
 --- !u!114 &3137247724424490478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,6 +1190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247723552966513}
+  cropPopUpMenu: {fileID: 0}
   dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
@@ -1304,7 +1309,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0296968, y: 0.35432076, z: 1.0374056}
+  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
   m_Center: {x: 0.0000009536743, y: 0.10559738, z: -1.4882149e-15}
 --- !u!114 &3137247724497505071
 MonoBehaviour:
@@ -1319,6 +1324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: {fileID: 3137247723228206461}
+  cropPopUpMenu: {fileID: 0}
   dropPosition: {fileID: 0}
   dirtMat: {fileID: 2100000, guid: 2a4aac6448159b94fbf9ae858b2661d3, type: 2}
   farmMat: {fileID: 2100000, guid: 1539f6b51dd0cbc4b893f0de9cb7043c, type: 2}
