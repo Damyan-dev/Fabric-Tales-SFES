@@ -8,12 +8,9 @@ public class PlayerController : MonoBehaviour
 	public float playerSpeed = 4.0f;
 	private CapsuleCollider col;
 	private Animator anim;
-	public WashingMachine washingMachine;
 	public AudioController audioController;
 	public Sheep1 Sheep;
-	public DyeMachine dyeMachine;
 	Interactor playerInteractor;
-	public Loom loom;
 	private int nextShear = 0;
 	public Text Cooldown;
 	public GameObject WMCanvas;

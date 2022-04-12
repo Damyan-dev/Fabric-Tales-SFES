@@ -7644,18 +7644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &100048309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7809,7 +7798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 798831741}
   Info: {fileID: 2092698894}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1001 &102070115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8808,6 +8797,7 @@ RectTransform:
   - {fileID: 1788787800}
   - {fileID: 199898985}
   - {fileID: 1646696192}
+  - {fileID: 774199125}
   m_Father: {fileID: 1101927226}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8829,18 +8819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &132748464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8947,9 +8926,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2046735b74708344bf1f824faaec5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
+  img: {fileID: 774199124}
   Info: {fileID: 1646696191}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!114 &132748468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12601,18 +12580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &244662966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12766,7 +12734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 1765044155}
   Info: {fileID: 1795888608}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1 &245334998
 GameObject:
   m_ObjectHideFlags: 0
@@ -14932,6 +14900,7 @@ RectTransform:
   - {fileID: 695118769}
   - {fileID: 703608752}
   - {fileID: 2128314435}
+  - {fileID: 1273102096}
   m_Father: {fileID: 182057217}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14953,18 +14922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &331208727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15116,9 +15074,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2046735b74708344bf1f824faaec5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
+  img: {fileID: 1273102095}
   Info: {fileID: 695118768}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1 &331692090
 GameObject:
   m_ObjectHideFlags: 0
@@ -15457,6 +15415,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342466307}
+  m_CullTransparentMesh: 1
+--- !u!1 &347924967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347924968}
+  - component: {fileID: 347924970}
+  - component: {fileID: 347924969}
+  m_Layer: 5
+  m_Name: Item image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &347924968
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347924967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5019528, y: 2.1362422, z: 2.1362422}
+  m_Children: []
+  m_Father: {fileID: 1404612519}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -127.50003, y: -101}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &347924969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347924967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &347924970
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347924967}
   m_CullTransparentMesh: 1
 --- !u!1 &348536465
 GameObject:
@@ -16982,7 +17015,7 @@ RectTransform:
   - {fileID: 2068144600}
   - {fileID: 1149751482}
   m_Father: {fileID: 0}
-  m_RootOrder: 88
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17106,22 +17139,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 428438055}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &428438058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17167,7 +17194,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 428438057}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: CropsTabOn
         m_Mode: 1
         m_Arguments:
@@ -18877,6 +18904,7 @@ RectTransform:
   - {fileID: 724201689}
   - {fileID: 1825731544}
   - {fileID: 1321158045}
+  - {fileID: 1484733627}
   m_Father: {fileID: 1538241921}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18898,18 +18926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &482267405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19061,9 +19078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2046735b74708344bf1f824faaec5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
+  img: {fileID: 1484733626}
   Info: {fileID: 1321158044}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1 &483576425
 GameObject:
   m_ObjectHideFlags: 0
@@ -19366,22 +19383,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 499193669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &499193672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19427,7 +19438,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499193671}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: SeedsTabOn
         m_Mode: 1
         m_Arguments:
@@ -19608,22 +19619,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 517086554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &517086557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19669,7 +19674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 517086556}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: FarmTabOn
         m_Mode: 1
         m_Arguments:
@@ -21350,22 +21355,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 555779390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &555779393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21411,7 +21410,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 555779392}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: MaterialTabOn
         m_Mode: 1
         m_Arguments:
@@ -22150,6 +22149,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
+--- !u!1 &593959994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593959995}
+  m_Layer: 0
+  m_Name: Shop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593959995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593959994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 37.13549, y: 17.015455, z: 79.4448}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 86
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595281105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7273638746831695839, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
@@ -22867,7 +22896,7 @@ RectTransform:
   m_LocalScale: {x: 0.08115381, y: 0.11787371, z: 0.10459894}
   m_Children: []
   m_Father: {fileID: 1827520084}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22883,22 +22912,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 611961467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &611961470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22944,7 +22967,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 611961469}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: MaterialTabOn
         m_Mode: 1
         m_Arguments:
@@ -24804,7 +24827,6 @@ GameObject:
   - component: {fileID: 691268025}
   - component: {fileID: 691268024}
   - component: {fileID: 691268023}
-  - component: {fileID: 691268027}
   m_Layer: 5
   m_Name: Seeds canvas
   m_TagString: Untagged
@@ -24894,27 +24916,13 @@ RectTransform:
   - {fileID: 1121141950}
   - {fileID: 499193670}
   m_Father: {fileID: 0}
-  m_RootOrder: 86
+  m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &691268027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691268022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4369548b27bcfb4da69b5083365cb0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barnOutside: {fileID: 0}
-  canvasObject: {fileID: 0}
 --- !u!4 &692404681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -26208,22 +26216,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 740997642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &740997645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26269,7 +26271,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 740997644}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: MaterialTabOn
         m_Mode: 1
         m_Arguments:
@@ -27339,6 +27341,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e540862fb70ab2f43bbf90782cf2fe31, type: 3}
   m_PrefabInstance: {fileID: 1018533240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &774199124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774199125}
+  - component: {fileID: 774199127}
+  - component: {fileID: 774199126}
+  m_Layer: 5
+  m_Name: Item image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &774199125
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774199124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.49871695, y: 2.1224706, z: 2.1224706}
+  m_Children: []
+  m_Father: {fileID: 132748462}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -126.5, y: -123}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.50000125, y: 0.50000066}
+--- !u!114 &774199126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774199124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d3ca067cb85af6f46bd583c05b82a73c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &774199127
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774199124}
+  m_CullTransparentMesh: 1
 --- !u!4 &774963084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3465396543010209986, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
@@ -27526,6 +27603,7 @@ GameObject:
   - component: {fileID: 792398915}
   - component: {fileID: 792398914}
   - component: {fileID: 792398913}
+  - component: {fileID: 792398916}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -27596,9 +27674,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 691268027}
-        m_TargetAssemblyTypeName: ShopTrigger, Assembly-CSharp
-        m_MethodName: CloseShop
+      - m_Target: {fileID: 792398916}
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
+        m_MethodName: CloseTabs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27646,6 +27724,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792398911}
   m_CullTransparentMesh: 1
+--- !u!114 &792398916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792398911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
 --- !u!1 &793072793
 GameObject:
   m_ObjectHideFlags: 0
@@ -28202,6 +28299,7 @@ RectTransform:
   m_Children:
   - {fileID: 1826751733}
   - {fileID: 866351839}
+  - {fileID: 941047498}
   - {fileID: 1600312122}
   m_Father: {fileID: 1538241921}
   m_RootOrder: 3
@@ -28224,18 +28322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &808356654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28387,9 +28474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2046735b74708344bf1f824faaec5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
+  img: {fileID: 941047497}
   Info: {fileID: 1600312121}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1 &810214384
 GameObject:
   m_ObjectHideFlags: 0
@@ -28438,22 +28525,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 810214384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &810214387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28499,7 +28580,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 810214386}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: FarmTabOn
         m_Mode: 1
         m_Arguments:
@@ -28959,22 +29040,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 828015593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &828015596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29020,7 +29095,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 828015595}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: CropsTabOn
         m_Mode: 1
         m_Arguments:
@@ -31011,22 +31086,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 911912761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &911912764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31072,7 +31141,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 911912763}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: CropsTabOn
         m_Mode: 1
         m_Arguments:
@@ -31521,6 +31590,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938998710}
   m_Mesh: {fileID: -4905233640310186999, guid: 7679286ec81d29649b1f3a1ff8a68992, type: 3}
+--- !u!1 &941047497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941047498}
+  - component: {fileID: 941047500}
+  - component: {fileID: 941047499}
+  m_Layer: 5
+  m_Name: Item image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &941047498
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941047497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4831568, y: 2.056249, z: 2.056249}
+  m_Children: []
+  m_Father: {fileID: 808356652}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -127.2, y: 63}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &941047499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941047497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3f648b979e81e9544989e919ae4025d1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &941047500
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941047497}
+  m_CullTransparentMesh: 1
 --- !u!4 &941454586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -32308,7 +32452,7 @@ RectTransform:
   - {fileID: 1782626010}
   - {fileID: 748765590}
   m_Father: {fileID: 0}
-  m_RootOrder: 80
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -32538,7 +32682,7 @@ RectTransform:
   m_LocalScale: {x: 0.08115381, y: 0.11787371, z: 0.10459894}
   m_Children: []
   m_Father: {fileID: 1827520084}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32554,22 +32698,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 979026095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &979026098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32615,7 +32753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 979026097}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ClothesTabOn
         m_Mode: 1
         m_Arguments:
@@ -33414,7 +33552,7 @@ RectTransform:
   - {fileID: 1313735619}
   - {fileID: 929677716}
   m_Father: {fileID: 0}
-  m_RootOrder: 89
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -34141,6 +34279,7 @@ GameObject:
   - component: {fileID: 1044153572}
   - component: {fileID: 1044153571}
   - component: {fileID: 1044153570}
+  - component: {fileID: 1044153573}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -34211,9 +34350,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1361079293}
-        m_TargetAssemblyTypeName: ShopTrigger, Assembly-CSharp
-        m_MethodName: CloseShop
+      - m_Target: {fileID: 1044153573}
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
+        m_MethodName: CloseTabs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34261,6 +34400,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044153568}
   m_CullTransparentMesh: 1
+--- !u!114 &1044153573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044153568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
 --- !u!1 &1045919481
 GameObject:
   m_ObjectHideFlags: 0
@@ -35571,7 +35729,6 @@ GameObject:
   - component: {fileID: 1112262966}
   - component: {fileID: 1112262965}
   - component: {fileID: 1112262964}
-  - component: {fileID: 1112262968}
   m_Layer: 5
   m_Name: Farm canvas
   m_TagString: Untagged
@@ -35659,27 +35816,13 @@ RectTransform:
   - {fileID: 810214385}
   - {fileID: 1185944486}
   m_Father: {fileID: 0}
-  m_RootOrder: 85
+  m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1112262968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112262963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4369548b27bcfb4da69b5083365cb0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barnOutside: {fileID: 0}
-  canvasObject: {fileID: 0}
 --- !u!1 &1119678770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4264112237968752919, guid: 7679286ec81d29649b1f3a1ff8a68992, type: 3}
@@ -35752,22 +35895,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121141949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1121141952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35813,7 +35950,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1121141951}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: FarmTabOn
         m_Mode: 1
         m_Arguments:
@@ -36053,7 +36190,7 @@ Transform:
   m_Children:
   - {fileID: 299268813}
   m_Father: {fileID: 0}
-  m_RootOrder: 82
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1126368603
 MonoBehaviour:
@@ -36223,22 +36360,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1130764713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1130764716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36284,7 +36415,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1130764715}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: FarmTabOn
         m_Mode: 1
         m_Arguments:
@@ -36551,22 +36682,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143306053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1143306056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36612,7 +36737,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1143306055}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ClothesTabOn
         m_Mode: 1
         m_Arguments:
@@ -37421,22 +37546,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177348375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1177348378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37482,7 +37601,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1177348377}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: MaterialTabOn
         m_Mode: 1
         m_Arguments:
@@ -37579,22 +37698,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177443383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1177443386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37640,7 +37753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1177443385}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ClothesTabOn
         m_Mode: 1
         m_Arguments:
@@ -37984,22 +38097,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185944485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1185944488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38045,7 +38152,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1185944487}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: SeedsTabOn
         m_Mode: 1
         m_Arguments:
@@ -40594,6 +40701,81 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1273102095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1273102096}
+  - component: {fileID: 1273102098}
+  - component: {fileID: 1273102097}
+  m_Layer: 5
+  m_Name: Item image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1273102096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273102095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.48715565, y: 2.0732672, z: 2.0732672}
+  m_Children: []
+  m_Father: {fileID: 331208725}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -126.5, y: -44}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1273102097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273102095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 637dea58d6d59254190178479dd6f9c7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1273102098
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273102095}
+  m_CullTransparentMesh: 1
 --- !u!1 &1273338550
 GameObject:
   m_ObjectHideFlags: 0
@@ -40642,22 +40824,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1273338550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1273338553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40703,7 +40879,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1273338552}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: CropsTabOn
         m_Mode: 1
         m_Arguments:
@@ -41534,6 +41710,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe824e3d179458b4fa458feedd3b8d6b, type: 3}
+--- !u!1 &1311513719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311513720}
+  - component: {fileID: 1311513722}
+  - component: {fileID: 1311513721}
+  m_Layer: 5
+  m_Name: Item image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1311513720
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311513719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.48163265, y: 2.0497622, z: 2.0497622}
+  m_Children: []
+  m_Father: {fileID: 1479781869}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -127.2, y: -120}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1311513721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311513719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3f648b979e81e9544989e919ae4025d1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1311513722
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311513719}
+  m_CullTransparentMesh: 1
 --- !u!1 &1313735618
 GameObject:
   m_ObjectHideFlags: 0
@@ -41714,7 +41965,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 81
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -43886,7 +44137,6 @@ GameObject:
   - component: {fileID: 1361079291}
   - component: {fileID: 1361079290}
   - component: {fileID: 1361079289}
-  - component: {fileID: 1361079293}
   m_Layer: 5
   m_Name: Crops canvas
   m_TagString: Untagged
@@ -43974,27 +44224,13 @@ RectTransform:
   - {fileID: 2142778265}
   - {fileID: 1044153569}
   m_Father: {fileID: 0}
-  m_RootOrder: 84
+  m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1361079293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361079288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4369548b27bcfb4da69b5083365cb0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barnOutside: {fileID: 0}
-  canvasObject: {fileID: 0}
 --- !u!1 &1361553476
 GameObject:
   m_ObjectHideFlags: 0
@@ -44931,7 +45167,6 @@ GameObject:
   - component: {fileID: 1400648285}
   - component: {fileID: 1400648284}
   - component: {fileID: 1400648283}
-  - component: {fileID: 1400648287}
   m_Layer: 5
   m_Name: Materials canvas
   m_TagString: Untagged
@@ -45019,27 +45254,13 @@ RectTransform:
   - {fileID: 517086555}
   - {fileID: 2091838653}
   m_Father: {fileID: 0}
-  m_RootOrder: 83
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1400648287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400648282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4369548b27bcfb4da69b5083365cb0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barnOutside: {fileID: 0}
-  canvasObject: {fileID: 0}
 --- !u!1 &1404612518
 GameObject:
   m_ObjectHideFlags: 0
@@ -45076,6 +45297,7 @@ RectTransform:
   - {fileID: 1501236746}
   - {fileID: 1363529243}
   - {fileID: 811817406}
+  - {fileID: 347924968}
   m_Father: {fileID: 1538241921}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45097,18 +45319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &1404612521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45260,9 +45471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2046735b74708344bf1f824faaec5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
+  img: {fileID: 347924967}
   Info: {fileID: 1501236745}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1001 &1412505064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47992,6 +48203,7 @@ RectTransform:
   - {fileID: 862233742}
   - {fileID: 1426952821}
   - {fileID: 1279348278}
+  - {fileID: 1311513720}
   m_Father: {fileID: 182057217}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48013,18 +48225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &1479781871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48176,9 +48377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2046735b74708344bf1f824faaec5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
+  img: {fileID: 1311513719}
   Info: {fileID: 1279348277}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1 &1481864243
 GameObject:
   m_ObjectHideFlags: 0
@@ -48345,6 +48546,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8957eaaa2dffe54c8a514bea0f1535b, type: 3}
+--- !u!1 &1484733626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484733627}
+  - component: {fileID: 1484733629}
+  - component: {fileID: 1484733628}
+  m_Layer: 5
+  m_Name: Item image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1484733627
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484733626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.48291966, y: 2.0552397, z: 2.0552397}
+  m_Children: []
+  m_Father: {fileID: 482267403}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -127.2, y: -19}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1484733628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484733626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1484733629
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484733626}
+  m_CullTransparentMesh: 1
 --- !u!1 &1486580965
 GameObject:
   m_ObjectHideFlags: 0
@@ -48502,22 +48778,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486717433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1486717436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48563,7 +48833,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1486717435}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ClothesTabOn
         m_Mode: 1
         m_Arguments:
@@ -49377,6 +49647,7 @@ GameObject:
   - component: {fileID: 1504147116}
   - component: {fileID: 1504147115}
   - component: {fileID: 1504147114}
+  - component: {fileID: 1504147117}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -49447,9 +49718,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1400648287}
-        m_TargetAssemblyTypeName: ShopTrigger, Assembly-CSharp
-        m_MethodName: CloseShop
+      - m_Target: {fileID: 1504147117}
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
+        m_MethodName: CloseTabs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49497,6 +49768,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504147112}
   m_CullTransparentMesh: 1
+--- !u!114 &1504147117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504147112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
 --- !u!1 &1504284011
 GameObject:
   m_ObjectHideFlags: 0
@@ -49869,22 +50159,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1517155449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 1936730976}
-  canvasObject2: {fileID: 1861642290}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1517155452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49930,7 +50214,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1517155451}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ShopkeeperOff
         m_Mode: 1
         m_Arguments:
@@ -56788,6 +57072,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d51524dfc246547b7708a2704192f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1578068988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2191883557590141988, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
+  m_PrefabInstance: {fileID: 6770683472378160144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578068985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40893e0e269a2ad4396a5a3bbdbf82d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1578068991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57194,22 +57489,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1597624090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1597624093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57255,7 +57544,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1597624092}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: SeedsTabOn
         m_Mode: 1
         m_Arguments:
@@ -57334,7 +57623,7 @@ RectTransform:
   m_LocalScale: {x: 0.18321986, y: 0.78279406, z: 0.78279394}
   m_Children: []
   m_Father: {fileID: 808356652}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -57548,6 +57837,7 @@ GameObject:
   - component: {fileID: 1610992091}
   - component: {fileID: 1610992090}
   - component: {fileID: 1610992089}
+  - component: {fileID: 1610992092}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -57618,9 +57908,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1861642290}
-        m_TargetAssemblyTypeName: ShopTrigger, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1610992092}
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
+        m_MethodName: CloseTabs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57668,6 +57958,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610992087}
   m_CullTransparentMesh: 1
+--- !u!114 &1610992092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610992087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
 --- !u!1 &1611256380
 GameObject:
   m_ObjectHideFlags: 0
@@ -58340,6 +58649,7 @@ GameObject:
   - component: {fileID: 1644257217}
   - component: {fileID: 1644257216}
   - component: {fileID: 1644257215}
+  - component: {fileID: 1644257218}
   m_Layer: 0
   m_Name: Close
   m_TagString: Untagged
@@ -58410,9 +58720,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1112262968}
-        m_TargetAssemblyTypeName: ShopTrigger, Assembly-CSharp
-        m_MethodName: CloseShop
+      - m_Target: {fileID: 1644257218}
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
+        m_MethodName: CloseTabs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58460,6 +58770,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644257213}
   m_CullTransparentMesh: 1
+--- !u!114 &1644257218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644257213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
 --- !u!4 &1645274408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -59146,22 +59475,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1675943171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 1936730976}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
+  MaterialsTab: {fileID: 1400648282}
+  CropsTab: {fileID: 1361079288}
+  FarmTab: {fileID: 1112262963}
+  SeedTab: {fileID: 691268022}
+  ClothesTab: {fileID: 1861642290}
 --- !u!114 &1675943174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59207,7 +59530,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1675943173}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ShopkeeperOn
         m_Mode: 1
         m_Arguments:
@@ -59987,7 +60310,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -61457,7 +61780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_RootOrder
-      value: 90
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_LocalScale.x
@@ -63719,6 +64042,7 @@ RectTransform:
   - {fileID: 95260176}
   - {fileID: 157640637}
   - {fileID: 1518356028}
+  - {fileID: 2126135922}
   m_Father: {fileID: 1827520084}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63740,18 +64064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &1815744446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63905,7 +64218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 1780596899}
   Info: {fileID: 1518356027}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!4 &1822421934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -64250,8 +64563,8 @@ RectTransform:
   - {fileID: 1601800537}
   - {fileID: 893561118}
   - {fileID: 793072794}
-  - {fileID: 611961468}
   - {fileID: 979026096}
+  - {fileID: 611961468}
   - {fileID: 1273338551}
   - {fileID: 1130764714}
   - {fileID: 1597624091}
@@ -65273,18 +65586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingameCamera: {fileID: 2134475459}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
-  MaterialsTab: {fileID: 0}
-  CropsTab: {fileID: 0}
-  FarmTab: {fileID: 0}
-  SeedTab: {fileID: 0}
-  ClothesTab: {fileID: 0}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
+  playerInteractor: {fileID: 1578068988}
 --- !u!114 &1867462098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65438,7 +65740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img: {fileID: 2146375369}
   Info: {fileID: 2006593155}
-  shopkeeperText: {fileID: 0}
+  shopkeeperText: {fileID: 2126135919}
 --- !u!1 &1873383605
 GameObject:
   m_ObjectHideFlags: 0
@@ -66694,7 +66996,6 @@ GameObject:
   - component: {fileID: 1936730979}
   - component: {fileID: 1936730978}
   - component: {fileID: 1936730977}
-  - component: {fileID: 1936730981}
   m_Layer: 5
   m_Name: Shopkeeper Canvas
   m_TagString: Untagged
@@ -66770,7 +67071,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936730976}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
@@ -66780,27 +67081,13 @@ RectTransform:
   - {fileID: 1434148890}
   - {fileID: 685908132}
   m_Father: {fileID: 0}
-  m_RootOrder: 79
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -37.13549, y: -17.015455}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1936730981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936730976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4369548b27bcfb4da69b5083365cb0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barnOutside: {fileID: 0}
-  canvasObject: {fileID: 0}
 --- !u!1 &1937546465
 GameObject:
   m_ObjectHideFlags: 0
@@ -67118,22 +67405,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1945208697}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1945208700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67179,7 +67460,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1945208699}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: FarmTabOn
         m_Mode: 1
         m_Arguments:
@@ -67499,22 +67780,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1964327990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &1964327993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67560,7 +67835,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1964327992}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: MaterialTabOn
         m_Mode: 1
         m_Arguments:
@@ -69435,22 +69710,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021076263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &2021076266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69496,7 +69765,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2021076265}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: ClothesTabOn
         m_Mode: 1
         m_Arguments:
@@ -69941,22 +70210,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2025279945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &2025279948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70002,7 +70265,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2025279947}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: CropsTabOn
         m_Mode: 1
         m_Arguments:
@@ -70675,6 +70938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 808d3b9248627f843b45d6d2ead99a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  machine: {fileID: 0}
 --- !u!64 &2046781114
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -71245,7 +71510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2060932876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71910,7 +72175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_RootOrder
-      value: 91
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 2303931857851211941, guid: 5eb82392d224db34993a7821014db467, type: 3}
       propertyPath: m_LocalScale.x
@@ -72158,22 +72423,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2091838652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &2091838655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72219,7 +72478,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2091838654}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: SeedsTabOn
         m_Mode: 1
         m_Arguments:
@@ -73134,6 +73393,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
+--- !u!1 &2126135919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126135922}
+  - component: {fileID: 2126135921}
+  - component: {fileID: 2126135920}
+  m_Layer: 5
+  m_Name: N/A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2126135920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126135919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &2126135921
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126135919}
+  m_CullTransparentMesh: 1
+--- !u!224 &2126135922
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126135919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1815744444}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2128314434
 GameObject:
   m_ObjectHideFlags: 0
@@ -73606,22 +73944,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142778264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3965286b0e74aa7408d192b484b3ef58, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e9d9e835b0d98d44ba7b0072acc8266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameCamera: {fileID: 0}
-  canvasObject1: {fileID: 0}
-  canvasObject2: {fileID: 0}
+  ShopkeeperCanvas: {fileID: 1936730976}
+  ShopCanvas: {fileID: 1861642290}
   MaterialsTab: {fileID: 1400648282}
   CropsTab: {fileID: 1361079288}
   FarmTab: {fileID: 1112262963}
   SeedTab: {fileID: 691268022}
   ClothesTab: {fileID: 1861642290}
-  playerInteractor: {fileID: 0}
-  ItemSlotData:
-    itemData: {fileID: 0}
-    itemName: 
-    quantity: 0
 --- !u!114 &2142778267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73667,7 +73999,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2142778266}
-        m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
+        m_TargetAssemblyTypeName: SwitchTabs, Assembly-CSharp
         m_MethodName: SeedsTabOn
         m_Mode: 1
         m_Arguments:

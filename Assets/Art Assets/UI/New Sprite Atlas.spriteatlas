@@ -57,6 +57,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 6c456f71ba391c840b75b7ab5b9bc202, type: 3}
   - {fileID: 21300000, guid: c9d33d8176375754785df5b6633ab10a, type: 3}
   - {fileID: 21300000, guid: d1d935c162f71094680f0305c7324195, type: 3}
+  - {fileID: 21300000, guid: 1877fac147c20614aa68d0630fb6bb72, type: 3}
   - {fileID: 21300000, guid: de0d59e1a4479984aab973c7c1d0b838, type: 3}
   - {fileID: 21300000, guid: bbbf5ae18c91b764398aae66c6aa6693, type: 3}
   - {fileID: 21300000, guid: 1d7756f19b1e98a45948005b035db239, type: 3}
@@ -122,10 +123,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 64aba166290bb874c86ea639ca430fb9, type: 3}
   - {fileID: 21300000, guid: 4f04a8669993348458093788e0eb9d4c, type: 3}
   - {fileID: 21300000, guid: 404b6976ddc18414d87f2eece79bd48d, type: 3}
+  - {fileID: 21300000, guid: 12be0c968d3547c468e8ae1178c4e176, type: 3}
   - {fileID: 21300000, guid: 9f7581a6d8e5f4e4383d7adc6c34adb0, type: 3}
   - {fileID: 21300000, guid: 143fe6d6a9a692f4ab465508a8e0829d, type: 3}
   - {fileID: 21300000, guid: ca9304f6e0546f24481f640ebb54887f, type: 3}
   - {fileID: 21300000, guid: fcbe5e079f0f3b74baad2b3adda920ea, type: 3}
+  - {fileID: 21300000, guid: a8af61271b62e1148bb95fc26bc43bdb, type: 3}
   - {fileID: 21300000, guid: 2f6edc27a09b72340a9804fbd2c60ccf, type: 3}
   - {fileID: 21300000, guid: 9613b93770469a944b1a57588779033a, type: 3}
   - {fileID: 21300000, guid: 57de014735a25a441943327fa7efb659, type: 3}
@@ -189,6 +192,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a856500ccd9b6634c9b6e0ea6464a386, type: 3}
   - {fileID: 21300000, guid: 16bd491c84335bc43a8d73ca052a5af5, type: 3}
   - {fileID: 21300000, guid: 3e8f4e2cfc80c1945a4500da3bcc88c9, type: 3}
+  - {fileID: 21300000, guid: dcc2c53c77263dc41bce3f424d657c7c, type: 3}
   - {fileID: 21300000, guid: 33fb973cf2f681144be8c3e34a205b5f, type: 3}
   - {fileID: 21300000, guid: d3ca067cb85af6f46bd583c05b82a73c, type: 3}
   - {fileID: 21300000, guid: bbc6888c24fd7c146946e2cc37e8177c, type: 3}
@@ -197,6 +201,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3400f2ece8cdab046b51aa94b83e06c5, type: 3}
   - {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
   - {fileID: 21300000, guid: c41c2bec2903eb74abeef97f3810e1da, type: 3}
+  - {fileID: 21300000, guid: d9899eec49a753743a1ba6dd37514bd5, type: 3}
   - {fileID: 21300000, guid: 1908951d50a2aaf49a9f8b87ff3f9f60, type: 3}
   - {fileID: 21300000, guid: 5b41a51d39c0a414489258b735649a45, type: 3}
   - {fileID: 21300000, guid: 9c7c366d46e748a44a608c9051274105, type: 3}
@@ -220,6 +225,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5e81d39e02d4259419bb5b3c981d80d0, type: 3}
   - {fileID: 21300000, guid: 79a4b99e88681544db26a9ffd6550390, type: 3}
   - {fileID: 21300000, guid: 5a02df9ec18f28e4abf4495b117b4d14, type: 3}
+  - {fileID: 21300000, guid: c9e183ce0c23a8648b0cd4adfd27bab9, type: 3}
   - {fileID: 21300000, guid: 052bb3ce786df0a43a1368a4a709925e, type: 3}
   - {fileID: 21300000, guid: f43d02eee27b59a45a3e7cbebfe9592b, type: 3}
   - {fileID: 21300000, guid: 80ec15ee77516ba488cef756f9a9fc2d, type: 3}
@@ -255,6 +261,7 @@ SpriteAtlas:
   - frame034
   - Journal Button
   - frame011
+  - Frame Smaller
   - frame045
   - frame024
   - turmeric green
@@ -320,10 +327,12 @@ SpriteAtlas:
   - Down Arrow
   - Menu Clicked
   - SMall Dialoge bar
+  - Dye Machine Header
   - Progress Bar 2
   - WateringCan
   - frame039
   - Border Top Left
+  - Loom header
   - frame019
   - Credits Normal
   - firefox_oZloZxAvKf
@@ -387,6 +396,7 @@ SpriteAtlas:
   - frame035
   - Load Normal
   - frame001
+  - Sewing Machine Header
   - Save Clicked
   - Cotton Seed Icon
   - craft button normal
@@ -395,6 +405,7 @@ SpriteAtlas:
   - frame044
   - elderberry green
   - frame013
+  - Washing Machine Header
   - cloth_gold
   - polyester clothing blue
   - inside separator top left
@@ -418,6 +429,7 @@ SpriteAtlas:
   - all borders
   - Water Inventory
   - Farm Tab
+  - Machine Screen Simple
   - Watering Can Icon
   - Credits Click
   - frame005
