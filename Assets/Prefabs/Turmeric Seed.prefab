@@ -43,18 +43,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac22d751bac3b4db197ad591e7a80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  harvestable: {fileID: 0}
+  harvestable: {fileID: 2583388155835689351, guid: 89e804ffb4f1ee14dab7e67cd100a2cb, type: 3}
   seedNeeded: {fileID: 0}
-  seedling: {fileID: 0}
-  wateringCanModel: {fileID: 0}
-  shearsModel: {fileID: 0}
+  seedling: {fileID: 4285616403407284518, guid: f8dade99553394a408a686ac72a10845, type: 3}
   timeToGrow: 1
   inventory: 1
   machine: 0
   farm: 0
   cottonSeed: 0
   elderberrySeed: 0
-  tumericSeed: 1
+  turmericSeed: 1
   fertilizer: 0
   shears: 0
   itemType: Turmeric Seed

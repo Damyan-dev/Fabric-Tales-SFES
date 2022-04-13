@@ -10,7 +10,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
     public Transform dropPosition;
     public Material dirtMat, farmMat, wateredMat;
     public Text Objtext;
-    GameTimeConverter timeWatered;
+    GameTimeConverter timePlanted;
     InteractableObject seedData;
     private Interactor selectedField;
     
@@ -45,13 +45,17 @@ public class Farmland : MonoBehaviour, ITimeTracker
         {
             case FarmStatus.Dirt:
                 materialToSwitch = dirtMat;
+
                 break;
             case FarmStatus.Farm:
                 materialToSwitch = farmMat;
+                timePlanted = TimeController.Instance.GetTimeStamp();
+
                 break;
             case FarmStatus.Watered:
                 materialToSwitch = wateredMat;
-                timeWatered = TimeController.Instance.GetTimeStamp();
+                timePlanted = TimeController.Instance.GetTimeStamp();
+
                 break;
         }
 
@@ -68,68 +72,114 @@ public class Farmland : MonoBehaviour, ITimeTracker
     {
         InteractableObject cottonInv = Inventory.Instance.FindItemByType("Cotton Seed");
 
-        if (selectedField.selectedFarmLand != null)
-        {
-            if (cottonInv.cottonSeed && farmStatus == FarmStatus.Dirt && cropPlanted == null && cottonInv.quantity > 0)
+        
+            if (cottonInv.cottonSeed && farmStatus == FarmStatus.Farm && cropPlanted == null && cottonInv.quantity >= 1)
             {
+            Debug.Log("planted");
                 GameObject cropObject = Instantiate(cropPrefab, transform);
                 cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
                 cropPlanted = cropObject.GetComponent<CropParams>();
                 cropPlanted.Plant(cottonInv);
-                Debug.Log(cropPlanted + " has been planted.");
-                Objtext.text = "Now use the watering can in your inventory to water the planted crop";
+                Debug.Log(cropPlanted + " has been planted.");               
                 Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
             }
+
+        if (cottonInv.cottonSeed && farmStatus == FarmStatus.Watered && cropPlanted == null && cottonInv.quantity >= 1)
+        {
+            Debug.Log("planted");
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
+            cropPlanted = cropObject.GetComponent<CropParams>();
+            cropPlanted.PlantFertilized(cottonInv);
+            Debug.Log(cropPlanted + " has been planted.");
+            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
         }
+
     }
 
     public void ElderberrySeed()
     {
-        if (seedData.elderberrySeed && farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        InteractableObject cottonInv = Inventory.Instance.FindItemByType("Elderberry Seed");
+
+
+        if (cottonInv.elderberrySeed && farmStatus == FarmStatus.Farm && cropPlanted == null && cottonInv.quantity >= 1)
         {
+            Debug.Log("planted");
             GameObject cropObject = Instantiate(cropPrefab, transform);
             cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
             cropPlanted = cropObject.GetComponent<CropParams>();
-            cropPlanted.Plant(seedData);
+            cropPlanted.Plant(cottonInv);
             Debug.Log(cropPlanted + " has been planted.");
-            Objtext.text = "Now use the watering can in your inventory to water the planted crop";
-            Inventory.Instance.RemoveItem(seedData);
+            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
         }
-        else
+
+        if (cottonInv.elderberrySeed && farmStatus == FarmStatus.Watered && cropPlanted == null && cottonInv.quantity >= 1)
         {
-            Debug.Log(seedData + " has not been found");
+            Debug.Log("planted");
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
+            cropPlanted = cropObject.GetComponent<CropParams>();
+            cropPlanted.PlantFertilized(cottonInv);
+            Debug.Log(cropPlanted + " has been planted.");
+            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
         }
     }
 
-    public void TumericSeed()
+    public void TurmericSeed()
     {
-        if (seedData.tumericSeed && farmStatus == FarmStatus.Dirt && cropPlanted == null)
+        InteractableObject cottonInv = Inventory.Instance.FindItemByType("Turmeric Seed");
+
+
+        if (cottonInv.turmericSeed && farmStatus == FarmStatus.Farm && cropPlanted == null && cottonInv.quantity >= 1)
         {
+            Debug.Log("planted");
             GameObject cropObject = Instantiate(cropPrefab, transform);
             cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
             cropPlanted = cropObject.GetComponent<CropParams>();
-            cropPlanted.Plant(seedData);
+            cropPlanted.Plant(cottonInv);
             Debug.Log(cropPlanted + " has been planted.");
-            Objtext.text = "Now use the watering can in your inventory to water the planted crop";
-            Inventory.Instance.RemoveItem(seedData);
+            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
+        }
+
+        if (cottonInv.turmericSeed && farmStatus == FarmStatus.Watered && cropPlanted == null && cottonInv.quantity >= 1)
+        {
+            Debug.Log("planted");
+            GameObject cropObject = Instantiate(cropPrefab, transform);
+            cropObject.transform.position = new Vector3(transform.position.x, 15.35f, transform.position.z);
+            cropPlanted = cropObject.GetComponent<CropParams>();
+            cropPlanted.PlantFertilized(cottonInv);
+            Debug.Log(cropPlanted + " has been planted.");
+            Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
         }
     }
 
     public void ClockUpdate(GameTimeConverter gametime)
     {
-        if(farmStatus == FarmStatus.Watered)
+        if(farmStatus == FarmStatus.Farm && cropPlanted != null)
         {
-            int hoursPassed = GameTimeConverter.CompareTime(timeWatered, gametime);
-            Debug.Log(hoursPassed + " since the crop was watered.");
+            int hoursPassed = GameTimeConverter.CompareTime(timePlanted, gametime);
+            Debug.Log(hoursPassed + " since the crop was planted.");
+            cropPlanted.Grow();
+           
 
-            if (cropPlanted != null)
+            if(hoursPassed > 12)
             {
-                cropPlanted.Grow();
+                cropPlanted = null;
+                ChangeFarmStatus(FarmStatus.Dirt);
             }
+        }
 
-            if(hoursPassed > 24)
+        if(farmStatus == FarmStatus.Watered && cropPlanted != null)
+        {
+            int hoursPassed = GameTimeConverter.CompareTime(timePlanted, gametime);
+            Debug.Log(hoursPassed + " since the crop was planted and fertilized.");
+            cropPlanted.GrowFertilized();
+
+
+            if (hoursPassed > 12)
             {
-                ChangeFarmStatus(FarmStatus.Farm);
+                cropPlanted = null;
+                ChangeFarmStatus(FarmStatus.Dirt);
             }
         }
     }

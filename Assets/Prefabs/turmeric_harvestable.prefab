@@ -1,0 +1,387 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &267217879770012642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9143013822838901543}
+  m_Layer: 0
+  m_Name: turmeric1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9143013822838901543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267217879770012642}
+  m_LocalRotation: {x: 0.34946966, y: -0.6147121, z: -0.34946966, w: 0.6147121}
+  m_LocalPosition: {x: 0.03318416, y: 0.15396926, z: 0.10450219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 823463070574855901}
+  m_Father: {fileID: 2923356758585504573}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2583388155835689351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2923356758585504573}
+  - component: {fileID: 1751729616666921956}
+  - component: {fileID: 9025610270971353074}
+  - component: {fileID: -5245046487677700390}
+  m_Layer: 0
+  m_Name: turmeric_harvestable
+  m_TagString: Item
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2923356758585504573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583388155835689351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.022, y: -0.011, z: 0.052}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_Children:
+  - {fileID: 7281857309240748365}
+  - {fileID: 9143013822838901543}
+  - {fileID: 3779276004130632506}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1751729616666921956
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583388155835689351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3d3138c0635a1c4c95974e84e4dae34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9025610270971353074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583388155835689351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acac22d751bac3b4db197ad591e7a80d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  harvestable: {fileID: 0}
+  seedNeeded: {fileID: 0}
+  seedling: {fileID: 0}
+  timeToGrow: 0
+  inventory: 1
+  machine: 0
+  farm: 0
+  cottonSeed: 0
+  elderberrySeed: 0
+  turmericSeed: 0
+  fertilizer: 0
+  shears: 0
+  itemType: Turmeric
+  selectedIntObj: {fileID: 3779276004130632507}
+  itemName: Turmeric
+  description: This plant is used as a yellow dye in the Dyeing Machine.
+  thumbnail: {fileID: 21300000, guid: 1d7756f19b1e98a45948005b035db239, type: 3}
+  quantity: 1
+  anim: {fileID: 1751729616666921956}
+--- !u!65 &-5245046487677700390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583388155835689351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.617604, z: 1}
+  m_Center: {x: 0, y: 0.3088013, z: 0}
+--- !u!1 &4121523143727579890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7281857309240748365}
+  - component: {fileID: 3188581547785287972}
+  m_Layer: 0
+  m_Name: turmeric
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7281857309240748365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4121523143727579890}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2272676, y: 0.01031922, z: -1.7094518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2923356758585504573}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &3188581547785287972
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4121523143727579890}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6036859283633556464, guid: 99ee44e152c1480468d6d6d77d05965e, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 5559596311955139748, guid: 99ee44e152c1480468d6d6d77d05965e, type: 3}
+  m_Bones:
+  - {fileID: 9143013822838901543}
+  - {fileID: 823463070574855901}
+  - {fileID: 1146641875105248212}
+  - {fileID: 6542406562441047482}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 9143013822838901543}
+  m_AABB:
+    m_Center: {x: -0.5385723, y: 0.056967735, z: 0.03318408}
+    m_Extent: {x: 0.7162212, y: 0.67451155, z: 0.3461589}
+  m_DirtyAABB: 0
+--- !u!1 &5161319546696269662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6542406562441047482}
+  m_Layer: 0
+  m_Name: turmeric4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6542406562441047482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161319546696269662}
+  m_LocalRotation: {x: -0.16166323, y: 0.6883786, z: 0.16166323, w: 0.6883786}
+  m_LocalPosition: {x: -0.5640493, y: 0.067401856, z: 0.2137877}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1146641875105248212}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5656556592690826230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823463070574855901}
+  m_Layer: 0
+  m_Name: turmeric2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823463070574855901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5656556592690826230}
+  m_LocalRotation: {x: 0.7971336, y: -0.603803, z: -3.6972267e-17, w: 4.8810356e-17}
+  m_LocalPosition: {x: -0.37248474, y: -0.0020328367, z: 0.04035368}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1146641875105248212}
+  m_Father: {fileID: 9143013822838901543}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8324504957325862421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146641875105248212}
+  m_Layer: 0
+  m_Name: turmeric3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146641875105248212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8324504957325862421}
+  m_LocalRotation: {x: -0.5941887, y: 0.8043257, z: 8.40277e-17, w: 1.0692386e-17}
+  m_LocalPosition: {x: -0.36554608, y: -0.004348042, z: 0.044169854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6542406562441047482}
+  m_Father: {fileID: 823463070574855901}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8814565301251482185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2923356758585504573}
+    m_Modifications:
+    - target: {fileID: 5629798532803793266, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_Name
+      value: Selected_harvestable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0495054
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1248837
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4bda687c716454f439db805c4782e118, type: 3}
+--- !u!1 &3779276004130632507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5629798532803793266, guid: 4bda687c716454f439db805c4782e118, type: 3}
+  m_PrefabInstance: {fileID: 8814565301251482185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3779276004130632506 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5629798532803793267, guid: 4bda687c716454f439db805c4782e118, type: 3}
+  m_PrefabInstance: {fileID: 8814565301251482185}
+  m_PrefabAsset: {fileID: 0}

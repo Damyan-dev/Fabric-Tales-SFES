@@ -5,6 +5,21 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
+    public static Interactor Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
     public Farmland selectedFarmLand = null;
     public InteractableObject selectedItemInteractableScript = null;
     public GameObject selectedInterObj = null;
@@ -84,16 +99,6 @@ public class Interactor : MonoBehaviour
 
         selectedItemInteractableScript = interactableObject;
         interactableObject.SelectedInteractableObject(true);
-    }
-
-    public void Interact()
-    {
-        if (selectedFarmLand != null)
-        {
-            selectedFarmLand.CottonSeed();
-            return;
-        }
-        
     }
 
 }

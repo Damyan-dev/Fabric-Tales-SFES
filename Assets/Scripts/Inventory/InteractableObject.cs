@@ -16,7 +16,7 @@ public class InteractableObject : MonoBehaviour
     public bool farm;
     public bool cottonSeed;
     public bool elderberrySeed;
-    public bool tumericSeed;
+    public bool turmericSeed;
     public bool fertilizer;
     public bool shears;
     public string itemType;
