@@ -1,23 +1,18 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ShopTrigger : MonoBehaviour
+public class LandlordTriggerDialouge : MonoBehaviour
 {
-
-    public GameObject barnOutside = null;
-    public GameObject canvasObject;
     public string[] dialogue = { "Word A", "Word B" };
     public TMP_Text text;
-
+    public GameObject Canvas;
     // Start is called before the first frame update
     void Start()
     {
-        barnOutside.SetActive(true);
-        canvasObject.SetActive(false);
+        Canvas.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -25,8 +20,8 @@ public class ShopTrigger : MonoBehaviour
         if (col.tag == "Player")
         {
             Debug.Log("entered");
-            barnOutside.SetActive(false);
-            canvasObject.SetActive(true);
+           
+            Canvas.SetActive(true);
             // log whatever comes out of the RandomWord string.
             string dialogueToDisplay = Randomdialogue();
 
@@ -38,10 +33,13 @@ public class ShopTrigger : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            barnOutside.SetActive(true);
-            canvasObject.SetActive(false);
+            
+            Canvas.SetActive(false);
         }
     }
+    // when you see a string function,
+    // it will return a string that
+    // you can use anywhere!
     private string Randomdialogue()
     {
         // grab a random string from the words array
@@ -50,5 +48,4 @@ public class ShopTrigger : MonoBehaviour
         // return it (this will be the string that the script will use)
         return randomdialogue;
     }
-
 }
