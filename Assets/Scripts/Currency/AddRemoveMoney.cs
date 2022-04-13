@@ -8,14 +8,35 @@ public class AddRemoveMoney : MonoBehaviour
     public GameObject ingameCamera;
     public Interactor playerInteractor;
   
-    public void Subtract10()
+    public void BuyCottonSeed()
     {
-        // ItemSlotData item = InventoryManager.Instance.("Cotton Seeds");
-        // playerInteractor.ItemPickup();
-
        var itemToBuy = Inventory.Instance.FindItemByType("Cotton Seed");
         
-        if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null)
+        if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
+        {
+            Inventory.Instance.AddItem(itemToBuy.itemType, 1);
+            Debug.Log("Added seed");
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
+        }
+    }
+
+    public void BuyElderberrySeed()
+    {
+        var itemToBuy = Inventory.Instance.FindItemByType("Elderberry Seed");
+
+        if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
+        {
+            Inventory.Instance.AddItem(itemToBuy.itemType, 1);
+            Debug.Log("Added seed");
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
+        }
+    }
+
+    public void BuyTurmericSeed()
+    {
+        var itemToBuy = Inventory.Instance.FindItemByType("Turmeric Seed");
+
+        if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
             Debug.Log("Added seed");
@@ -35,7 +56,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
         var itemToSell = Inventory.Instance.FindItemByType("Cotton Shirt");
 
-        if (itemToSell.itemType != null && itemToSell.quantity > 0)
+        if (itemToSell.itemType != null && itemToSell.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(itemToSell.itemType, 1);
             Debug.Log("removed shirt");
@@ -44,9 +65,9 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add20()
     {
-        var itemToSell3 = Inventory.Instance.FindItemByType("Washed Wool");
+        var itemToSell3 = Inventory.Instance.FindItemByType("Washed Cotton");
 
-        if (itemToSell3.itemType != null && itemToSell3.quantity > 0)
+        if (itemToSell3.itemType != null && itemToSell3.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(itemToSell3.itemType, 1);
             Debug.Log("removed WW");
@@ -57,7 +78,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
         var itemToSell2 = Inventory.Instance.FindItemByType("Red Cotton Shirt");
 
-        if (itemToSell2.itemType != null && itemToSell2.quantity > 0)
+        if (itemToSell2.itemType != null && itemToSell2.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(itemToSell2.itemType, 1);
             Debug.Log("removed red shirt");
@@ -68,7 +89,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
         var itemToSell4 = Inventory.Instance.FindItemByType("Yellow Cotton Shirt");
 
-        if (itemToSell4.itemType != null && itemToSell4.quantity > 0)
+        if (itemToSell4.itemType != null && itemToSell4.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(itemToSell4.itemType, 1);
             Debug.Log("removed yellow shirt");

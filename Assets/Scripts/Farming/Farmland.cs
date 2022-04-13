@@ -82,6 +82,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
                 cropPlanted.Plant(cottonInv);
                 Debug.Log(cropPlanted + " has been planted.");               
                 Inventory.Instance.RemoveItem(cottonInv.itemType, 1);
+
             }
 
         if (cottonInv.cottonSeed && farmStatus == FarmStatus.Watered && cropPlanted == null && cottonInv.quantity >= 1)
@@ -163,8 +164,8 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
             if(hoursPassed > 12)
             {
-                cropPlanted = null;
                 ChangeFarmStatus(FarmStatus.Dirt);
+                cropPlanted = null;
             }
         }
 
@@ -176,8 +177,9 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
             if (hoursPassed > 12)
             {
-                cropPlanted = null;
                 ChangeFarmStatus(FarmStatus.Dirt);
+                cropPlanted = null;
+
             }
         }
     }

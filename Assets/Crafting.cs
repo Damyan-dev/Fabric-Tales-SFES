@@ -57,7 +57,7 @@ public class Crafting : MonoBehaviour
     }
     public void OrganicYDyeCraft()
     {
-        /*
+        
         var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Turmeric");
 
@@ -67,7 +67,7 @@ public class Crafting : MonoBehaviour
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Yellow Cotton Shirt", 1, dyeSpawnPoint.position));
         }
-        */
+        
     }
 
     public void InorganicRDyeCraft()
@@ -84,7 +84,7 @@ public class Crafting : MonoBehaviour
         }
     }
     public void InorganicYDyeCraft()
-    {/*
+    {
         var dyeItemToUse = Inventory.Instance.FindItemByType("Polyester Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Turmeric");
 
@@ -95,7 +95,7 @@ public class Crafting : MonoBehaviour
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Yellow Polyester Shirt", 1, dyeSpawnPoint.position));
         }
-        */
+        
     }
 
     public IEnumerator CraftDelay(float seconds, string itemType, int quantity, Vector3 spawnPoint)
