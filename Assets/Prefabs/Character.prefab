@@ -365,8 +365,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8833590855728530672}
+  m_Children: []
   m_Father: {fileID: 6520356582479455680}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -444,99 +443,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.04193212, y: 0.0012732744, z: 0.009863943}
     m_Extent: {x: 0.40259248, y: 0.32413462, z: 0.18679824}
   m_DirtyAABB: 0
---- !u!1 &4052246285899390277
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8833590855728530672}
-  - component: {fileID: 7923277486352326122}
-  m_Layer: 0
-  m_Name: CharacterHightlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8833590855728530672
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4052246285899390277}
-  m_LocalRotation: {x: -0.00063235033, y: 0.70710653, z: -0.70710653, w: -0.00063235033}
-  m_LocalPosition: {x: -0, y: 1.19, z: -0.55}
-  m_LocalScale: {x: 0.37037018, y: 0.3703703, z: 0.3703704}
-  m_Children: []
-  m_Father: {fileID: 1275676845318133874}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!108 &7923277486352326122
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4052246285899390277}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 0
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 20
-  m_SpotAngle: 49
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &4684506086475951428
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,14 +765,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 4
-  washingMachine: {fileID: 0}
   audioController: {fileID: 0}
   Sheep: {fileID: 0}
-  dyeMachine: {fileID: 0}
-  loom: {fileID: 0}
   Cooldown: {fileID: 0}
   WMCanvas: {fileID: 0}
   LoomCanvas: {fileID: 0}
+  DMCanvas: {fileID: 0}
   cottonItem: {fileID: 0}
 --- !u!114 &5852187401226633083
 MonoBehaviour:
@@ -892,6 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40893e0e269a2ad4396a5a3bbdbf82d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedFarmLand: {fileID: 0}
   selectedItemInteractableScript: {fileID: 0}
   selectedInterObj: {fileID: 0}
   inventory: {fileID: 391667780903861597}
