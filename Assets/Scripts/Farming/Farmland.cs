@@ -158,7 +158,6 @@ public class Farmland : MonoBehaviour, ITimeTracker
         if(farmStatus == FarmStatus.Farm && cropPlanted != null)
         {
             int hoursPassed = GameTimeConverter.CompareTime(timePlanted, gametime);
-            Debug.Log(hoursPassed + " since the crop was planted.");
             cropPlanted.Grow();
            
 
@@ -172,7 +171,6 @@ public class Farmland : MonoBehaviour, ITimeTracker
         if(farmStatus == FarmStatus.Watered && cropPlanted != null)
         {
             int hoursPassed = GameTimeConverter.CompareTime(timePlanted, gametime);
-            Debug.Log(hoursPassed + " since the crop was planted and fertilized.");
             cropPlanted.GrowFertilized();
 
 

@@ -51,7 +51,6 @@ public class CropParams : MonoBehaviour
     {
         
         growth++;
-        Debug.Log(growth);
 
         if(growth >= maxGrowth/4 && cropState == CropState.Seed)
         {
@@ -68,7 +67,6 @@ public class CropParams : MonoBehaviour
     {
 
         growthFertlized++;
-        Debug.Log(growth);
 
         if (growthFertlized >= maxGrowthFertlized / 6 && cropState == CropState.Seed)
         {
