@@ -8,6 +8,7 @@ public class Crafting : MonoBehaviour
     public Transform wmSpawnPoint;
     public Transform lmSpawnPoint;
     public Transform dyeSpawnPoint;
+    public GameObject selectedFinished;
 
 
     public void WashedCottonCraft()
@@ -42,9 +43,7 @@ public class Crafting : MonoBehaviour
         }
     }
 
-
-
-    public void OrganicDyeCraft()
+    public void OrganicRDyeCraft()
     {
         var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Elderberry");
@@ -56,8 +55,22 @@ public class Crafting : MonoBehaviour
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Red Cotton Shirt", 1, dyeSpawnPoint.position));
         }
     }
+    public void OrganicYDyeCraft()
+    {
+        /*
+        var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
+        var dyeMaterialToUse = Inventory.Instance.FindItemByType("Turmeric");
 
-    public void InorganicDyeCraft()
+        if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
+        {
+            Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
+            Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
+            Inventory.Instance.StartCoroutine(CraftDelay(2, "Yellow Cotton Shirt", 1, dyeSpawnPoint.position));
+        }
+        */
+    }
+
+    public void InorganicRDyeCraft()
     {
         var dyeItemToUse = Inventory.Instance.FindItemByType("Polyester Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Elderberry");
@@ -70,13 +83,31 @@ public class Crafting : MonoBehaviour
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Red Polyester Shirt", 1, dyeSpawnPoint.position));
         }
     }
+    public void InorganicYDyeCraft()
+    {/*
+        var dyeItemToUse = Inventory.Instance.FindItemByType("Polyester Shirt");
+        var dyeMaterialToUse = Inventory.Instance.FindItemByType("Turmeric");
 
-    public IEnumerator CraftDelay(float seconds, string itemType, int quanity, Vector3 spawnPoint)
+
+        if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
+        {
+            Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
+            Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
+            Inventory.Instance.StartCoroutine(CraftDelay(2, "Yellow Polyester Shirt", 1, dyeSpawnPoint.position));
+        }
+        */
+    }
+
+    public IEnumerator CraftDelay(float seconds, string itemType, int quantity, Vector3 spawnPoint)
     {
         yield return new WaitForSeconds(seconds);
         GameObject craftedItem = Instantiate(Inventory.Instance.FindItemByType(itemType).gameObject);
-        craftedItem.GetComponent<InteractableObject>().quantity = quanity;
+        craftedItem.GetComponent<InteractableObject>().quantity = quantity;
         craftedItem.transform.parent = null;
         craftedItem.transform.position = spawnPoint;
+        selectedFinished.SetActive(true);
+        yield return new WaitForSeconds(seconds);
+        selectedFinished.SetActive(false);
+
     }
 }
