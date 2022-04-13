@@ -9,7 +9,8 @@ public class ShopTrigger : MonoBehaviour
 {
 
     public GameObject barnOutside = null;
-    public GameObject canvasObject;
+    public GameObject ShopkeeperCanvas;
+    public GameObject[] canvasToDisable;
     public string[] dialogue = { "Word A", "Word B" };
     public TMP_Text text;
 
@@ -17,7 +18,8 @@ public class ShopTrigger : MonoBehaviour
     void Start()
     {
         barnOutside.SetActive(true);
-        canvasObject.SetActive(false);
+        ShopkeeperCanvas.SetActive(false);
+
     }
 
     private void OnTriggerEnter(Collider col)
@@ -26,7 +28,7 @@ public class ShopTrigger : MonoBehaviour
         {
             Debug.Log("entered");
             barnOutside.SetActive(false);
-            canvasObject.SetActive(true);
+            ShopkeeperCanvas.SetActive(true);
             // log whatever comes out of the RandomWord string.
             string dialogueToDisplay = Randomdialogue();
 
@@ -39,7 +41,13 @@ public class ShopTrigger : MonoBehaviour
         if (col.tag == "Player")
         {
             barnOutside.SetActive(true);
-            canvasObject.SetActive(false);
+            ShopkeeperCanvas.SetActive(false);
+            canvasToDisable[0].SetActive(false);
+            canvasToDisable[1].SetActive(false);
+            canvasToDisable[2].SetActive(false);
+            canvasToDisable[3].SetActive(false);
+            canvasToDisable[4].SetActive(false);
+
         }
     }
     private string Randomdialogue()

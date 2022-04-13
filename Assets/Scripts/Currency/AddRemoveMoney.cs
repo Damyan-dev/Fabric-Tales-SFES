@@ -15,7 +15,6 @@ public class AddRemoveMoney : MonoBehaviour
         if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
-            Debug.Log("Added seed");
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
         }
     }
@@ -27,7 +26,6 @@ public class AddRemoveMoney : MonoBehaviour
         if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
-            Debug.Log("Added seed");
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
         }
     }
@@ -38,15 +36,20 @@ public class AddRemoveMoney : MonoBehaviour
 
         if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
-            Inventory.Instance.AddItem(itemToBuy.itemType, 1);
-            Debug.Log("Added seed");
+            Inventory.Instance.AddItem(itemToBuy.itemType, 1);        
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
         }
     }
 
-    public void Subtract25()
+    public void BuyPolyester()
     {
-        ingameCamera.GetComponent<playerMoney>().subtractMoney(25);
+        var itemToBuy = Inventory.Instance.FindItemByType("Polyester");
+
+        if (ingameCamera.GetComponent<playerMoney>().money >= 25 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
+        {
+            Inventory.Instance.AddItem(itemToBuy.itemType, 1);
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(25);
+        }
     }
     public void Subtract100()
     {
