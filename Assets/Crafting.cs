@@ -14,7 +14,7 @@ public class Crafting : MonoBehaviour
     {
        var wmItemToUse = Inventory.Instance.FindItemByType("Cotton");
 
-        if (wmItemToUse != null)
+        if (wmItemToUse != null && wmItemToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(wmItemToUse.itemType, 1);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Washed Cotton", 1, wmSpawnPoint.position));
@@ -25,7 +25,7 @@ public class Crafting : MonoBehaviour
     {
         var lmItemToUse = Inventory.Instance.FindItemByType("Washed Cotton");
 
-        if (lmItemToUse != null)
+        if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
          Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
          Inventory.Instance.StartCoroutine(CraftDelay(2, "Cotton Shirt", 1, lmSpawnPoint.position));
@@ -35,7 +35,7 @@ public class Crafting : MonoBehaviour
     public void InorganicFabricCraft()
     {
         var lmItemToUse = Inventory.Instance.FindItemByType("Polyester");
-        if (lmItemToUse != null)
+        if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
          Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
          Inventory.Instance.StartCoroutine(CraftDelay(2, "Polyester Shirt", 1, lmSpawnPoint.position));
@@ -49,7 +49,7 @@ public class Crafting : MonoBehaviour
         var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Elderberry");
 
-        if (dyeItemToUse != null && dyeMaterialToUse != null)
+        if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
@@ -63,7 +63,7 @@ public class Crafting : MonoBehaviour
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Elderberry");
 
 
-        if (dyeItemToUse != null && dyeMaterialToUse != null)
+        if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);

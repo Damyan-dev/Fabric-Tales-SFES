@@ -13,7 +13,12 @@ public class AddRemoveMoney : MonoBehaviour
         // ItemSlotData item = InventoryManager.Instance.("Cotton Seeds");
         // playerInteractor.ItemPickup();
 
-       var itemToBuy = Inventory.Instance.FindItemByType("");
+       var itemToBuy = Inventory.Instance.FindItemByType("Cotton");
+        if (itemToBuy != null)
+        {
+           // Inventory.Instance.AddItem()
+        }
+
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
        
     }
