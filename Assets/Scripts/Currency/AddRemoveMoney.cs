@@ -13,14 +13,14 @@ public class AddRemoveMoney : MonoBehaviour
         // ItemSlotData item = InventoryManager.Instance.("Cotton Seeds");
         // playerInteractor.ItemPickup();
 
-       var itemToBuy = Inventory.Instance.FindItemByType("Cotton");
-        if (itemToBuy != null)
+       var itemToBuy = Inventory.Instance.FindItemByType("Cotton Seed");
+        
+        if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null)
         {
-           // Inventory.Instance.AddItem()
-        }
-
+            Inventory.Instance.AddItem(itemToBuy.itemType, 1);
+            Debug.Log("Added seed");
             ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
-       
+        }
     }
 
     public void Subtract25()
@@ -33,41 +33,46 @@ public class AddRemoveMoney : MonoBehaviour
     }
     public void Add30()
     {
-        InteractableObject item = Inventory.Instance.FindItemByType("Rare Shirt");
-        if (item != null)
+        var itemToSell = Inventory.Instance.FindItemByType("Cotton Shirt");
+
+        if (itemToSell.itemType != null && itemToSell.quantity > 0)
         {
-            Inventory.Instance.RemoveItem(item);
+            Inventory.Instance.RemoveItem(itemToSell.itemType, 1);
+            Debug.Log("removed shirt");
             ingameCamera.GetComponent<playerMoney>().addMoney(30);
         }
     }
     public void Add20()
     {
-      //  ItemSlotData item = InventoryManager.Instance.ItemSearch("Washed Wool");
-       // if (item != null)
-       // {
-       //     InventoryManager.Instance.ItemRemove(item);   
-       // }
+        var itemToSell3 = Inventory.Instance.FindItemByType("Washed Wool");
 
-        ingameCamera.GetComponent<playerMoney>().addMoney(20);
+        if (itemToSell3.itemType != null && itemToSell3.quantity > 0)
+        {
+            Inventory.Instance.RemoveItem(itemToSell3.itemType, 1);
+            Debug.Log("removed WW");
+            ingameCamera.GetComponent<playerMoney>().addMoney(20);
+        }
     }
     public void Add50()
     {
-        InteractableObject item = Inventory.Instance.FindItemByType("Red Dyed shirt");
-        if (item != null)
+        var itemToSell2 = Inventory.Instance.FindItemByType("Red Cotton Shirt");
+
+        if (itemToSell2.itemType != null && itemToSell2.quantity > 0)
         {
-            Inventory.Instance.RemoveItem(item);
+            Inventory.Instance.RemoveItem(itemToSell2.itemType, 1);
+            Debug.Log("removed red shirt");
             ingameCamera.GetComponent<playerMoney>().addMoney(50);
         }
     }
     public void Add75()
     {
-        InteractableObject item = Inventory.Instance.FindItemByType("Yellow Dyed Shirt");
-        if (item != null)
+        var itemToSell4 = Inventory.Instance.FindItemByType("Yellow Cotton Shirt");
+
+        if (itemToSell4.itemType != null && itemToSell4.quantity > 0)
         {
-            Inventory.Instance.RemoveItem(item);
-            ingameCamera.GetComponent<playerMoney>().addMoney(75);
+            Inventory.Instance.RemoveItem(itemToSell4.itemType, 1);
+            Debug.Log("removed yellow shirt");
+            ingameCamera.GetComponent<playerMoney>().addMoney(50);
         }
     }
-
-    
 }

@@ -75,7 +75,7 @@ public class Inventory : MonoBehaviour
 
         }
     }
-
+    
     public void RemoveItem(InteractableObject interObject)
     {
         RemoveItem(interObject.itemType, interObject.quantity);
