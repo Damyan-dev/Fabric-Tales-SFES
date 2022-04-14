@@ -9,7 +9,12 @@ public class Crafting : MonoBehaviour
     public Transform lmSpawnPoint;
     public Transform dyeSpawnPoint;
     public GameObject selectedFinished;
-
+    public GameObject WMObject;
+    public GameObject LMObject;
+    public GameObject DyeObject;
+    Animator WManim;
+    Animator LManim;
+    Animator Dyeanim;
 
     public void WashedCottonCraft()
     {
@@ -18,6 +23,8 @@ public class Crafting : MonoBehaviour
         if (wmItemToUse != null && wmItemToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(wmItemToUse.itemType, 1);
+            WManim = WMObject.GetComponent<Animator>();
+            WManim.Play("WMAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Washed Cotton", 1, wmSpawnPoint.position));
         }
     }
@@ -29,7 +36,9 @@ public class Crafting : MonoBehaviour
         if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
          Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
-         Inventory.Instance.StartCoroutine(CraftDelay(2, "Cotton Shirt", 1, lmSpawnPoint.position));
+            LManim = LMObject.GetComponent<Animator>();
+            LManim.Play("LMAction", 0, 0.0f);
+            Inventory.Instance.StartCoroutine(CraftDelay(2, "Cotton Shirt", 1, lmSpawnPoint.position));
         }
     }
 
@@ -39,7 +48,9 @@ public class Crafting : MonoBehaviour
         if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
          Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
-         Inventory.Instance.StartCoroutine(CraftDelay(2, "Polyester Shirt", 1, lmSpawnPoint.position));
+            LManim = LMObject.GetComponent<Animator>();
+            LManim.Play("LMAction", 0, 0.0f);
+            Inventory.Instance.StartCoroutine(CraftDelay(2, "Polyester Shirt", 1, lmSpawnPoint.position));
         }
     }
 
@@ -52,6 +63,8 @@ public class Crafting : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
+            Dyeanim = DyeObject.GetComponent<Animator>();
+            Dyeanim.Play("DyeAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Red Cotton Shirt", 1, dyeSpawnPoint.position));
         }
     }
@@ -65,6 +78,8 @@ public class Crafting : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
+            Dyeanim = DyeObject.GetComponent<Animator>();
+            Dyeanim.Play("DyeAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Yellow Cotton Shirt", 1, dyeSpawnPoint.position));
         }
         
@@ -80,6 +95,8 @@ public class Crafting : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
+            Dyeanim = DyeObject.GetComponent<Animator>();
+            Dyeanim.Play("DyeAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Red Polyester Shirt", 1, dyeSpawnPoint.position));
         }
     }
@@ -93,6 +110,8 @@ public class Crafting : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
+            Dyeanim = DyeObject.GetComponent<Animator>();
+            Dyeanim.Play("DyeAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Yellow Polyester Shirt", 1, dyeSpawnPoint.position));
         }
         
