@@ -25,7 +25,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
     [Header("Crops")]
     public GameObject cropPrefab;
-    CropParams cropPlanted = null;
+    public CropParams cropPlanted = null;
 
 
     void Start()
@@ -162,7 +162,7 @@ public class Farmland : MonoBehaviour, ITimeTracker
             cropPlanted.Grow();
            
 
-            if(hoursPassed > 12)
+            if(hoursPassed > 13)
             {
                 ChangeFarmStatus(FarmStatus.Dirt);
                 cropPlanted = null;
@@ -171,11 +171,11 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
         if(farmStatus == FarmStatus.Watered && cropPlanted != null)
         {
-            int hoursPassed = GameTimeConverter.CompareTime(timePlanted, gametime);
+            int hoursPassedFertilized = GameTimeConverter.CompareTime(timePlanted, gametime);
             cropPlanted.GrowFertilized();
 
 
-            if (hoursPassed > 12)
+            if (hoursPassedFertilized > 13)
             {
                 ChangeFarmStatus(FarmStatus.Dirt);
                 cropPlanted = null;

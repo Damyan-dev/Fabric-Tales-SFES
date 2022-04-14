@@ -88,6 +88,7 @@ public class Interactor : MonoBehaviour
         selectedFarmLand = farmLand;
         farmLand.Selected(true);
         
+
     }
 
     private void SelectedInteractableObject(InteractableObject interactableObject)
@@ -101,4 +102,5 @@ public class Interactor : MonoBehaviour
         interactableObject.SelectedInteractableObject(true);
     }
 
+    
 }

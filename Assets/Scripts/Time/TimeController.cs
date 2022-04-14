@@ -29,7 +29,7 @@ public class TimeController : MonoBehaviour
 
     private void Start()
     {
-        gametime = new GameTimeConverter(2022, GameTimeConverter.Month.Jan, 1, 8, 0);
+        gametime = new GameTimeConverter(1, GameTimeConverter.Month.Jan, 1, 8, 0);
         StartCoroutine(UpdateTime());
     }
 
