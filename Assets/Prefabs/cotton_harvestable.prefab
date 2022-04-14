@@ -4976,7 +4976,7 @@ MonoBehaviour:
   itemName: Cotton
   description: This is a cotton bud. It needs to be washed first so it can be used
     to produce clothes!
-  thumbnail: {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
+  thumbnail: {fileID: 21300000, guid: f461cb1b21505024198952bf8693820e, type: 3}
   quantity: 1
   anim: {fileID: 1761906551579199106}
 --- !u!1 &1954367281628159343

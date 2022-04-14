@@ -60,6 +60,6 @@ MonoBehaviour:
   itemName: Turmeric Seed
   description: Used for planting turmeric plants. Turmeric is used to produce yellow
     dyes!
-  thumbnail: {fileID: 21300000, guid: ac9c35c9eb36dc346b823257df4409e3, type: 3}
+  thumbnail: {fileID: 21300000, guid: 2de69a72021b6e149924ab8c066535c2, type: 3}
   quantity: 1
   anim: {fileID: 0}

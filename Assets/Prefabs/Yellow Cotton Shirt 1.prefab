@@ -126,7 +126,7 @@ MonoBehaviour:
   selectedIntObj: {fileID: 2743647817498526380}
   itemName: Yellow Cotton Shirt
   description: This is a cotton shirt that has been dyed yellow with turmeric.
-  thumbnail: {fileID: 21300000, guid: 40da779b7cb6fa64c989c0efa72b820d, type: 3}
+  thumbnail: {fileID: 21300000, guid: 499b7f46ab66fa04ebb358657b6db48f, type: 3}
   quantity: 1
   anim: {fileID: 0}
 --- !u!1001 &7508181001605977054

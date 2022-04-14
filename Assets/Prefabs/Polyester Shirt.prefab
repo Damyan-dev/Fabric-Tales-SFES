@@ -195,21 +195,19 @@ MonoBehaviour:
   harvestable: {fileID: 0}
   seedNeeded: {fileID: 0}
   seedling: {fileID: 0}
-  wateringCanModel: {fileID: 0}
-  shearsModel: {fileID: 0}
   timeToGrow: 0
   inventory: 1
   machine: 0
   farm: 0
   cottonSeed: 0
   elderberrySeed: 0
-  tumericSeed: 0
+  turmericSeed: 0
   fertilizer: 0
   shears: 0
   itemType: Polyester Shirt
   selectedIntObj: {fileID: 3987729134551494792}
   itemName: Polyester Shirt
   description: This is a plain polyester shirt with no dyes applied to it.
-  thumbnail: {fileID: 21300000, guid: 5b41a51d39c0a414489258b735649a45, type: 3}
+  thumbnail: {fileID: 21300000, guid: 8fc0ddcc126a2de43b753e56d3abc217, type: 3}
   quantity: 1
   anim: {fileID: 0}

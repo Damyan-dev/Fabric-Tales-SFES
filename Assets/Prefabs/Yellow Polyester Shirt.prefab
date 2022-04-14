@@ -126,7 +126,7 @@ MonoBehaviour:
   selectedIntObj: {fileID: 1817498941768695416}
   itemName: Yellow Polyester Shirt
   description: This is a polyester shirt that has been dyed yellow with turmeric.
-  thumbnail: {fileID: 21300000, guid: ab7aebb7370a0ce4cb4a4183001259e7, type: 3}
+  thumbnail: {fileID: 21300000, guid: 7120ec394ca2cb54c9a9495468bb8ad2, type: 3}
   quantity: 1
   anim: {fileID: 0}
 --- !u!1001 &6275768659785576202

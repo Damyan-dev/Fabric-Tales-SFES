@@ -4889,7 +4889,7 @@ MonoBehaviour:
   selectedIntObj: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
   itemName: Elderberry
   description: This is an elderberry that is used to dye clothes.
-  thumbnail: {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
+  thumbnail: {fileID: 21300000, guid: ed7d2b33a92ada24eaaf0beed895a5e3, type: 3}
   quantity: 1
   anim: {fileID: 8167053410627783768}
 --- !u!1001 &2812262938532006824

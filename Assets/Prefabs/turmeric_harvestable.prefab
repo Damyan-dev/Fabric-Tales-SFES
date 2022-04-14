@@ -114,7 +114,7 @@ MonoBehaviour:
   selectedIntObj: {fileID: 3779276004130632507}
   itemName: Turmeric
   description: This plant is used as a yellow dye in the Dyeing Machine.
-  thumbnail: {fileID: 21300000, guid: 1d7756f19b1e98a45948005b035db239, type: 3}
+  thumbnail: {fileID: 21300000, guid: 9b86530778e0b304c922d04f1b983aaf, type: 3}
   quantity: 1
   anim: {fileID: 1751729616666921956}
 --- !u!65 &-5245046487677700390

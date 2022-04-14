@@ -46,15 +46,13 @@ MonoBehaviour:
   harvestable: {fileID: 4913100214129844947, guid: 5b44a1d03fdc13642b280c1eb0717937, type: 3}
   seedNeeded: {fileID: 0}
   seedling: {fileID: 2405213754106394176, guid: 4a5b6acf98752b947b2eaf585fd3233e, type: 3}
-  wateringCanModel: {fileID: 0}
-  shearsModel: {fileID: 0}
   timeToGrow: 1
   inventory: 1
   machine: 0
   farm: 0
   cottonSeed: 0
   elderberrySeed: 1
-  tumericSeed: 0
+  turmericSeed: 0
   fertilizer: 0
   shears: 0
   itemType: Elderberry Seed
@@ -62,6 +60,6 @@ MonoBehaviour:
   itemName: Elderberry Seed
   description: Used for planting elderberries. Elderberry is used to produce red
     dyes!
-  thumbnail: {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
+  thumbnail: {fileID: 21300000, guid: 5e51a9db66b68084cb67fa589b2bb676, type: 3}
   quantity: 1
   anim: {fileID: 0}
