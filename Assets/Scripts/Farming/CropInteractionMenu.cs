@@ -19,7 +19,7 @@ public class CropInteractionMenu : MonoBehaviour
     public void Start()
     {
         EndCanvas.SetActive(false);
-        currentHealth = maxHealth;
+        currentHealth = 25;
         healthBar.SetMaxHealth(maxHealth);
         anim = GetComponent<Animator>();
         tillButton.interactable = true;
@@ -93,6 +93,7 @@ public class CropInteractionMenu : MonoBehaviour
         if (selectedField != null)
         {
             selectedField.CottonSeed();
+            GainHealth(1);
         }
     }
 
@@ -102,8 +103,8 @@ public class CropInteractionMenu : MonoBehaviour
         CheckInventory();
         if (selectedField != null)
         {
-
             selectedField.ElderberrySeed();
+            GainHealth(1);
         }
     }
 
@@ -114,13 +115,19 @@ public class CropInteractionMenu : MonoBehaviour
         if (selectedField != null)
         {
             selectedField.TurmericSeed();
+            GainHealth(1);
         }
     }
 
     public void GainHealth(int health)
     {
-        currentHealth = currentHealth + health;
+        currentHealth += health;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth == 50)
+        {
+            Debug.Log("Environment is healthy");
+            //WinCanvas.SetActive(true);
+        }
     }
 
     public void LoseHealth(int damage)

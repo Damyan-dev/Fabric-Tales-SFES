@@ -7,19 +7,19 @@ public class InteractButtons : MonoBehaviour
 {
     public HealthBar healthBar;
     public int maxHealth = 50;
-    public int currentHealth;
+    public int currentHealth = 25;
     public GameObject EndCanvas;
 
     public void Start()
     {
         EndCanvas.SetActive(false);
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth);
     }
 
     public void UseFertiliser()
     {
-        LoseHealth(5);
+        currentHealth -= 5;
+        healthBar.SetHealth(currentHealth);
     }
 
     public void HarvestCrop()
@@ -33,14 +33,5 @@ public class InteractButtons : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    public void LoseHealth(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-        if(currentHealth == 0)
-        {
-            Debug.Log("Environment damaged beyond repair");
-            EndCanvas.SetActive(true);
-        }
-    }
+
 }

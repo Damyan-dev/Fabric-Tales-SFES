@@ -77,7 +77,7 @@ public class AddRemoveMoney : MonoBehaviour
             ingameCamera.GetComponent<playerMoney>().addMoney(20);
         }
     }
-    public void Add50()
+    public void SellRCottonShirt()
     {
         var itemToSell2 = Inventory.Instance.FindItemByType("Red Cotton Shirt");
 
@@ -88,7 +88,7 @@ public class AddRemoveMoney : MonoBehaviour
             ingameCamera.GetComponent<playerMoney>().addMoney(50);
         }
     }
-    public void Add75()
+    public void SellYCottonShirt()
     {
         var itemToSell4 = Inventory.Instance.FindItemByType("Yellow Cotton Shirt");
 

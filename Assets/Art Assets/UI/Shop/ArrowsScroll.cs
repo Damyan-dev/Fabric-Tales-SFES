@@ -9,6 +9,8 @@ public class ArrowsScroll : MonoBehaviour
     public GameObject Button2;
     public GameObject Button3;
     public GameObject Button4;
+    public GameObject Button5;
+    public GameObject Button6;
 
     void Start()
     {
@@ -16,6 +18,8 @@ public class ArrowsScroll : MonoBehaviour
         Button2.SetActive(true);
         Button3.SetActive(true);
         Button4.SetActive(false);
+        Button5.SetActive(false);
+        Button6.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +29,8 @@ public class ArrowsScroll : MonoBehaviour
         Button2.SetActive(false);
         Button3.SetActive(false);
         Button4.SetActive(true);
+        Button5.SetActive(true);
+        Button6.SetActive(true);
     }
 
     public void UpArrow()
@@ -33,5 +39,7 @@ public class ArrowsScroll : MonoBehaviour
         Button2.SetActive(true);
         Button3.SetActive(true);
         Button4.SetActive(false);
+        Button5.SetActive(false);
+        Button6.SetActive(false);
     }
 }
