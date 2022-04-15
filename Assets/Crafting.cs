@@ -12,14 +12,17 @@ public class Crafting : MonoBehaviour
     public GameObject WMObject;
     public GameObject LMObject;
     public GameObject DyeObject;
+
     Animator WManim;
     Animator LManim;
     Animator Dyeanim;
 
+  
+
+
     public void WashedCottonCraft()
     {
        var wmItemToUse = Inventory.Instance.FindItemByType("Cotton");
-
         if (wmItemToUse != null && wmItemToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(wmItemToUse.itemType, 1);
@@ -32,7 +35,6 @@ public class Crafting : MonoBehaviour
     public void FabricCraft()
     {
         var lmItemToUse = Inventory.Instance.FindItemByType("Washed Cotton");
-
         if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
          Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
@@ -58,7 +60,6 @@ public class Crafting : MonoBehaviour
     {
         var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Elderberry");
-
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
@@ -73,7 +74,6 @@ public class Crafting : MonoBehaviour
         
         var dyeItemToUse = Inventory.Instance.FindItemByType("Cotton Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Turmeric");
-
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
@@ -90,7 +90,6 @@ public class Crafting : MonoBehaviour
         var dyeItemToUse = Inventory.Instance.FindItemByType("Polyester Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Elderberry");
 
-
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
@@ -104,7 +103,6 @@ public class Crafting : MonoBehaviour
     {
         var dyeItemToUse = Inventory.Instance.FindItemByType("Polyester Shirt");
         var dyeMaterialToUse = Inventory.Instance.FindItemByType("Turmeric");
-
 
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {

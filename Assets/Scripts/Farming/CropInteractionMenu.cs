@@ -24,9 +24,9 @@ public class CropInteractionMenu : MonoBehaviour
         anim = GetComponent<Animator>();
         tillButton.interactable = true;
         fertilizeButton.interactable = true;
-        plantCottonButton.interactable = true;
-        plantElderberryButton.interactable = true;
-        plantTurmericButton.interactable = true;
+        plantCottonButton.interactable = false;
+        plantElderberryButton.interactable = false;
+        plantTurmericButton.interactable = false;
         CheckInventory();
     }
 
