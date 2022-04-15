@@ -39,10 +39,12 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 4fc5bc003c6c2c844806e9216c8fb22c, type: 3}
+  - {fileID: 21300000, guid: 34acf4100ce110f4a9a4872f382a0781, type: 3}
   - {fileID: 21300000, guid: e661b8206d68730498e0555ce887b058, type: 3}
   - {fileID: 21300000, guid: c3136440165a73642a231737835140a1, type: 3}
   - {fileID: 21300000, guid: cd1a7540bd514ec4b823402553aaa805, type: 3}
   - {fileID: 21300000, guid: 11f2d6807c8cf3e4d91b97da8d4ed7bb, type: 3}
+  - {fileID: 21300000, guid: d0c3ca803f974da48923eb7d80070e59, type: 3}
   - {fileID: 21300000, guid: 83467e804e14502429fa6e1d537c09f6, type: 3}
   - {fileID: 21300000, guid: ee7fad90a5cc5a34186ecb7ae9fdeef5, type: 3}
   - {fileID: 21300000, guid: 875b52b01892dfc449146c9246a23afc, type: 3}
@@ -70,6 +72,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 74fb93427bfeed14fac17cb3d9e7febb, type: 3}
   - {fileID: 21300000, guid: 558ace42a6f1d7340bc198725a295d84, type: 3}
   - {fileID: 21300000, guid: 2de69a72021b6e149924ab8c066535c2, type: 3}
+  - {fileID: 21300000, guid: c4648d7245a2f3a43ab28da1d7f58060, type: 3}
   - {fileID: 21300000, guid: d3a02f722a6bb4046abe9bf309c2b531, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
   - {fileID: 21300000, guid: d1d930b2695910e43b0a6aaab2b7dc3e, type: 3}
@@ -114,9 +117,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e6110c4523970bd4f87c73e2f32ca010, type: 3}
   - {fileID: 21300000, guid: c68e3555ef11be446a1cb81ed4613977, type: 3}
   - {fileID: 21300000, guid: ba022755126b04f42b218c17974ddc41, type: 3}
+  - {fileID: 21300000, guid: 5b56bf85e6b7d33408513b6aed9a6d87, type: 3}
   - {fileID: 21300000, guid: 04628aa59dd192d45a6f7b60f61da5b5, type: 3}
   - {fileID: 21300000, guid: 294424c5aa338fa42aa2309dc16b9895, type: 3}
   - {fileID: 21300000, guid: 42c405c53ccc66a45ab9cd69e799a5a8, type: 3}
+  - {fileID: 21300000, guid: 3cda70d5f3e8ec14ba4c18f3393ac698, type: 3}
   - {fileID: 21300000, guid: 6a9556d5c90a3b94e87acb985e327256, type: 3}
   - {fileID: 21300000, guid: 77a1efd5c006f0644b844709206595fd, type: 3}
   - {fileID: 21300000, guid: 310702f534b5fde43a4469d084796378, type: 3}
@@ -137,6 +142,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2f6edc27a09b72340a9804fbd2c60ccf, type: 3}
   - {fileID: 21300000, guid: 9613b93770469a944b1a57588779033a, type: 3}
   - {fileID: 21300000, guid: 57de014735a25a441943327fa7efb659, type: 3}
+  - {fileID: 21300000, guid: deac0c67ce2a1ec4ba4eab299568a44c, type: 3}
   - {fileID: 21300000, guid: bb211e77c8b5fe549a068df020f165a4, type: 3}
   - {fileID: 21300000, guid: 2775a0879d934a74c8e92643e4b3c5df, type: 3}
   - {fileID: 21300000, guid: b07c9997f5b620f45a987f63dc277ac9, type: 3}
@@ -175,6 +181,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2b68fdc952b71cf44a9d580b1becd05e, type: 3}
   - {fileID: 21300000, guid: face8ad9dc9cb094bad66caaa8d7ed6d, type: 3}
   - {fileID: 21300000, guid: 7135dcd956783df4b9dce5383e1a64f1, type: 3}
+  - {fileID: 21300000, guid: b6b1e6f93e4d09d469824ac8b22fe742, type: 3}
   - {fileID: 21300000, guid: 6f2a280a964cfdd4f878045579a45aa1, type: 3}
   - {fileID: 21300000, guid: e8942a1a277b1034a9c76ef07332cb74, type: 3}
   - {fileID: 21300000, guid: e744aa1acbfd244409bc576d1a55108b, type: 3}
@@ -200,6 +207,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2932c5cbd26d8a14a8a2fce2e1a9019b, type: 3}
   - {fileID: 21300000, guid: dd5d31db41ceeb64684a73a8b28045b2, type: 3}
   - {fileID: 21300000, guid: f61394dbb5f594d4e83ac5474adb1475, type: 3}
+  - {fileID: 21300000, guid: 858a39db670438340ad0b8fb9cd7d36d, type: 3}
   - {fileID: 21300000, guid: 5e51a9db66b68084cb67fa589b2bb676, type: 3}
   - {fileID: 21300000, guid: d9d7d2eb2c62bef4b872dd516d3bd7dd, type: 3}
   - {fileID: 21300000, guid: a856500ccd9b6634c9b6e0ea6464a386, type: 3}
@@ -223,6 +231,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1733f52d66af30d41bdb10c5b4f3f4c6, type: 3}
   - {fileID: 21300000, guid: 9c7c366d46e748a44a608c9051274105, type: 3}
   - {fileID: 21300000, guid: 17f2947d7f149174c87d720d6c40798e, type: 3}
+  - {fileID: 21300000, guid: dce2da8d612361e4dad74d82012c983b, type: 3}
   - {fileID: 21300000, guid: 1ea119bd9506e994d9a5d7153c886425, type: 3}
   - {fileID: 21300000, guid: 24837bbdc3e4bd041ad632f8b8ebf449, type: 3}
   - {fileID: 21300000, guid: 555a71cd7da7fdf41b4efa1bdd71d008, type: 3}
@@ -251,6 +260,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5279b73ff072f4343b4aa938889e42cd, type: 3}
   - {fileID: 21300000, guid: 54e4684f67302bf46805977588ce6849, type: 3}
   - {fileID: 21300000, guid: 4444ce4f542de8c4d9bce8970188ca13, type: 3}
+  - {fileID: 21300000, guid: 6755a15f6fdb01f4c875c37a4fd01eb6, type: 3}
   - {fileID: 21300000, guid: e9a6dc6fb059d784095ffab5cfe3525b, type: 3}
   - {fileID: 21300000, guid: cde7108f7dec6a742a4e12082440371b, type: 3}
   - {fileID: 21300000, guid: 7142458f910e7554bb22ab5ef264d118, type: 3}
@@ -261,10 +271,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 279f3eef6dd0ceb4997de663ef9969e9, type: 3}
   m_PackedSpriteNamesToIndex:
   - Inventory Button
+  - Materials-Sell
   - Header
   - Close Hover
   - Quit Normal
   - Quick Inventory Single
+  - Clothes Tab
   - Options Click
   - rope5
   - frame030
@@ -292,6 +304,7 @@ SpriteAtlas:
   - Red_dyed_clothing_gold
   - Menu Open Hover
   - turmeric seed
+  - Seeds Tab
   - Resume Normal
   - frame047
   - elderberry blue
@@ -336,9 +349,11 @@ SpriteAtlas:
   - icons8-cotton-64
   - Shopkeepr Face
   - frame023
+  - Dialoge bar
   - frame037
   - seed1
   - Crops Tab
+  - Good Environment Stat 1
   - tab3
   - IMG_0698
   - Up Button
@@ -359,6 +374,7 @@ SpriteAtlas:
   - frame019
   - Credits Normal
   - firefox_oZloZxAvKf
+  - Materials Tab
   - inside separators
   - Hammer Inventory
   - clean wool blue
@@ -397,6 +413,7 @@ SpriteAtlas:
   - Game menu Border
   - cotton seed
   - Clock
+  - Clothes Tab- Sell
   - backpack icon
   - Red Dye Icon
   - Menu normal
@@ -422,6 +439,7 @@ SpriteAtlas:
   - Options Normal
   - frame036
   - Inventory Rework 1
+  - Bad Environment Stat 1
   - elderberry seeds
   - red polyester tshirt
   - frame035
@@ -445,6 +463,7 @@ SpriteAtlas:
   - wool
   - inside separator top left
   - tab4
+  - Neutral Environment Stat 1
   - yellow dyed polyester clothing gold
   - tab2
   - Seeds Tab
@@ -473,6 +492,7 @@ SpriteAtlas:
   - frame009
   - Background top right
   - unknown
+  - SMall Dialoge bar
   - rope6
   - cloth_blue
   - Crafting4
