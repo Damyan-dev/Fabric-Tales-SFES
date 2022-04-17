@@ -8,17 +8,18 @@ using UnityEngine.Rendering.PostProcessing;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
-    public GameObject BadEnvironment;
-    public GameObject AverageEnvironment;
+    public GameObject gameOver;
+    public GameObject badEnvironment;
+    public GameObject averageEnvironment;
     public PostProcessVolume volume;
-    public PostProcessProfile Profile1;
-    public PostProcessProfile Profile2;
-    public PostProcessProfile Profile3;
+    public PostProcessProfile profile1;
+    public PostProcessProfile profile2;
+    public PostProcessProfile profile3;
 
     private void Start()
     {
         volume = GameObject.Find("Volume").GetComponent<PostProcessVolume>();
-        volume.profile = Profile2;
+        volume.profile = profile2;
     }
 
 
@@ -26,25 +27,31 @@ public class HealthBar : MonoBehaviour
 
         private void Update()
     {
+        if (slider.value == 0)
+        {
+            gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+
         if(slider.value <= 15)
         {
-            BadEnvironment.SetActive(true);
+            badEnvironment.SetActive(true);
             //AverageEnvironment.SetActive(false);
-            volume.profile = Profile3;
+            volume.profile = profile3;
 
 
         }
         if (slider.value > 15 && slider.value <= 30)
         {
-            AverageEnvironment.SetActive(true);
-            BadEnvironment.SetActive(false);
-            volume.profile = Profile2;
+            averageEnvironment.SetActive(true);
+            badEnvironment.SetActive(false);
+            volume.profile = profile2;
         }
         if (slider.value > 30)
         {
-            AverageEnvironment.SetActive(false);
-            BadEnvironment.SetActive(false);
-            volume.profile = Profile1;
+            averageEnvironment.SetActive(false);
+            badEnvironment.SetActive(false);
+            volume.profile = profile1;
 
         }
 
