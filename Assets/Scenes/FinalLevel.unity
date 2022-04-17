@@ -21928,8 +21928,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: 362}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -218.49005, y: 366.82}
+  m_SizeDelta: {x: 164.105, y: 45.539}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499193671
 MonoBehaviour:
@@ -24081,7 +24081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4757329, y: -166}
+  m_AnchoredPosition: {x: 1.4757566, y: -188}
   m_SizeDelta: {x: 550.5606, y: 151.718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547867040
@@ -24168,8 +24168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -425, y: 362}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -424.4901, y: 367.92996}
+  m_SizeDelta: {x: 160.7693, y: 48.658}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555779392
 MonoBehaviour:
@@ -25395,7 +25395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &593959995
 Transform:
   m_ObjectHideFlags: 0
@@ -26475,8 +26475,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.029999, y: 45.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -26.685736, y: 46.194733}
+  m_SizeDelta: {x: 161.61328, y: 44.51162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611961469
 MonoBehaviour:
@@ -34672,7 +34672,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sell Washed Wool                               + 20 Gold
+  m_Text: Buy Cotton                               - 30 Gold
 --- !u!222 &862233744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37451,7 +37451,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960049879}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
@@ -42691,8 +42691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.6, y: 45.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -39.3909, y: 46.128944}
+  m_SizeDelta: {x: 154.84686, y: 46.74399}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979026097
 MonoBehaviour:
@@ -48611,8 +48611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -638, y: 362}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -624.57227, y: 367.9323}
+  m_SizeDelta: {x: 148.3393, y: 49.6322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1177443385
 MonoBehaviour:
@@ -49336,7 +49336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.4757329, y: -166}
+  m_AnchoredPosition: {x: 1.4757329, y: -149}
   m_SizeDelta: {x: 550.5606, y: 151.718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187616667
@@ -52142,7 +52142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Wool, Wool something something/
+  m_Text: Cotton material, used in the washing machine as part of clothes production.
 --- !u!222 &1279348280
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -53256,7 +53256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f648b979e81e9544989e919ae4025d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f461cb1b21505024198952bf8693820e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59140,7 +59140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f648b979e81e9544989e919ae4025d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f461cb1b21505024198952bf8693820e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -61478,7 +61478,7 @@ GameObject:
   - component: {fileID: 1479781875}
   - component: {fileID: 1479781874}
   m_Layer: 5
-  m_Name: Sell WW
+  m_Name: Sell Cotton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61504,7 +61504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.38208, y: 21}
+  m_AnchoredPosition: {x: 15.38208, y: 20.6}
   m_SizeDelta: {x: 112.7768, y: 68.2516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1479781870
@@ -71159,8 +71159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.2, y: 45.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -14.303609, y: 46.104057}
+  m_SizeDelta: {x: 162.72491, y: 46.05008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1597624092
 MonoBehaviour:
@@ -74637,7 +74637,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7770269, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -82117,7 +82117,6 @@ MonoBehaviour:
   - {fileID: 1361079288}
   - {fileID: 1400648282}
   - {fileID: 1861642290}
-  - {fileID: 1936730976}
   dialogue:
   - Only 15% of consumers recycle their used clothing, are you one of them?
   - "The ecological and social price of factory farms is erosion, deforestation,
@@ -83121,8 +83120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -423, y: 361}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -415.01117, y: 368.5}
+  m_SizeDelta: {x: 155.9823, y: 44.703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1964327992
 MonoBehaviour:
@@ -85181,8 +85180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -636, y: 361}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -620.0224, y: 369.22}
+  m_SizeDelta: {x: 157.5894, y: 49.387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2021076265
 MonoBehaviour:
@@ -88216,8 +88215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213, y: 361}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -215.9292, y: 367.2148}
+  m_SizeDelta: {x: 161.2862, y: 46.3578}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091838654
 MonoBehaviour:

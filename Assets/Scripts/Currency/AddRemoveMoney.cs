@@ -66,15 +66,15 @@ public class AddRemoveMoney : MonoBehaviour
             ingameCamera.GetComponent<playerMoney>().addMoney(30);
         }
     }
-    public void Add20()
+    public void BuyCotton()
     {
-        var itemToSell3 = Inventory.Instance.FindItemByType("Washed Cotton");
+        var itemToBuy = Inventory.Instance.FindItemByType("Cotton");
 
-        if (itemToSell3.itemType != null && itemToSell3.quantity >= 1)
+        if (itemToBuy.itemType != null && itemToBuy.quantity >= 0)
         {
-            Inventory.Instance.RemoveItem(itemToSell3.itemType, 1);
-            Debug.Log("removed WW");
-            ingameCamera.GetComponent<playerMoney>().addMoney(20);
+            Inventory.Instance.RemoveItem(itemToBuy.itemType, 1);
+            Debug.Log("Bought Cotton");
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(30);
         }
     }
     public void SellRCottonShirt()
