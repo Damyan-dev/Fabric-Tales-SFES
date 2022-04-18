@@ -18,7 +18,6 @@ public class Menu : MonoBehaviour
     public void CloseMenu()
     {
         MenuCanvas.SetActive(false);
-
     }
 
     public void BackToMain()
@@ -28,6 +27,6 @@ public class Menu : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -22,10 +22,7 @@ public class InteractButtons : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    public void HarvestCrop()
-    {
-        GainHealth(1);
-    }
+
 
     public void GainHealth(int health)
     {

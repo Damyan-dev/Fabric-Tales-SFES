@@ -9,6 +9,7 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public GameObject gameOver;
+    public GameObject gameComplete;
     public GameObject badEnvironment;
     public GameObject averageEnvironment;
     public PostProcessVolume volume;
@@ -53,6 +54,10 @@ public class HealthBar : MonoBehaviour
             badEnvironment.SetActive(false);
             volume.profile = profile1;
 
+        }
+        if (slider.value == 50)
+        {
+            gameComplete.SetActive(true);  
         }
 
     }
