@@ -100,6 +100,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4b53fa2417abca548b21917d3fb7404e, type: 3}
   - {fileID: 21300000, guid: f493d134e05580548a365391b48e03e3, type: 3}
   - {fileID: 21300000, guid: c9b218348c5d8cc49b407354a699382f, type: 3}
+  - {fileID: 21300000, guid: 719dba34e2d26f043bfd08a433a13a47, type: 3}
   - {fileID: 21300000, guid: 77f20c64a2e955949a6581ba5dd37205, type: 3}
   - {fileID: 21300000, guid: 28809394dbf971f4fa6483028ef63168, type: 3}
   - {fileID: 21300000, guid: 41a6f1b43f9f1ab46a00020c4afb194c, type: 3}
@@ -220,6 +221,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bbc6888c24fd7c146946e2cc37e8177c, type: 3}
   - {fileID: 21300000, guid: 37af54ac3dfd15045b71b19e9f7eeb7b, type: 3}
   - {fileID: 21300000, guid: f0553cacca68d844692e744d67c9c476, type: 3}
+  - {fileID: 21300000, guid: e01b8dacb2b2e984bad111584092bb1d, type: 3}
   - {fileID: 21300000, guid: 8fc0ddcc126a2de43b753e56d3abc217, type: 3}
   - {fileID: 21300000, guid: 3400f2ece8cdab046b51aa94b83e06c5, type: 3}
   - {fileID: 21300000, guid: afcd1becbb8c97d44a51dba1ff2e3837, type: 3}
@@ -241,6 +243,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 26c247fd38cfd674881b28854ed3de64, type: 3}
   - {fileID: 21300000, guid: c3af4b0ea58acba429c962e3db88ca89, type: 3}
   - {fileID: 21300000, guid: 99887b0eb2a5e574cbdd1a30e9bcffcd, type: 3}
+  - {fileID: 21300000, guid: c16e5e0eb7b90ec429a51228506033fa, type: 3}
   - {fileID: 21300000, guid: 8e825f0e90d433445a366035a3cc7408, type: 3}
   - {fileID: 21300000, guid: 2c2d944e91ce90b48a2bcbcf5e947c4b, type: 3}
   - {fileID: 21300000, guid: bef6754e01a827b4ab46e19493f0ada3, type: 3}
@@ -332,6 +335,7 @@ SpriteAtlas:
   - Border Top Right
   - firefox_qtPr9ljSsH
   - frame027
+  - Credits Normal 1
   - shop  ui tab 3
   - red dyed polyester clothing gold
   - clothing_blue
@@ -452,6 +456,7 @@ SpriteAtlas:
   - craft button normal
   - Normal Save
   - cotton_blue
+  - Credits Hover 1
   - polyester tshirt
   - frame044
   - elderberry green
@@ -473,6 +478,7 @@ SpriteAtlas:
   - frame043
   - Washing Machine Screen
   - frame046
+  - Credits Click 1
   - frame007
   - Craft Button
   - Menu Open Normal
