@@ -18100,7 +18100,6 @@ GameObject:
   m_Component:
   - component: {fileID: 339366951}
   - component: {fileID: 339366950}
-  - component: {fileID: 339366949}
   m_Layer: 0
   m_Name: Shearing Sheep
   m_TagString: Untagged
@@ -18108,32 +18107,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &339366949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339366948}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 0}
-  lmSpawnPoint: {fileID: 0}
-  dyeSpawnPoint: {fileID: 0}
-  selectedFinished: {fileID: 0}
-  WMObject: {fileID: 0}
-  LMObject: {fileID: 0}
-  DyeObject: {fileID: 0}
-  washCottonButton: {fileID: 0}
-  shirtCraftButton: {fileID: 0}
-  polyesterCraftButton: {fileID: 0}
-  shirtRedDyeButton: {fileID: 0}
-  shirtYellowDyeButton: {fileID: 0}
-  polyShirtRedDyeButton: {fileID: 0}
-  polyShirtYellowDyeButton: {fileID: 0}
 --- !u!65 &339366950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39307,7 +39280,6 @@ GameObject:
   - component: {fileID: 960049882}
   - component: {fileID: 960049881}
   - component: {fileID: 960049880}
-  - component: {fileID: 960049884}
   m_Layer: 5
   m_Name: DyeMachine Canvas
   m_TagString: Untagged
@@ -39403,32 +39375,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &960049884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960049879}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 1537232896}
-  lmSpawnPoint: {fileID: 2019411388}
-  dyeSpawnPoint: {fileID: 456186768}
-  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
-  WMObject: {fileID: 1464779188}
-  LMObject: {fileID: 2046781108}
-  DyeObject: {fileID: 1876319605}
-  washCottonButton: {fileID: 1321515369}
-  shirtCraftButton: {fileID: 1259790922}
-  polyesterCraftButton: {fileID: 532271676}
-  shirtRedDyeButton: {fileID: 1782626014}
-  shirtYellowDyeButton: {fileID: 1484961840}
-  polyShirtRedDyeButton: {fileID: 748765594}
-  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!1001 &962040336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88543,7 +88489,6 @@ GameObject:
   - component: {fileID: 1999312025}
   - component: {fileID: 1999312024}
   - component: {fileID: 1999312023}
-  - component: {fileID: 1999312027}
   m_Layer: 5
   m_Name: CanvasWashingMachine
   m_TagString: Untagged
@@ -88632,32 +88577,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1999312027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999312022}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 1537232896}
-  lmSpawnPoint: {fileID: 2019411388}
-  dyeSpawnPoint: {fileID: 456186768}
-  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
-  WMObject: {fileID: 1464779188}
-  LMObject: {fileID: 2046781108}
-  DyeObject: {fileID: 1876319605}
-  washCottonButton: {fileID: 1321515369}
-  shirtCraftButton: {fileID: 1259790922}
-  polyesterCraftButton: {fileID: 532271676}
-  shirtRedDyeButton: {fileID: 1782626014}
-  shirtYellowDyeButton: {fileID: 1484961840}
-  polyShirtRedDyeButton: {fileID: 748765594}
-  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!4 &1999462772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8957eaaa2dffe54c8a514bea0f1535b, type: 3}
@@ -91245,7 +91164,6 @@ GameObject:
   - component: {fileID: 2060932878}
   - component: {fileID: 2060932877}
   - component: {fileID: 2060932876}
-  - component: {fileID: 2060932880}
   m_Layer: 5
   m_Name: CanvasLoomMachine
   m_TagString: Untagged
@@ -91339,32 +91257,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2060932880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060932875}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 1537232896}
-  lmSpawnPoint: {fileID: 2019411388}
-  dyeSpawnPoint: {fileID: 456186768}
-  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
-  WMObject: {fileID: 1464779188}
-  LMObject: {fileID: 2046781108}
-  DyeObject: {fileID: 1876319605}
-  washCottonButton: {fileID: 1321515369}
-  shirtCraftButton: {fileID: 1259790922}
-  polyesterCraftButton: {fileID: 532271676}
-  shirtRedDyeButton: {fileID: 1782626014}
-  shirtYellowDyeButton: {fileID: 1484961840}
-  polyShirtRedDyeButton: {fileID: 748765594}
-  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!1 &2062471189
 GameObject:
   m_ObjectHideFlags: 0
