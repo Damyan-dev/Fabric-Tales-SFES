@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 54d86b71f5b4a0247b320c181e8a910e, type: 3}
+  m_Texture: {fileID: 2800000, guid: 713b9821e2d3e5944831158b02aba0bc, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2555,6 +2555,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62440870}
   m_Mesh: {fileID: -4905233640310186999, guid: 4037c17bb5d81ef44867ba343eb9b28d, type: 3}
+--- !u!1 &64369959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5629798532803793266, guid: 4bda687c716454f439db805c4782e118, type: 3}
+  m_PrefabInstance: {fileID: 1334914574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &66227938
 GameObject:
   m_ObjectHideFlags: 0
@@ -12403,7 +12408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &195121718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12411,9 +12416,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195121717}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7767085, y: 2.030524, z: 2.030524}
+  m_LocalScale: {x: 0.70000005, y: 0.7, z: 0.70000005}
   m_Children:
   - {fileID: 324585891}
   m_Father: {fileID: 1115377161}
@@ -12421,7 +12426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 432}
+  m_AnchoredPosition: {x: 0, y: 124}
   m_SizeDelta: {x: 291.3258, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195121719
@@ -18096,7 +18101,6 @@ GameObject:
   - component: {fileID: 339366951}
   - component: {fileID: 339366950}
   - component: {fileID: 339366949}
-  - component: {fileID: 339366952}
   m_Layer: 0
   m_Name: Shearing Sheep
   m_TagString: Untagged
@@ -18111,12 +18115,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339366948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef1c38f1cf0c4644b8b62cc147ef5bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barnOutside: {fileID: 0}
+  wmSpawnPoint: {fileID: 0}
+  lmSpawnPoint: {fileID: 0}
+  dyeSpawnPoint: {fileID: 0}
+  selectedFinished: {fileID: 0}
+  WMObject: {fileID: 0}
+  LMObject: {fileID: 0}
+  DyeObject: {fileID: 0}
+  washCottonButton: {fileID: 0}
+  shirtCraftButton: {fileID: 0}
+  polyesterCraftButton: {fileID: 0}
+  shirtRedDyeButton: {fileID: 0}
+  shirtYellowDyeButton: {fileID: 0}
+  polyShirtRedDyeButton: {fileID: 0}
+  polyShirtYellowDyeButton: {fileID: 0}
 --- !u!65 &339366950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18145,18 +18162,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &339366952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339366948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2306d464a79154890a7b081624d1d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &340357453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18780,7 +18785,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355924790}
-  - component: {fileID: 355924791}
   m_Layer: 0
   m_Name: Crafting Machines
   m_TagString: Untagged
@@ -18807,32 +18811,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &355924791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355924789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 1537232896}
-  lmSpawnPoint: {fileID: 2019411388}
-  dyeSpawnPoint: {fileID: 456186768}
-  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
-  WMObject: {fileID: 1464779188}
-  LMObject: {fileID: 2046781108}
-  DyeObject: {fileID: 1876319605}
-  washCottonButton: {fileID: 1321515369}
-  shirtCraftButton: {fileID: 1259790922}
-  polyesterCraftButton: {fileID: 532271676}
-  shirtRedDyeButton: {fileID: 1782626014}
-  shirtYellowDyeButton: {fileID: 1484961840}
-  polyShirtRedDyeButton: {fileID: 748765594}
-  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!1 &357676243
 GameObject:
   m_ObjectHideFlags: 0
@@ -20274,7 +20252,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2002751724}
   - {fileID: 1957367459}
   - {fileID: 2068144600}
   - {fileID: 1149751482}
@@ -21755,11 +21732,6 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8957eaaa2dffe54c8a514bea0f1535b, type: 3}
   m_PrefabInstance: {fileID: 670891416}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &459696900 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5629798532803793266, guid: 4bda687c716454f439db805c4782e118, type: 3}
-  m_PrefabInstance: {fileID: 773394289}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &461918662
 GameObject:
@@ -24331,6 +24303,7 @@ GameObject:
   - component: {fileID: 532271676}
   - component: {fileID: 532271674}
   - component: {fileID: 532271673}
+  - component: {fileID: 532271675}
   m_Layer: 5
   m_Name: Inorganic Fabric
   m_TagString: Untagged
@@ -24421,6 +24394,23 @@ MonoBehaviour:
   img: {fileID: 1293595387}
   Info: {fileID: 357676243}
   shopkeeperText: {fileID: 1418210663}
+--- !u!114 &532271675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532271671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e8891b17fdcea449d405f222bd2054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lmSpawnPoint: {fileID: 2019411388}
+  selectedFinished: {fileID: 717184271}
+  LMObject: {fileID: 2046781108}
+  shirtCraftButton: {fileID: 1259790922}
+  polyesterCraftButton: {fileID: 532271676}
 --- !u!114 &532271676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24465,8 +24455,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355924791}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+      - m_Target: {fileID: 532271675}
+        m_TargetAssemblyTypeName: LoomMachine, Assembly-CSharp
         m_MethodName: InorganicFabricCraft
         m_Mode: 1
         m_Arguments:
@@ -31269,6 +31259,11 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &717184271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5629798532803793266, guid: 4bda687c716454f439db805c4782e118, type: 3}
+  m_PrefabInstance: {fileID: 1219350984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &720480793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32094,9 +32089,9 @@ GameObject:
   - component: {fileID: 748765596}
   - component: {fileID: 748765595}
   - component: {fileID: 748765594}
-  - component: {fileID: 748765593}
   - component: {fileID: 748765592}
   - component: {fileID: 748765591}
+  - component: {fileID: 748765593}
   m_Layer: 5
   m_Name: inorganic red shirt
   m_TagString: Untagged
@@ -32196,19 +32191,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 748765589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
+  m_Script: {fileID: 11500000, guid: f71ccc0b8a97c2c4b97b6463b5e0bf78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 0}
-  lmSpawnPoint: {fileID: 0}
   dyeSpawnPoint: {fileID: 456186768}
-  selectedFinished: {fileID: 459696900}
-  WMObject: {fileID: 1464779188}
-  LMObject: {fileID: 2046781108}
+  selectedFinished: {fileID: 1683105554}
   DyeObject: {fileID: 1876319605}
-  washCottonButton: {fileID: 1321515369}
-  shirtCraftButton: {fileID: 1259790922}
-  polyesterCraftButton: {fileID: 532271676}
   shirtRedDyeButton: {fileID: 1782626014}
   shirtYellowDyeButton: {fileID: 1484961840}
   polyShirtRedDyeButton: {fileID: 748765594}
@@ -32258,7 +32246,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 748765593}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+        m_TargetAssemblyTypeName: DyeMachine, Assembly-CSharp
         m_MethodName: InorganicRDyeCraft
         m_Mode: 1
         m_Arguments:
@@ -39319,6 +39307,7 @@ GameObject:
   - component: {fileID: 960049882}
   - component: {fileID: 960049881}
   - component: {fileID: 960049880}
+  - component: {fileID: 960049884}
   m_Layer: 5
   m_Name: DyeMachine Canvas
   m_TagString: Untagged
@@ -39414,6 +39403,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &960049884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960049879}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wmSpawnPoint: {fileID: 1537232896}
+  lmSpawnPoint: {fileID: 2019411388}
+  dyeSpawnPoint: {fileID: 456186768}
+  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
+  WMObject: {fileID: 1464779188}
+  LMObject: {fileID: 2046781108}
+  DyeObject: {fileID: 1876319605}
+  washCottonButton: {fileID: 1321515369}
+  shirtCraftButton: {fileID: 1259790922}
+  polyesterCraftButton: {fileID: 532271676}
+  shirtRedDyeButton: {fileID: 1782626014}
+  shirtYellowDyeButton: {fileID: 1484961840}
+  polyShirtRedDyeButton: {fileID: 748765594}
+  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!1001 &962040336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45109,78 +45124,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
---- !u!1 &986685377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 986685378}
-  - component: {fileID: 986685380}
-  - component: {fileID: 986685379}
-  m_Layer: 5
-  m_Name: Anim end
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &986685378
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986685377}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1278293574}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00030136108, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &986685379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986685377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 5649fdede3640434983dce7b94eef512, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &986685380
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986685377}
-  m_CullTransparentMesh: 1
 --- !u!4 &992229527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -50175,7 +50118,7 @@ RectTransform:
   m_LocalScale: {x: 1.7933824, y: 4.151876, z: 1.7933824}
   m_Children: []
   m_Father: {fileID: 418198704}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -53869,6 +53812,7 @@ GameObject:
   - component: {fileID: 1259790922}
   - component: {fileID: 1259790920}
   - component: {fileID: 1259790925}
+  - component: {fileID: 1259790921}
   m_Layer: 5
   m_Name: Fabric
   m_TagString: Untagged
@@ -53914,6 +53858,23 @@ MonoBehaviour:
   img: {fileID: 2091309496}
   Info: {fileID: 630997552}
   shopkeeperText: {fileID: 945250330}
+--- !u!114 &1259790921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259790918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e8891b17fdcea449d405f222bd2054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lmSpawnPoint: {fileID: 2019411388}
+  selectedFinished: {fileID: 717184271}
+  LMObject: {fileID: 2046781108}
+  shirtCraftButton: {fileID: 1259790922}
+  polyesterCraftButton: {fileID: 532271676}
 --- !u!114 &1259790922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53958,8 +53919,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355924791}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+      - m_Target: {fileID: 1259790921}
+        m_TargetAssemblyTypeName: LoomMachine, Assembly-CSharp
         m_MethodName: FabricCraft
         m_Mode: 1
         m_Arguments:
@@ -54843,6 +54804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278293574}
+  - component: {fileID: 1278293575}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -54861,7 +54823,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 19.8805, y: 10.949906, z: 10.814721}
   m_Children:
-  - {fileID: 986685378}
+  - {fileID: 1961298141}
   m_Father: {fileID: 1115377161}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54870,6 +54832,45 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -12}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1278293575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278293573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fabd0370c4b9f046a36a3d0fc8ad2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: c38a9292b7548f94c930c6bf40a93e61, type: 3}
+  - {fileID: 21300000, guid: a490e733df67c6a4f958ff3e723cafa5, type: 3}
+  - {fileID: 21300000, guid: 2e3d9d6c7be0efd49817207ed5d9fd5a, type: 3}
+  - {fileID: 21300000, guid: fda35e5e6b2b9474687905639eccc5e1, type: 3}
+  - {fileID: 21300000, guid: e758d93f5ab2a394ebcc2637d5a0e1f8, type: 3}
+  - {fileID: 21300000, guid: 657b76859d160ff4592bce0bd662cf63, type: 3}
+  - {fileID: 21300000, guid: a1d32c9b1a605a54aa9f74cc147d6b06, type: 3}
+  - {fileID: 21300000, guid: d3fa8aab167d95c4b95c9cc554c78d7e, type: 3}
+  - {fileID: 21300000, guid: 3983acf2dff074b4191c81fc06b9d65a, type: 3}
+  - {fileID: 21300000, guid: 650afe9df5a62b647bf692e8c9e73897, type: 3}
+  - {fileID: 21300000, guid: e45bf107cb0dbaa4fab5fd116db8fa0e, type: 3}
+  - {fileID: 21300000, guid: 8ce5b9e344d8506488df953264f28f35, type: 3}
+  - {fileID: 21300000, guid: 4fff1cc519d52294c939e06bfeeb6e75, type: 3}
+  - {fileID: 21300000, guid: 5d4a698515b26a547ba65ff2d53042d1, type: 3}
+  - {fileID: 21300000, guid: 96213fd12b3a0ed4a98e12f5d06f30d2, type: 3}
+  - {fileID: 21300000, guid: 0fe6d91bfb8be234dbb7278a9638b712, type: 3}
+  - {fileID: 21300000, guid: 2af4e810322bfa04fb0b78709fbc747d, type: 3}
+  - {fileID: 21300000, guid: fc862439db5936d4d9884d7af087fe3c, type: 3}
+  - {fileID: 21300000, guid: 7736a784b58453941b6752f0cdbd5446, type: 3}
+  - {fileID: 21300000, guid: 4d74504cd0aa5864698487c5bf6fc623, type: 3}
+  - {fileID: 21300000, guid: e5ff6936287493e4983c5ccb35adf2f9, type: 3}
+  - {fileID: 21300000, guid: d7b9e8b3ef53abf4ea4a8fe44f9b2a1e, type: 3}
+  - {fileID: 21300000, guid: 55c31e9e2aa1d12479fcb42a35def26f, type: 3}
+  - {fileID: 21300000, guid: b43ee29363dc78c4e8703ab1acf41bbd, type: 3}
+  background: {fileID: 1961298144}
+  frameRate: 0.32
 --- !u!1 &1279348277
 GameObject:
   m_ObjectHideFlags: 0
@@ -55479,81 +55480,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293595387}
-  m_CullTransparentMesh: 1
---- !u!1 &1296491150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1296491151}
-  - component: {fileID: 1296491153}
-  - component: {fileID: 1296491152}
-  m_Layer: 5
-  m_Name: fill
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1296491151
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296491150}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3180075, y: 0.3180075, z: 0.3180075}
-  m_Children: []
-  m_Father: {fileID: 2002751724}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.5, y: 4.5654}
-  m_SizeDelta: {x: 133.6956, y: 54.5889}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1296491152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296491150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8235295, g: 0.8235295, b: 0.69803923, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1296491153
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296491150}
   m_CullTransparentMesh: 1
 --- !u!1001 &1297530252
 PrefabInstance:
@@ -56221,9 +56147,9 @@ GameObject:
   - component: {fileID: 1313956116}
   - component: {fileID: 1313956115}
   - component: {fileID: 1313956114}
-  - component: {fileID: 1313956113}
   - component: {fileID: 1313956112}
   - component: {fileID: 1313956111}
+  - component: {fileID: 1313956113}
   m_Layer: 5
   m_Name: inorganic Yellow shirt
   m_TagString: Untagged
@@ -56323,19 +56249,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313956109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
+  m_Script: {fileID: 11500000, guid: f71ccc0b8a97c2c4b97b6463b5e0bf78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wmSpawnPoint: {fileID: 0}
-  lmSpawnPoint: {fileID: 0}
   dyeSpawnPoint: {fileID: 456186768}
-  selectedFinished: {fileID: 459696900}
-  WMObject: {fileID: 1464779188}
-  LMObject: {fileID: 2046781108}
+  selectedFinished: {fileID: 1683105554}
   DyeObject: {fileID: 1876319605}
-  washCottonButton: {fileID: 1321515369}
-  shirtCraftButton: {fileID: 1259790922}
-  polyesterCraftButton: {fileID: 532271676}
   shirtRedDyeButton: {fileID: 1782626014}
   shirtYellowDyeButton: {fileID: 1484961840}
   polyShirtRedDyeButton: {fileID: 748765594}
@@ -56385,7 +56304,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1313956113}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+        m_TargetAssemblyTypeName: DyeMachine, Assembly-CSharp
         m_MethodName: InorganicYDyeCraft
         m_Mode: 1
         m_Arguments:
@@ -56850,6 +56769,7 @@ GameObject:
   - component: {fileID: 1321515369}
   - component: {fileID: 1321515372}
   - component: {fileID: 1321515368}
+  - component: {fileID: 1321515373}
   m_Layer: 5
   m_Name: Wash Cotton
   m_TagString: Untagged
@@ -56969,8 +56889,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355924791}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+      - m_Target: {fileID: 1321515373}
+        m_TargetAssemblyTypeName: WashingMachine, Assembly-CSharp
         m_MethodName: WashedCottonCraft
         m_Mode: 1
         m_Arguments:
@@ -57034,6 +56954,22 @@ MonoBehaviour:
   img: {fileID: 98805139}
   Info: {fileID: 1745773210}
   shopkeeperText: {fileID: 342286925}
+--- !u!114 &1321515373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321515366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb6e4afc1d142745b94670cc17844b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wmSpawnPoint: {fileID: 1537232896}
+  selectedFinished: {fileID: 64369959}
+  WMObject: {fileID: 1464779188}
+  washCottonButton: {fileID: 1321515369}
 --- !u!4 &1324650503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -61600,7 +61536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6, y: -153}
+  m_AnchoredPosition: {x: -5.999878, y: -153}
   m_SizeDelta: {x: -1500, y: -800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1413409020
@@ -63990,7 +63926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd64098c84eaf3c4ba7239ae869ff218, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.292
+      value: 15.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd64098c84eaf3c4ba7239ae869ff218, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65557,6 +65493,7 @@ GameObject:
   - component: {fileID: 1484961840}
   - component: {fileID: 1484961838}
   - component: {fileID: 1484961837}
+  - component: {fileID: 1484961839}
   m_Layer: 5
   m_Name: 'Yellow shirt '
   m_TagString: Untagged
@@ -65647,6 +65584,25 @@ MonoBehaviour:
   img: {fileID: 804264380}
   Info: {fileID: 1187616665}
   shopkeeperText: {fileID: 1429280041}
+--- !u!114 &1484961839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484961835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71ccc0b8a97c2c4b97b6463b5e0bf78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dyeSpawnPoint: {fileID: 456186768}
+  selectedFinished: {fileID: 1683105554}
+  DyeObject: {fileID: 1876319605}
+  shirtRedDyeButton: {fileID: 1782626014}
+  shirtYellowDyeButton: {fileID: 1484961840}
+  polyShirtRedDyeButton: {fileID: 748765594}
+  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!114 &1484961840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65691,8 +65647,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355924791}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+      - m_Target: {fileID: 1484961839}
+        m_TargetAssemblyTypeName: DyeMachine, Assembly-CSharp
         m_MethodName: OrganicYDyeCraft
         m_Mode: 1
         m_Arguments:
@@ -74459,7 +74415,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5629798532803793267, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
       propertyPath: m_RootOrder
@@ -78246,6 +78202,11 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1683105554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5629798532803793266, guid: 4bda687c716454f439db805c4782e118, type: 3}
+  m_PrefabInstance: {fileID: 773394289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1686341685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78435,7 +78396,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7760663, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -81101,6 +81062,7 @@ GameObject:
   - component: {fileID: 1782626014}
   - component: {fileID: 1782626012}
   - component: {fileID: 1782626011}
+  - component: {fileID: 1782626013}
   m_Layer: 5
   m_Name: Red shirt
   m_TagString: Untagged
@@ -81191,6 +81153,25 @@ MonoBehaviour:
   img: {fileID: 472496276}
   Info: {fileID: 547867038}
   shopkeeperText: {fileID: 1123782580}
+--- !u!114 &1782626013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782626009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71ccc0b8a97c2c4b97b6463b5e0bf78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dyeSpawnPoint: {fileID: 456186768}
+  selectedFinished: {fileID: 1683105554}
+  DyeObject: {fileID: 1876319605}
+  shirtRedDyeButton: {fileID: 1782626014}
+  shirtYellowDyeButton: {fileID: 1484961840}
+  polyShirtRedDyeButton: {fileID: 748765594}
+  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!114 &1782626014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81235,8 +81216,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355924791}
-        m_TargetAssemblyTypeName: Crafting, Assembly-CSharp
+      - m_Target: {fileID: 1782626013}
+        m_TargetAssemblyTypeName: DyeMachine, Assembly-CSharp
         m_MethodName: OrganicRDyeCraft
         m_Mode: 1
         m_Arguments:
@@ -87012,7 +86993,7 @@ RectTransform:
   m_LocalScale: {x: 1.2108, y: 1.2108, z: 1.2108}
   m_Children: []
   m_Father: {fileID: 418198704}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -87136,6 +87117,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9030908570850489543, guid: 7679286ec81d29649b1f3a1ff8a68992, type: 3}
   m_PrefabInstance: {fileID: 2041668268}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1961298140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961298141}
+  - component: {fileID: 1961298143}
+  - component: {fileID: 1961298144}
+  m_Layer: 5
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1961298141
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961298140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278293574}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.09676}
+  m_SizeDelta: {x: 78, y: 78}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1961298143
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961298140}
+  m_CullTransparentMesh: 1
+--- !u!114 &1961298144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961298140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1964327990
 GameObject:
   m_ObjectHideFlags: 0
@@ -88487,6 +88543,7 @@ GameObject:
   - component: {fileID: 1999312025}
   - component: {fileID: 1999312024}
   - component: {fileID: 1999312023}
+  - component: {fileID: 1999312027}
   m_Layer: 5
   m_Name: CanvasWashingMachine
   m_TagString: Untagged
@@ -88562,7 +88619,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999312022}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
@@ -88575,6 +88632,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1999312027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999312022}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wmSpawnPoint: {fileID: 1537232896}
+  lmSpawnPoint: {fileID: 2019411388}
+  dyeSpawnPoint: {fileID: 456186768}
+  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
+  WMObject: {fileID: 1464779188}
+  LMObject: {fileID: 2046781108}
+  DyeObject: {fileID: 1876319605}
+  washCottonButton: {fileID: 1321515369}
+  shirtCraftButton: {fileID: 1259790922}
+  polyesterCraftButton: {fileID: 532271676}
+  shirtRedDyeButton: {fileID: 1782626014}
+  shirtYellowDyeButton: {fileID: 1484961840}
+  polyShirtRedDyeButton: {fileID: 748765594}
+  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!4 &1999462772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8957eaaa2dffe54c8a514bea0f1535b, type: 3}
@@ -88751,82 +88834,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001321790}
-  m_CullTransparentMesh: 1
---- !u!1 &2002751723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2002751724}
-  - component: {fileID: 2002751726}
-  - component: {fileID: 2002751725}
-  m_Layer: 5
-  m_Name: Health bar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2002751724
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002751723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8729796, y: 2.1405482, z: 2.1405482}
-  m_Children:
-  - {fileID: 1296491151}
-  m_Father: {fileID: 418198704}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.6, y: 428.2}
-  m_SizeDelta: {x: 291.3258, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2002751725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002751723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 858a39db670438340ad0b8fb9cd7d36d, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2002751726
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002751723}
   m_CullTransparentMesh: 1
 --- !u!1001 &2004617164
 PrefabInstance:
@@ -91238,6 +91245,7 @@ GameObject:
   - component: {fileID: 2060932878}
   - component: {fileID: 2060932877}
   - component: {fileID: 2060932876}
+  - component: {fileID: 2060932880}
   m_Layer: 5
   m_Name: CanvasLoomMachine
   m_TagString: Untagged
@@ -91331,6 +91339,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2060932880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060932875}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe44503efab5143a447f89fedddb95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wmSpawnPoint: {fileID: 1537232896}
+  lmSpawnPoint: {fileID: 2019411388}
+  dyeSpawnPoint: {fileID: 456186768}
+  selectedFinished: {fileID: 6065603883966390025, guid: fc268aad18d5d524f99fa729c9c558c9, type: 3}
+  WMObject: {fileID: 1464779188}
+  LMObject: {fileID: 2046781108}
+  DyeObject: {fileID: 1876319605}
+  washCottonButton: {fileID: 1321515369}
+  shirtCraftButton: {fileID: 1259790922}
+  polyesterCraftButton: {fileID: 532271676}
+  shirtRedDyeButton: {fileID: 1782626014}
+  shirtYellowDyeButton: {fileID: 1484961840}
+  polyShirtRedDyeButton: {fileID: 748765594}
+  polyShirtYellowDyeButton: {fileID: 1313956114}
 --- !u!1 &2062471189
 GameObject:
   m_ObjectHideFlags: 0
@@ -91629,7 +91663,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 418198704}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -96831,7 +96865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5629798532803793266, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5629798532803793267, guid: 7eec74011775b644b8c14016f7e843f8, type: 3}
       propertyPath: m_RootOrder
@@ -97530,7 +97564,7 @@ PrefabInstance:
     - target: {fileID: 6770683471627661282, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: Sheep
       value: 
-      objectReference: {fileID: 339366952}
+      objectReference: {fileID: 0}
     - target: {fileID: 6770683471627661282, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: Cooldown
       value: 

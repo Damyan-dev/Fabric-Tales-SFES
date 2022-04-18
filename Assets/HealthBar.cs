@@ -57,9 +57,9 @@ public class HealthBar : MonoBehaviour
         }
         if (slider.value == 50)
         {
-            gameComplete.SetActive(true);  
+            gameComplete.SetActive(true);
         }
-
+        
     }
     public void SetMaxHealth(int health)
     {
