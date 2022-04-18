@@ -29,7 +29,7 @@ public class HealthBar : MonoBehaviour
     {
         if (slider.value == 0)
         {
-            gameObject.SetActive(true);
+            gameOver.SetActive(true);
             Time.timeScale = 0;
         }
 
