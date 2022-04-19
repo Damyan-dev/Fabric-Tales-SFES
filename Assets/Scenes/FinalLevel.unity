@@ -24116,7 +24116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &526544725
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31900,6 +31900,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724201688}
   m_CullTransparentMesh: 1
+--- !u!1 &726605859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6971701308670321999, guid: 588e669a1b5bbe24582c66a9db8c4dc3, type: 3}
+  m_PrefabInstance: {fileID: 702415710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &726605863
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726605859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1769844376353330802, guid: 588e669a1b5bbe24582c66a9db8c4dc3, type: 3}
 --- !u!1 &727221661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5145632094588875119, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
@@ -33877,6 +33896,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
   m_PrefabInstance: {fileID: 789927348}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &791908148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8655916560179723109, guid: 588e669a1b5bbe24582c66a9db8c4dc3, type: 3}
+  m_PrefabInstance: {fileID: 702415710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &791908152
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791908148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7994028316772081947, guid: 588e669a1b5bbe24582c66a9db8c4dc3, type: 3}
 --- !u!1 &792398911
 GameObject:
   m_ObjectHideFlags: 0
@@ -62673,7 +62711,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1414473408
 CanvasRenderer:
@@ -65583,7 +65621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -479, y: -364}
+  m_AnchoredPosition: {x: -479, y: -354}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478491728
@@ -65633,8 +65671,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -65669,7 +65707,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -953.92505, w: -62.03621}
+  m_margin: {x: 0, y: 0, z: -953.92505, w: -82.17679}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -87237,11 +87275,12 @@ MonoBehaviour:
   - How can I help ya?
   - "I heard you quit your previous job because your bosses didn\u2019t care about
     sustainability. Is that true Ekko? "
-  - "Welcome back Ekko! Did you know that soil is more than just dirt \u2014 it\u2019s
-    practically a living organism! One handful of healthy soil contains billions
-    of micro-organisms that are critical to storing gases, breaking down and retaining
-    nutrients, and growing healthy plants!"
+  - "Did you know that soil is more than just dirt \u2014 it\u2019s practically a
+    living organism! One handful of healthy soil contains billions of micro-organisms
+    that are critical to storing gases, breaking down and retaining nutrients, and
+    growing healthy plants!"
   - "Can\u2019t get enough of my lovely shop? "
+  - Welcome Ekko!
   text: {fileID: 1478491728}
 --- !u!65 &1933924551
 BoxCollider:
