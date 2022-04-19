@@ -5,14 +5,20 @@ using UnityEngine;
 
 public class BarnTrigger : MonoBehaviour
 {
-
+    private AudioController audioController;
     public GameObject barnOutside = null;
+
+    public void Start()
+    {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
+    }
 
     private void OnTriggerEnter(Collider col)
     {
         if (col.tag == "Player")
         {
             Debug.Log("entered");
+            audioController.PlaySoundComplete("Barn");
             barnOutside.SetActive(false);
         }
     }
@@ -21,6 +27,7 @@ public class BarnTrigger : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            audioController.PlaySoundComplete("Barn");
             barnOutside.SetActive(true);
         }
     }

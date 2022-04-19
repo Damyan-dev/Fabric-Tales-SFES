@@ -17,9 +17,10 @@ public class WashingMachine : MonoBehaviour
     public Button washCottonButton;
 
     Animator WManim;
-
+    private AudioController audioController;
     public void Start()
     {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         washCottonButton.interactable = false;
         CheckWMInventory();
     }
@@ -48,6 +49,7 @@ public class WashingMachine : MonoBehaviour
         CheckWMInventory();
         if (wmItemToUse != null && wmItemToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(wmItemToUse.itemType, 1);
             WManim = WMObject.GetComponent<Animator>();
             WManim.Play("WMAction", 0, 0.0f);

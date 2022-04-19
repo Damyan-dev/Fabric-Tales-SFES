@@ -18,10 +18,11 @@ public class SheepShearing : MonoBehaviour
 
     Animator Sheepanim;
     private int nextShear = 0;
-
+    private AudioController audioController;
 
     public void Start()
     {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         shearSheepButton.interactable = false;
         CheckSheepInventory();
     }
@@ -48,6 +49,7 @@ public class SheepShearing : MonoBehaviour
     {
         //Sheepanim = SheepObject.GetComponent<Animator>();
         //Sheepanim.Play("SheepAction", 0, 0.0f);
+        audioController.PlaySoundComplete("Button Click");
         nextShear = 1;
         Inventory.Instance.StartCoroutine(CraftDelay(5, "Wool", 1, SheepSpawnPoint.position));
         

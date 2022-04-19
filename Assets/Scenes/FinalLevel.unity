@@ -49924,6 +49924,69 @@ MonoBehaviour:
     fadeTime: 0
     loop: 1
     playOnAwake: 1
+  - name: Till
+    clip: {fileID: 8300000, guid: cf2cae4a17d86df4db6b334f73bbe90b, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Fertilize
+    clip: {fileID: 8300000, guid: e56eddc0501583846902fa53fd36c9de, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Shop
+    clip: {fileID: 8300000, guid: cbd612b83cfddc44bb3252a09be7ab10, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Barn
+    clip: {fileID: 8300000, guid: bb397dab470452841887743ebb84e2cb, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Button Click
+    clip: {fileID: 8300000, guid: 8c1d2f8d2dd56854ea1b1652a7ca176e, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Shop Button Click
+    clip: {fileID: 8300000, guid: cf8e21fb60e4a2a408200652158d9136, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Sheep
+    clip: {fileID: 8300000, guid: 3eecf33e6081fb940a642a12739606e5, type: 3}
+    volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
   soundContainer: {fileID: 774963084}
   masterVolume: 0.078
 --- !u!114 &1126368604

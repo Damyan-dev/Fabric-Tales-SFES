@@ -16,6 +16,7 @@ public class CropInteractionMenu : MonoBehaviour
     public Button plantCottonButton;
     public Button plantElderberryButton;
     public Button plantTurmericButton;
+    private AudioController audioController;
 
     public void Start()
     {
@@ -23,6 +24,7 @@ public class CropInteractionMenu : MonoBehaviour
         WinCanvas.SetActive(false);
         currentHealth = 25;
         healthBar.SetMaxHealth(maxHealth);
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         anim = GetComponent<Animator>();
         tillButton.interactable = true;
         fertilizeButton.interactable = true;
@@ -77,6 +79,7 @@ public class CropInteractionMenu : MonoBehaviour
             if (selectedField.farmStatus == Farmland.FarmStatus.Dirt)
             {
                 LoseHealth(5);
+                audioController.PlaySoundComplete("Fertilize");
             }
 
             selectedField.ChangeFarmStatus(Farmland.FarmStatus.Watered);
@@ -90,6 +93,7 @@ public class CropInteractionMenu : MonoBehaviour
         if (selectedField != null && selectedField.cropPlanted == null)
         {
             selectedField.ChangeFarmStatus(Farmland.FarmStatus.Farm);
+            audioController.PlaySoundComplete("Till");
         }
     }
 

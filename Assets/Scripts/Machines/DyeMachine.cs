@@ -20,9 +20,11 @@ public class DyeMachine : MonoBehaviour
 
     
     Animator Dyeanim;
+    private AudioController audioController;
 
     public void Start()
     {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         shirtRedDyeButton.interactable = false;
         shirtYellowDyeButton.interactable = false;
         polyShirtYellowDyeButton.interactable = false;
@@ -108,11 +110,13 @@ public class DyeMachine : MonoBehaviour
         CheckPolyesterYDyeInventory();
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
             Dyeanim = DyeObject.GetComponent<Animator>();
             Dyeanim.Play("DyeAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Red Cotton Shirt", 1, dyeSpawnPoint.position));
+            
         }
     }
     public void OrganicYDyeCraft()
@@ -126,6 +130,7 @@ public class DyeMachine : MonoBehaviour
         CheckPolyesterYDyeInventory();
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
             Dyeanim = DyeObject.GetComponent<Animator>();
@@ -145,6 +150,7 @@ public class DyeMachine : MonoBehaviour
         CheckPolyesterYDyeInventory();
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
             Dyeanim = DyeObject.GetComponent<Animator>();
@@ -162,6 +168,7 @@ public class DyeMachine : MonoBehaviour
         CheckPolyesterYDyeInventory();
         if (dyeItemToUse != null && dyeItemToUse.quantity >= 1 && dyeMaterialToUse != null && dyeMaterialToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(dyeItemToUse.itemType, 1);
             Inventory.Instance.RemoveItem(dyeMaterialToUse.itemType, 1);
             Dyeanim = DyeObject.GetComponent<Animator>();

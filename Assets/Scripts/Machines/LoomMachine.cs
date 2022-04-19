@@ -17,9 +17,10 @@ public class LoomMachine : MonoBehaviour
     public Button polyesterCraftButton;
 
     Animator LManim;
-
+    private AudioController audioController;
     public void Start()
     {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         shirtCraftButton.interactable = false;
         polyesterCraftButton.interactable = false;
         CheckLMachineInventory();
@@ -59,6 +60,7 @@ public class LoomMachine : MonoBehaviour
         CheckLMachineInventory();
         if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
             LManim = LMObject.GetComponent<Animator>();
             LManim.Play("LMAction", 0, 0.0f);
@@ -72,6 +74,7 @@ public class LoomMachine : MonoBehaviour
         CheckLMachineInventory();
         if (lmItemToUse != null && lmItemToUse.quantity >= 1)
         {
+            audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
             LManim = LMObject.GetComponent<Animator>();
             LManim.Play("LMAction", 0, 0.0f);

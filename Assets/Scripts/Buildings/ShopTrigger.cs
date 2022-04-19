@@ -13,10 +13,12 @@ public class ShopTrigger : MonoBehaviour
     public GameObject[] canvasToDisable;
     public string[] dialogue = { "Word A", "Word B" };
     public TMP_Text text;
+    private AudioController audioController;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         barnOutside.SetActive(true);
         ShopkeeperCanvas.SetActive(false);
 
@@ -27,6 +29,7 @@ public class ShopTrigger : MonoBehaviour
         if (col.tag == "Player")
         {
             Debug.Log("entered");
+            audioController.PlaySoundComplete("Shop");
             barnOutside.SetActive(false);
             ShopkeeperCanvas.SetActive(true);
             // log whatever comes out of the RandomWord string.
@@ -40,6 +43,7 @@ public class ShopTrigger : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            audioController.PlaySoundComplete("Shop");
             barnOutside.SetActive(true);
             ShopkeeperCanvas.SetActive(false);
             canvasToDisable[0].SetActive(false);

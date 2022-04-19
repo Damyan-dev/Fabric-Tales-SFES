@@ -7,11 +7,13 @@ public class HeartTrigger : MonoBehaviour
 {
     public GameObject barnOutside = null;
     public GameObject canvasObject;
+    private AudioController audioController;
 
     // Start is called before the first frame update
     public Renderer object_render;
     void Start()
     {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
         object_render = GetComponent<Renderer>();
         object_render.enabled = false;
     }
@@ -20,6 +22,7 @@ public class HeartTrigger : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            audioController.PlaySoundComplete("Sheep");
             object_render.enabled = true;
         }
     }
@@ -28,6 +31,7 @@ public class HeartTrigger : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            audioController.PlaySoundComplete("Sheep");
             object_render.enabled = false;
         }
     }
