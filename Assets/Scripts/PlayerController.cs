@@ -16,8 +16,10 @@ public class PlayerController : MonoBehaviour
 	public GameObject DMCanvas;
 	public GameObject SheepCanvas;
 	public GameObject cottonItem;
+	
 
-	private void Start()
+
+    public void Start()
 	{
 
 		anim = GetComponent<Animator>();
@@ -25,7 +27,10 @@ public class PlayerController : MonoBehaviour
 		playerInteractor = GetComponentInChildren<Interactor>();
 		audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
 		audioController.PlaySoundComplete("BGM");
-
+		GetPolyester();
+		GetCottonSeed();
+		GetElderberrySeed();
+		GetTurmericSeed();
 	}
 
 	private void Update()
@@ -140,6 +145,41 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	public void GetPolyester()
+    {
+		var polyesterItem = Inventory.Instance.FindItemByType("Polyester");
+		if (polyesterItem.itemType != null && polyesterItem.inventory && polyesterItem.quantity >= 0)
+        {
+			Inventory.Instance.AddItem(polyesterItem.itemType, 2);
+		}
+	}
+
+	public void GetCottonSeed()
+    {
+		var cottonSeedItem = Inventory.Instance.FindItemByType("Cotton Seed");
+		if (cottonSeedItem.itemType != null && cottonSeedItem.inventory && cottonSeedItem.quantity >= 0)
+        {
+			Inventory.Instance.AddItem(cottonSeedItem.itemType, 2);
+		}
+	}
+
+	public void GetElderberrySeed()
+    {
+		var elderberrySeedItem = Inventory.Instance.FindItemByType("Elderberry Seed");
+		if (elderberrySeedItem.itemType != null && elderberrySeedItem.inventory && elderberrySeedItem.quantity >= 0)
+        {
+			Inventory.Instance.AddItem(elderberrySeedItem.itemType, 2);
+		}
+	}
+
+	public void GetTurmericSeed()
+    {
+		var turmericSeedItem = Inventory.Instance.FindItemByType("Turmeric Seed");
+		if (turmericSeedItem.itemType != null && turmericSeedItem.inventory && turmericSeedItem.quantity >= 0)
+        {
+			Inventory.Instance.AddItem(turmericSeedItem.itemType, 2);
+		}
+	}
 
 	public IEnumerator HarvestRoutine()
 		{

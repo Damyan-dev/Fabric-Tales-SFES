@@ -31,7 +31,7 @@ public class HealthBar : MonoBehaviour
         if (slider.value == 0)
         {
             gameOver.SetActive(true);
-            Time.timeScale = 0;
+            StartCoroutine(BadEnd(32));
         }
 
         if(slider.value <= 15)
@@ -58,6 +58,7 @@ public class HealthBar : MonoBehaviour
         if (slider.value == 50)
         {
             gameComplete.SetActive(true);
+            StartCoroutine(GoodEnd(32, gameComplete));
         }
         
     }
@@ -70,5 +71,17 @@ public class HealthBar : MonoBehaviour
     public void SetHealth(int health)
     {
         slider.value = health;
+    }
+
+    public IEnumerator BadEnd(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Application.Quit();
+    }
+
+    public IEnumerator GoodEnd(float seconds, GameObject goodEnd)
+    {
+        yield return new WaitForSeconds(seconds);
+        goodEnd.SetActive(false);
     }
 }

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public InteractableObject item;
-    
 
     public void SetUI(InteractableObject item)
     {
