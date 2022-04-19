@@ -61,7 +61,7 @@ public class SheepShearing : MonoBehaviour
         craftedItem.transform.parent = null;
         craftedItem.transform.position = spawnPoint;
         selectedFinished.SetActive(true);
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(30);
         selectedFinished.SetActive(false);
         nextShear = 0;
 
