@@ -55,7 +55,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
         ingameCamera.GetComponent<playerMoney>().subtractMoney(100);
     }
-    public void Add30()
+    public void SellCottonShirt()
     {
         var itemToSell = Inventory.Instance.FindItemByType("Cotton Shirt");
 
@@ -102,6 +102,39 @@ public class AddRemoveMoney : MonoBehaviour
     public void SellYCottonShirt()
     {
         var itemToSell4 = Inventory.Instance.FindItemByType("Yellow Cotton Shirt");
+
+        if (itemToSell4.itemType != null && itemToSell4.quantity >= 1)
+        {
+            Inventory.Instance.RemoveItem(itemToSell4.itemType, 1);
+            Debug.Log("removed yellow shirt");
+            ingameCamera.GetComponent<playerMoney>().addMoney(50);
+        }
+    }
+    public void SellPolyShirt()
+    {
+        var itemToSell = Inventory.Instance.FindItemByType("Polyester Shirt");
+
+        if (itemToSell.itemType != null && itemToSell.quantity >= 1)
+        {
+            Inventory.Instance.RemoveItem(itemToSell.itemType, 1);
+            Debug.Log("removed shirt");
+            ingameCamera.GetComponent<playerMoney>().addMoney(30);
+        }
+    }
+    public void SellRPolyShirt()
+    {
+        var itemToSell2 = Inventory.Instance.FindItemByType("Red Polyester Shirt");
+
+        if (itemToSell2.itemType != null && itemToSell2.quantity >= 1)
+        {
+            Inventory.Instance.RemoveItem(itemToSell2.itemType, 1);
+            Debug.Log("removed red shirt");
+            ingameCamera.GetComponent<playerMoney>().addMoney(50);
+        }
+    }
+    public void SellYPolyShirt()
+    {
+        var itemToSell4 = Inventory.Instance.FindItemByType("Yellow Polyester Shirt");
 
         if (itemToSell4.itemType != null && itemToSell4.quantity >= 1)
         {

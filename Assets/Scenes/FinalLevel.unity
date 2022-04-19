@@ -52359,7 +52359,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1184208174}
         m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
-        m_MethodName: SellYCottonShirt
+        m_MethodName: SellYPolyShirt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -83647,7 +83647,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1815744445}
         m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
-        m_MethodName: Add30
+        m_MethodName: SellCottonShirt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -85800,7 +85800,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1867462097}
         m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
-        m_MethodName: Add30
+        m_MethodName: SellPolyShirt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -93357,7 +93357,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2084012990}
         m_TargetAssemblyTypeName: AddRemoveMoney, Assembly-CSharp
-        m_MethodName: SellRCottonShirt
+        m_MethodName: SellRPolyShirt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
