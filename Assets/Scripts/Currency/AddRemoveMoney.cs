@@ -15,7 +15,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
-            ingameCamera.GetComponent<playerMoney>().subtractMoney(10);
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(5);
         }
     }
 
@@ -48,7 +48,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (ingameCamera.GetComponent<playerMoney>().money >= 25 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
-            ingameCamera.GetComponent<playerMoney>().subtractMoney(25);
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(5);
         }
     }
     public void Subtract100()
@@ -63,7 +63,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToSell.itemType, 1);
             Debug.Log("removed shirt");
-            ingameCamera.GetComponent<playerMoney>().addMoney(30);
+            ingameCamera.GetComponent<playerMoney>().addMoney(40);
         }
     }
     public void BuyCotton()
@@ -74,7 +74,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToBuy.itemType, 1);
             Debug.Log("Bought Cotton");
-            ingameCamera.GetComponent<playerMoney>().subtractMoney(30);
+            ingameCamera.GetComponent<playerMoney>().subtractMoney(15);
         }
     }
     public void SellRCottonShirt()
@@ -85,7 +85,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToSell2.itemType, 1);
             Debug.Log("removed red shirt");
-            ingameCamera.GetComponent<playerMoney>().addMoney(50);
+            ingameCamera.GetComponent<playerMoney>().addMoney(60);
         }
     }
     public void SellWool()
@@ -107,7 +107,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToSell4.itemType, 1);
             Debug.Log("removed yellow shirt");
-            ingameCamera.GetComponent<playerMoney>().addMoney(50);
+            ingameCamera.GetComponent<playerMoney>().addMoney(60);
         }
     }
     public void SellPolyShirt()
@@ -118,7 +118,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToSell.itemType, 1);
             Debug.Log("removed shirt");
-            ingameCamera.GetComponent<playerMoney>().addMoney(30);
+            ingameCamera.GetComponent<playerMoney>().addMoney(50);
         }
     }
     public void SellRPolyShirt()
@@ -129,7 +129,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToSell2.itemType, 1);
             Debug.Log("removed red shirt");
-            ingameCamera.GetComponent<playerMoney>().addMoney(50);
+            ingameCamera.GetComponent<playerMoney>().addMoney(70);
         }
     }
     public void SellYPolyShirt()
@@ -140,7 +140,7 @@ public class AddRemoveMoney : MonoBehaviour
         {
             Inventory.Instance.RemoveItem(itemToSell4.itemType, 1);
             Debug.Log("removed yellow shirt");
-            ingameCamera.GetComponent<playerMoney>().addMoney(50);
+            ingameCamera.GetComponent<playerMoney>().addMoney(70);
         }
     }
 }
