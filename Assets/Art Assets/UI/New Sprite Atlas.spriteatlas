@@ -83,6 +83,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c4648d7245a2f3a43ab28da1d7f58060, type: 3}
   - {fileID: 21300000, guid: d3a02f722a6bb4046abe9bf309c2b531, type: 3}
   - {fileID: 21300000, guid: c38a9292b7548f94c930c6bf40a93e61, type: 3}
+  - {fileID: 21300000, guid: 1977d3a2480e6c1469adfe201a5f83dc, type: 3}
   - {fileID: 21300000, guid: cd6a47a2a3e1511489f3cdea445524bb, type: 3}
   - {fileID: 21300000, guid: 43d00ea296abe264ba86dfd911b6d23c, type: 3}
   - {fileID: 21300000, guid: d1d930b2695910e43b0a6aaab2b7dc3e, type: 3}
@@ -102,6 +103,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e4a5ae4304a5d424fafc73fec46a633b, type: 3}
   - {fileID: 21300000, guid: d4012353e06e25e45925aa70513dad11, type: 3}
   - {fileID: 21300000, guid: 38a11463e2dbe264382b446cbe2fb4ba, type: 3}
+  - {fileID: 21300000, guid: 350d5c83689f89a44b6bcc0da63a5829, type: 3}
   - {fileID: 21300000, guid: 53a95f83ec7f21e428e5622650938739, type: 3}
   - {fileID: 21300000, guid: 5530219342c53b14d962b95e527f01ad, type: 3}
   - {fileID: 21300000, guid: b43ee29363dc78c4e8703ab1acf41bbd, type: 3}
@@ -161,6 +163,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 15247cf561182794ca9428e3a6b5a3c9, type: 3}
   - {fileID: 21300000, guid: 5f2bfdf5727717c45b6dbc1a711ee670, type: 3}
   - {fileID: 21300000, guid: b1b41026b0dedeb46b1cc041e4402ea1, type: 3}
+  - {fileID: 21300000, guid: 96d8782664cf4c3488c685d2359697ad, type: 3}
   - {fileID: 21300000, guid: e5ff6936287493e4983c5ccb35adf2f9, type: 3}
   - {fileID: 21300000, guid: 499b7f46ab66fa04ebb358657b6db48f, type: 3}
   - {fileID: 21300000, guid: f8b17e56242fd9c4782643d47a6a9dd8, type: 3}
@@ -237,6 +240,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e744aa1acbfd244409bc576d1a55108b, type: 3}
   - {fileID: 21300000, guid: 9bc5483a60e6adf479e66003404b91e0, type: 3}
   - {fileID: 21300000, guid: 6db1f35a84fcde54e8dab62f3faccfaf, type: 3}
+  - {fileID: 21300000, guid: 2088e27acf55cc84cbf22760377f73d1, type: 3}
   - {fileID: 21300000, guid: 314bd87a6de41ea4cbd04d44c4608897, type: 3}
   - {fileID: 21300000, guid: 61532b7a1176a44429b4066c4cb4591f, type: 3}
   - {fileID: 21300000, guid: b2169e7a7d4630745879968d70cbb2c8, type: 3}
@@ -390,6 +394,7 @@ SpriteAtlas:
   - Seeds Tab
   - Resume Normal
   - frame_00_delay-0.3s
+  - Amelia 1
   - frame_23_delay-0.3s
   - frame047
   - elderberry blue
@@ -409,6 +414,7 @@ SpriteAtlas:
   - frame_11_delay-0.3s
   - cotton_green
   - rope3
+  - Vera
   - Save Hover
   - Good Environment Stat
   - frame_23_delay-0.3s
@@ -468,6 +474,7 @@ SpriteAtlas:
   - tab5
   - elderberry seeds
   - frame_16_delay-0.3s
+  - Vera Head
   - frame_20_delay-0.3s
   - yellow tshirt
   - Washing Machine title
@@ -544,6 +551,7 @@ SpriteAtlas:
   - Menu normal
   - frame_10_delay-0.3s
   - frame048
+  - Ekko
   - unused tabs
   - Quit Click
   - rope4

@@ -14,7 +14,7 @@ The shopkeeper is called Vera. She is a bit of naive tree-huger, but not too ann
 
 Do you have any questions?
 * [Ekko: Where do I start?]
-    Amelia: I asked Vera to give you a sample seeds, so you can see what plants you can grow. After that, you have to buy your own seeds to grow your crops. With that you can star your production process.
+    Amelia: I asked Vera to give you a sample seeds, so you can see what plants you can grow. After that, you have to buy your own seeds to grow your crops. With that you can start your production process.
         -> Question
 * [Ekko: How do I plant crops?]
     Amelia: Go over to one of your field patches and till it. You can use fertilizer in the proces as well. Afterwards it is ready for planting. Did you write that down?
