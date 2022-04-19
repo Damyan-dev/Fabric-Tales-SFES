@@ -74,10 +74,13 @@ public class CropInteractionMenu : MonoBehaviour
         var selectedField = Interactor.Instance.selectedFarmLand;
         if (selectedField != null && selectedField.cropPlanted == null)
         {
+            if (selectedField.farmStatus == Farmland.FarmStatus.Dirt)
+            {
+                LoseHealth(5);
+            }
 
             selectedField.ChangeFarmStatus(Farmland.FarmStatus.Watered);
          
-                LoseHealth(5);
         }
     }
 
