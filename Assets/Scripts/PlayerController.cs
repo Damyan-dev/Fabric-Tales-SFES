@@ -9,13 +9,12 @@ public class PlayerController : MonoBehaviour
 	private CapsuleCollider col;
 	private Animator anim;
 	public AudioController audioController;
-	public Sheep1 Sheep;
 	Interactor playerInteractor;
-	private int nextShear = 0;
 	public Text Cooldown;
 	public GameObject WMCanvas;
 	public GameObject LoomCanvas;
 	public GameObject DMCanvas;
+	public GameObject SheepCanvas;
 	public GameObject cottonItem;
 
 	private void Start()
@@ -31,12 +30,13 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
-		Cooldown.text = (nextShear - Time.time).ToString();
+		/*Cooldown.text = (nextShear - Time.time).ToString();
 		if((nextShear - Time.time) < 0)
         {
 			Cooldown.text = "0";
         }
 		Interact();
+		*/
 	}
 
 	private void FixedUpdate()
@@ -88,99 +88,10 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 
-		/*if (Input.GetKeyDown(KeyCode.E))
-		{
-			playerInteractor.ItemPickup();
-		} */
-
 		if (Input.GetKey(KeyCode.RightBracket))
         {
 			TimeController.Instance.Tick();
         }
-	}
-	private void OnTriggerStay(Collider other)
-	{
-		/*
-		if (other.name == "Loom")
-		{
-			InteractableObject itemWashed = Inventory.Instance.FindItemByType("Rare Washed");
-
-			if (Input.GetKeyDown(KeyCode.F))
-			{
-
-				if (itemWashed != null)
-				{
-					Inventory.Instance.RemoveItem(itemWashed);
-					loom.Spawn();
-				}
-			}
-
-		}
-		if (other.name == "Shearing Sheep")
-		{
-			if (Input.GetKeyDown(KeyCode.F) && Time.time > nextShear)
-			{
-
-				Sheep.Spawn();
-				
-				nextShear += 100;
-				//Cooldown.text = (nextShear - Time.time).ToString();
-
-				//ItemData item = InventoryManager.Instance.ItemSearch("Wool");
-				//if (item != null)
-				//{
-				//	InventoryManager.Instance.ItemRemove(item);
-				//	loom.Spawn();
-				//}
-			}
-
-		}
-
-		if (other.name == "Dye Machine")
-		{
-			InteractableObject itemShirt = Inventory.Instance.FindItemByType("Rare Shirt");
-
-			if (Input.GetKeyDown(KeyCode.F))
-			{
-
-
-				if (itemShirt != null)
-				{
-					Inventory.Instance.RemoveItem(itemShirt);
-					dyeMachine.Spawn();
-				}
-
-			}
-
-		}
-
-		if (other.name == "Washing Machine Rig")
-		{
-			InteractableObject itemCotton = Inventory.Instance.FindItemByType("Cotton");
-
-			if (Input.GetKeyDown(KeyCode.F) && itemCotton.quantity > 0)
-			{
-				if (itemCotton != null)
-				{
-					Inventory.Instance.RemoveItem(itemCotton);
-					loom.Spawn();
-				}
-			}
-			
-			InteractableObject itemWool = Inventory.Instance.FindItemByType("Wool");
-
-			if (Input.GetKeyDown(KeyCode.F))
-			{
-
-				if (itemCotton != null)
-				{
-					Inventory.Instance.RemoveItem(itemCotton);
-				
-					
-				}
-			}
-		}
-		*/
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -200,6 +111,10 @@ public class PlayerController : MonoBehaviour
 			DMCanvas.SetActive(true);
         }
 
+		if (other.name == "Shearing Sheep")
+		{
+			SheepCanvas.SetActive(true);
+		}
 	}
 
 
@@ -219,7 +134,10 @@ public class PlayerController : MonoBehaviour
 		{
 			DMCanvas.SetActive(false);
 		}
-
+		if (other.name == "Shearing Sheep")
+		{
+			SheepCanvas.SetActive(false);
+		}
 	}
 
 
