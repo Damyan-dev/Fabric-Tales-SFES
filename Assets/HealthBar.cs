@@ -31,7 +31,7 @@ public class HealthBar : MonoBehaviour
         if (slider.value == 0)
         {
             gameOver.SetActive(true);
-            StartCoroutine(BadEnd(31));
+
         }
 
         if(slider.value <= 15)
@@ -58,7 +58,7 @@ public class HealthBar : MonoBehaviour
         if (slider.value == 50)
         {
             gameComplete.SetActive(true);
-            StartCoroutine(GoodEnd(32, gameComplete));
+            StartCoroutine(GoodEnd(10, gameComplete));
         }
         
     }

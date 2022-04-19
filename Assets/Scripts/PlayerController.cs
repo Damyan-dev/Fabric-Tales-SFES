@@ -35,13 +35,10 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
-		/*Cooldown.text = (nextShear - Time.time).ToString();
-		if((nextShear - Time.time) < 0)
-        {
-			Cooldown.text = "0";
-        }
-		Interact();
-		*/
+		if (Input.GetKey(KeyCode.RightBracket))
+		{
+			TimeController.Instance.Tick();
+		}
 	}
 
 	private void FixedUpdate()
