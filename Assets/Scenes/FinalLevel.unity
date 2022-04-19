@@ -30606,7 +30606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &691268023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55024,8 +55024,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -78149,8 +78149,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -79459,7 +79459,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -87232,11 +87232,15 @@ MonoBehaviour:
   - Did you participate in COP26 in Glasgow a while ago? I heard there were leaders
     from all over the world!
   - Hello Ecco, I got new goodies for ya!
-  - What can I get ya?
+  - Agriculture uses up 70% of our global freshwater. It goes up to 90% in fast-developing
+    countries. Ugh! Anyway what can I get ya?
   - How can I help ya?
   - "I heard you quit your previous job because your bosses didn\u2019t care about
     sustainability. Is that true Ekko? "
-  - 'Welcome back Ekko! '
+  - "Welcome back Ekko! Did you know that soil is more than just dirt \u2014 it\u2019s
+    practically a living organism! One handful of healthy soil contains billions
+    of micro-organisms that are critical to storing gases, breaking down and retaining
+    nutrients, and growing healthy plants!"
   - "Can\u2019t get enough of my lovely shop? "
   text: {fileID: 1478491728}
 --- !u!65 &1933924551
