@@ -64,6 +64,7 @@ public class WashingMachine : MonoBehaviour
         craftedItem.GetComponent<InteractableObject>().quantity = quantity;
         craftedItem.transform.parent = null;
         craftedItem.transform.position = spawnPoint;
+        audioController.PlaySoundComplete("Finished");
         selectedFinished.SetActive(true);
         yield return new WaitForSeconds(seconds);
         selectedFinished.SetActive(false);

@@ -8,6 +8,7 @@ public class CropParams : MonoBehaviour
     public GameObject seed;
     private GameObject seedling;
     private GameObject harvestable;
+    private AudioController audioController;
     int growth;
     int maxGrowth;
     int growthFertlized;
@@ -19,7 +20,10 @@ public class CropParams : MonoBehaviour
     public CropState cropState;
 
 
-    
+    public void Start()
+    {
+        audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
+    }
 
     public void Plant(InteractableObject seedToGrow)
     {
@@ -60,6 +64,7 @@ public class CropParams : MonoBehaviour
         if(growth >= maxGrowth/2 && cropState == CropState.Seedling)
         {
             SwitchState(CropState.Harvestable);
+            audioController.PlaySoundComplete("Finished");
         }
     }
 
@@ -76,6 +81,7 @@ public class CropParams : MonoBehaviour
         if (growthFertlized >= maxGrowthFertlized / 4 && cropState == CropState.Seedling)
         {
             SwitchState(CropState.Harvestable);
+            audioController.PlaySoundComplete("Finished");
         }
     }
 

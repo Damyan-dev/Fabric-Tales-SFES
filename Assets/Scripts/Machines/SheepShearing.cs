@@ -62,6 +62,7 @@ public class SheepShearing : MonoBehaviour
         craftedItem.GetComponent<InteractableObject>().quantity = quantity;
         craftedItem.transform.parent = null;
         craftedItem.transform.position = spawnPoint;
+        audioController.PlaySoundComplete("Finished");
         selectedFinished.SetActive(true);
         yield return new WaitForSeconds(30);
         selectedFinished.SetActive(false);

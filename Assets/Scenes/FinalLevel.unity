@@ -49925,7 +49925,7 @@ MonoBehaviour:
     playOnAwake: 1
   - name: Till
     clip: {fileID: 8300000, guid: cf2cae4a17d86df4db6b334f73bbe90b, type: 3}
-    volume: 0.068
+    volume: 0.089
     pitch: 1
     volumeDeviation: 0.06
     pitchDeviation: 0.019
@@ -49934,7 +49934,7 @@ MonoBehaviour:
     playOnAwake: 0
   - name: Fertilize
     clip: {fileID: 8300000, guid: e56eddc0501583846902fa53fd36c9de, type: 3}
-    volume: 0.068
+    volume: 0.089
     pitch: 1
     volumeDeviation: 0.06
     pitchDeviation: 0.019
@@ -49980,6 +49980,15 @@ MonoBehaviour:
   - name: Sheep
     clip: {fileID: 8300000, guid: 3eecf33e6081fb940a642a12739606e5, type: 3}
     volume: 0.068
+    pitch: 1
+    volumeDeviation: 0.06
+    pitchDeviation: 0.019
+    fadeTime: 0
+    loop: 0
+    playOnAwake: 0
+  - name: Finished
+    clip: {fileID: 8300000, guid: a2a6f40dddcf91148bf8a09c4468b5e6, type: 3}
+    volume: 0.07
     pitch: 1
     volumeDeviation: 0.06
     pitchDeviation: 0.019

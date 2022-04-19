@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 class Load : MonoBehaviour
 {
+    
     public void Mainmenu()
     {
         SceneManager.LoadScene("MainMenu");
