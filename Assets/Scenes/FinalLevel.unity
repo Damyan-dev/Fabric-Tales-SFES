@@ -19191,7 +19191,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Synthetic fabric is harmful to the environment. It can, however, be used
-    to produced clothing faster by taking (1x)Polyester.
+    to produced clothing faster by taking (1x)Polyester and (1x)Washed Cotton.
 --- !u!222 &357676246
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19374,6 +19374,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4336706434927076308, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
+--- !u!65 &369952230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369952225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8623654, y: 0.6117088, z: 0.450386}
+  m_Center: {x: -0.3306318, y: 0.3058544, z: -0.1836467}
 --- !u!4 &371350346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8957eaaa2dffe54c8a514bea0f1535b, type: 3}
@@ -22137,6 +22150,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8560969995569238093, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
+--- !u!65 &463472032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463472027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.41335183, y: 0.43148094, z: 0.55211985}
+  m_Center: {x: -0.06516106, y: 0.20074214, z: -0.27579218}
 --- !u!1 &467437431
 GameObject:
   m_ObjectHideFlags: 0
@@ -24800,6 +24826,7 @@ MonoBehaviour:
   LMObject: {fileID: 2046781108}
   shirtCraftButton: {fileID: 1259790922}
   polyesterCraftButton: {fileID: 532271676}
+  healthRemove: {fileID: 806970882}
 --- !u!114 &532271676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36964,6 +36991,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
+--- !u!65 &863111808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863111803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7104492, y: 1.1659821, z: 0.3142956}
+  m_Center: {x: -0.8552246, y: 0.58299106, z: -0.15714777}
 --- !u!1 &866351838
 GameObject:
   m_ObjectHideFlags: 0
@@ -54723,6 +54763,7 @@ MonoBehaviour:
   LMObject: {fileID: 2046781108}
   shirtCraftButton: {fileID: 1259790922}
   polyesterCraftButton: {fileID: 532271676}
+  healthRemove: {fileID: 0}
 --- !u!114 &1259790922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75458,6 +75499,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: 5b9e1beefb6e684438fa0c6c27b13934, type: 3}
+--- !u!65 &1581908339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581908334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3858883, y: 0.6076585, z: 2.2509096}
+  m_Center: {x: -0.000000013642116, y: 0.10175166, z: -0.3923459}
 --- !u!4 &1582294684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a6728870de7d77e42bbaff7b252c727d, type: 3}
@@ -79562,7 +79616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687143130}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 31.53, y: 22.57538, z: 49.6774}
+  m_LocalPosition: {x: 30.7, y: 22.57538, z: 50.3474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1638603457}
@@ -95444,7 +95498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134475459}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 31.53, y: 22.57538, z: 49.6774}
+  m_LocalPosition: {x: 30.7, y: 22.57538, z: 50.3474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1518221022}
@@ -98778,7 +98832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.53
+      value: 30.7
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -98786,11 +98840,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56.12
+      value: 56.79
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.38864177
+      value: -0.44188914
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -98798,7 +98852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.921389
+      value: -0.8970697
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalRotation.z
@@ -98810,7 +98864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -225.74
+      value: -232.449
       objectReference: {fileID: 0}
     - target: {fileID: 6520356582479455680, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

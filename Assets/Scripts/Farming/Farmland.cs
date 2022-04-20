@@ -164,8 +164,9 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
             if(hoursPassed > 13)
             {
-                ChangeFarmStatus(FarmStatus.Dirt);
                 cropPlanted = null;
+                ChangeFarmStatus(FarmStatus.Dirt);
+                
             }
         }
 
@@ -175,10 +176,11 @@ public class Farmland : MonoBehaviour, ITimeTracker
             cropPlanted.GrowFertilized();
 
 
-            if (hoursPassedFertilized > 13)
+            if (hoursPassedFertilized > 7)
             {
-                ChangeFarmStatus(FarmStatus.Dirt);
                 cropPlanted = null;
+                ChangeFarmStatus(FarmStatus.Dirt);
+                
 
             }
         }

@@ -18,6 +18,7 @@ public class LoomMachine : MonoBehaviour
 
     Animator LManim;
     private AudioController audioController;
+    public CropInteractionMenu healthRemove;
     public void Start()
     {
         audioController = GameObject.Find("GameManager").GetComponent<AudioController>();
@@ -44,7 +45,8 @@ public class LoomMachine : MonoBehaviour
         }
 
         var polyesterCheck = Inventory.Instance.FindItemByType("Polyester");
-        if (polyesterCheck.itemType != null && polyesterCheck.quantity >= 1)
+        var washedCottonCheck = Inventory.Instance.FindItemByType("Washed Cotton");
+        if (polyesterCheck.itemType != null && polyesterCheck.quantity >= 1 && washedCottonCheck.itemType != null && washedCottonCheck.quantity >= 1)
         {
             polyesterCraftButton.interactable = true;
         }
@@ -71,11 +73,14 @@ public class LoomMachine : MonoBehaviour
     public void InorganicFabricCraft()
     {
         var lmItemToUse = Inventory.Instance.FindItemByType("Polyester");
+        var lmMaterialToUse = Inventory.Instance.FindItemByType("Washed Cotton");
         CheckLMachineInventory();
-        if (lmItemToUse != null && lmItemToUse.quantity >= 1)
+        if (lmItemToUse != null && lmItemToUse.quantity >= 1 && lmMaterialToUse != null && lmMaterialToUse.quantity >= 1)
         {
             audioController.PlaySoundComplete("Button Click");
             Inventory.Instance.RemoveItem(lmItemToUse.itemType, 1);
+            Inventory.Instance.RemoveItem(lmMaterialToUse.itemType, 1);
+            healthRemove.LoseHealth(5);
             LManim = LMObject.GetComponent<Animator>();
             LManim.Play("LMAction", 0, 0.0f);
             Inventory.Instance.StartCoroutine(CraftDelay(2, "Polyester Shirt", 1, lmSpawnPoint.position));

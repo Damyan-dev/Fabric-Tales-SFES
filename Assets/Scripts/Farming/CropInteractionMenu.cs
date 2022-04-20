@@ -106,7 +106,7 @@ public class CropInteractionMenu : MonoBehaviour
             selectedField.CottonSeed();
             if(selectedField.cropPlanted != null)
             {
-                GainHealth(1);
+                GainHealth(2);
             }
         }
     }
@@ -120,7 +120,7 @@ public class CropInteractionMenu : MonoBehaviour
             selectedField.ElderberrySeed();
             if (selectedField.cropPlanted != null)
             {
-                GainHealth(1);
+                GainHealth(2);
             }
         }
     }
@@ -134,7 +134,7 @@ public class CropInteractionMenu : MonoBehaviour
             selectedField.TurmericSeed();
             if (selectedField.cropPlanted != null)
             {
-                GainHealth(1);
+                GainHealth(2);
             }
         }
     }
