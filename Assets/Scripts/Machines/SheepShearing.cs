@@ -47,8 +47,8 @@ public class SheepShearing : MonoBehaviour
 
     public void WoolCraft()
     {
-        //Sheepanim = SheepObject.GetComponent<Animator>();
-        //Sheepanim.Play("SheepAction", 0, 0.0f);
+        sheepAnim = SheepObject.GetComponent<Animator>();
+        sheepAnim.Play("Shear Sheep", 0, 0.0f);
         audioController.PlaySoundComplete("Button Click");
         nextShear = 1;
         Inventory.Instance.StartCoroutine(CraftDelay(5, "Wool", 1, SheepSpawnPoint.position));
