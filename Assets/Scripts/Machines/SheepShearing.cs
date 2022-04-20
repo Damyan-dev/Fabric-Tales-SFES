@@ -16,7 +16,7 @@ public class SheepShearing : MonoBehaviour
     [Header("Buttons")]
     public Button shearSheepButton;
 
-    Animator Sheepanim;
+    Animator sheepAnim;
     private int nextShear = 0;
     private AudioController audioController;
 

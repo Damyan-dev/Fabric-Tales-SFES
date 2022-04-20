@@ -36878,11 +36878,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8957eaaa2dffe54c8a514bea0f1535b, type: 3}
---- !u!1 &856757010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 25595625906734997, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
-  m_PrefabInstance: {fileID: 6770683472378160144}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &857834816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1bc2784feef72a742a21892f0b064bac, type: 3}
@@ -67384,7 +67379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1578068986}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToolSwitcher, Assembly-CSharp
         m_MethodName: Fix
         m_Mode: 1
@@ -69454,7 +69449,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1578068986}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToolSwitcher, Assembly-CSharp
         m_MethodName: Water
         m_Mode: 1
@@ -75307,30 +75302,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1576505435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6449400341764170451, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
-  m_PrefabInstance: {fileID: 6770683472378160144}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1578068985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5852187401226633082, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
   m_PrefabInstance: {fileID: 6770683472378160144}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1578068986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578068985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64450880739fe3e4280235ae6ed2751b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Tool1: {fileID: 856757010}
-  Tool2: {fileID: 1576505435}
 --- !u!114 &1578068987 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 391667780903861597, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
@@ -80485,7 +80461,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1578068986}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToolSwitcher, Assembly-CSharp
         m_MethodName: Harvest
         m_Mode: 1
@@ -98928,6 +98904,10 @@ PrefabInstance:
       objectReference: {fileID: 1555256490}
     - target: {fileID: 6770683471627661282, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
       propertyPath: washingMachine
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6770683471627661282, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
+      propertyPath: audioController
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6770683471627661284, guid: 5b011ac7f068d264787d2ebd69cb85f3, type: 3}
