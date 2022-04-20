@@ -84,7 +84,7 @@ public class AddRemoveMoney : MonoBehaviour
         if (itemToBuy.itemType != null && itemToBuy.quantity >= 0)
         {
             audioController.PlaySoundComplete("Shop Button Click");
-            Inventory.Instance.RemoveItem(itemToBuy.itemType, 1);
+            Inventory.Instance.AddItem(itemToBuy.itemType, 1);
             Debug.Log("Bought Cotton");
             ingameCamera.GetComponent<playerMoney>().subtractMoney(15);
         }

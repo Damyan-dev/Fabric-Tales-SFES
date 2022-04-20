@@ -61798,7 +61798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1400648283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64754,7 +64754,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - I hope you are making money Ekko...
-  - Don't forget, I will collect your rent in the morning!
+  - The textile industry employs 1 in 8 workers across the globe. Fashion is big
+    business!
   - Use some fertiliser, will ya? We got no time to wait around.
   - We need to expand the farm to increase production.
   - I'm just waiting for my driver...
@@ -64764,8 +64765,6 @@ MonoBehaviour:
   - I have known Vera since we were kids. She stayed in the countryside, while I
     went to the city to study.
   - I wonder if your textile will end up in my new clothes.
-  - The textile industry employs 1 in 8 workers across the globe. Fashion is big
-    business!
   text: {fileID: 916198906}
   Canvas: {fileID: 1431602146}
 --- !u!1 &1453744470
@@ -84366,7 +84365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.945312, y: -36}
+  m_AnchoredPosition: {x: 23.945312, y: -32.02173}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827520085
