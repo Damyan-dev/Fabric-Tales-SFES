@@ -118,6 +118,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f493d134e05580548a365391b48e03e3, type: 3}
   - {fileID: 21300000, guid: c9b218348c5d8cc49b407354a699382f, type: 3}
   - {fileID: 21300000, guid: 719dba34e2d26f043bfd08a433a13a47, type: 3}
+  - {fileID: 21300000, guid: ffd851449a1d4124fb56c7205fa018ad, type: 3}
   - {fileID: 21300000, guid: 77f20c64a2e955949a6581ba5dd37205, type: 3}
   - {fileID: 21300000, guid: ad834e64506af8d4b98d9e794822a0ee, type: 3}
   - {fileID: 21300000, guid: 9e874e84ea77c4f478b9afaac02fdd86, type: 3}
@@ -405,6 +406,7 @@ SpriteAtlas:
   - firefox_qtPr9ljSsH
   - frame027
   - Credits Normal 1
+  - Clothes_Tab-_Sell
   - shop  ui tab 3
   - frame_04_delay-0.3s
   - frame_01_delay-0.3s
