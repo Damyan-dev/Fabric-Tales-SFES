@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Farmland : MonoBehaviour, ITimeTracker
 {
+    
     public GameObject selected;
     public GameObject cropPopUpMenu;
     public Transform dropPosition;
@@ -156,25 +157,33 @@ public class Farmland : MonoBehaviour, ITimeTracker
 
     public void ClockUpdate(GameTimeConverter gametime)
     {
-        if(farmStatus == FarmStatus.Farm && cropPlanted != null)
-        {
-            cropPlanted.Grow();
+        if(farmStatus == FarmStatus.Farm)
+        {           
             int hoursPassed = GameTimeConverter.CompareTime(timePlanted, gametime);
             
-            if(hoursPassed > 13)
+            if (cropPlanted != null)
+            {
+                cropPlanted.Grow();
+            }
+
+            if(hoursPassed > 12)
             {
                 cropPlanted = null;
                 ChangeFarmStatus(FarmStatus.Dirt);
                 
-            }
-        }
+            } 
+        } 
 
         if(farmStatus == FarmStatus.Watered && cropPlanted != null)
-        {
-            cropPlanted.GrowFertilized();
+        {          
             int hoursPassedFertilized = GameTimeConverter.CompareTime(timePlanted, gametime);
             
-            if (hoursPassedFertilized > 7)
+            if (cropPlanted != null)
+            {
+                cropPlanted.GrowFertilized();
+            }
+
+            if (hoursPassedFertilized > 6)
             {
                 cropPlanted = null;
                 ChangeFarmStatus(FarmStatus.Dirt);

@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247722409030059}
   m_LocalRotation: {x: -0, y: -0.99996614, z: -0, w: 0.008233788}
-  m_LocalPosition: {x: -0.04, y: 0, z: -2.21}
+  m_LocalPosition: {x: -0.51, y: 0, z: -2.21}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3137247724231611593}
@@ -94,7 +94,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247722409030059}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -111,8 +111,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
-  m_Center: {x: 0.0009001493, y: 0.061198212, z: 0.0000019073467}
+  m_Size: {x: 0.76422936, y: 0.22069445, z: 0.8343942}
+  m_Center: {x: -0.005187124, y: 0.038784042, z: 0.0017978847}
 --- !u!114 &3137247722409030097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   Objtext: {fileID: 0}
   farmStatus: 0
   cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
+  cropPlanted: {fileID: 0}
 --- !u!1 &3137247722805587765
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247722915745820}
   m_LocalRotation: {x: -0, y: -0.99996614, z: -0, w: 0.008233788}
-  m_LocalPosition: {x: 4.194, y: -0.045, z: -0.079}
+  m_LocalPosition: {x: 4.75, y: -0.045, z: 0.51}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3137247724365146606}
@@ -264,7 +265,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247722915745820}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -281,8 +282,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
-  m_Center: {x: 0, y: 0.053411935, z: 0}
+  m_Size: {x: 0.76422936, y: 0.22069445, z: 0.8343942}
+  m_Center: {x: -0.005187124, y: 0.038784042, z: 0.0017978847}
 --- !u!114 &3137247722915745818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +305,7 @@ MonoBehaviour:
   Objtext: {fileID: 0}
   farmStatus: 0
   cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
+  cropPlanted: {fileID: 0}
 --- !u!1 &3137247723228206461
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247723578547749}
   m_LocalRotation: {x: -0, y: -0.99996614, z: -0, w: 0.008233788}
-  m_LocalPosition: {x: 2.12, y: 0, z: -0.04}
+  m_LocalPosition: {x: 2.13, y: 0, z: 0.51}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3137247723631430353}
@@ -562,7 +564,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247723578547749}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -579,8 +581,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
-  m_Center: {x: 0.0000009536743, y: 0.045514077, z: 0.0000019073486}
+  m_Size: {x: 0.76422936, y: 0.22069445, z: 0.8343942}
+  m_Center: {x: -0.005187124, y: 0.038784042, z: 0.0017978847}
 --- !u!114 &3137247723578547747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,6 +604,7 @@ MonoBehaviour:
   Objtext: {fileID: 0}
   farmStatus: 0
   cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
+  cropPlanted: {fileID: 0}
 --- !u!1 &3137247723631430358
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247724086582729}
   m_LocalRotation: {x: -0, y: -0.99996614, z: -0, w: 0.008233788}
-  m_LocalPosition: {x: 4.153999, y: -0.045, z: -2.288999}
+  m_LocalPosition: {x: 4.75, y: -0.045, z: -2.29}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3137247724363152590}
@@ -778,7 +781,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247724086582729}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -795,8 +798,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
-  m_Center: {x: 0, y: 0.069945075, z: 0}
+  m_Size: {x: 0.76422936, y: 0.22069445, z: 0.8343942}
+  m_Center: {x: -0.005187124, y: 0.038784042, z: 0.0017978847}
 --- !u!114 &3137247724086582775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,6 +821,7 @@ MonoBehaviour:
   Objtext: {fileID: 0}
   farmStatus: 0
   cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
+  cropPlanted: {fileID: 0}
 --- !u!1 &3137247724231611598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247724424490464}
   m_LocalRotation: {x: -0, y: -0.99996614, z: -0, w: 0.008233788}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.51, y: 0, z: 0.51}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3137247723552966512}
@@ -1158,7 +1162,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247724424490464}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -1175,8 +1179,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
-  m_Center: {x: -0.009457022, y: 0.038784042, z: -0.013934076}
+  m_Size: {x: 0.76422936, y: 0.22069445, z: 0.8343942}
+  m_Center: {x: -0.005187124, y: 0.038784042, z: 0.0017978847}
 --- !u!114 &3137247724424490478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,6 +1202,7 @@ MonoBehaviour:
   Objtext: {fileID: 0}
   farmStatus: 0
   cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
+  cropPlanted: {fileID: 0}
 --- !u!1 &3137247724497505057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247724497505057}
   m_LocalRotation: {x: -0, y: -0.99996614, z: -0, w: 0.008233788}
-  m_LocalPosition: {x: 2.079999, y: 0, z: -2.249999}
+  m_LocalPosition: {x: 2.13, y: 0, z: -2.249999}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 3137247723228206460}
@@ -1292,7 +1297,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137247724497505057}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -1309,8 +1314,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.51, y: 0.22069445, z: 0.51911134}
-  m_Center: {x: 0.0000009536743, y: 0.10559738, z: -1.4882149e-15}
+  m_Size: {x: 0.76422936, y: 0.22069445, z: 0.8343942}
+  m_Center: {x: -0.005187124, y: 0.038784042, z: 0.0017978847}
 --- !u!114 &3137247724497505071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,3 +1337,4 @@ MonoBehaviour:
   Objtext: {fileID: 0}
   farmStatus: 0
   cropPrefab: {fileID: 3593613598540454561, guid: a2561ab5656290e43ac26d0126ae2016, type: 3}
+  cropPlanted: {fileID: 0}

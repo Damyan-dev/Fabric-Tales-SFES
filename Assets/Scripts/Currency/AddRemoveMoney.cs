@@ -18,7 +18,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
        var itemToBuy = Inventory.Instance.FindItemByType("Cotton Seed");
         
-        if (ingameCamera.GetComponent<playerMoney>().money >= 10 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
+        if (ingameCamera.GetComponent<playerMoney>().money >= 5 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             audioController.PlaySoundComplete("Shop Button Click");
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
@@ -54,7 +54,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
         var itemToBuy = Inventory.Instance.FindItemByType("Polyester");
 
-        if (ingameCamera.GetComponent<playerMoney>().money >= 25 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
+        if (ingameCamera.GetComponent<playerMoney>().money >= 5 && itemToBuy.itemType != null && itemToBuy.inventory && itemToBuy.quantity >= 0)
         {
             audioController.PlaySoundComplete("Shop Button Click");
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);
@@ -81,7 +81,7 @@ public class AddRemoveMoney : MonoBehaviour
     {
         var itemToBuy = Inventory.Instance.FindItemByType("Cotton");
 
-        if (itemToBuy.itemType != null && itemToBuy.quantity >= 0)
+        if (ingameCamera.GetComponent<playerMoney>().money >= 15 && itemToBuy.itemType != null && itemToBuy.quantity >= 0)
         {
             audioController.PlaySoundComplete("Shop Button Click");
             Inventory.Instance.AddItem(itemToBuy.itemType, 1);

@@ -18,7 +18,7 @@ public class CropParams : MonoBehaviour
         Seed, Seedling, Harvestable
     }
     public CropState cropState;
-
+    private Farmland farm;
 
     public void Start()
     {
@@ -69,8 +69,7 @@ public class CropParams : MonoBehaviour
     }
 
     public void GrowFertilized()
-    {
-
+    {      
         growthFertlized++;
 
         if (growthFertlized >= maxGrowthFertlized / 6 && cropState == CropState.Seed)
@@ -102,7 +101,7 @@ public class CropParams : MonoBehaviour
             case CropState.Harvestable:
                 harvestable.SetActive(true);
                 harvestable.transform.parent = null;
-                //Destroy(gameObject);
+                Destroy(gameObject);
                 break;
         }
 

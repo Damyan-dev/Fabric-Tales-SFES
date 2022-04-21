@@ -16,6 +16,9 @@ public class CropInteractionMenu : MonoBehaviour
     public Button plantCottonButton;
     public Button plantElderberryButton;
     public Button plantTurmericButton;
+    public Button plantFCottonButton;
+    public Button plantFElderberryButton;
+    public Button plantFTurmericButton;
     private AudioController audioController;
 
     public void Start()
@@ -31,6 +34,9 @@ public class CropInteractionMenu : MonoBehaviour
         plantCottonButton.interactable = false;
         plantElderberryButton.interactable = false;
         plantTurmericButton.interactable = false;
+        plantFCottonButton.interactable = false;
+        plantFElderberryButton.interactable = false;
+        plantFTurmericButton.interactable = false;
         CheckInventory();
     }
 
@@ -45,30 +51,36 @@ public class CropInteractionMenu : MonoBehaviour
         if (cottonSeedCheck.itemType != null && cottonSeedCheck.quantity >= 1)
         {
             plantCottonButton.interactable = true;
+            plantFCottonButton.interactable = true;
         }
         else
         {
             plantCottonButton.interactable= false;
+            plantFCottonButton.interactable = false;
         }
 
         var cottonESeedCheck = Inventory.Instance.FindItemByType("Elderberry Seed");
         if (cottonESeedCheck.itemType != null && cottonESeedCheck.quantity >= 1)
         {
             plantElderberryButton.interactable = true;
+            plantFElderberryButton.interactable = true;
         }
         else
         {
             plantElderberryButton.interactable = false;
+            plantFElderberryButton.interactable = false;
         }
 
         var cottonTSeedCheck = Inventory.Instance.FindItemByType("Turmeric Seed");
         if (cottonTSeedCheck.itemType != null && cottonTSeedCheck.quantity >= 1)
         {
             plantTurmericButton.interactable = true;
+            plantFTurmericButton.interactable = true;
         }
         else
         {
             plantTurmericButton.interactable = false;
+            plantFTurmericButton.interactable = false;
         }
     }
     public void Fertilize()
@@ -101,8 +113,10 @@ public class CropInteractionMenu : MonoBehaviour
     {
         var selectedField = Interactor.Instance.selectedFarmLand;
         CheckInventory();
-        if (selectedField != null)
+        if (selectedField != null && selectedField.cropPlanted == null)
         {
+            selectedField.ChangeFarmStatus(Farmland.FarmStatus.Farm);
+            audioController.PlaySoundComplete("Till");
             selectedField.CottonSeed();
             if(selectedField.cropPlanted != null)
             {
@@ -111,12 +125,30 @@ public class CropInteractionMenu : MonoBehaviour
         }
     }
 
+    public void PlantFertilizedCotton()
+    {
+        var selectedField = Interactor.Instance.selectedFarmLand;
+        CheckInventory();
+        if (selectedField != null && selectedField.cropPlanted == null)
+        {
+            selectedField.ChangeFarmStatus(Farmland.FarmStatus.Watered);
+            audioController.PlaySoundComplete("Fertilize");
+            selectedField.CottonSeed();
+            if (selectedField.cropPlanted != null)
+            {
+                LoseHealth(5);
+            }
+        }
+    }
+
     public void PlantElderberry()
     {
         var selectedField = Interactor.Instance.selectedFarmLand;
         CheckInventory();
-        if (selectedField != null)
+        if (selectedField != null && selectedField.cropPlanted == null)
         {
+            selectedField.ChangeFarmStatus(Farmland.FarmStatus.Farm);
+            audioController.PlaySoundComplete("Till");
             selectedField.ElderberrySeed();
             if (selectedField.cropPlanted != null)
             {
@@ -125,16 +157,50 @@ public class CropInteractionMenu : MonoBehaviour
         }
     }
 
+    public void PlantFertilizedElderberry()
+    {
+        var selectedField = Interactor.Instance.selectedFarmLand;
+        CheckInventory();
+        if (selectedField != null && selectedField.cropPlanted == null)
+        {
+            selectedField.ChangeFarmStatus(Farmland.FarmStatus.Watered);
+            audioController.PlaySoundComplete("Fertilize");
+            selectedField.ElderberrySeed();
+            if (selectedField.cropPlanted != null)
+            {
+                LoseHealth(5);
+            }
+        }
+    }
+
     public void PlantTurmeric()
     {
         var selectedField = Interactor.Instance.selectedFarmLand;
         CheckInventory();
-        if (selectedField != null)
+        if (selectedField != null && selectedField.cropPlanted == null)
         {
+            selectedField.ChangeFarmStatus(Farmland.FarmStatus.Farm);
+            audioController.PlaySoundComplete("Till");
             selectedField.TurmericSeed();
             if (selectedField.cropPlanted != null)
             {
                 GainHealth(1);
+            }
+        }
+    }
+
+    public void PlantFertilizedTurmeric()
+    {
+        var selectedField = Interactor.Instance.selectedFarmLand;
+        CheckInventory();
+        if (selectedField != null && selectedField.cropPlanted == null)
+        {
+            selectedField.ChangeFarmStatus(Farmland.FarmStatus.Watered);
+            audioController.PlaySoundComplete("Fertilize");
+            selectedField.TurmericSeed();
+            if (selectedField.cropPlanted != null)
+            {
+                LoseHealth(5);
             }
         }
     }
